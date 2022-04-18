@@ -1,17 +1,27 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
+#include "company.h"
+
 class Employee{
     int employee_id;
     int employee_salary;
     int employee_grade;
-    int employees_company_id;
+    Company* company_ptr;
 
     public:
-    Employee(int employee_id, int employee_salary, int employee_grade, int employees_company_id);
+    Employee(int employee_id, int employee_salary, int employee_grade, int company_id);
     ~Employee();
     
-
+    void setCompany(Company* new_company_ptr){ company_ptr = new_company_ptr; }
+    void setGrade(int new_grade){ employee_grade = new_grade; }
+    void setSalary(int new_salary){ employee_salary = new_salary; } 
+    int getId(){ return employee_id; }
+    int getGrade(){ return employee_grade; }
+    int getCompanyId(){ return company_ptr->getId(); }
+    Company* getCompanyPtr(){ return company_ptr; }
+    int getSalary(){ return employee_salary; }
+    Employee operator=(Employee other_employee);
 };
 
 #endif  //EMPLOYEE_H
