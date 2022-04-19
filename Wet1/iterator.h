@@ -21,7 +21,8 @@ public:
 	key_t getKey() const {return ptr->getKey(); }
 	Node<key_t, data_t>* getPtr() {return ptr; }
 	void setPtr(Node<key_t, data_t>* new_ptr) { ptr = new_ptr; }
-
+	bool checkNullLeft() { return (node_ptr->left == nullptr); }
+    bool checkNullRight() { return (node_ptr->right == nullptr); }
 };
 
 

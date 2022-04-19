@@ -35,10 +35,14 @@ void Company::setHighestEarner(Employee* new_highest_ptr){
     highest_earner = new_highest_ptr;
 }
 
+void Company::setValue(int new_value){
+    this->company_value = new_value;
+}
+
 ReturnValue Company::findEmployee(int employee_id, Employee* returned_employee){
     auto itr = employees_salary_filtered.begin();
     Employee_Key employee_key = Employee_Key(employee_id,0);
-    ReturnValue res = employees_salary_filtered.pre_order_find_by_key(employee_key, itr);
+    ReturnValue res = employees_salary_filtered.findElement(employee_key, itr);
     if(res == ELEMENT_EXISTS){
         returned_employee = itr.getData();
         return MY_SUCCESS;
@@ -52,7 +56,7 @@ ReturnValue Company::findEmployee(int employee_id, Employee* returned_employee){
 bool Company::isEmployeeExist(int employee_id){
     auto itr = employees_salary_filtered.begin();
     Employee_Key employee_key = Employee_Key(employee_id,0);
-    ReturnValue res = employees_salary_filtered.pre_order_find_by_key(employee_key, itr);
+    ReturnValue res = employees_salary_filtered.findElement(employee_key, itr);
     if(res == ELEMENT_EXISTS)
         return true;
     else
@@ -70,6 +74,22 @@ ReturnValue Company::addEmployee(Employee& employee){
         employees_salary_filtered.removeElement(employee_key);
         return res;
     }
+
+    if(employees_id_filtered.getSize() == 1){
+        setHighestEarner(&employee);
+    }
+    else{
+        if(employee.getSalary() > highest_earner->getSalary()){
+            setHighestEarner(&employee);
+        }
+        else if (employee.getSalary() == highest_earner->getSalary())
+        {
+            if(employee.getId() < highest_earner->getId()){
+                setHighestEarner(&employee);
+            }
+        }
+    }
+
     return res;
 }
 
@@ -80,5 +100,46 @@ ReturnValue Company::removeEmployee(Employee& employee){
         return res;
     }
     res = employees_id_filtered.removeElement(employee.getId());
+
+    if(highest_earner == &employee){
+            auto rightmost_iter = employees_salary_filtered.getRightMost();
+            if(rightmost_iter.getPtr() == nullptr){
+                highest_earner == nullptr;
+            }
+            else{
+                highest_earner = rightmost_iter.getData();
+            }
+        }
+
     return res;
+}
+
+ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor){
+    int new_value = floor((this->getValue() + other_company->getValue())*Factor);
+
+    Employee* new_highest_earner = nullptr;
+    int acquire_highest_salary = this->getHighestEarner()->getSalary();
+    int target_highest_salary = other_company->getHighestEarner()->getSalary();
+    if(acquire_highest_salary > target_highest_salary){
+        new_highest_earner = this->getHighestEarner();
+    }
+    else if (acquire_highest_salary == target_highest_salary)
+    {
+        if(this->getHighestEarner()->getId() < other_company->getHighestEarner()->getId()){
+            new_highest_earner = this->getHighestEarner();
+        }
+        else{
+            new_highest_earner = other_company->getHighestEarner();
+        }
+    }
+    else{
+        new_highest_earner = other_company->getHighestEarner();
+    }
+
+    employees_id_filtered.mergeToMe(other_company->employees_id_filtered);
+    employees_salary_filtered.mergeToMe(other_company->employees_salary_filtered);
+    this->setValue(new_value);
+    this->setHighestEarner(new_highest_earner);
+
+    return MY_SUCCESS;
 }

@@ -30,8 +30,35 @@ class CompaniesManager{
     ReturnValue GetNumEmployeesMatching(int CompanyID, int MinEmployeeID, int MaxEmployeeId, int MinSalary, 
                                         int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees);
 
-    void updateCompanyForAllEmployees(Company* old_company, Company* new_company);
+    void updateCompanyForAllEmployees(Company* new_company);
     void recursiveUpdateGroupForAllPlayers(Company* new_company, Iterator<Employee_Key, Employee*> iter);
 };
+
+template<typename key, typename data>
+void deleteTreeData(Tree<key,data*> &tree){
+    auto iter = tree.begin();
+    recursiveDeleteTreeData(&iter);
+}
+
+template<typename key, typename data>
+void recursiveDeleteTreeData(Tree<key,data*> &tree, Iterator<key, data*> &iter){
+    if (iter.getPtr() == nullptr) {
+            return;	
+    }
+
+    if (!iter.checkNullLeft()) {
+        iter.goLeft();
+        recursiveDeleteTreeData(iter);
+        iter.goFather();
+    }
+
+    if (!iter.checkNullRight()) {
+        iter.goRight();
+        recursiveDeleteTreeData(iter);
+        iter.goFather();
+    }
+
+    delete *(iter.getData());
+}
 
 #endif // COMPANIES_MANAGER_H

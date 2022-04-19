@@ -10,7 +10,7 @@ class Employee{
     Company* company_ptr;
 
     public:
-    Employee(int employee_id, int employee_salary, int employee_grade, int company_id);
+    Employee(int employee_id, int employee_salary, int employee_grade, Company* company_ptr);
     ~Employee();
     
     void setCompany(Company* new_company_ptr){ company_ptr = new_company_ptr; }

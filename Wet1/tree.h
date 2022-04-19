@@ -15,78 +15,90 @@ template<typename key_t, typename data_t>
 class Tree {
 	Node<key_t, data_t>* root;
 	int size;
-public:
-	Tree() : size(0) {root = nullptr; }
-	~Tree();
-	ReturnValue pre_order_find_by_key(key_t key, Iterator<key_t, data_t>& iter);
-	void clearTree();
-	void deleteTreeNodes(Node<key_t, data_t>* node);
-	int getSize() const;
-	ReturnValue insert(key_t key, data_t element);
-	ReturnValue removeElement(key_t key);
-	ReturnValue removeRoot(Iterator<key_t, data_t>& iter);
-	ReturnValue removeNonRoot(Iterator<key_t, data_t>& iter);
-	ReturnValue swapNodes(Node<key_t, data_t>* node1, Node<key_t, data_t>* node2);
+
+	//tree rolls
 	ReturnValue fixTree(Iterator<key_t, data_t>& iter);
 	ReturnValue RollTree(Node<key_t, data_t>& node);
 	ReturnValue LLRoll(Node<key_t, data_t>& node);
 	ReturnValue RRRoll(Node<key_t, data_t>& node);
 	ReturnValue LRRoll(Node<key_t, data_t>& node);
 	ReturnValue RLRoll(Node<key_t, data_t>& node);
+
+	//Node Removal Helper Functions
+	ReturnValue removeRoot(Iterator<key_t, data_t>& iter);
+	ReturnValue removeNonRoot(Iterator<key_t, data_t>& iter);
+
+    //Node Swaps
+	ReturnValue swapNodes(Node<key_t, data_t>* node1, Node<key_t, data_t>* node2);
+	void swapRoot(Node<key_t, data_t>* received_root, Node<key_t, data_t>* node);
+	void swapNonRoot(Node<key_t, data_t>* node1, Node<key_t, data_t>* node2);
+
+    //Tree Merging Helper Function and Calculations
+	int findRequiredEmptyTreeHeight(int n);
+	int findNumOfNodesToDelete(int size);
+	Node<key_t, data_t>* createEmptyTree(int* height);
+	bool removeExtraTreeNodes(Node<key_t, data_t>* node, int* num_of_nodes_to_delete);
+
+	//Array casting
+	void putTreeToArray(Node<key_t, data_t>* node, Node<key_t, data_t>* arr[], int* i);
+    void putArrayIntoTree(Node<key_t, data_t>** tree_node, Node<key_t, data_t>*** array, int* i); 
+	
+	//Array merge
+	void mergeArrays(Node<key_t, data_t>* arr1[], Node<key_t, data_t>* arr2[],
+					   Node<key_t, data_t>* merged_arr[], int arr1_size, int arr2_size);
+
+
+public:
+	Tree() : size(0) {root = nullptr; }
+	~Tree();
+
+	//Add or Remove elements
+	void deleteTreeNodes(Iterator<key_t, data_t>& iter);
+	ReturnValue insert(key_t key, data_t element);
+	ReturnValue removeElement(key_t key);
+
+	ReturnValue findElement(key_t key, Iterator<key_t, data_t>& iter);
+	int getSize() const;
 	Iterator<key_t, data_t> begin();
 	Iterator<key_t, data_t> begin() const;
 	Iterator<key_t, data_t> createIterByNode(Node<key_t, data_t>& node);
 	Iterator<key_t, data_t> createIterByNode(Node<key_t, data_t>& node) const;
+	void getRootIndexInOrder(Node<key_t, data_t>* node, int* index_ptr);
+	void getRightMostNode(Node<key_t, data_t>** node_ptr);
+	Iterator<key_t, data_t> Tree<key_t, data_t>::getRightMost();
+
+	// Print functions
 	void printTree();
 	void printInOrder(Node<key_t, data_t>* node);
-	void getRightMostNode(Node<key_t, data_t>** node_ptr);
-
-	Tree<key_t, data_t>* mergeTree(Tree<key_t, data_t>& tree2);
-	void putTreeToArray(Node<key_t, data_t>* node, Node<key_t, data_t>* arr[], int* i);
-	void myMergeArrays(Node<key_t, data_t>* arr1[], Node<key_t, data_t>* arr2[],
-					   Node<key_t, data_t>* merged_arr[], int arr1_size, int arr2_size);
-	Node<key_t, data_t>* createEmptyTree(int* height);
-	int findRequiredEmptyTreeHeight(int n);
-	bool removeExtraTreeNodes(Node<key_t, data_t>* node, int* num_of_nodes_to_delete,
-							  int* deg, int* tree_height);
-    void putArrayIntoTree(Node<key_t, data_t>** tree_node, Node<key_t, data_t>*** array, int* i); //new func
-
-	void swapRoot(Node<key_t, data_t>* received_root, Node<key_t, data_t>* node);
-	void swapNonRoot(Node<key_t, data_t>* node1, Node<key_t, data_t>* node2);
-	void getRootIndexInOrder(Node<key_t, data_t>* node, int* index_ptr);
-
+	
+	// Merge other tree to this tree
+	Tree<key_t, data_t>* mergeToMe(Tree<key_t, data_t>& tree2);
 };
 
 template<typename key_t, typename data_t>
 Tree<key_t, data_t>::~Tree<key_t, data_t>() {
-	deleteTreeNodes(root);
-	root = nullptr;
-	size = 0;
+	deleteTreeNodes(this->begin());
+	delete root;
 }
 
-template<typename key_t, typename data_t>
-void Tree<key_t, data_t>::clearTree() {
-	deleteTreeNodes(root);
-	root = nullptr;
-	size = 0;
-}
 
 template<typename key_t, typename data_t>
-void Tree<key_t, data_t>::deleteTreeNodes(Node<key_t, data_t> *node) {
-	if(node == nullptr){
+void Tree<key_t, data_t>::deleteTreeNodes(Iterator<key_t, data_t>& iter) {
+	if(iter.getPtr() == nullptr){
 		return;
 	}
-	deleteTreeNodes(node->left);
-	deleteTreeNodes(node->right);
-	if(node != root){
-		node->isALeftSon() ? node->father->left = nullptr : node->father->right = nullptr;
-		node->father = nullptr;
+	deleteTreeNodes(iter.getPtr()->left);
+	deleteTreeNodes(iter.getPtr()->right);
+	if(iter.getPtr() != root){
+		iter.getPtr()->isALeftSon() ? iter.getPtr()->father->left = nullptr : iter.getPtr()->father->right = nullptr;
+		iter.getPtr()->father = nullptr;
+		delete iter.getPtr();
 	}
 }
 
 
 template<typename key_t, typename data_t>
-ReturnValue Tree<key_t, data_t>::pre_order_find_by_key(key_t key, Iterator<key_t, data_t>& iter) {
+ReturnValue Tree<key_t, data_t>::findElement(key_t key, Iterator<key_t, data_t>& iter) {
 	if(iter.ptr == nullptr) {
 		return NO_ROOT;
 	}
@@ -132,7 +144,7 @@ ReturnValue Tree<key_t, data_t>::insert(key_t key, data_t element) {
 		return MY_ALLOCATION_ERROR;
 	}*/
 	//check height when son is nullptr
-	ReturnValue result = pre_order_find_by_key(key, iter);
+	ReturnValue result = findElement(key, iter);
 	switch (result) {
 		case MY_ALLOCATION_ERROR :
 			return MY_ALLOCATION_ERROR;
@@ -295,7 +307,7 @@ template<typename key_t, typename data_t>
 ReturnValue Tree<key_t, data_t>::removeElement(key_t key) {
 	Iterator<key_t, data_t> iter = begin();
 
-	ReturnValue result = pre_order_find_by_key(key, iter);
+	ReturnValue result = findElement(key, iter);
 	switch (result) {
 		case MY_ALLOCATION_ERROR :
 			return MY_ALLOCATION_ERROR;
@@ -488,6 +500,19 @@ void Tree<key_t, data_t>::getRightMostNode(Node<key_t, data_t>** node_ptr){
 }
 
 template<typename key_t, typename data_t>
+Iterator<key_t, data_t> Tree<key_t, data_t>::getRightMost(){
+	Iterator<key_t, data_t> iter = begin();
+	if(iter.getPtr() == nullptr) {
+		return iter;
+	}
+	while(!iter.checkNullRight()){
+		iter.goRight();
+	}
+
+	return iter;
+}
+
+template<typename key_t, typename data_t>
 void Tree<key_t, data_t>::swapRoot(Node<key_t, data_t> *received_root, Node<key_t, data_t> *node) {
 	Node<key_t, data_t>* orig_father_of_node = node->father;
 	Node<key_t, data_t>* orig_right_son_of_node = node->right;
@@ -578,44 +603,52 @@ void Tree<key_t, data_t>::swapNonRoot(Node<key_t, data_t> *node1, Node<key_t, da
 }
 
 template<typename key_t, typename data_t>
-Tree<key_t, data_t>* Tree<key_t, data_t>::mergeTree(Tree<key_t, data_t>& tree2) {
+Tree<key_t, data_t>* Tree<key_t, data_t>::mergeToMe(Tree<key_t, data_t>& other_tree) {
+	if (other_tree.getSize() == 0){
+        return;
+    }
 
 	/*
 	 * create arrays for each tree, and merged tree
 	 * */
 	Node<key_t, data_t>** arr1 = new Node<key_t, data_t>*[sizeof(Node<key_t, data_t>*) * getSize()];
-	Node<key_t, data_t>** arr2 = new Node<key_t, data_t>*[sizeof(Node<key_t, data_t>*) * tree2.getSize()];
-	Node<key_t, data_t>** merged_arr = new Node<key_t, data_t>*[sizeof(Node<key_t, data_t>*) * (getSize()+tree2.getSize())];
+	Node<key_t, data_t>** arr2 = new Node<key_t, data_t>*[sizeof(Node<key_t, data_t>*) * other_tree.getSize()];
+	Node<key_t, data_t>** merged_arr = new Node<key_t, data_t>*[sizeof(Node<key_t, data_t>*) * (getSize()+other_tree.getSize())];
 
 	/*
 	 * insert all nodes of each tree to it's array
 	 * */
 	int i=0 , j = 0;
 	this->putTreeToArray(root, arr1, &i);
-	tree2.putTreeToArray(tree2.root, arr2, &j);
+	other_tree.putTreeToArray(other_tree.root, arr2, &j);
 
 	/*
 	 * merge the 2 arrays to 1 array
 	 * */
-	myMergeArrays(arr1, arr2, merged_arr, size, tree2.getSize());
+	mergeArrays(arr1, arr2, merged_arr, size, other_tree.getSize());
 
 	/*
-	 * turn the merged array to a tree
+	 * create new tree with new size
 	 * */
-	Tree<key_t, data_t>* merged_tree = new Tree<key_t, data_t>;
-	int req_tree_height = findRequiredEmptyTreeHeight(size + tree2.getSize());
-	merged_tree->root = createEmptyTree( &req_tree_height);
-	req_tree_height = findRequiredEmptyTreeHeight(size + tree2.getSize());
-	double num_of_nodes_to_delete = (exp2(1 + req_tree_height) - 1) - (size + tree2.getSize());//
-	int num_of_nodes_to_delete_int = ceil(num_of_nodes_to_delete);
-	int deg = 0, m=0;
+	int merged_size = size + other_tree.getSize();
+	int req_tree_height = findRequiredEmptyTreeHeight(merged_size);
+	Node<key_t, data_t>* new_root = createEmptyTree(&req_tree_height);
+	int num_of_nodes_to_delete_int = findNumOfNodesToDelete(merged_size);
+	removeExtraTreeNodes(new_root, &num_of_nodes_to_delete_int);
 
-	removeExtraTreeNodes(merged_tree->root, &num_of_nodes_to_delete_int,
-						 							&deg, &req_tree_height);
+	int m=0;
+	Node<key_t, data_t>* old_root = this.root;
+	this.root = new_root;
+    putArrayIntoTree(&new_root, &merged_arr, &m);
+	this.size = merged_size;
 
-    merged_tree->putArrayIntoTree(&merged_tree->root, &merged_arr, &m);
-	merged_tree->size = size + tree2.getSize();
-	return merged_tree;
+	Tree<key_t, data_t> temp_tree = Tree<key_t, data_t>();
+	temp_tree.root = old_root;
+	temp_tree.~Tree<key_t, data_t>();
+
+	delete[] arr1;
+    delete[] arr2;
+    delete[] merged_arr;
 }
 
 
@@ -663,8 +696,7 @@ Node<key_t, data_t>* Tree<key_t, data_t>::createEmptyTree(int* height) {
 }
 
 template<typename key_t, typename data_t>
-bool Tree<key_t, data_t>::removeExtraTreeNodes(Node<key_t, data_t> *node, int* num_of_nodes_to_delete,
-											   int* deg, int* tree_height) {
+bool Tree<key_t, data_t>::removeExtraTreeNodes(Node<key_t, data_t> *node, int* num_of_nodes_to_delete) {
     if (*num_of_nodes_to_delete == 0 || node == nullptr){
         return false;
     }
@@ -677,14 +709,14 @@ bool Tree<key_t, data_t>::removeExtraTreeNodes(Node<key_t, data_t> *node, int* n
 
     Node<key_t, data_t>* right_son = node->getRight();
     if(right_son != nullptr){
-        if (removeExtraTreeNodes(right_son, num_of_nodes_to_delete, deg, tree_height)){
+        if (removeExtraTreeNodes(right_son, num_of_nodes_to_delete)){
             node->right = nullptr;
         }
     }
 
     Node<key_t, data_t>* left_son = node->getLeft();
     if(left_son != nullptr){
-        if (removeExtraTreeNodes(left_son, num_of_nodes_to_delete, deg, tree_height)){
+        if (removeExtraTreeNodes(left_son, num_of_nodes_to_delete)){
             node->left = nullptr;
         }
     }
@@ -701,6 +733,14 @@ int Tree<key_t, data_t>::findRequiredEmptyTreeHeight(int n) {
 }
 
 template<typename key_t, typename data_t>
+int Tree<key_t, data_t>::findNumOfNodesToDelete(int size){
+	int tree_height = findRequiredEmptyTreeHeight(size);
+    double num_of_nodes_to_delete = (exp2(1 + tree_height) - 1) - size;
+    int num_of_nodes_to_delete_int = ceil(num_of_nodes_to_delete);
+    return num_of_nodes_to_delete_int;
+}
+
+template<typename key_t, typename data_t>
 void Tree<key_t, data_t>::putTreeToArray(Node<key_t, data_t>* node, Node<key_t, data_t> **arr, int* i) {
 	if(node == nullptr){
 		return;
@@ -712,7 +752,7 @@ void Tree<key_t, data_t>::putTreeToArray(Node<key_t, data_t>* node, Node<key_t, 
 }
 
 template<typename key_t, typename data_t>
-void Tree<key_t, data_t>::myMergeArrays(Node<key_t, data_t> **arr1, Node<key_t, data_t> **arr2,
+void Tree<key_t, data_t>::mergeArrays(Node<key_t, data_t> **arr1, Node<key_t, data_t> **arr2,
 										Node<key_t, data_t> **merged_arr, int arr1_size, int arr2_size) {
 	int i= 0, j = 0, k = 0;
 	while(i < arr1_size && j < arr2_size){
