@@ -12,6 +12,8 @@ class Company{
     Tree<Employee_Key,Employee*> employees_salary_filtered;
     Tree<int,Employee*> employees_id_filtered;
 
+    void recursiveUpdateGroupForAllPlayers(Iterator<int, Employee*> iter);
+
     public:
     Company(int company_id, int company_value);
     ~Company();
@@ -27,6 +29,8 @@ class Company{
     ReturnValue addEmployee(Employee& employee);
     ReturnValue removeEmployee(Employee& employee);
     ReturnValue AcquireAnotherCompany(Company* other, double Factor);
+    void updateCompanyForAllEmployees();
+    
 };
 
 #endif // COMPANY_H

@@ -47,6 +47,21 @@ class Tree {
 	void mergeArrays(Node<key_t, data_t>* arr1[], Node<key_t, data_t>* arr2[],
 					   Node<key_t, data_t>* merged_arr[], int arr1_size, int arr2_size);
 
+	// // Work in progress
+	// class TreeIterator{
+	// 		Node<key_t, data_t>* curr_node;
+	// 		Node<key_t, data_t>* last_node;
+	
+	// 	public:
+	// 	explicit TreeIterator(Node<key_t, data_t>* curr_node) noexcept: next_node(curr_node), last_node(nullptr) {}
+	// 	~TreeIterator(){}
+	// 	TreeIterator<key_t, data_t>& next();
+	// 	data_t getData() const {return curr_node->getData(); }
+	// 	key_t getKey() const {return curr_node->getKey(); }
+	// 	bool operator==()
+	// };
+	// //...
+
 
 public:
 	Tree() : size(0) {root = nullptr; }
@@ -649,6 +664,8 @@ Tree<key_t, data_t>* Tree<key_t, data_t>::mergeToMe(Tree<key_t, data_t>& other_t
 	delete[] arr1;
     delete[] arr2;
     delete[] merged_arr;
+
+	return this;
 }
 
 

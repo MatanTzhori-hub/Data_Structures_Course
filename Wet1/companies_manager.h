@@ -30,8 +30,6 @@ class CompaniesManager{
     ReturnValue GetNumEmployeesMatching(int CompanyID, int MinEmployeeID, int MaxEmployeeId, int MinSalary, 
                                         int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees);
 
-    void updateCompanyForAllEmployees(Company* new_company);
-    void recursiveUpdateGroupForAllPlayers(Company* new_company, Iterator<Employee_Key, Employee*> iter);
 };
 
 template<typename key, typename data>

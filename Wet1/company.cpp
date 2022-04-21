@@ -118,28 +118,36 @@ ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor
     int new_value = floor((this->getValue() + other_company->getValue())*Factor);
 
     Employee* new_highest_earner = nullptr;
-    int acquire_highest_salary = this->getHighestEarner()->getSalary();
-    int target_highest_salary = other_company->getHighestEarner()->getSalary();
-    if(acquire_highest_salary > target_highest_salary){
-        new_highest_earner = this->getHighestEarner();
-    }
-    else if (acquire_highest_salary == target_highest_salary)
-    {
-        if(this->getHighestEarner()->getId() < other_company->getHighestEarner()->getId()){
-            new_highest_earner = this->getHighestEarner();
-        }
-        else{
-            new_highest_earner = other_company->getHighestEarner();
-        }
-    }
-    else{
-        new_highest_earner = other_company->getHighestEarner();
-    }
-
+    Employee_Key this_key = Employee_Key(this->getHighestEarner()->getId(),this->getHighestEarner()->getId());
+    Employee_Key other_key = Employee_Key(other_company->getHighestEarner()->getId(),other_company->getHighestEarner()->getId());
+    new_highest_earner = (this_key > other_key) ? this->getHighestEarner() : other_company->getHighestEarner();
+    
     employees_id_filtered.mergeToMe(other_company->employees_id_filtered);
     employees_salary_filtered.mergeToMe(other_company->employees_salary_filtered);
     this->setValue(new_value);
     this->setHighestEarner(new_highest_earner);
 
     return MY_SUCCESS;
+}
+
+void Company::updateCompanyForAllEmployees(){
+    auto iter = this->employees_id_filtered.begin();
+    recursiveUpdateGroupForAllPlayers(iter);
+}
+
+void Company::recursiveUpdateGroupForAllPlayers(Iterator<int, Employee*> iter){
+    if(iter.getPtr() == nullptr){
+		return;
+	}
+    if(!iter.checkNullLeft()){
+        iter.goLeft();
+	    recursiveUpdateGroupForAllPlayers(iter);
+        iter.goFather();
+    }
+    if(!iter.checkNullRight()){
+        iter.goRight();
+	    recursiveUpdateGroupForAllPlayers(iter);
+        iter.goFather();
+    }
+    iter.getData()->setCompany(this);
 }

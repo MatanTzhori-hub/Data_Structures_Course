@@ -259,13 +259,86 @@ ReturnValue CompaniesManager::AcquireCompany(int AcquirerID, int TargetID, doubl
     non_empty_companies.removeElement(TargetID);
     all_companies.removeElement(TargetID);
 
-    // need to implement this function!
-    updateCompanyForAllEmployees(acquire_company_ptr);
-    //
+    acquire_company_ptr->updateCompanyForAllEmployees();
 
     delete target_company_ptr;
     target_company_ptr = nullptr;
 
     return MY_SUCCESS;
 }
+
+ReturnValue CompaniesManager::GetHighestEarner(int CompanyID, int *EmployeeID){
+    if(CompanyID < 0){
+        if(highest_earner == nullptr){
+            return MY_FAILURE;
+        }
+        else{
+            *EmployeeID = highest_earner->getId();
+            return MY_SUCCESS;
+        }
+    }
+    else{
+        auto company_iter = all_companies.begin();
+        ReturnValue res = all_companies.findElement(CompanyID, company_iter);
+        if(res != ELEMENT_EXISTS){
+            return MY_FAILURE;
+        }
+
+        Company* company_ptr = company_iter.getData();
+        if(company_ptr->getHighestEarner() == nullptr){
+            return MY_FAILURE;
+        }
+        else{
+            *EmployeeID = company_ptr->getHighestEarner()->getId();
+            return MY_SUCCESS;
+        }
+    }
+
+    return MY_FAILURE;
+}
+
+// ReturnValue CompaniesManager::GetAllEmployeesBySalary(int CompanyID, int **Employees, int *NumOfEmployees){
+//     if(CompanyID < 0){
+//         *NumOfEmployees = all_employees_salary_filtered.getSize();
+//         if(*NumOfEmployees <= 0){
+//             return MY_FAILURE;
+//         }
+//         else{
+//             int *Employees_arr = (int*)malloc(*NumOfEmployees * sizeof(int));
+//             auto employee_iter = all_employees_salary_filtered.begin();
+
+//             //...//
+//             // need to implement
+//             //...//
+
+//             Employees = &Employees_arr;
+//         }
+//     }
+//     else{
+//         auto company_iter = all_companies.begin();
+//         ReturnValue res = all_companies.findElement(CompanyID, company_iter);
+//         if(res != ELEMENT_EXISTS){
+//             return MY_FAILURE;
+//         }
+
+//         Company* company_ptr = company_iter.getData();
+        
+//         *NumOfEmployees = company_ptr->getSize();
+//         if(*NumOfEmployees <= 0){
+//             return MY_FAILURE;
+//         }
+//         else{
+//             int *Employees_arr = (int*)malloc(*NumOfEmployees * sizeof(int));
+            
+//             //...//
+//             // need to implement
+//             //...//
+
+//             Employees = &Employees_arr;
+//         }
+//     }
+// }
+
+
+
 
