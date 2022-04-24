@@ -51,7 +51,7 @@ ReturnValue CompaniesManager::AddEmployee(int EmployeeID, int CompanyID, int Sal
             non_empty_companies.insert(CompanyID, company_ptr);
         }
 
-        if(is_company_empty || highest_earner->getSalary() < new_employee->getSalary()){
+        if(all_employees_salary_filtered.getSize() == 1 || highest_earner->getSalary() < new_employee->getSalary()){
             highest_earner = new_employee;
         }
         else if (highest_earner->getSalary() == new_employee->getSalary())
@@ -192,6 +192,16 @@ ReturnValue CompaniesManager::PromoteEmployee(int EmployeeID, int SalaryIncrease
 
     if(res1 != MY_SUCCESS || res2 != MY_SUCCESS || res3 != MY_SUCCESS){
         return MY_FAILURE;
+    }
+
+    if(highest_earner == employee_ptr){
+        auto rightmost_iter = all_employees_salary_filtered.getRightMost();
+        if(rightmost_iter == all_employees_salary_filtered.end()){
+            highest_earner == nullptr;
+        }
+        else{
+            highest_earner = rightmost_iter.getData();
+        }
     }
 
     return MY_SUCCESS;
