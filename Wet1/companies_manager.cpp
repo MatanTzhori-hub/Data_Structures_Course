@@ -379,6 +379,15 @@ ReturnValue CompaniesManager::GetNumEmployeesMatching(int CompanyID, int MinEmpl
             start_iter.next();
         }
 
+        // one more time, incase end_iter is the largest key, and is still in range.
+        Employee* employee_ptr = start_iter.getData();
+        if( MinEmployeeID <= employee_ptr->getId() && employee_ptr->getId() <= MaxEmployeeId){
+            totalNumEmployees++;
+            if(MinSalary <= employee_ptr->getSalary() && MinGrade <= employee_ptr->getGrade()){
+                numEmployees++;
+            }
+        }
+
         *TotalNumOfEmployees = totalNumEmployees;
         *NumOfEmployees = numEmployees;
         return MY_SUCCESS;
