@@ -237,7 +237,7 @@ ReturnValue CompaniesManager::AcquireCompany(int AcquirerID, int TargetID, doubl
     
     Company* acquire_company_ptr = acquire_company_iter.getData();
     Company* target_company_ptr = target_company_iter.getData();
-
+    
     if(acquire_company_ptr->getValue() < 10 * target_company_ptr->getValue()){
         return MY_FAILURE;
     }
