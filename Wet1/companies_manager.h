@@ -35,28 +35,11 @@ class CompaniesManager{
 template<typename key, typename data>
 void deleteTreeData(Tree<key,data*> &tree){
     auto iter = tree.begin();
-    recursiveDeleteTreeData(&iter);
-}
-
-template<typename key, typename data>
-void recursiveDeleteTreeData(Tree<key,data*> &tree, Iterator<key, data*> &iter){
-    if (iter.getPtr() == nullptr) {
-            return;	
+    while(iter != tree.end()){
+        data* cur_data = iter.getData();
+        delete cur_data;
+        iter.next();
     }
-
-    if (!iter.checkNullLeft()) {
-        iter.goLeft();
-        recursiveDeleteTreeData(iter);
-        iter.goFather();
-    }
-
-    if (!iter.checkNullRight()) {
-        iter.goRight();
-        recursiveDeleteTreeData(iter);
-        iter.goFather();
-    }
-
-    delete *(iter.getData());
 }
 
 #endif // COMPANIES_MANAGER_H

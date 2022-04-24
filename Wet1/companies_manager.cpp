@@ -27,20 +27,18 @@ ReturnValue CompaniesManager::AddCompany(int CompanyID, int Value){
 }
 
 ReturnValue CompaniesManager::AddEmployee(int EmployeeID, int CompanyID, int Salary, int Grade){
-    auto employee_iter = all_employees_id_filtered.begin();
-    ReturnValue res = all_employees_id_filtered.findElement(EmployeeID, employee_iter);
-    if(res == ELEMENT_EXISTS){
+    auto employee_iter = all_employees_id_filtered.findElement(EmployeeID);
+    if(employee_iter != all_employees_id_filtered.end()){
         return MY_FAILURE;
     }
 
-    auto company_iter = all_companies.begin();
-    res = all_companies.findElement(CompanyID, company_iter);
-    if(res != ELEMENT_EXISTS){
+    auto company_iter = all_companies.findElement(CompanyID);
+    if(company_iter == all_companies.end()){
         return MY_FAILURE;
     }
 
-    bool is_company_empty = (all_companies.getSize() == 0);
     Company *company_ptr = company_iter.getData();
+    bool is_company_empty = (company_ptr->getSize() == 0);
 
     try{
         Employee* new_employee = new Employee(EmployeeID, Salary, Grade, company_ptr);
@@ -53,7 +51,7 @@ ReturnValue CompaniesManager::AddEmployee(int EmployeeID, int CompanyID, int Sal
             non_empty_companies.insert(CompanyID, company_ptr);
         }
 
-        if(highest_earner->getSalary() < new_employee->getSalary()){
+        if(is_company_empty || highest_earner->getSalary() < new_employee->getSalary()){
             highest_earner = new_employee;
         }
         else if (highest_earner->getSalary() == new_employee->getSalary())
@@ -71,9 +69,8 @@ ReturnValue CompaniesManager::AddEmployee(int EmployeeID, int CompanyID, int Sal
 }
 
 ReturnValue CompaniesManager::RemoveEmployee(int EmployeeID){
-    auto employee_iter = all_employees_id_filtered.begin();
-    ReturnValue res = all_employees_id_filtered.findElement(EmployeeID, employee_iter);
-    if(res != ELEMENT_EXISTS){
+    auto employee_iter = all_employees_id_filtered.findElement(EmployeeID);
+    if(employee_iter == all_employees_id_filtered.end()){
         return MY_FAILURE;
     }
     else{
@@ -88,7 +85,7 @@ ReturnValue CompaniesManager::RemoveEmployee(int EmployeeID){
 
         if(highest_earner == employee_ptr){
             auto rightmost_iter = all_employees_salary_filtered.getRightMost();
-            if(rightmost_iter.getPtr() == nullptr){
+            if(rightmost_iter == all_employees_salary_filtered.end()){
                 highest_earner == nullptr;
             }
             else{
@@ -107,9 +104,8 @@ ReturnValue CompaniesManager::RemoveEmployee(int EmployeeID){
 }
 
 ReturnValue CompaniesManager::RemoveCompany(int CompanyID){
-    auto company_iter = all_companies.begin();
-    ReturnValue res = all_companies.findElement(CompanyID, company_iter);
-    if(res != ELEMENT_EXISTS){
+    auto company_iter = all_companies.findElement(CompanyID);
+    if(company_iter == all_companies.end()){
         return MY_FAILURE;
     }
     else{
@@ -130,9 +126,8 @@ ReturnValue CompaniesManager::RemoveCompany(int CompanyID){
 }
 
 ReturnValue CompaniesManager::GetCompanyInfo(int CompanyID, int *Value, int *NumEmployees){
-    auto company_iter = all_companies.begin();
-    ReturnValue res = all_companies.findElement(CompanyID, company_iter);
-    if(res != ELEMENT_EXISTS){
+    auto company_iter = all_companies.findElement(CompanyID);
+    if(company_iter == all_companies.end()){
         return MY_FAILURE;
     }
 
@@ -144,9 +139,8 @@ ReturnValue CompaniesManager::GetCompanyInfo(int CompanyID, int *Value, int *Num
 }
 
 ReturnValue CompaniesManager::GetEmployeeInfo(int EmployeeID, int *EmployerID, int *Salary, int *Grade){
-    auto employee_iter = all_employees_id_filtered.begin();
-    ReturnValue res = all_employees_id_filtered.findElement(EmployeeID, employee_iter);
-    if(res != ELEMENT_EXISTS){
+    auto employee_iter = all_employees_id_filtered.findElement(EmployeeID);
+    if(employee_iter == all_employees_id_filtered.end()){
         return MY_FAILURE;
     }
 
@@ -161,9 +155,8 @@ ReturnValue CompaniesManager::GetEmployeeInfo(int EmployeeID, int *EmployerID, i
 }
 
 ReturnValue CompaniesManager::IncreaseCompanyValue(int CompanyID, int ValueIncrease){
-    auto company_iter = all_companies.begin();
-    ReturnValue res = all_companies.findElement(CompanyID, company_iter);
-    if(res != ELEMENT_EXISTS){
+    auto company_iter = all_companies.findElement(CompanyID);
+    if(company_iter == all_companies.end()){
         return MY_FAILURE;
     }
 
@@ -174,9 +167,8 @@ ReturnValue CompaniesManager::IncreaseCompanyValue(int CompanyID, int ValueIncre
 }
 
 ReturnValue CompaniesManager::PromoteEmployee(int EmployeeID, int SalaryIncrease, int BumpGrade){
-    auto employee_iter = all_employees_id_filtered.begin();
-    ReturnValue res = all_employees_id_filtered.findElement(EmployeeID, employee_iter);
-    if(res != ELEMENT_EXISTS){
+    auto employee_iter = all_employees_id_filtered.findElement(EmployeeID);
+    if(employee_iter == all_employees_id_filtered.end()){
         return MY_FAILURE;
     }
 
@@ -206,9 +198,8 @@ ReturnValue CompaniesManager::PromoteEmployee(int EmployeeID, int SalaryIncrease
 }
 
 ReturnValue CompaniesManager::HireEmployee(int EmployeeID, int NewCompanyID){
-    auto employee_iter = all_employees_id_filtered.begin();
-    ReturnValue res = all_employees_id_filtered.findElement(EmployeeID, employee_iter);
-    if( res != ELEMENT_EXISTS){
+    auto employee_iter = all_employees_id_filtered.findElement(EmployeeID);
+    if( employee_iter == all_employees_id_filtered.end()){
         return MY_FAILURE;
     }
 
@@ -219,9 +210,8 @@ ReturnValue CompaniesManager::HireEmployee(int EmployeeID, int NewCompanyID){
         return MY_FAILURE;
     }
 
-    auto new_company_iter = all_companies.begin();
-    res = all_companies.findElement(NewCompanyID, new_company_iter);
-    if(res != ELEMENT_EXISTS){
+    auto new_company_iter = all_companies.findElement(NewCompanyID);
+    if(new_company_iter == all_companies.end()){
         return MY_FAILURE;
     }
 
@@ -235,15 +225,13 @@ ReturnValue CompaniesManager::HireEmployee(int EmployeeID, int NewCompanyID){
 }
 
 ReturnValue CompaniesManager::AcquireCompany(int AcquirerID, int TargetID, double Factor){
-    auto acquire_company_iter = all_companies.begin();
-    ReturnValue res = all_companies.findElement(AcquirerID, acquire_company_iter);
-    if(res != ELEMENT_EXISTS){
+    auto acquire_company_iter = all_companies.findElement(AcquirerID);
+    if(acquire_company_iter == all_companies.end()){
         return MY_FAILURE;
     }
     
-    auto target_company_iter = all_companies.begin();
-    ReturnValue res = all_companies.findElement(TargetID, target_company_iter);
-    if(res != ELEMENT_EXISTS){
+    auto target_company_iter = all_companies.findElement(TargetID);
+    if(target_company_iter == all_companies.end()){
         return MY_FAILURE;
     }
     
@@ -278,9 +266,8 @@ ReturnValue CompaniesManager::GetHighestEarner(int CompanyID, int *EmployeeID){
         }
     }
     else{
-        auto company_iter = all_companies.begin();
-        ReturnValue res = all_companies.findElement(CompanyID, company_iter);
-        if(res != ELEMENT_EXISTS){
+        auto company_iter = all_companies.findElement(CompanyID);
+        if(company_iter == all_companies.end()){
             return MY_FAILURE;
         }
 
@@ -297,48 +284,104 @@ ReturnValue CompaniesManager::GetHighestEarner(int CompanyID, int *EmployeeID){
     return MY_FAILURE;
 }
 
-// ReturnValue CompaniesManager::GetAllEmployeesBySalary(int CompanyID, int **Employees, int *NumOfEmployees){
-//     if(CompanyID < 0){
-//         *NumOfEmployees = all_employees_salary_filtered.getSize();
-//         if(*NumOfEmployees <= 0){
-//             return MY_FAILURE;
-//         }
-//         else{
-//             int *Employees_arr = (int*)malloc(*NumOfEmployees * sizeof(int));
-//             auto employee_iter = all_employees_salary_filtered.begin();
+ReturnValue CompaniesManager::GetAllEmployeesBySalary(int CompanyID, int **Employees, int *NumOfEmployees){
+    if(CompanyID < 0){
+        *NumOfEmployees = all_employees_salary_filtered.getSize();
+        if(*NumOfEmployees <= 0){
+            return MY_FAILURE;
+        }
+        else{
+            int *Employees_arr = (int*)malloc(*NumOfEmployees * sizeof(int));
+            if(Employees_arr == NULL){
+                return MY_ALLOCATION_ERROR;
+            }
+            auto employee_iter = all_employees_salary_filtered.begin(-1);
 
-//             //...//
-//             // need to implement
-//             //...//
+            for(int i = 0; i < *NumOfEmployees; i++){
+                Employees_arr[i] = employee_iter.getData()->getId();
+                employee_iter.next();
+            }
 
-//             Employees = &Employees_arr;
-//         }
-//     }
-//     else{
-//         auto company_iter = all_companies.begin();
-//         ReturnValue res = all_companies.findElement(CompanyID, company_iter);
-//         if(res != ELEMENT_EXISTS){
-//             return MY_FAILURE;
-//         }
+            *Employees = Employees_arr;
+        }
+    }
+    else{
+        auto company_iter = all_companies.findElement(CompanyID);
+        if(company_iter == all_companies.end()){
+            return MY_FAILURE;
+        }
 
-//         Company* company_ptr = company_iter.getData();
+        Company* company_ptr = company_iter.getData();
         
-//         *NumOfEmployees = company_ptr->getSize();
-//         if(*NumOfEmployees <= 0){
-//             return MY_FAILURE;
-//         }
-//         else{
-//             int *Employees_arr = (int*)malloc(*NumOfEmployees * sizeof(int));
-            
-//             //...//
-//             // need to implement
-//             //...//
+        *NumOfEmployees = company_ptr->getSize();
+        if(*NumOfEmployees <= 0){
+            return MY_FAILURE;
+        }
+        else{
+            return company_ptr->GetAllEmployeesBySalary(Employees, NumOfEmployees);
+        }
+    }
 
-//             Employees = &Employees_arr;
-//         }
-//     }
-// }
+    return MY_SUCCESS;
+}
 
+ReturnValue CompaniesManager::GetHighestEarnerInEachCompany(int NumOfCompanies, int **Employees){
+    if(non_empty_companies.getSize() < NumOfCompanies){
+        return MY_FAILURE;
+    }
+    int *Employees_arr = (int*)malloc(NumOfCompanies * sizeof(int));
+    if(Employees_arr == NULL){
+        return MY_ALLOCATION_ERROR;
+    }
 
+    auto company_iter = non_empty_companies.begin();
 
+    for(int i = 0; i < NumOfCompanies; i++){
+        Employees_arr[i] = company_iter.getData()->getHighestEarner()->getId();
+        company_iter.next();
+    }
 
+    *Employees = Employees_arr;
+    return MY_SUCCESS;
+}
+
+ReturnValue CompaniesManager::GetNumEmployeesMatching(int CompanyID, int MinEmployeeID, int MaxEmployeeId, int MinSalary, 
+                                                        int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees){
+    
+    if(CompanyID > 0){
+        auto company_iter = all_companies.findElement(CompanyID);
+        if(company_iter == all_companies.end() || company_iter.getData()->getSize() == 0){
+            return MY_FAILURE;
+        }
+
+        Company* company_ptr = company_iter.getData();
+        company_ptr->GetNumEmployeesMatching(MinEmployeeID, MaxEmployeeId, MinSalary, MinGrade, TotalNumOfEmployees, NumOfEmployees);
+        return MY_SUCCESS;
+    }
+    else{
+        if(all_employees_id_filtered.getSize() == 0){
+            return MY_FAILURE;
+        }
+
+        int numEmployees = 0;
+        int totalNumEmployees = 0;
+        auto start_iter = all_employees_id_filtered.findCloseestElement(MinEmployeeID);
+        auto end_iter = all_employees_id_filtered.findCloseestElement(MaxEmployeeId);
+
+        while(start_iter != end_iter){
+            Employee* employee_ptr = start_iter.getData();
+            if( MinEmployeeID <= employee_ptr->getId() && employee_ptr->getId() <= MaxEmployeeId){
+                totalNumEmployees++;
+                if(MinSalary <= employee_ptr->getSalary() && MinGrade <= employee_ptr->getGrade()){
+                    numEmployees++;
+                }
+            }
+            start_iter.next();
+        }
+
+        *TotalNumOfEmployees = totalNumEmployees;
+        *NumOfEmployees = numEmployees;
+        return MY_SUCCESS;
+    }
+
+ }

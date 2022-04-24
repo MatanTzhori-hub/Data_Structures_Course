@@ -6,3 +6,6 @@ Employee::Employee(int employee_id, int employee_salary, int employee_grade, Com
                     employee_grade(employee_grade),
                     company_ptr(company_ptr){}
 
+int Employee::getCompanyId(){
+    return company_ptr->getId(); 
+}

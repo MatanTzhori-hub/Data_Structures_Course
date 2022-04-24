@@ -163,6 +163,7 @@ int main(int argc, const char**argv) {
         if (parser(buffer) == error)
             break;
     };
+
     return 0;
 }
 
@@ -197,7 +198,7 @@ static errorType parser(const char* const command) {
     const char* command_args = NULL;
     errorType rtn_val = error;
     commandType command_val = CheckCommand(command, &command_args);
-    if ((command_val >= INIT_CMD) and (command_val <= QUIT_CMD)) {
+    if ((command_val >= INIT_CMD) && (command_val <= QUIT_CMD)) {
         rtn_val = OnCmdPtrs[command_val](&DS, command_args);
     } else if (command_val == COMMENT_CMD) {
         rtn_val = error_free;
@@ -255,7 +256,7 @@ static errorType OnQuit(void** DS, const char* const command) {
 static errorType OnAddCompany(void **DS, const char* const command) {
     int CompanyID, Value;
     ValidateRead(sscanf(command, "%d %d", &CompanyID, &Value), 2, "AddCompany failed.\n");
-    StatusType res = AddCompany(DS, CompanyID, Value);
+    StatusType res = AddCompany(*DS, CompanyID, Value);
     printf("AddCompany: %s\n", ReturnValToStr(res));
     return error_free;
 }
@@ -266,7 +267,7 @@ static errorType OnAddCompany(void **DS, const char* const command) {
 static errorType OnAddEmployee(void **DS, const char* const command) {
     int EmployeeID, CompanyID, Salary, Grade;
     ValidateRead(sscanf(command, "%d %d %d %d", &EmployeeID, &CompanyID, &Salary, &Grade), 4, "AddEmployee failed.\n");
-    StatusType res = AddEmployee(DS, EmployeeID, CompanyID, Salary, Grade);
+    StatusType res = AddEmployee(*DS, EmployeeID, CompanyID, Salary, Grade);
     printf("AddEmployee: %s\n", ReturnValToStr(res));
     return error_free;
 }
@@ -277,7 +278,7 @@ static errorType OnAddEmployee(void **DS, const char* const command) {
 static errorType OnRemoveCompany(void **DS, const char* const command) {
     int CompanyID;
     ValidateRead(sscanf(command, "%d", &CompanyID), 1, "RemoveCompany failed.\n");
-    StatusType res = RemoveCompany(DS, CompanyID);
+    StatusType res = RemoveCompany(*DS, CompanyID);
     printf("RemoveCompany: %s\n", ReturnValToStr(res));
     return error_free;
 }
@@ -288,7 +289,7 @@ static errorType OnRemoveCompany(void **DS, const char* const command) {
 static errorType OnRemoveEmployee(void **DS, const char* const command) {
     int EmployeeID;
     ValidateRead(sscanf(command, "%d", &EmployeeID), 1, "RemoveEmployee failed.\n");
-    StatusType res = RemoveEmployee(DS, EmployeeID);
+    StatusType res = RemoveEmployee(*DS, EmployeeID);
     printf("RemoveEmployee: %s\n", ReturnValToStr(res));
     return error_free;
 }
@@ -299,9 +300,9 @@ static errorType OnRemoveEmployee(void **DS, const char* const command) {
 static errorType OnGetCompanyInfo(void **DS, const char* const command) {
     int CompanyID, Value, NumEmployees;
     ValidateRead(sscanf(command, "%d", &CompanyID), 1, "GetCompanyInfo failed.\n");
-    StatusType res = GetCompanyInfo(DS, CompanyID, &Value, &NumEmployees);
+    StatusType res = GetCompanyInfo(*DS, CompanyID, &Value, &NumEmployees);
     if (res == SUCCESS) {
-        printf("GetCompanyInfo: SUCCESS. Company %d has %d employees and value %d\n", CompanyID, Value, NumEmployees);
+        printf("GetCompanyInfo: SUCCESS. Company %d has %d employees and value %d\n", CompanyID, NumEmployees, Value);
     } else {
         printf("GetCompanyInfo: %s\n", ReturnValToStr(res));
     }
@@ -314,7 +315,7 @@ static errorType OnGetCompanyInfo(void **DS, const char* const command) {
 static errorType OnGetEmployeeInfo(void **DS, const char* const command) {
     int EmployeeID, EmployerID, Salary, Grade;
     ValidateRead(sscanf(command, "%d", &EmployeeID), 1, "GetEmployeeInfo failed.\n");
-    StatusType res = GetEmployeeInfo(DS, EmployeeID, &EmployerID, &Salary, &Grade);
+    StatusType res = GetEmployeeInfo(*DS, EmployeeID, &EmployerID, &Salary, &Grade);
     if (res == SUCCESS) {
         printf("GetEmployeeInfo: SUCCESS. Employee %d works at %d and earns %d at grade %d\n", EmployeeID, EmployerID, Salary, Grade);
     } else {
@@ -329,7 +330,7 @@ static errorType OnGetEmployeeInfo(void **DS, const char* const command) {
 static errorType OnIncreaseCompanyValue(void **DS, const char* const command) {
     int CompanyID, ValueIncrease;
     ValidateRead(sscanf(command, "%d %d", &CompanyID, &ValueIncrease), 2, "IncreaseCompanyValue failed.\n");
-    StatusType res = IncreaseCompanyValue(DS, CompanyID, ValueIncrease);
+    StatusType res = IncreaseCompanyValue(*DS, CompanyID, ValueIncrease);
     printf("IncreaseCompanyValue: %s\n", ReturnValToStr(res));
     return error_free;
 }
@@ -340,7 +341,7 @@ static errorType OnIncreaseCompanyValue(void **DS, const char* const command) {
 static errorType OnPromoteEmployee(void **DS, const char* const command) {
     int EmployeeID, SalaryIncrease, BumpGrade;
     ValidateRead(sscanf(command, "%d %d %d", &EmployeeID, &SalaryIncrease, &BumpGrade), 3, "PromoteEmployee failed.\n");
-    StatusType res = PromoteEmployee(DS, EmployeeID, SalaryIncrease, BumpGrade);
+    StatusType res = PromoteEmployee(*DS, EmployeeID, SalaryIncrease, BumpGrade);
     printf("PromoteEmployee: %s\n", ReturnValToStr(res));
     return error_free;
 }
@@ -351,7 +352,7 @@ static errorType OnPromoteEmployee(void **DS, const char* const command) {
 static errorType OnHireEmployee(void **DS, const char* const command) {
     int EmployeeID, NewCompanyID;
     ValidateRead(sscanf(command, "%d %d", &EmployeeID, &NewCompanyID), 2, "HireEmployee failed.\n");
-    StatusType res = HireEmployee(DS, EmployeeID, NewCompanyID);
+    StatusType res = HireEmployee(*DS, EmployeeID, NewCompanyID);
     printf("HireEmployee: %s\n", ReturnValToStr(res));
     return error_free;
 }
@@ -363,7 +364,7 @@ static errorType OnAcquireCompany(void **DS, const char* const command) {
     int AcquirerID, TargetID;
     double Factor;
     ValidateRead(sscanf(command, "%d %d %lf", &AcquirerID, &TargetID, &Factor), 3, "AcquireCompany failed.\n");
-    StatusType res = AcquireCompany(DS, AcquirerID, TargetID, Factor);
+    StatusType res = AcquireCompany(*DS, AcquirerID, TargetID, Factor);
     printf("AcquireCompany: %s\n", ReturnValToStr(res));
     return error_free;
 }
@@ -374,7 +375,7 @@ static errorType OnAcquireCompany(void **DS, const char* const command) {
 static errorType OnGetHighestEarner(void **DS, const char* const command) {
     int CompanyID, EmployeeID;
     ValidateRead(sscanf(command, "%d", &CompanyID), 1, "GetHighestEarner failed.\n");
-    StatusType res = GetHighestEarner(DS, CompanyID, &EmployeeID);
+    StatusType res = GetHighestEarner(*DS, CompanyID, &EmployeeID);
     if (res == SUCCESS) {
         printf("GetHighestEarner: SUCCESS. Highest earner is %d\n", EmployeeID);
     } else {
@@ -389,7 +390,7 @@ static errorType OnGetHighestEarner(void **DS, const char* const command) {
 static errorType OnGetAllEmployeesBySalary(void **DS, const char* const command) {
     int CompanyID, *Employees, NumOfEmployees;
     ValidateRead(sscanf(command, "%d", &CompanyID), 1, "GetAllEmployeesBySalary failed.\n");
-    StatusType res = GetAllEmployeesBySalary(DS, CompanyID, &Employees, &NumOfEmployees);
+    StatusType res = GetAllEmployeesBySalary(*DS, CompanyID, &Employees, &NumOfEmployees);
     if (res == SUCCESS) {
         printf("GetAllEmployeesBySalary: SUCCESS. Highest earners:\n");
         printf("Employee Rank || Employee ID\n");
@@ -409,7 +410,7 @@ static errorType OnGetAllEmployeesBySalary(void **DS, const char* const command)
 static errorType OnGetHighestEarnerInEachCompany(void **DS, const char* const command) {
     int NumOfCompanies, *Employees;
     ValidateRead(sscanf(command, "%d", &NumOfCompanies), 1, "GetHighestEarnerInEachCompany failed.\n");
-    StatusType res = GetHighestEarnerInEachCompany(DS, NumOfCompanies, &Employees);
+    StatusType res = GetHighestEarnerInEachCompany(*DS, NumOfCompanies, &Employees);
     if (res == SUCCESS) {
         printf("GetHighestEarnerInEachCompany: SUCCESS. Highest earners:\n");
         printf("Company Index || Employee ID\n");
@@ -429,7 +430,7 @@ static errorType OnGetHighestEarnerInEachCompany(void **DS, const char* const co
 static errorType OnGetNumEmployeesMatching(void **DS, const char* const command) {
     int CompanyID, MinEmployeeID, MaxEmployeeId, MinSalary, MinGrade, TotalNumOfEmployees, NumOfEmployees;
     ValidateRead(sscanf(command, "%d %d %d %d %d", &CompanyID, &MinEmployeeID, &MaxEmployeeId, &MinSalary, &MinGrade), 5, "GetNumEmployeesMatching failed.\n");
-    StatusType res = GetNumEmployeesMatching(DS, CompanyID, MinEmployeeID, MaxEmployeeId, MinSalary, MinGrade, &TotalNumOfEmployees, &NumOfEmployees);
+    StatusType res = GetNumEmployeesMatching(*DS, CompanyID, MinEmployeeID, MaxEmployeeId, MinSalary, MinGrade, &TotalNumOfEmployees, &NumOfEmployees);
     if (res == SUCCESS) {
         printf("GetNumEmployeesMatching: SUCCESS. Out of %d, %d match\n", TotalNumOfEmployees, NumOfEmployees);
     } else {

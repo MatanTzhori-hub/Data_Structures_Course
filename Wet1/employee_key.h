@@ -7,16 +7,17 @@ class Employee_Key{
     int employee_salary;
 
     public:
+    Employee_Key() = default;
     Employee_Key(int employee_id, int employee_salary);
-    ~Employee_Key();
+    ~Employee_Key() = default;
 
     int getId() const { return employee_id; }
     int getSalary() const { return employee_salary; }
     void setId(int new_id){ employee_id = new_id; }
     void setSalary(int new_salary){ employee_salary = new_salary; }
     
-    bool operator>(const Employee_Key& other);
-    bool operator<(const Employee_Key& other);
+    bool operator>(const Employee_Key& other) const;
+    bool operator<(const Employee_Key& other) const;
 };
 
 bool operator==(const Employee_Key& first, const Employee_Key& second);

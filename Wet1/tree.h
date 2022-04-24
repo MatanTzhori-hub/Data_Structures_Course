@@ -17,7 +17,7 @@ class Tree {
 	int size;
 
 	//tree rolls
-	ReturnValue fixTree(Iterator<key_t, data_t>& iter);
+	ReturnValue fixTree(Node<key_t, data_t> *node);
 	ReturnValue RollTree(Node<key_t, data_t>& node);
 	ReturnValue LLRoll(Node<key_t, data_t>& node);
 	ReturnValue RRRoll(Node<key_t, data_t>& node);
@@ -25,8 +25,8 @@ class Tree {
 	ReturnValue RLRoll(Node<key_t, data_t>& node);
 
 	//Node Removal Helper Functions
-	ReturnValue removeRoot(Iterator<key_t, data_t>& iter);
-	ReturnValue removeNonRoot(Iterator<key_t, data_t>& iter);
+	ReturnValue removeRoot(Node<key_t, data_t> *to_delete);
+	ReturnValue removeNonRoot(Node<key_t, data_t> *to_delete);
 
     //Node Swaps
 	ReturnValue swapNodes(Node<key_t, data_t>* node1, Node<key_t, data_t>* node2);
@@ -47,40 +47,28 @@ class Tree {
 	void mergeArrays(Node<key_t, data_t>* arr1[], Node<key_t, data_t>* arr2[],
 					   Node<key_t, data_t>* merged_arr[], int arr1_size, int arr2_size);
 
-	// // Work in progress
-	// class TreeIterator{
-	// 		Node<key_t, data_t>* curr_node;
-	// 		Node<key_t, data_t>* last_node;
-	
-	// 	public:
-	// 	explicit TreeIterator(Node<key_t, data_t>* curr_node) noexcept: next_node(curr_node), last_node(nullptr) {}
-	// 	~TreeIterator(){}
-	// 	TreeIterator<key_t, data_t>& next();
-	// 	data_t getData() const {return curr_node->getData(); }
-	// 	key_t getKey() const {return curr_node->getKey(); }
-	// 	bool operator==()
-	// };
-	// //...
-
 
 public:
 	Tree() : size(0) {root = nullptr; }
 	~Tree();
 
 	//Add or Remove elements
-	void deleteTreeNodes(Iterator<key_t, data_t>& iter);
+	void deleteTreeNodes(Node<key_t, data_t> *node);
 	ReturnValue insert(key_t key, data_t element);
 	ReturnValue removeElement(key_t key);
 
-	ReturnValue findElement(key_t key, Iterator<key_t, data_t>& iter);
+	Iterator<key_t, data_t> findElement(key_t key);
+	Iterator<key_t, data_t> findCloseestElement(key_t key);
 	int getSize() const;
-	Iterator<key_t, data_t> begin();
-	Iterator<key_t, data_t> begin() const;
+	Iterator<key_t, data_t> begin(int order = 0);
+	Iterator<key_t, data_t> begin(int order = 0) const;
+	Iterator<key_t, data_t> end();
+	Iterator<key_t, data_t> end() const;
 	Iterator<key_t, data_t> createIterByNode(Node<key_t, data_t>& node);
 	Iterator<key_t, data_t> createIterByNode(Node<key_t, data_t>& node) const;
 	void getRootIndexInOrder(Node<key_t, data_t>* node, int* index_ptr);
 	void getRightMostNode(Node<key_t, data_t>** node_ptr);
-	Iterator<key_t, data_t> Tree<key_t, data_t>::getRightMost();
+	Iterator<key_t, data_t> getRightMost();
 
 	// Print functions
 	void printTree();
@@ -92,55 +80,79 @@ public:
 
 template<typename key_t, typename data_t>
 Tree<key_t, data_t>::~Tree<key_t, data_t>() {
-	deleteTreeNodes(this->begin());
+	deleteTreeNodes(root);
 	delete root;
 }
 
 
 template<typename key_t, typename data_t>
-void Tree<key_t, data_t>::deleteTreeNodes(Iterator<key_t, data_t>& iter) {
-	if(iter.getPtr() == nullptr){
+void Tree<key_t, data_t>::deleteTreeNodes(Node<key_t, data_t> *node) {
+	if(node == nullptr){
 		return;
 	}
-	deleteTreeNodes(iter.getPtr()->left);
-	deleteTreeNodes(iter.getPtr()->right);
-	if(iter.getPtr() != root){
-		iter.getPtr()->isALeftSon() ? iter.getPtr()->father->left = nullptr : iter.getPtr()->father->right = nullptr;
-		iter.getPtr()->father = nullptr;
-		delete iter.getPtr();
+	deleteTreeNodes(node->getLeft());
+	deleteTreeNodes(node->getRight());
+	if(node != root){
+		node->isALeftSon() ? node->father->left = nullptr : node->father->right = nullptr;
+		node->father = nullptr;
+		delete node;
 	}
 }
 
 
 template<typename key_t, typename data_t>
-ReturnValue Tree<key_t, data_t>::findElement(key_t key, Iterator<key_t, data_t>& iter) {
-	if(iter.ptr == nullptr) {
-		return NO_ROOT;
+Iterator<key_t, data_t> Tree<key_t, data_t>::findElement(key_t key){
+	if(root == nullptr) {
+		return end();
 	}
-	Iterator<key_t, data_t> temp_iter = iter;
-	while(temp_iter.ptr){
-		if(iter.ptr->key == key){
-			return ELEMENT_EXISTS;
+	
+	Node<key_t, data_t>* cur_node = root;
+	
+	while(cur_node){
+		if(cur_node->key == key){
+			return Iterator<key_t, data_t>(cur_node);
 		}
-		else if(iter.ptr->key > key){
-			temp_iter.goLeft();
-			if(temp_iter.ptr){
-				iter.goLeft();
+		else if(cur_node->key > key){
+				cur_node = cur_node->getLeft();
+			}
+			else{
+				cur_node = cur_node->getRight();
 			}
 		}
-		else{
-			temp_iter.goRight();
-			if(temp_iter.ptr){
-				iter.goRight();
-			}
-		}
-	}
-	if(iter.ptr->key > key){
-		return NO_ELEMENT_INSERT_LEFT;
-	}
-	return NO_ELEMENT_INSERT_RIGHT;
+	
+	return end();
 }
 
+template<typename key_t, typename data_t>
+Iterator<key_t, data_t> Tree<key_t, data_t>::findCloseestElement(key_t key){
+	if(root == nullptr) {
+		return end();
+	}
+	
+	Node<key_t, data_t>* cur_node = root;
+	Node<key_t, data_t>* closest = root;
+	int min_diff = abs(root->key - key);
+
+	while(cur_node){
+		if(cur_node->key == key){
+			return Iterator<key_t, data_t>(cur_node);
+		}
+		else{
+			if (min_diff > abs(cur_node->key - key)) 
+			{ 
+				min_diff = abs(cur_node->key - key); 
+				closest = cur_node; 
+			} 
+			if(cur_node->key > key){
+				cur_node = cur_node->getLeft();
+			}
+			else{
+				cur_node = cur_node->getRight();
+			}
+		}
+	}
+	return Iterator<key_t, data_t>(closest);
+}
 
 template<typename key_t, typename data_t>
 ReturnValue Tree<key_t, data_t>::insert(key_t key, data_t element) {
@@ -154,56 +166,60 @@ ReturnValue Tree<key_t, data_t>::insert(key_t key, data_t element) {
 		root = node_to_insert;
 		return MY_SUCCESS;
 	}
-	Iterator<key_t, data_t> iter = begin();
-	/**if(!iter){
-		return MY_ALLOCATION_ERROR;
-	}*/
-	//check height when son is nullptr
-	ReturnValue result = findElement(key, iter);
-	switch (result) {
-		case MY_ALLOCATION_ERROR :
-			return MY_ALLOCATION_ERROR;
-		case NO_ROOT :
-			size++;
-			root = node_to_insert;
-			return MY_SUCCESS;
-		case ELEMENT_EXISTS :
-			return MY_FAILURE;
-		case NO_ELEMENT_INSERT_LEFT :
-			iter.ptr->left = node_to_insert;
-			node_to_insert->father = iter.ptr;
-			break;
-		case NO_ELEMENT_INSERT_RIGHT :
-			iter.ptr->right = node_to_insert;
-			node_to_insert->father = iter.ptr;
-		default :
-			break;
-	}
+	
+	Node<key_t, data_t>* cur_node = root;
+	bool found = false;
+	while(cur_node && !found){
+		if(cur_node->key == key){
+			return ELEMENT_EXISTS;
+		}
+		else if(cur_node->key > key){
+				if(cur_node->getLeft() != nullptr){
+					cur_node = cur_node->getLeft();
+				}
+				else{
+					found = true;
+					cur_node->left = node_to_insert;
+					node_to_insert->father = cur_node;
+				}
+			}
+			else{
+				if(cur_node->getRight() != nullptr){
+					cur_node = cur_node->getRight();
+				}
+				else{
+					found = true;
+					cur_node->right = node_to_insert;
+					node_to_insert->father = cur_node;
+				}
+			}
+		}
+
 	size++;
-	return fixTree(iter);
+	return fixTree(cur_node);
 }
 
 
 template<typename key_t, typename data_t>
-ReturnValue Tree<key_t, data_t>::fixTree(Iterator<key_t, data_t>& iter) {
+ReturnValue Tree<key_t, data_t>::fixTree(Node<key_t, data_t> *node){
 	int old_height = 0;
-	while(iter.ptr != nullptr){
-		old_height = iter.ptr->height;
-		iter.ptr->updateHeight();
-		iter.ptr->updateBF();
-		if(abs(iter.ptr->balance_factor) == 2){
-			if(RollTree(*iter.ptr) == MY_ALLOCATION_ERROR) {
+	while(node != nullptr){
+		old_height = node->height;
+		node->updateHeight();
+		node->updateBF();
+		if(abs(node->balance_factor) == 2){
+			if(RollTree(*node) == MY_ALLOCATION_ERROR) {
 				return MY_ALLOCATION_ERROR;
 			}
-			iter.goFather();
+			node = node->getFather();
 		}
-        if(iter.ptr == nullptr){
+        if(node == nullptr){
             break;
         }
-        if(old_height == iter.ptr->height){
+        if(old_height == node->height){
 			break;
 		}
-		iter.goFather();
+		node = node->getFather();
 	}
 	return MY_SUCCESS;
 }
@@ -309,140 +325,162 @@ ReturnValue Tree<key_t, data_t>::RLRoll(Node<key_t, data_t> &node) {
 }
 
 template<typename key_t, typename data_t>
-Iterator<key_t, data_t> Tree<key_t, data_t>::begin() {
-	return Iterator<key_t, data_t>(root);
+Iterator<key_t, data_t> Tree<key_t, data_t>::begin(int order) {
+	if(root == nullptr){
+		return end();
+	}
+	Node<key_t, data_t> *cur = root;
+	if(order >= 0 ){
+		while(cur->getLeft() != nullptr){
+			cur = cur->getLeft();
+		}
+	}
+	else{
+		while(cur->getRight() != nullptr){
+			cur = cur->getRight();
+		}
+	}
+	return Iterator<key_t, data_t>(cur, order);
 }
 
 template<typename key_t, typename data_t>
-Iterator<key_t, data_t> Tree<key_t,data_t>::begin() const {
-	return Iterator<key_t, data_t>(root);
+Iterator<key_t, data_t> Tree<key_t,data_t>::begin(int order) const {
+	if(root == nullptr){
+		return end();
+	}
+	Node<key_t, data_t> *cur = root;
+	while(cur.getLeft() != nullptr){
+		cur = cur.getLeft();
+	}
+	return Iterator<key_t, data_t>(cur);
+}
+
+template<typename key_t, typename data_t>
+Iterator<key_t, data_t> Tree<key_t, data_t>::end() {
+	return Iterator<key_t, data_t>(nullptr);
+}
+
+template<typename key_t, typename data_t>
+Iterator<key_t, data_t> Tree<key_t,data_t>::end() const {
+	return Iterator<key_t, data_t>(nullptr);
 }
 
 template<typename key_t, typename data_t>
 ReturnValue Tree<key_t, data_t>::removeElement(key_t key) {
-	Iterator<key_t, data_t> iter = begin();
+	Iterator<key_t, data_t> iter = findElement(key);
 
-	ReturnValue result = findElement(key, iter);
-	switch (result) {
-		case MY_ALLOCATION_ERROR :
-			return MY_ALLOCATION_ERROR;
-		case ELEMENT_EXISTS:
-			break;
-		default:
-			return MY_FAILURE;
-	}
-	if(iter.ptr == root){
-		return removeRoot(iter);
+	if(iter == end()){
+		return MY_FAILURE;
 	}
 	else{
-		return removeNonRoot(iter);
+		Node<key_t, data_t> *node = iter.ptr;
+		if(node == root){
+			return removeRoot(node);
+		}
+		else{
+			return removeNonRoot(node);
+		}
 	}
 }
 
 template<typename key_t, typename data_t>
-ReturnValue Tree<key_t, data_t>::removeRoot(Iterator<key_t, data_t> &iter) {
-	Node<key_t, data_t>* to_delete = iter.ptr;
+ReturnValue Tree<key_t, data_t>::removeRoot(Node<key_t, data_t> *to_delete) {
 	if(!to_delete){
 		return MY_ALLOCATION_ERROR;
 	}
-	if(iter.ptr->isLeaf()){
+	if(to_delete->isLeaf()){
 		root = nullptr;
-		iter.ptr = nullptr;
 		delete to_delete;
 		size--;
 		return MY_SUCCESS;
 	}
-	else if(iter.ptr->onlyHaveRightSon()) {
-		iter.ptr->right->father = nullptr;
-		root = iter.ptr->right;
-		iter.ptr = nullptr;
+	else if(to_delete->onlyHaveRightSon()) {
+		to_delete->right->father = nullptr;
+		root = to_delete->right;
 		delete to_delete;
 		size--;
 		return MY_SUCCESS;
 	}
-	else if(iter.ptr->onlyHaveLeftSon()){
-		iter.ptr->left->father = nullptr;
-		root = iter.ptr->left;
-		iter.ptr = nullptr;
+	else if(to_delete->onlyHaveLeftSon()){
+		to_delete->left->father = nullptr;
+		root = to_delete->left;
 		delete to_delete;
 		size--;
 		return MY_SUCCESS;
 	}
 	else{
-		iter.goRight();
-		while(iter.ptr->left != nullptr){
-			iter.goLeft();
+		Node<key_t, data_t> *to_replace = to_delete->getRight();
+		while(to_replace->left != nullptr){
+			to_replace = to_replace->getLeft();
 		}
-		if(swapNodes(to_delete, iter.ptr) == MY_ALLOCATION_ERROR){
+		if(swapNodes(to_delete, to_replace) == MY_ALLOCATION_ERROR){
 			return MY_ALLOCATION_ERROR;
 		}
-        Iterator<key_t, data_t> new_iter = createIterByNode(*to_delete);
-		return removeNonRoot(new_iter);
+		return removeNonRoot(to_delete);
 	}
 }
 
 template<typename key_t, typename data_t>
-ReturnValue Tree<key_t, data_t>::removeNonRoot(Iterator<key_t, data_t> &iter) {
-	Node<key_t, data_t>* to_delete = iter.ptr;
+ReturnValue Tree<key_t, data_t>::removeNonRoot(Node<key_t, data_t> *to_delete) {
 	if(!to_delete){
 		return MY_ALLOCATION_ERROR;
 	}
-	if(iter.ptr->haveTwoSons()){
-		iter.goRight();
-		while(iter.ptr->left){
-			iter.goLeft();
+	if(to_delete->haveTwoSons()){
+		Node<key_t, data_t> *to_replace = to_delete->getRight();
+		while(to_replace->left){
+			to_replace = to_replace->getLeft();
 		}
-		if(swapNodes(to_delete, iter.ptr) == MY_ALLOCATION_ERROR){
+		if(swapNodes(to_delete, to_replace) == MY_ALLOCATION_ERROR){
 			return MY_ALLOCATION_ERROR;
 		}
 	}
 
-	Iterator<key_t, data_t> new_iter = createIterByNode(*to_delete);
+	//Iterator<key_t, data_t> new_iter = createIterByNode(*to_delete);
 
-	if(new_iter.ptr->isLeaf()){
-		if(new_iter.ptr->isALeftSon()){
-			new_iter.ptr->father->left = nullptr;
+	if(to_delete->isLeaf()){
+		if(to_delete->isALeftSon()){
+			to_delete->father->left = nullptr;
 		}
-		else if(new_iter.ptr->isARightSon()){
-			new_iter.ptr->father->right = nullptr;
+		else if(to_delete->isARightSon()){
+			to_delete->father->right = nullptr;
 		}
-		new_iter.goFather();
+		Node<key_t, data_t> *parent = to_delete->getFather();
 		delete to_delete;
 		size--;
-		return fixTree(new_iter);
+		return fixTree(parent);
 	}
-	if(new_iter.ptr->onlyHaveLeftSon()){
-		if(new_iter.ptr->isALeftSon()){
-			new_iter.ptr->father->left = new_iter.ptr->left;
-			new_iter.ptr->left->father = new_iter.ptr->father;
-			new_iter.goFather();
+	if(to_delete->onlyHaveLeftSon()){
+		if(to_delete->isALeftSon()){
+			to_delete->father->left = to_delete->left;
+			to_delete->left->father = to_delete->father;
+			Node<key_t, data_t> *parent = to_delete->getFather();
             delete to_delete;
 			size--;
-			return fixTree(new_iter);
-		} else if(new_iter.ptr->isARightSon()){
-			new_iter.ptr->father->right = new_iter.ptr->left;
-			new_iter.ptr->left->father = new_iter.ptr->father;
-			new_iter.goFather();
+			return fixTree(parent);
+		} else if(to_delete->isARightSon()){
+			to_delete->father->right = to_delete->left;
+			to_delete->left->father = to_delete->father;
+			Node<key_t, data_t> *parent = to_delete->getFather();
             delete to_delete;
 			size--;
-			return fixTree(new_iter);
+			return fixTree(parent);
 		}
 	}
-	else if(new_iter.ptr->onlyHaveRightSon()){
-		if(new_iter.ptr->isALeftSon()){
-			new_iter.ptr->father->left = new_iter.ptr->right;
-			new_iter.ptr->right->father = new_iter.ptr->father;
-			new_iter.goFather();
+	else if(to_delete->onlyHaveRightSon()){
+		if(to_delete->isALeftSon()){
+			to_delete->father->left = to_delete->right;
+			to_delete->right->father = to_delete->father;
+			Node<key_t, data_t> *parent = to_delete->getFather();
             delete to_delete;
 			size--;
-			return fixTree(new_iter);
-		} else if(new_iter.ptr->isARightSon()){
-			new_iter.ptr->father->right = new_iter.ptr->right;
-			new_iter.ptr->right->father = new_iter.ptr->father;
-			new_iter.goFather();
+			return fixTree(parent);
+		} else if(to_delete->isARightSon()){
+			to_delete->father->right = to_delete->right;
+			to_delete->right->father = to_delete->father;
+			Node<key_t, data_t> *parent = to_delete->getFather();
             delete to_delete;
 			size--;
-			return fixTree(new_iter);
+			return fixTree(parent);
 		}
 	}
 	return MY_SUCCESS;
@@ -493,38 +531,38 @@ void Tree<key_t, data_t>::printInOrder(Node<key_t, data_t>* node) {
 
 }
 
-template<typename key_t, typename data_t>
-void Tree<key_t, data_t>::getRightMostNode(Node<key_t, data_t>** node_ptr){
-	Iterator<key_t, data_t> iter = begin();
-	if(iter.ptr == nullptr) {
-		node_ptr = nullptr;
-	}
-	Iterator<key_t, data_t> temp_iter = begin();
-	if(temp_iter.ptr == nullptr){
-		node_ptr = nullptr;
-	}
-	while(temp_iter.ptr){
-		if(iter.ptr->getRight() == nullptr){
-			*node_ptr = iter.getPtr();
-			return;
-		}
-		iter.goRight();
-		temp_iter.goRight();
-	}
-	*node_ptr = iter.getPtr();
-}
+// template<typename key_t, typename data_t>
+// void Tree<key_t, data_t>::getRightMostNode(Node<key_t, data_t>** node_ptr){
+// 	Iterator<key_t, data_t> iter = begin();
+// 	if(iter.ptr == nullptr) {
+// 		node_ptr = nullptr;
+// 	}
+// 	Iterator<key_t, data_t> temp_iter = begin();
+// 	if(temp_iter.ptr == nullptr){
+// 		node_ptr = nullptr;
+// 	}
+// 	while(temp_iter.ptr){
+// 		if(iter.ptr->getRight() == nullptr){
+// 			*node_ptr = iter.getPtr();
+// 			return;
+// 		}
+// 		iter.goRight();
+// 		temp_iter.goRight();
+// 	}
+// 	*node_ptr = iter.getPtr();
+// }
 
 template<typename key_t, typename data_t>
 Iterator<key_t, data_t> Tree<key_t, data_t>::getRightMost(){
-	Iterator<key_t, data_t> iter = begin();
-	if(iter.getPtr() == nullptr) {
-		return iter;
+	if(root == nullptr) {
+		return Iterator<key_t, data_t>(root);
 	}
-	while(!iter.checkNullRight()){
-		iter.goRight();
+	Node<key_t, data_t> *node = root;
+	while(node->getRight() != nullptr){
+		node = node->getRight();
 	}
 
-	return iter;
+	return Iterator<key_t, data_t>(node);
 }
 
 template<typename key_t, typename data_t>
@@ -620,7 +658,7 @@ void Tree<key_t, data_t>::swapNonRoot(Node<key_t, data_t> *node1, Node<key_t, da
 template<typename key_t, typename data_t>
 Tree<key_t, data_t>* Tree<key_t, data_t>::mergeToMe(Tree<key_t, data_t>& other_tree) {
 	if (other_tree.getSize() == 0){
-        return;
+        return this;
     }
 
 	/*
@@ -652,14 +690,14 @@ Tree<key_t, data_t>* Tree<key_t, data_t>::mergeToMe(Tree<key_t, data_t>& other_t
 	removeExtraTreeNodes(new_root, &num_of_nodes_to_delete_int);
 
 	int m=0;
-	Node<key_t, data_t>* old_root = this.root;
-	this.root = new_root;
+	Node<key_t, data_t>* old_root = this->root;
+	this->root = new_root;
     putArrayIntoTree(&new_root, &merged_arr, &m);
-	this.size = merged_size;
+	this->size = merged_size;
 
+	// This will be destructed when we exit this function. will destroy old nodes.
 	Tree<key_t, data_t> temp_tree = Tree<key_t, data_t>();
 	temp_tree.root = old_root;
-	temp_tree.~Tree<key_t, data_t>();
 
 	delete[] arr1;
     delete[] arr2;

@@ -29,7 +29,7 @@ void* Init(){
 }
 
 StatusType AddCompany(void *DS, int CompanyID, int Value){
-    if (DS == nullptr || CompanyID <= 0 || Value <= 0){
+    if (!DS || CompanyID <= 0 || Value <= 0){
         return INVALID_INPUT;
     }
 
@@ -39,7 +39,7 @@ StatusType AddCompany(void *DS, int CompanyID, int Value){
 }
 
 StatusType AddEmployee(void *DS, int EmployeeID, int CompanyID, int Salary, int Grade){
-    if (DS == nullptr || EmployeeID <= 0 || CompanyID <= 0 || Salary <= 0 || Grade < 0){
+    if (!DS || EmployeeID <= 0 || CompanyID <= 0 || Salary <= 0 || Grade < 0){
         return INVALID_INPUT;
     }
 
@@ -49,7 +49,7 @@ StatusType AddEmployee(void *DS, int EmployeeID, int CompanyID, int Salary, int 
 }
 
 StatusType RemoveCompany(void *DS, int CompanyID){
-    if (DS == nullptr || CompanyID <= 0){
+    if (!DS || CompanyID <= 0){
         return INVALID_INPUT;
     }
 
@@ -59,7 +59,7 @@ StatusType RemoveCompany(void *DS, int CompanyID){
 }
 
 StatusType RemoveEmployee(void *DS, int EmployeeID){
-    if (DS == nullptr || EmployeeID <= 0){
+    if (!DS || EmployeeID <= 0){
         return INVALID_INPUT;
     }
 
@@ -69,7 +69,7 @@ StatusType RemoveEmployee(void *DS, int EmployeeID){
 }
 
 StatusType GetCompanyInfo(void *DS, int CompanyID, int *Value, int *NumEmployees){
-    if (DS == nullptr || CompanyID <= 0 || Value == nullptr || NumEmployees == nullptr){
+    if (!DS || CompanyID <= 0 || Value == nullptr || NumEmployees == nullptr){
         return INVALID_INPUT;
     }
 
@@ -79,7 +79,7 @@ StatusType GetCompanyInfo(void *DS, int CompanyID, int *Value, int *NumEmployees
 }
 
 StatusType GetEmployeeInfo(void *DS, int EmployeeID, int *EmployerID, int *Salary, int *Grade){
-    if (DS == nullptr || EmployeeID <= 0 || EmployerID == nullptr || Salary == nullptr || Grade == nullptr){
+    if (!DS || EmployeeID <= 0 || EmployerID == nullptr || Salary == nullptr || Grade == nullptr){
         return INVALID_INPUT;
     }
 
@@ -89,7 +89,7 @@ StatusType GetEmployeeInfo(void *DS, int EmployeeID, int *EmployerID, int *Salar
 }
 
 StatusType IncreaseCompanyValue(void *DS, int CompanyID, int ValueIncrease){
-    if (DS == nullptr || CompanyID <= 0 || ValueIncrease <= 0){
+    if (!DS || CompanyID <= 0 || ValueIncrease <= 0){
         return INVALID_INPUT;
     }
 
@@ -99,7 +99,7 @@ StatusType IncreaseCompanyValue(void *DS, int CompanyID, int ValueIncrease){
 }
 
 StatusType PromoteEmployee(void *DS, int EmployeeID, int SalaryIncrease, int BumpGrade){
-    if (DS == nullptr || EmployeeID <= 0 || SalaryIncrease <= 0){
+    if (!DS || EmployeeID <= 0 || SalaryIncrease <= 0){
         return INVALID_INPUT;
     }
 
@@ -109,7 +109,7 @@ StatusType PromoteEmployee(void *DS, int EmployeeID, int SalaryIncrease, int Bum
 }
 
 StatusType HireEmployee(void *DS, int EmployeeID, int NewCompanyID){
-    if (DS == nullptr || EmployeeID <= 0 || NewCompanyID <= 0){
+    if (!DS || EmployeeID <= 0 || NewCompanyID <= 0){
         return INVALID_INPUT;
     }
 
@@ -119,7 +119,7 @@ StatusType HireEmployee(void *DS, int EmployeeID, int NewCompanyID){
 }
 
 StatusType AcquireCompany(void *DS, int AcquirerID, int TargetID, double Factor){
-    if (DS == nullptr || AcquirerID <= 0 || TargetID <= 0 || TargetID == AcquirerID || Factor < MIN_FACTOR){
+    if (!DS || AcquirerID <= 0 || TargetID <= 0 || TargetID == AcquirerID || Factor < MIN_FACTOR){
         return INVALID_INPUT;
     }
 
@@ -129,7 +129,7 @@ StatusType AcquireCompany(void *DS, int AcquirerID, int TargetID, double Factor)
 }
 
 StatusType GetHighestEarner(void *DS, int CompanyID, int *EmployeeID){
-    if (DS == nullptr || CompanyID == 0 || EmployeeID == nullptr){
+    if (!DS || CompanyID == 0 || EmployeeID == nullptr){
         return INVALID_INPUT;
     }
 
@@ -139,7 +139,7 @@ StatusType GetHighestEarner(void *DS, int CompanyID, int *EmployeeID){
 }
 
 StatusType GetAllEmployeesBySalary(void *DS, int CompanyID, int **Employees, int *NumOfEmployees){
-    if (DS == nullptr || CompanyID == 0 || Employees == nullptr || NumOfEmployees == nullptr){
+    if (!DS || CompanyID == 0 || Employees == nullptr || NumOfEmployees == nullptr){
         return INVALID_INPUT;
     }
 
@@ -149,7 +149,7 @@ StatusType GetAllEmployeesBySalary(void *DS, int CompanyID, int **Employees, int
 }
 
 StatusType GetHighestEarnerInEachCompany(void *DS, int NumOfCompanies, int **Employees){
-    if (DS == nullptr || Employees == nullptr || NumOfCompanies < 1){
+    if (!DS || Employees == nullptr || NumOfCompanies < 1){
         return INVALID_INPUT;
     }
 
@@ -160,7 +160,7 @@ StatusType GetHighestEarnerInEachCompany(void *DS, int NumOfCompanies, int **Emp
 
 StatusType GetNumEmployeesMatching(void *DS, int CompanyID, int MinEmployeeID, int MaxEmployeeId, 
                                     int MinSalary, int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees){
-    if (DS == nullptr || TotalNumOfEmployees == nullptr || NumOfEmployees == nullptr || CompanyID == 1 ||
+    if (!DS || TotalNumOfEmployees == nullptr || NumOfEmployees == nullptr || CompanyID == 0 ||
         MinEmployeeID < 0 || MaxEmployeeId < 0 || MinSalary < 0 || MinGrade < 0 || MinEmployeeID > MaxEmployeeId){
         return INVALID_INPUT;
     }
@@ -177,7 +177,8 @@ void Quit(void** DS){
         return;
     }
 
-    delete DS;
+    CompaniesManager* companies_manager = (CompaniesManager*)(*DS);
+    delete companies_manager;
     *DS = nullptr;
 }
 

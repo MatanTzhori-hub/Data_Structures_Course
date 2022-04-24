@@ -40,27 +40,25 @@ void Company::setValue(int new_value){
 }
 
 ReturnValue Company::findEmployee(int employee_id, Employee* returned_employee){
-    auto itr = employees_salary_filtered.begin();
-    Employee_Key employee_key = Employee_Key(employee_id,0);
-    ReturnValue res = employees_salary_filtered.findElement(employee_key, itr);
-    if(res == ELEMENT_EXISTS){
-        returned_employee = itr.getData();
+    auto iter = employees_id_filtered.findElement(employee_id);
+    if(iter != employees_id_filtered.end()){
+        returned_employee = iter.getData();
         return MY_SUCCESS;
     }
     else{
         returned_employee = nullptr;
-        return res;
+        return MY_FAILURE;
     }
 }
 
 bool Company::isEmployeeExist(int employee_id){
-    auto itr = employees_salary_filtered.begin();
-    Employee_Key employee_key = Employee_Key(employee_id,0);
-    ReturnValue res = employees_salary_filtered.findElement(employee_key, itr);
-    if(res == ELEMENT_EXISTS)
+    auto iter = employees_id_filtered.findElement(employee_id);
+    if(iter != employees_id_filtered.end()){
         return true;
-    else
+    }
+    else{
         return false;
+    }
 }
 
 ReturnValue Company::addEmployee(Employee& employee){
@@ -103,7 +101,7 @@ ReturnValue Company::removeEmployee(Employee& employee){
 
     if(highest_earner == &employee){
             auto rightmost_iter = employees_salary_filtered.getRightMost();
-            if(rightmost_iter.getPtr() == nullptr){
+            if(rightmost_iter == employees_salary_filtered.end()){
                 highest_earner == nullptr;
             }
             else{
@@ -132,22 +130,58 @@ ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor
 
 void Company::updateCompanyForAllEmployees(){
     auto iter = this->employees_id_filtered.begin();
-    recursiveUpdateGroupForAllPlayers(iter);
+    while(iter != employees_id_filtered.end()){
+        iter.getData()->setCompany(this);
+        iter.next();
+    }
 }
 
-void Company::recursiveUpdateGroupForAllPlayers(Iterator<int, Employee*> iter){
-    if(iter.getPtr() == nullptr){
-		return;
-	}
-    if(!iter.checkNullLeft()){
-        iter.goLeft();
-	    recursiveUpdateGroupForAllPlayers(iter);
-        iter.goFather();
+
+ReturnValue Company::GetAllEmployeesBySalary(int **Employees, int *NumOfEmployees){
+    *NumOfEmployees = employees_salary_filtered.getSize();
+    if(*NumOfEmployees <= 0){
+        return MY_FAILURE;
     }
-    if(!iter.checkNullRight()){
-        iter.goRight();
-	    recursiveUpdateGroupForAllPlayers(iter);
-        iter.goFather();
+    else{
+        int *Employees_arr = (int*)malloc(*NumOfEmployees * sizeof(int));
+        if(Employees_arr == NULL){
+            return MY_ALLOCATION_ERROR;
+        }
+        auto employee_iter = employees_salary_filtered.begin(-1);
+
+        for(int i = 0; i < *NumOfEmployees; i++){
+            Employees_arr[i] = employee_iter.getData()->getId();
+            employee_iter.next();
+        }
+
+        *Employees = Employees_arr;
     }
-    iter.getData()->setCompany(this);
+    return MY_SUCCESS;
+}
+
+ReturnValue Company::GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary, 
+                                            int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees){
+    if(employees_id_filtered.getSize() == 0){
+        return MY_FAILURE;
+    }
+
+    int numEmployees = 0;
+    int totalNumEmployees = 0;
+    auto start_iter = employees_id_filtered.findCloseestElement(MinEmployeeID);
+    auto end_iter = employees_id_filtered.findCloseestElement(MaxEmployeeId);
+
+    while(start_iter != end_iter){
+        Employee* employee_ptr = start_iter.getData();
+        if( MinEmployeeID <= employee_ptr->getId() && employee_ptr->getId() <= MaxEmployeeId){
+            totalNumEmployees++;
+            if(MinSalary <= employee_ptr->getSalary() && MinGrade <= employee_ptr->getGrade()){
+                numEmployees++;
+            }
+        }
+        start_iter.next();
+    }
+
+    *TotalNumOfEmployees = totalNumEmployees;
+    *NumOfEmployees = numEmployees;
+    return MY_SUCCESS;
 }

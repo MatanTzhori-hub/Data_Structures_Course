@@ -5,14 +5,14 @@
 #include "employee_key.h"
 #include "employee.h"
 
+class Employee;
+
 class Company{
     int company_id;
     int company_value;
     Employee* highest_earner;
     Tree<Employee_Key,Employee*> employees_salary_filtered;
     Tree<int,Employee*> employees_id_filtered;
-
-    void recursiveUpdateGroupForAllPlayers(Iterator<int, Employee*> iter);
 
     public:
     Company(int company_id, int company_value);
@@ -30,6 +30,9 @@ class Company{
     ReturnValue removeEmployee(Employee& employee);
     ReturnValue AcquireAnotherCompany(Company* other, double Factor);
     void updateCompanyForAllEmployees();
+    ReturnValue GetAllEmployeesBySalary(int **Employees, int *NumOfEmployees);
+    ReturnValue GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary, 
+                                        int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees);
     
 };
 
