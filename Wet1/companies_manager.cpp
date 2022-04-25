@@ -194,14 +194,13 @@ ReturnValue CompaniesManager::PromoteEmployee(int EmployeeID, int SalaryIncrease
         return MY_FAILURE;
     }
 
-    if(highest_earner == employee_ptr){
-        auto rightmost_iter = all_employees_salary_filtered.getRightMost();
-        if(rightmost_iter == all_employees_salary_filtered.end()){
-            highest_earner == nullptr;
-        }
-        else{
-            highest_earner = rightmost_iter.getData();
-        }
+    if(employee_ptr->getSalary() == highest_earner->getSalary()){
+        if(employee_ptr->getId() < highest_earner->getId())
+            highest_earner = employee_ptr;
+    }
+    else{
+        if(employee_ptr->getSalary() > highest_earner->getSalary())
+            highest_earner = employee_ptr;
     }
 
     return MY_SUCCESS;
