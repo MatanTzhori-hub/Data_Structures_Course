@@ -18,8 +18,8 @@ public:
 	data_t getData() const {return ptr->getData(); }
 	key_t getKey() const {return ptr->getKey(); }
 	Iterator& next();
-	bool operator==(Iterator other);
-	bool operator!=(Iterator other){ return !(*this == other); };
+	bool operator==(Iterator other){ return this->ptr == other.ptr;}
+	bool operator!=(Iterator other){ return this->ptr != other.ptr;}
 };
 
 template<typename key_t, typename data_t>
@@ -83,16 +83,6 @@ Iterator<key_t, data_t>& Iterator<key_t, data_t>::next(){
 	
 	return *this;
 
-}
-
-template<typename key_t, typename data_t>
-bool Iterator<key_t, data_t>::operator==(Iterator other){
-	if(this->ptr == nullptr || other.ptr == nullptr){
-		return this->ptr == other.ptr;
-	}
-	else{
-		return this->getKey() == other.getKey();
-	}
 }
 
 #endif //ITERATOR_H
