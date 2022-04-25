@@ -100,14 +100,12 @@ ReturnValue Company::removeEmployee(Employee& employee){
     res = employees_id_filtered.removeElement(employee.getId());
 
     if(highest_earner == &employee){
-            auto rightmost_iter = employees_salary_filtered.getRightMost();
-            if(rightmost_iter == employees_salary_filtered.end()){
-                highest_earner == nullptr;
-            }
-            else{
-                highest_earner = rightmost_iter.getData();
-            }
+        highest_earner = nullptr;
+        if(employees_id_filtered.getSize() != 0){
+            Iterator<Employee_Key, Employee*> rightmost_iter = employees_salary_filtered.getRightMost();
+            highest_earner = rightmost_iter.getData();
         }
+    }
 
     return res;
 }
@@ -115,7 +113,7 @@ ReturnValue Company::removeEmployee(Employee& employee){
 ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor){
     int new_value = floor((this->getValue() + other_company->getValue())*Factor);
 
-    Employee* new_highest_earner = nullptr;
+    Employee* new_highest_earner = this->getHighestEarner();
     if(other_company->getSize() > 0){
         if(this->getHighestEarner() == nullptr){
             new_highest_earner = other_company->getHighestEarner();

@@ -86,7 +86,7 @@ ReturnValue CompaniesManager::RemoveEmployee(int EmployeeID){
         if(highest_earner == employee_ptr){
             auto rightmost_iter = all_employees_salary_filtered.getRightMost();
             if(rightmost_iter == all_employees_salary_filtered.end()){
-                highest_earner == nullptr;
+                highest_earner = nullptr;
             }
             else{
                 highest_earner = rightmost_iter.getData();
