@@ -51,14 +51,12 @@ ReturnValue CompaniesManager::AddEmployee(int EmployeeID, int CompanyID, int Sal
             non_empty_companies.insert(CompanyID, company_ptr);
         }
 
-        if(all_employees_salary_filtered.getSize() == 1 || highest_earner->getSalary() < new_employee->getSalary()){
+        // Check if need to update highest_earner
+        if(all_employees_salary_filtered.getSize() == 1){
             highest_earner = new_employee;
         }
-        else if (highest_earner->getSalary() == new_employee->getSalary())
-        {
-            if(highest_earner->getId() > new_employee->getId()){
-                highest_earner = new_employee;
-            }
+        else if(*highest_earner < *new_employee){
+            highest_earner = new_employee;
         }
     }
     catch(std::bad_alloc err){
@@ -83,12 +81,11 @@ ReturnValue CompaniesManager::RemoveEmployee(int EmployeeID){
 
         company_ptr->removeEmployee(*employee_ptr);
 
+        // Check if need to update highest_earner
         if(highest_earner == employee_ptr){
-            auto rightmost_iter = all_employees_salary_filtered.getRightMost();
-            if(rightmost_iter == all_employees_salary_filtered.end()){
-                highest_earner = nullptr;
-            }
-            else{
+            highest_earner = nullptr;
+            if(all_employees_salary_filtered.getSize() != 0){
+                Iterator<Employee_Key, Employee*> rightmost_iter = all_employees_salary_filtered.getRightMost();
                 highest_earner = rightmost_iter.getData();
             }
         }
@@ -115,6 +112,7 @@ ReturnValue CompaniesManager::RemoveCompany(int CompanyID){
         }
         else{
             ReturnValue res = all_companies.removeElement(CompanyID);
+            non_empty_companies.removeElement(CompanyID);
             if(res!=MY_SUCCESS)
                 return res;
         }
@@ -194,13 +192,9 @@ ReturnValue CompaniesManager::PromoteEmployee(int EmployeeID, int SalaryIncrease
         return MY_FAILURE;
     }
 
-    if(employee_ptr->getSalary() == highest_earner->getSalary()){
-        if(employee_ptr->getId() < highest_earner->getId())
-            highest_earner = employee_ptr;
-    }
-    else{
-        if(employee_ptr->getSalary() > highest_earner->getSalary())
-            highest_earner = employee_ptr;
+    // Check if need to update highest_earner
+    if(*highest_earner < *employee_ptr){
+        highest_earner = employee_ptr;
     }
 
     return MY_SUCCESS;
@@ -227,6 +221,9 @@ ReturnValue CompaniesManager::HireEmployee(int EmployeeID, int NewCompanyID){
     Company *new_company_ptr = new_company_iter.getData();
 
     curr_company_ptr->removeEmployee(*employee_ptr);
+    if(curr_company_ptr->getSize() == 0){
+        non_empty_companies.removeElement(curr_company_ptr->getId());
+    }
     employee_ptr->setCompany(new_company_ptr);
     new_company_ptr->addEmployee(*employee_ptr);
 

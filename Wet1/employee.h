@@ -24,6 +24,8 @@ class Employee{
     Company* getCompanyPtr(){ return company_ptr; }
     int getSalary(){ return employee_salary; }
     Employee operator=(Employee other_employee);
+    bool operator<(Employee &other_employee);
+    bool operator>(Employee &other_employee);
 };
 
 #endif  //EMPLOYEE_H

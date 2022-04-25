@@ -73,19 +73,12 @@ ReturnValue Company::addEmployee(Employee& employee){
         return res;
     }
 
-    if(employees_id_filtered.getSize() == 1){
-        setHighestEarner(&employee);
+    // Check if need to update highest_earner
+    if(employees_salary_filtered.getSize() == 1){
+        highest_earner = &employee;
     }
-    else{
-        if(employee.getSalary() > highest_earner->getSalary()){
-            setHighestEarner(&employee);
-        }
-        else if (employee.getSalary() == highest_earner->getSalary())
-        {
-            if(employee.getId() < highest_earner->getId()){
-                setHighestEarner(&employee);
-            }
-        }
+    else if(*highest_earner < employee){
+        highest_earner = &employee;
     }
 
     return res;
@@ -99,6 +92,7 @@ ReturnValue Company::removeEmployee(Employee& employee){
     }
     res = employees_id_filtered.removeElement(employee.getId());
 
+    // Check if need to update highest_earner
     if(highest_earner == &employee){
         highest_earner = nullptr;
         if(employees_id_filtered.getSize() != 0){
@@ -115,13 +109,13 @@ ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor
 
     Employee* new_highest_earner = this->getHighestEarner();
     if(other_company->getSize() > 0){
-        if(this->getHighestEarner() == nullptr){
+        if(this->getSize() == 0){
             new_highest_earner = other_company->getHighestEarner();
         }
         else{
-            Employee_Key this_key = Employee_Key(this->getHighestEarner()->getId(),this->getHighestEarner()->getId());
-            Employee_Key other_key = Employee_Key(other_company->getHighestEarner()->getId(),other_company->getHighestEarner()->getId());
-            new_highest_earner = (this_key > other_key) ? this->getHighestEarner() : other_company->getHighestEarner();
+            if(*new_highest_earner < *(other_company->getHighestEarner())){
+                new_highest_earner = other_company->getHighestEarner();
+            }
         }
 
         employees_id_filtered.mergeToMe(other_company->employees_id_filtered);
