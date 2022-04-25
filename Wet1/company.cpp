@@ -115,12 +115,17 @@ ReturnValue Company::removeEmployee(Employee& employee){
 ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor){
     int new_value = floor((this->getValue() + other_company->getValue())*Factor);
 
-    Employee* new_highest_earner = this->getHighestEarner();
+    Employee* new_highest_earner = nullptr;
     if(other_company->getSize() > 0){
-        Employee_Key this_key = Employee_Key(this->getHighestEarner()->getId(),this->getHighestEarner()->getId());
-        Employee_Key other_key = Employee_Key(other_company->getHighestEarner()->getId(),other_company->getHighestEarner()->getId());
-        new_highest_earner = (this_key > other_key) ? this->getHighestEarner() : other_company->getHighestEarner();
-    
+        if(this->getHighestEarner() == nullptr){
+            new_highest_earner = other_company->getHighestEarner();
+        }
+        else{
+            Employee_Key this_key = Employee_Key(this->getHighestEarner()->getId(),this->getHighestEarner()->getId());
+            Employee_Key other_key = Employee_Key(other_company->getHighestEarner()->getId(),other_company->getHighestEarner()->getId());
+            new_highest_earner = (this_key > other_key) ? this->getHighestEarner() : other_company->getHighestEarner();
+        }
+
         employees_id_filtered.mergeToMe(other_company->employees_id_filtered);
         employees_salary_filtered.mergeToMe(other_company->employees_salary_filtered);
     }
