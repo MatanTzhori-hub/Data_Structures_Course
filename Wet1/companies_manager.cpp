@@ -16,7 +16,7 @@ ReturnValue CompaniesManager::AddCompany(int CompanyID, int Value){
     try{
         Company* new_company = new Company(CompanyID, Value);
         ReturnValue res = all_companies.insert(CompanyID, new_company);
-        if(res == MY_FAILURE){
+        if(res != MY_SUCCESS){
             return res;
         }
     }
@@ -226,6 +226,9 @@ ReturnValue CompaniesManager::HireEmployee(int EmployeeID, int NewCompanyID){
     }
     employee_ptr->setCompany(new_company_ptr);
     new_company_ptr->addEmployee(*employee_ptr);
+    if(new_company_ptr->getSize() == 1){
+        non_empty_companies.insert(new_company_ptr->getId(), new_company_ptr);
+    }
 
     return MY_SUCCESS;
 }
