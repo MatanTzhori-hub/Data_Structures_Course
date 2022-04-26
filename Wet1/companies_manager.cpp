@@ -13,6 +13,10 @@ CompaniesManager::~CompaniesManager(){
 }
 
 ReturnValue CompaniesManager::AddCompany(int CompanyID, int Value){
+    auto found = all_companies.findElement(CompanyID);
+    if(found == all_companies.end()){
+        return MY_FAILURE;
+    }
     try{
         Company* new_company = new Company(CompanyID, Value);
         ReturnValue res = all_companies.insert(CompanyID, new_company);
