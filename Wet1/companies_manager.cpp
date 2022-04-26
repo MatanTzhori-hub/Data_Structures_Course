@@ -17,6 +17,7 @@ ReturnValue CompaniesManager::AddCompany(int CompanyID, int Value){
         Company* new_company = new Company(CompanyID, Value);
         ReturnValue res = all_companies.insert(CompanyID, new_company);
         if(res != MY_SUCCESS){
+            delete new_company;
             return res;
         }
     }
@@ -112,9 +113,9 @@ ReturnValue CompaniesManager::RemoveCompany(int CompanyID){
         }
         else{
             ReturnValue res = all_companies.removeElement(CompanyID);
-            non_empty_companies.removeElement(CompanyID);
             if(res!=MY_SUCCESS)
                 return res;
+            non_empty_companies.removeElement(CompanyID);
         }
 
         delete company_ptr;
