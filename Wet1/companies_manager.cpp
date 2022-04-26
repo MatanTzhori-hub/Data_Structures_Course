@@ -14,7 +14,7 @@ CompaniesManager::~CompaniesManager(){
 
 ReturnValue CompaniesManager::AddCompany(int CompanyID, int Value){
     auto found = all_companies.findElement(CompanyID);
-    if(found == all_companies.end()){
+    if(found != all_companies.end()){
         return MY_FAILURE;
     }
     try{
