@@ -3,9 +3,9 @@
 
 Company::Company(int company_id, int company_value) : company_id(company_id), 
                                                       company_value(company_value),
+                                                      highest_earner(nullptr),
                                                       employees_salary_filtered(),
-                                                      employees_id_filtered(),
-                                                      highest_earner(nullptr){}
+                                                      employees_id_filtered(){}
 
 Company::~Company(){
     highest_earner = nullptr;   //TODO: check if we need to call destructures
