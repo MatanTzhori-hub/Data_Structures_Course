@@ -171,6 +171,7 @@ ReturnValue Tree<key_t, data_t>::insert(key_t key, data_t element) {
 	bool found = false;
 	while(cur_node && !found){
 		if(cur_node->key == key){
+			delete node_to_insert;
 			return ELEMENT_EXISTS;
 		}
 		else if(cur_node->key > key){
