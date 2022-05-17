@@ -260,6 +260,7 @@ ReturnValue CompaniesManager::AcquireCompany(int AcquirerID, int TargetID, doubl
     
     non_empty_companies.removeElement(TargetID);
     all_companies.removeElement(TargetID);
+    non_empty_companies.insert(AcquirerID, acquire_company_ptr);
 
     acquire_company_ptr->updateCompanyForAllEmployees();
 
