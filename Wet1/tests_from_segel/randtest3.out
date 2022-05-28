@@ -1,0 +1,1006 @@
+#Test: BasicQueryTest. NumCommands: 1000. MinInt: -20. MaxInt: 10000. Seed: 1068805824855780828.
+Init done
+#Starting with 500 SUCCESS commands
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1704 has 0 employees and value 58
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3832 works at 3007 and earns 2720 at grade 2421
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1526 has 1 employees and value 423
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1526 has 0 employees and value 423
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1526 has 0 employees and value 423
+GetCompanyInfo: SUCCESS. Company 1526 has 0 employees and value 423
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6283 has 0 employees and value 343
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 2 employees and value 951
+GetEmployeeInfo: SUCCESS. Employee 1108 works at 1087 and earns 6633 at grade 5348
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1108 works at 1087 and earns 6633 at grade 5348
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1108 works at 1087 and earns 6633 at grade 5348
+GetEmployeeInfo: SUCCESS. Employee 1108 works at 1087 and earns 6633 at grade 5348
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1108 works at 1087 and earns 6633 at grade 5348
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 3266 has 0 employees and value 187
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 3 employees and value 951
+GetCompanyInfo: SUCCESS. Company 1087 has 3 employees and value 951
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7835 works at 1087 and earns 8621 at grade 1054
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6625 has 0 employees and value 315
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 1 employees and value 951
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5535 has 1 employees and value 811
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 9004 has 0 employees and value 637
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 1 employees and value 951
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 9004 has 0 employees and value 637
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 1 employees and value 951
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1771 works at 2387 and earns 6981 at grade 124
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 9990 has 0 employees and value 854
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 65 has 0 employees and value 393
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+GetEmployeeInfo: SUCCESS. Employee 9411 works at 6283 and earns 5163 at grade 1008
+GetCompanyInfo: SUCCESS. Company 2387 has 4 employees and value 965
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5535 has 4 employees and value 811
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2387 has 3 employees and value 965
+GetCompanyInfo: SUCCESS. Company 4237 has 1 employees and value 359
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 354 works at 5535 and earns 2906 at grade 7419
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 4237 has 2 employees and value 359
+GetCompanyInfo: SUCCESS. Company 2387 has 3 employees and value 965
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6422 has 0 employees and value 189
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6422 has 0 employees and value 189
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6283 has 1 employees and value 343
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1059 works at 6283 and earns 2538 at grade 3372
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6283 has 2 employees and value 343
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7264 works at 5535 and earns 9666 at grade 5801
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2387 has 4 employees and value 965
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3217 works at 2387 and earns 9204 at grade 2972
+GetEmployeeInfo: SUCCESS. Employee 3660 works at 5535 and earns 9871 at grade 1355
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5954 works at 2387 and earns 9576 at grade 9663
+GetEmployeeInfo: SUCCESS. Employee 2849 works at 7832 and earns 2728 at grade 3621
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 7832 has 2 employees and value 586
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 3855 has 1 employees and value 339
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 9106 works at 7832 and earns 7438 at grade 5937
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 2 employees and value 951
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 9444 has 0 employees and value 230
+GetEmployeeInfo: SUCCESS. Employee 3707 works at 2387 and earns 420 at grade 6097
+GetEmployeeInfo: SUCCESS. Employee 3660 works at 5535 and earns 9871 at grade 1355
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1059 works at 6283 and earns 2538 at grade 3372
+GetCompanyInfo: SUCCESS. Company 4237 has 1 employees and value 359
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6283 has 1 employees and value 343
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2387 has 6 employees and value 965
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7341 works at 6283 and earns 9856 at grade 1510
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7262 works at 2387 and earns 4957 at grade 4210
+GetCompanyInfo: SUCCESS. Company 2387 has 6 employees and value 965
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 9106 works at 7832 and earns 7438 at grade 5937
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 7832 has 3 employees and value 586
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 2849 works at 7832 and earns 2728 at grade 3621
+GetEmployeeInfo: SUCCESS. Employee 5641 works at 2387 and earns 7229 at grade 5819
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 5 employees and value 951
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2387 has 7 employees and value 965
+GetCompanyInfo: SUCCESS. Company 5535 has 4 employees and value 811
+GetEmployeeInfo: SUCCESS. Employee 8990 works at 4237 and earns 8556 at grade 9144
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 9866 works at 5535 and earns 4435 at grade 3170
+GetEmployeeInfo: SUCCESS. Employee 7614 works at 1087 and earns 5957 at grade 1135
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6587 has 0 employees and value 367
+GetCompanyInfo: SUCCESS. Company 1848 has 0 employees and value 694
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1848 has 0 employees and value 694
+GetCompanyInfo: SUCCESS. Company 1087 has 4 employees and value 951
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6283 has 2 employees and value 343
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5685 has 0 employees and value 923
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5737 works at 3855 and earns 1966 at grade 9059
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 2624 works at 4237 and earns 4716 at grade 355
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5737 works at 3855 and earns 1966 at grade 9059
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 8688 has 0 employees and value 308
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7341 works at 6283 and earns 9856 at grade 1510
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 8745 has 0 employees and value 855
+GetEmployeeInfo: SUCCESS. Employee 4709 works at 6283 and earns 2125 at grade 7108
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5954 works at 2387 and earns 9576 at grade 9663
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 2 employees and value 951
+GetCompanyInfo: SUCCESS. Company 2982 has 0 employees and value 772
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1759 has 0 employees and value 112
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 9150 works at 2387 and earns 9518 at grade 3037
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5954 works at 2387 and earns 9576 at grade 9663
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1759 has 0 employees and value 112
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6337 works at 6283 and earns 8627 at grade 4228
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 4237 has 2 employees and value 359
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 3486 has 2 employees and value 952
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 2849 works at 7832 and earns 2728 at grade 3621
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1087 has 1 employees and value 951
+GetEmployeeInfo: SUCCESS. Employee 517 works at 5535 and earns 5479 at grade 4039
+GetEmployeeInfo: SUCCESS. Employee 7614 works at 1087 and earns 5957 at grade 1135
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 2341 works at 3486 and earns 2353 at grade 5160
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6283 has 2 employees and value 343
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 4709 works at 6283 and earns 2125 at grade 7108
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6283 has 2 employees and value 343
+GetEmployeeInfo: SUCCESS. Employee 9150 works at 2387 and earns 9518 at grade 3037
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2387 has 3 employees and value 965
+GetCompanyInfo: SUCCESS. Company 6283 has 2 employees and value 343
+GetCompanyInfo: SUCCESS. Company 5535 has 2 employees and value 811
+GetEmployeeInfo: SUCCESS. Employee 2624 works at 4237 and earns 4716 at grade 355
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 475 has 2 employees and value 660
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3093 works at 3486 and earns 1006 at grade 6623
+GetEmployeeInfo: SUCCESS. Employee 2624 works at 4237 and earns 4716 at grade 355
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 8745 has 1 employees and value 855
+GetCompanyInfo: SUCCESS. Company 3486 has 2 employees and value 952
+GetEmployeeInfo: SUCCESS. Employee 2624 works at 4237 and earns 4716 at grade 355
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3093 works at 3486 and earns 1006 at grade 6623
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6283 has 2 employees and value 343
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 9150 works at 2387 and earns 9518 at grade 3037
+GetCompanyInfo: SUCCESS. Company 3486 has 3 employees and value 952
+GetEmployeeInfo: SUCCESS. Employee 7614 works at 1087 and earns 5957 at grade 1135
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 8929 has 0 employees and value 462
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1768 works at 6047 and earns 7886 at grade 3160
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 8745 has 1 employees and value 855
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6047 has 1 employees and value 969
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 8636 works at 7832 and earns 3468 at grade 196
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6030 has 1 employees and value 584
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3093 works at 3486 and earns 1006 at grade 6623
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 553 works at 3486 and earns 4355 at grade 9677
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+GetCompanyInfo: SUCCESS. Company 1087 has 3 employees and value 951
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7517 works at 7832 and earns 4934 at grade 3226
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 4894 has 0 employees and value 883
+GetEmployeeInfo: SUCCESS. Employee 1768 works at 6047 and earns 7886 at grade 3160
+GetCompanyInfo: SUCCESS. Company 6623 has 0 employees and value 799
+GetEmployeeInfo: SUCCESS. Employee 9150 works at 2387 and earns 9518 at grade 3037
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 4894 has 0 employees and value 883
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 4206 works at 1087 and earns 2460 at grade 1635
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7543 works at 2387 and earns 9715 at grade 7741
+GetEmployeeInfo: SUCCESS. Employee 3954 works at 7832 and earns 7909 at grade 4084
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 2849 works at 7832 and earns 2728 at grade 3621
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5535 has 1 employees and value 811
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 8745 has 1 employees and value 855
+GetCompanyInfo: SUCCESS. Company 475 has 1 employees and value 660
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6047 has 0 employees and value 969
+GetEmployeeInfo: SUCCESS. Employee 553 works at 3486 and earns 4355 at grade 9677
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 738 works at 8745 and earns 6752 at grade 750
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3954 works at 7832 and earns 7909 at grade 4084
+GetCompanyInfo: SUCCESS. Company 475 has 1 employees and value 660
+GetCompanyInfo: SUCCESS. Company 9926 has 1 employees and value 161
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 223 has 1 employees and value 751
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5535 has 1 employees and value 811
+GetEmployeeInfo: SUCCESS. Employee 3954 works at 7832 and earns 7909 at grade 4084
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 553 works at 3486 and earns 4355 at grade 9677
+GetCompanyInfo: SUCCESS. Company 2529 has 0 employees and value 923
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1183 has 0 employees and value 791
+GetEmployeeInfo: SUCCESS. Employee 8636 works at 7832 and earns 3468 at grade 196
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3954 works at 7832 and earns 7909 at grade 4084
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5944 works at 1742 and earns 436 at grade 9291
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+#Trying 250 mixed SUCCESS/FAILURE commands
+AddCompany: FAILURE
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+AddEmployee: SUCCESS
+RemoveCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 7613 has 0 employees and value 546
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 9926 has 0 employees and value 161
+GetEmployeeInfo: SUCCESS. Employee 553 works at 3486 and earns 4355 at grade 9677
+AddEmployee: FAILURE
+GetCompanyInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 204 has 0 employees and value 828
+GetCompanyInfo: FAILURE
+AddCompany: FAILURE
+RemoveEmployee: SUCCESS
+AddCompany: FAILURE
+RemoveEmployee: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 7721 works at 2529 and earns 5913 at grade 1673
+RemoveCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 1742 has 0 employees and value 317
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 3486 has 1 employees and value 952
+RemoveEmployee: FAILURE
+RemoveEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: SUCCESS
+AddEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 9587 has 0 employees and value 822
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+RemoveEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 5535 has 0 employees and value 811
+RemoveEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 6047 has 1 employees and value 969
+GetEmployeeInfo: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 2013 has 0 employees and value 382
+GetCompanyInfo: SUCCESS. Company 1742 has 0 employees and value 317
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1742 has 0 employees and value 317
+AddCompany: FAILURE
+RemoveEmployee: FAILURE
+GetCompanyInfo: FAILURE
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2387 has 0 employees and value 965
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+GetCompanyInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 7613 has 0 employees and value 546
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+AddEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 738 works at 8745 and earns 6752 at grade 750
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 4808 works at 204 and earns 3828 at grade 2224
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 7916 has 0 employees and value 529
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 1744 works at 8745 and earns 4198 at grade 4631
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: FAILURE
+RemoveCompany: SUCCESS
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+AddEmployee: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 738 works at 8745 and earns 6752 at grade 750
+GetEmployeeInfo: SUCCESS. Employee 738 works at 8745 and earns 6752 at grade 750
+GetCompanyInfo: FAILURE
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 4895 has 0 employees and value 559
+GetCompanyInfo: SUCCESS. Company 4895 has 0 employees and value 559
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+RemoveCompany: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 738 works at 8745 and earns 6752 at grade 750
+RemoveEmployee: SUCCESS
+RemoveCompany: FAILURE
+AddEmployee: SUCCESS
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: FAILURE
+AddEmployee: FAILURE
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6216 works at 3946 and earns 1607 at grade 572
+RemoveCompany: SUCCESS
+AddCompany: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 6216 works at 3946 and earns 1607 at grade 572
+RemoveEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 2013 has 0 employees and value 382
+AddCompany: FAILURE
+GetCompanyInfo: FAILURE
+AddEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 3946 has 1 employees and value 927
+RemoveEmployee: SUCCESS
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+AddEmployee: SUCCESS
+RemoveEmployee: FAILURE
+AddCompany: FAILURE
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+GetCompanyInfo: FAILURE
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 3946 has 2 employees and value 927
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 204 has 1 employees and value 828
+GetEmployeeInfo: SUCCESS. Employee 6216 works at 3946 and earns 1607 at grade 572
+AddCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 6162 works at 5036 and earns 4586 at grade 4617
+GetEmployeeInfo: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: SUCCESS
+AddEmployee: FAILURE
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3000 works at 3946 and earns 7600 at grade 1359
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+AddEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+AddEmployee: FAILURE
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 7255 has 0 employees and value 169
+RemoveCompany: FAILURE
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6162 works at 5036 and earns 4586 at grade 4617
+GetEmployeeInfo: SUCCESS. Employee 2713 works at 2411 and earns 6045 at grade 7322
+RemoveEmployee: SUCCESS
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+GetCompanyInfo: FAILURE
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 8745 has 1 employees and value 855
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 3000 works at 3946 and earns 7600 at grade 1359
+GetCompanyInfo: FAILURE
+RemoveEmployee: SUCCESS
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 7205 works at 8745 and earns 7912 at grade 9005
+GetCompanyInfo: FAILURE
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: FAILURE
+RemoveCompany: SUCCESS
+GetEmployeeInfo: FAILURE
+AddEmployee: FAILURE
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: FAILURE
+RemoveCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+GetCompanyInfo: FAILURE
+RemoveEmployee: FAILURE
+GetCompanyInfo: FAILURE
+AddEmployee: FAILURE
+#Finishing with 250 SUCCESS commands
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5179 works at 8374 and earns 6172 at grade 9065
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5179 works at 8374 and earns 6172 at grade 9065
+GetCompanyInfo: SUCCESS. Company 7334 has 0 employees and value 499
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5179 works at 8374 and earns 6172 at grade 9065
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 8328 works at 3045 and earns 9805 at grade 5733
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 238 works at 5129 and earns 4705 at grade 7751
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6345 works at 7334 and earns 609 at grade 4554
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 9083 has 0 employees and value 960
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6009 works at 7515 and earns 1697 at grade 6534
+GetCompanyInfo: SUCCESS. Company 4729 has 0 employees and value 868
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3371 works at 4729 and earns 3620 at grade 995
+GetCompanyInfo: SUCCESS. Company 4729 has 1 employees and value 868
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5961 has 1 employees and value 303
+GetEmployeeInfo: SUCCESS. Employee 4139 works at 5961 and earns 3640 at grade 3081
+GetCompanyInfo: SUCCESS. Company 9454 has 0 employees and value 779
+GetEmployeeInfo: SUCCESS. Employee 4139 works at 5961 and earns 3640 at grade 3081
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 9454 has 0 employees and value 779
+GetCompanyInfo: SUCCESS. Company 9454 has 0 employees and value 779
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 7648 works at 4729 and earns 7410 at grade 6662
+GetCompanyInfo: SUCCESS. Company 5961 has 1 employees and value 303
+GetCompanyInfo: SUCCESS. Company 5494 has 1 employees and value 231
+GetEmployeeInfo: SUCCESS. Employee 7648 works at 4729 and earns 7410 at grade 6662
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 4729 has 2 employees and value 868
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5939 has 2 employees and value 556
+GetCompanyInfo: SUCCESS. Company 5494 has 1 employees and value 231
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 4139 works at 5961 and earns 3640 at grade 3081
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3009 works at 5939 and earns 7603 at grade 5075
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 620 has 0 employees and value 559
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5494 has 1 employees and value 231
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5494 has 2 employees and value 231
+GetCompanyInfo: SUCCESS. Company 4729 has 2 employees and value 868
+GetCompanyInfo: SUCCESS. Company 5939 has 1 employees and value 556
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 4729 has 2 employees and value 868
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 6716 has 0 employees and value 60
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5494 has 2 employees and value 231
+GetEmployeeInfo: SUCCESS. Employee 6492 works at 4729 and earns 3623 at grade 3271
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6492 works at 4729 and earns 3623 at grade 3271
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6143 works at 4729 and earns 6647 at grade 8428
+GetCompanyInfo: SUCCESS. Company 5494 has 2 employees and value 231
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 4729 has 0 employees and value 868
+GetCompanyInfo: SUCCESS. Company 4729 has 0 employees and value 868
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2980 has 0 employees and value 325
+GetEmployeeInfo: SUCCESS. Employee 4139 works at 5961 and earns 3640 at grade 3081
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5961 has 3 employees and value 303
+GetCompanyInfo: SUCCESS. Company 4729 has 0 employees and value 868
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5494 has 2 employees and value 231
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5494 has 2 employees and value 231
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2980 has 0 employees and value 325
+GetEmployeeInfo: SUCCESS. Employee 8315 works at 5494 and earns 4594 at grade 3746
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 8315 works at 5494 and earns 4594 at grade 3746
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2980 has 1 employees and value 325
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5494 has 2 employees and value 231
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5494 has 1 employees and value 231
+GetEmployeeInfo: SUCCESS. Employee 7106 works at 5494 and earns 5389 at grade 8775
+GetCompanyInfo: SUCCESS. Company 5494 has 1 employees and value 231
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5961 has 1 employees and value 303
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3561 works at 5961 and earns 7026 at grade 4672
+GetEmployeeInfo: SUCCESS. Employee 300 works at 5961 and earns 4483 at grade 4774
+GetCompanyInfo: SUCCESS. Company 5961 has 3 employees and value 303
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 2965 works at 5961 and earns 6640 at grade 3757
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 2965 works at 5961 and earns 6640 at grade 3757
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 300 works at 5961 and earns 4483 at grade 4774
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 404 has 0 employees and value 151
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6890 works at 5961 and earns 258 at grade 8379
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 349 has 1 employees and value 52
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6890 works at 5961 and earns 258 at grade 8379
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5961 has 2 employees and value 303
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1350 has 1 employees and value 23
+GetCompanyInfo: SUCCESS. Company 1350 has 1 employees and value 23
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1136 works at 349 and earns 8393 at grade 2410
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 6675 works at 2183 and earns 8368 at grade 863
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 5150 has 1 employees and value 646
+GetEmployeeInfo: SUCCESS. Employee 3415 works at 5961 and earns 2503 at grade 6981
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1350 has 1 employees and value 23
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 1136 works at 349 and earns 8393 at grade 2410
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 3415 works at 5961 and earns 2503 at grade 6981
+GetEmployeeInfo: SUCCESS. Employee 1136 works at 349 and earns 8393 at grade 2410
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5113 works at 349 and earns 1742 at grade 5025
+GetCompanyInfo: SUCCESS. Company 5961 has 2 employees and value 303
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 9705 works at 349 and earns 1869 at grade 2572
+GetEmployeeInfo: SUCCESS. Employee 7406 works at 1350 and earns 5105 at grade 5008
+GetCompanyInfo: SUCCESS. Company 349 has 3 employees and value 52
+GetEmployeeInfo: SUCCESS. Employee 5024 works at 5150 and earns 434 at grade 9081
+GetEmployeeInfo: SUCCESS. Employee 5113 works at 349 and earns 1742 at grade 5025
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5113 works at 349 and earns 1742 at grade 5025
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2183 has 1 employees and value 785
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 2183 has 1 employees and value 785
+GetCompanyInfo: SUCCESS. Company 2183 has 1 employees and value 785
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1350 has 2 employees and value 23
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 5783 works at 1350 and earns 9764 at grade 8255
+Quit done

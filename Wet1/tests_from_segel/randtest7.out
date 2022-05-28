@@ -1,0 +1,1006 @@
+#Test: BasicMergeTest. NumCommands: 1000. MinInt: -20. MaxInt: 1000. Seed: 8940967260940868895.
+Init done
+#Starting with 500 SUCCESS commands
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 50 has 1 employees and value 100
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 786 has 0 employees and value 53
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 966 has 0 employees and value 76
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 917 has 0 employees and value 55
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 917 has 0 employees and value 55
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 65 works at 191 and earns 885 at grade 951
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 127 works at 50 and earns 590 at grade 601
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 346 works at 585 and earns 364 at grade 237
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 756 has 0 employees and value 105
+GetCompanyInfo: SUCCESS. Company 886 has 0 employees and value 141
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 65 works at 50 and earns 1791 at grade 952
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 599 has 0 employees and value 115
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 774 works at 756 and earns 331 at grade 17
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 774 works at 756 and earns 331 at grade 17
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 0 employees and value 242
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 774 works at 599 and earns 331 at grade 17
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 50 has 0 employees and value 142
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 774 works at 352 and earns 1485 at grade 19
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 774 works at 352 and earns 1485 at grade 19
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 917 has 0 employees and value 68
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 128 works at 717 and earns 1147 at grade 317
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 775 has 0 employees and value 91
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 917 has 0 employees and value 68
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 905 works at 917 and earns 606 at grade 50
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 437 has 0 employees and value 113
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 880 works at 507 and earns 720 at grade 239
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 3 employees and value 703
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 756 has 0 employees and value 133
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 545 has 0 employees and value 105
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 396 has 0 employees and value 48
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 545 has 0 employees and value 105
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 756 has 0 employees and value 133
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 923 works at 507 and earns 46 at grade 53
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 394 has 0 employees and value 96
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 394 has 0 employees and value 96
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 545 has 1 employees and value 128
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 3 employees and value 747
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 4 employees and value 1393
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 7 employees and value 3466
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 923 works at 507 and earns 46 at grade 53
+GetEmployeeInfo: SUCCESS. Employee 530 works at 507 and earns 216 at grade 209
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 923 works at 507 and earns 46 at grade 53
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 5 employees and value 3577
+GetCompanyInfo: SUCCESS. Company 507 has 5 employees and value 3577
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 4 employees and value 3630
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 4 employees and value 3630
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 4 employees and value 6263
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 5 employees and value 7539
+GetCompanyInfo: SUCCESS. Company 507 has 5 employees and value 7539
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 329 works at 507 and earns 940 at grade 369
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 990 works at 507 and earns 1852 at grade 404
+GetCompanyInfo: SUCCESS. Company 507 has 4 employees and value 7624
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 5 employees and value 7675
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 24 works at 507 and earns 2399 at grade 642
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 4 employees and value 7744
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 81 works at 507 and earns 355 at grade 149
+GetCompanyInfo: SUCCESS. Company 507 has 6 employees and value 7744
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 7 employees and value 7744
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 397 has 0 employees and value 10
+GetCompanyInfo: SUCCESS. Company 397 has 0 employees and value 10
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 650 has 0 employees and value 96
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 198 works at 507 and earns 895 at grade 283
+GetEmployeeInfo: SUCCESS. Employee 248 works at 507 and earns 928 at grade 50
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 248 works at 507 and earns 928 at grade 50
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 7 employees and value 12894
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 6 employees and value 12975
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 7 employees and value 12975
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 311 works at 507 and earns 946 at grade 661
+GetCompanyInfo: SUCCESS. Company 507 has 8 employees and value 13014
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 8 employees and value 13014
+GetCompanyInfo: SUCCESS. Company 507 has 8 employees and value 13014
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 311 works at 507 and earns 946 at grade 661
+GetCompanyInfo: SUCCESS. Company 507 has 8 employees and value 13014
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 545 works at 507 and earns 380 at grade 81
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 198 works at 507 and earns 1812 at grade 284
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 325 works at 507 and earns 1337 at grade 978
+GetEmployeeInfo: SUCCESS. Employee 311 works at 507 and earns 946 at grade 661
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 24 works at 507 and earns 4023 at grade 647
+GetEmployeeInfo: SUCCESS. Employee 311 works at 507 and earns 946 at grade 661
+GetCompanyInfo: SUCCESS. Company 507 has 7 employees and value 17040
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 8 employees and value 18773
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 7 employees and value 18806
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 7 employees and value 18837
+GetCompanyInfo: SUCCESS. Company 507 has 7 employees and value 18837
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 507 has 3 employees and value 22808
+GetCompanyInfo: SUCCESS. Company 507 has 3 employees and value 22808
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 822 works at 507 and earns 1196 at grade 232
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 616 has 0 employees and value 123
+HireEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 733 works at 507 and earns 816 at grade 155
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 456 has 0 employees and value 47
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 105 works at 915 and earns 618 at grade 509
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 511 has 1 employees and value 114
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 366 has 0 employees and value 21
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 947 has 0 employees and value 37
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 947 has 1 employees and value 37
+GetEmployeeInfo: SUCCESS. Employee 802 works at 947 and earns 179 at grade 340
+GetEmployeeInfo: SUCCESS. Employee 802 works at 947 and earns 179 at grade 340
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 802 works at 947 and earns 179 at grade 340
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 947 has 2 employees and value 114
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 947 has 2 employees and value 135
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 947 has 1 employees and value 135
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 600 has 0 employees and value 91
+#Trying 250 mixed SUCCESS/FAILURE commands
+AcquireCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: SUCCESS
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: SUCCESS
+AddCompany: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+GetCompanyInfo: SUCCESS. Company 600 has 0 employees and value 149
+RemoveCompany: SUCCESS
+GetEmployeeInfo: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+GetEmployeeInfo: FAILURE
+HireEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+GetEmployeeInfo: FAILURE
+RemoveCompany: SUCCESS
+RemoveCompany: FAILURE
+AcquireCompany: FAILURE
+GetEmployeeInfo: FAILURE
+AddEmployee: FAILURE
+PromoteEmployee: FAILURE
+AddEmployee: FAILURE
+RemoveEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+GetEmployeeInfo: FAILURE
+RemoveEmployee: FAILURE
+HireEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+HireEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveCompany: FAILURE
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+AddCompany: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 607 has 1 employees and value 161
+AcquireCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 607 has 1 employees and value 161
+GetCompanyInfo: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: SUCCESS
+HireEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: FAILURE
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+GetCompanyInfo: FAILURE
+AddCompany: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+HireEmployee: FAILURE
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 990 has 1 employees and value 87
+HireEmployee: FAILURE
+AddCompany: FAILURE
+PromoteEmployee: FAILURE
+AddCompany: FAILURE
+RemoveEmployee: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+AcquireCompany: FAILURE
+AddCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+AddEmployee: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: FAILURE
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+AddCompany: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+GetCompanyInfo: FAILURE
+PromoteEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 990 has 0 employees and value 166
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 500 has 0 employees and value 88
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 981 has 1 employees and value 49
+AddEmployee: SUCCESS
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 685 works at 990 and earns 894 at grade 227
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AddCompany: FAILURE
+GetCompanyInfo: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+GetCompanyInfo: FAILURE
+PromoteEmployee: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+AddCompany: FAILURE
+AddCompany: FAILURE
+AcquireCompany: FAILURE
+#Finishing with 250 SUCCESS commands
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 500 has 0 employees and value 158
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 65 works at 500 and earns 2118 at grade 848
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 931 has 0 employees and value 267
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 329 works at 500 and earns 970 at grade 234
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 280 has 0 employees and value 57
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 586 has 3 employees and value 52
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 586 has 2 employees and value 52
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 586 has 1 employees and value 52
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 49 has 1 employees and value 73
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 373 has 0 employees and value 62
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 465 works at 586 and earns 1180 at grade 313
+GetEmployeeInfo: SUCCESS. Employee 465 works at 586 and earns 1180 at grade 313
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 586 has 2 employees and value 52
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 465 works at 586 and earns 1385 at grade 314
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 465 works at 586 and earns 1385 at grade 314
+GetCompanyInfo: SUCCESS. Company 666 has 0 employees and value 69
+GetCompanyInfo: SUCCESS. Company 49 has 0 employees and value 73
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 666 has 0 employees and value 142
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 510 works at 82 and earns 1662 at grade 13
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 115 works at 82 and earns 118 at grade 399
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 115 works at 82 and earns 118 at grade 399
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 679 works at 586 and earns 1342 at grade 237
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 569 has 0 employees and value 92
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 882 works at 586 and earns 555 at grade 229
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 115 works at 586 and earns 118 at grade 399
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 882 works at 586 and earns 555 at grade 229
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 422 works at 217 and earns 3062 at grade 223
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 985 works at 518 and earns 603 at grade 415
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 581 has 2 employees and value 54
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 24 works at 518 and earns 148 at grade 298
+GetEmployeeInfo: SUCCESS. Employee 819 works at 586 and earns 987 at grade 198
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 819 works at 586 and earns 987 at grade 198
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 217 has 3 employees and value 65
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 24 works at 518 and earns 832 at grade 299
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 82 has 2 employees and value 231
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+RemoveCompany: SUCCESS
+AcquireCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 819 works at 586 and earns 2078 at grade 200
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 816 has 2 employees and value 91
+GetEmployeeInfo: SUCCESS. Employee 129 works at 816 and earns 814 at grade 402
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 276 works at 82 and earns 238 at grade 656
+GetEmployeeInfo: SUCCESS. Employee 129 works at 816 and earns 814 at grade 402
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 86 works at 217 and earns 42 at grade 894
+GetCompanyInfo: SUCCESS. Company 586 has 1 employees and value 811
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+Quit done

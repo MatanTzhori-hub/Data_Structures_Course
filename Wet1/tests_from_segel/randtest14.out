@@ -1,0 +1,1610 @@
+#Test: ErrorsTest. NumCommands: 1000. MinInt: -999. MaxInt: 9999. Seed: 7222536186507485990.
+Init done
+#Starting with 125 SUCCESS addition commands
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+#Trying 750 mainly INVALID_INPUT commands
+RemoveEmployee: INVALID_INPUT
+AcquireCompany: SUCCESS
+HireEmployee: INVALID_INPUT
+AddEmployee: FAILURE
+AddCompany: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+AddEmployee: SUCCESS
+GetHighestEarner: FAILURE
+HireEmployee: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetEmployeeInfo: INVALID_INPUT
+RemoveEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: INVALID_INPUT
+AcquireCompany: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+AddEmployee: FAILURE
+AcquireCompany: FAILURE
+GetHighestEarner: INVALID_INPUT
+AddEmployee: FAILURE
+PromoteEmployee: INVALID_INPUT
+AcquireCompany: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+HireEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveEmployee: FAILURE
+RemoveEmployee: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetHighestEarner: FAILURE
+AddCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: INVALID_INPUT
+RemoveEmployee: FAILURE
+GetHighestEarner: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 278 works at 7505 and earns 6612 at grade 779
+GetHighestEarnerInEachCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: INVALID_INPUT
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+HireEmployee: FAILURE
+GetHighestEarner: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+AddEmployee: FAILURE
+HireEmployee: FAILURE
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+HireEmployee: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+AddCompany: FAILURE
+AddEmployee: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+PromoteEmployee: FAILURE
+AddCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+AddEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: INVALID_INPUT
+AcquireCompany: SUCCESS
+AddCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+AddEmployee: FAILURE
+GetNumEmployeesMatching: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+PromoteEmployee: FAILURE
+RemoveEmployee: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+AcquireCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+PromoteEmployee: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 6603
+1 - 107
+2 - 3388
+3 - 7097
+4 - 932
+5 - 9573
+6 - 5821
+7 - 6286
+8 - 5875
+9 - 2730
+10 - 4372
+11 - 1948
+12 - 431
+13 - 3212
+14 - 903
+15 - 5321
+16 - 3259
+17 - 8033
+18 - 8741
+19 - 9387
+20 - 4032
+21 - 2544
+22 - 6960
+23 - 5879
+24 - 7481
+25 - 9350
+26 - 8918
+27 - 278
+28 - 263
+29 - 2632
+30 - 5490
+31 - 3836
+32 - 7331
+33 - 9804
+34 - 5486
+35 - 457
+36 - 4893
+37 - 3968
+38 - 1523
+39 - 532
+40 - 577
+41 - 1610
+42 - 9476
+43 - 886
+44 - 9362
+45 - 106
+46 - 7392
+47 - 6508
+48 - 2088
+49 - 422
+50 - 8040
+51 - 399
+52 - 179
+53 - 3282
+54 - 9861
+55 - 9837
+56 - 6972
+57 - 5231
+58 - 9578
+59 - 1317
+60 - 3942
+61 - 6979
+62 - 8879
+63 - 7611
+64 - 1134
+65 - 459
+66 - 1039
+67 - 4805
+GetAllEmployeesBySalary: FAILURE
+AddCompany: INVALID_INPUT
+GetHighestEarner: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+PromoteEmployee: INVALID_INPUT
+HireEmployee: FAILURE
+AddCompany: FAILURE
+GetCompanyInfo: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+AcquireCompany: INVALID_INPUT
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: INVALID_INPUT
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+HireEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AddCompany: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetHighestEarner: SUCCESS. Highest earner is 9362
+GetHighestEarnerInEachCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: INVALID_INPUT
+RemoveEmployee: FAILURE
+GetCompanyInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+AddCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+AddCompany: FAILURE
+RemoveEmployee: FAILURE
+GetHighestEarner: FAILURE
+AcquireCompany: FAILURE
+AddCompany: INVALID_INPUT
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: INVALID_INPUT
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 8033
+1 - 6508
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+AddCompany: INVALID_INPUT
+GetEmployeeInfo: FAILURE
+AddCompany: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+AddCompany: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+AddCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AcquireCompany: FAILURE
+RemoveCompany: INVALID_INPUT
+PromoteEmployee: FAILURE
+PromoteEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+HireEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+AddCompany: INVALID_INPUT
+AcquireCompany: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+RemoveEmployee: INVALID_INPUT
+AddEmployee: FAILURE
+RemoveEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+AcquireCompany: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+HireEmployee: FAILURE
+AddEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+AddCompany: SUCCESS
+IncreaseCompanyValue: INVALID_INPUT
+RemoveCompany: FAILURE
+AcquireCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+GetCompanyInfo: SUCCESS. Company 2389 has 0 employees and value 65
+IncreaseCompanyValue: FAILURE
+AddEmployee: FAILURE
+GetCompanyInfo: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+HireEmployee: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AddCompany: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+AcquireCompany: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveCompany: FAILURE
+HireEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+AddCompany: INVALID_INPUT
+AcquireCompany: FAILURE
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 6603
+1 - 107
+2 - 3388
+3 - 7097
+4 - 932
+5 - 9573
+6 - 5821
+7 - 6286
+8 - 5875
+9 - 2730
+10 - 4372
+11 - 1948
+12 - 431
+13 - 3212
+14 - 903
+15 - 5321
+16 - 3259
+17 - 8033
+18 - 8741
+19 - 9387
+20 - 4032
+21 - 2544
+22 - 6960
+23 - 5879
+24 - 7481
+25 - 9350
+26 - 8918
+27 - 278
+28 - 263
+29 - 2632
+30 - 5490
+31 - 3836
+32 - 7331
+33 - 9804
+34 - 5486
+35 - 457
+36 - 4893
+37 - 3968
+38 - 1523
+39 - 577
+40 - 1610
+41 - 9476
+42 - 886
+43 - 9362
+44 - 106
+45 - 7392
+46 - 6508
+47 - 2088
+48 - 422
+49 - 8040
+50 - 399
+51 - 179
+52 - 3282
+53 - 9861
+54 - 9837
+55 - 6972
+56 - 5231
+57 - 9578
+58 - 1317
+59 - 3942
+60 - 6979
+61 - 8879
+62 - 7611
+63 - 1134
+64 - 459
+65 - 1039
+66 - 4805
+RemoveCompany: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+RemoveCompany: SUCCESS
+GetHighestEarnerInEachCompany: INVALID_INPUT
+AddEmployee: FAILURE
+AddCompany: FAILURE
+AddCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+AddCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+AddCompany: FAILURE
+RemoveEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+RemoveEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+RemoveCompany: SUCCESS
+GetEmployeeInfo: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+RemoveEmployee: FAILURE
+GetHighestEarner: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+RemoveCompany: FAILURE
+PromoteEmployee: INVALID_INPUT
+RemoveCompany: SUCCESS
+GetHighestEarner: INVALID_INPUT
+AddCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+AddCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+RemoveEmployee: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetHighestEarner: FAILURE
+AcquireCompany: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+AcquireCompany: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+PromoteEmployee: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetHighestEarner: FAILURE
+RemoveCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+PromoteEmployee: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+AddCompany: INVALID_INPUT
+HireEmployee: FAILURE
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetHighestEarner: FAILURE
+GetCompanyInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+HireEmployee: SUCCESS
+AcquireCompany: FAILURE
+GetNumEmployeesMatching: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+IncreaseCompanyValue: SUCCESS
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+AcquireCompany: FAILURE
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetHighestEarner: SUCCESS. Highest earner is 9861
+HireEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+RemoveEmployee: FAILURE
+HireEmployee: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+AddCompany: FAILURE
+AddCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+HireEmployee: INVALID_INPUT
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: INVALID_INPUT
+HireEmployee: FAILURE
+AcquireCompany: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AddCompany: INVALID_INPUT
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AddCompany: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AddEmployee: FAILURE
+RemoveCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+AcquireCompany: FAILURE
+PromoteEmployee: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+RemoveEmployee: FAILURE
+GetAllEmployeesBySalary: FAILURE
+AcquireCompany: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+AcquireCompany: SUCCESS
+RemoveEmployee: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+HireEmployee: FAILURE
+AddCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+AddEmployee: FAILURE
+RemoveCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+AddCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+RemoveEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+HireEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+AcquireCompany: SUCCESS
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetNumEmployeesMatching: SUCCESS. Out of 4, 1 match
+AcquireCompany: FAILURE
+AcquireCompany: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+PromoteEmployee: FAILURE
+RemoveCompany: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+GetEmployeeInfo: FAILURE
+PromoteEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+AcquireCompany: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+AddEmployee: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+PromoteEmployee: FAILURE
+AddEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+AddCompany: FAILURE
+GetCompanyInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+AddCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 6603
+1 - 107
+2 - 3388
+3 - 7097
+4 - 932
+5 - 9573
+6 - 5821
+7 - 6286
+8 - 2730
+9 - 4372
+10 - 1948
+11 - 431
+12 - 3212
+13 - 903
+14 - 5321
+15 - 3259
+16 - 8033
+17 - 8741
+18 - 9387
+19 - 4032
+20 - 2544
+21 - 6960
+22 - 5879
+23 - 7481
+24 - 9350
+25 - 8918
+26 - 278
+27 - 263
+28 - 2632
+29 - 5490
+30 - 3836
+31 - 7331
+32 - 9804
+33 - 5486
+34 - 457
+35 - 4893
+36 - 3968
+37 - 1523
+38 - 577
+39 - 1610
+40 - 9476
+41 - 886
+42 - 9362
+43 - 106
+44 - 7392
+45 - 6508
+46 - 2088
+47 - 422
+48 - 8040
+49 - 399
+50 - 179
+51 - 3282
+52 - 9861
+53 - 9837
+54 - 6972
+55 - 5231
+56 - 9578
+57 - 1317
+58 - 3942
+59 - 6979
+60 - 8879
+61 - 7611
+62 - 1134
+63 - 459
+64 - 9252
+65 - 4805
+GetNumEmployeesMatching: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 6603
+1 - 107
+2 - 3388
+3 - 7097
+4 - 932
+5 - 9573
+6 - 5821
+7 - 6286
+8 - 2730
+9 - 4372
+10 - 1948
+11 - 431
+12 - 3212
+13 - 903
+14 - 5321
+15 - 3259
+16 - 8033
+17 - 8741
+18 - 9387
+19 - 4032
+20 - 2544
+21 - 6960
+22 - 5879
+23 - 7481
+24 - 9350
+25 - 8918
+26 - 278
+27 - 263
+28 - 2632
+29 - 5490
+30 - 3836
+31 - 7331
+32 - 9804
+33 - 5486
+34 - 457
+35 - 4893
+36 - 3968
+37 - 1523
+38 - 577
+39 - 1610
+40 - 9476
+41 - 886
+42 - 9362
+43 - 106
+44 - 7392
+45 - 6508
+46 - 2088
+47 - 422
+48 - 8040
+49 - 399
+50 - 179
+51 - 3282
+52 - 9861
+53 - 9837
+54 - 6972
+55 - 5231
+56 - 9578
+57 - 1317
+58 - 3942
+59 - 6979
+60 - 8879
+61 - 7611
+62 - 1134
+63 - 459
+64 - 9252
+65 - 4805
+AcquireCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AddEmployee: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 2544
+GetHighestEarner: FAILURE
+AddEmployee: FAILURE
+RemoveEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetHighestEarner: FAILURE
+PromoteEmployee: INVALID_INPUT
+PromoteEmployee: FAILURE
+PromoteEmployee: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+RemoveEmployee: SUCCESS
+GetCompanyInfo: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 6603
+1 - 107
+2 - 3388
+3 - 7097
+4 - 932
+5 - 9573
+6 - 5821
+7 - 6286
+8 - 2730
+9 - 4372
+10 - 1948
+11 - 431
+12 - 3212
+13 - 903
+14 - 5321
+15 - 3259
+16 - 8033
+17 - 8741
+18 - 9387
+19 - 4032
+20 - 2544
+21 - 6960
+22 - 5879
+23 - 7481
+24 - 9350
+25 - 8918
+26 - 278
+27 - 2632
+28 - 5490
+29 - 3836
+30 - 7331
+31 - 9804
+32 - 5486
+33 - 457
+34 - 4893
+35 - 3968
+36 - 1523
+37 - 577
+38 - 1610
+39 - 9476
+40 - 886
+41 - 9362
+42 - 106
+43 - 7392
+44 - 6508
+45 - 2088
+46 - 422
+47 - 8040
+48 - 399
+49 - 179
+50 - 3282
+51 - 9861
+52 - 9837
+53 - 6972
+54 - 5231
+55 - 9578
+56 - 1317
+57 - 3942
+58 - 6979
+59 - 8879
+60 - 7611
+61 - 1134
+62 - 459
+63 - 9252
+64 - 4805
+GetHighestEarner: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 6972
+1 - 886
+2 - 8918
+3 - 6603
+4 - 8040
+5 - 2544
+6 - 7481
+7 - 5879
+8 - 7097
+9 - 9804
+10 - 932
+11 - 4032
+12 - 9350
+13 - 5821
+14 - 8033
+15 - 457
+16 - 9573
+RemoveCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+AddCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+AddCompany: INVALID_INPUT
+RemoveEmployee: FAILURE
+GetCompanyInfo: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+RemoveEmployee: FAILURE
+RemoveEmployee: INVALID_INPUT
+GetCompanyInfo: SUCCESS. Company 6699 has 0 employees and value 1521
+AcquireCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+AddCompany: INVALID_INPUT
+GetCompanyInfo: FAILURE
+AcquireCompany: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+AddCompany: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+AcquireCompany: FAILURE
+RemoveCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+GetNumEmployeesMatching: INVALID_INPUT
+AddCompany: FAILURE
+RemoveEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+PromoteEmployee: INVALID_INPUT
+PromoteEmployee: SUCCESS
+HireEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+HireEmployee: FAILURE
+GetCompanyInfo: FAILURE
+RemoveCompany: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetCompanyInfo: FAILURE
+HireEmployee: FAILURE
+GetHighestEarner: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+GetCompanyInfo: SUCCESS. Company 2389 has 0 employees and value 65
+IncreaseCompanyValue: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetCompanyInfo: FAILURE
+GetHighestEarnerInEachCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+HireEmployee: FAILURE
+RemoveCompany: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+HireEmployee: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 932
+GetCompanyInfo: SUCCESS. Company 1329 has 1 employees and value 670
+AddEmployee: FAILURE
+RemoveCompany: SUCCESS
+GetEmployeeInfo: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AcquireCompany: FAILURE
+GetHighestEarner: INVALID_INPUT
+PromoteEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 6979 works at 4105 and earns 1545 at grade 3678
+GetAllEmployeesBySalary: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+GetHighestEarner: FAILURE
+PromoteEmployee: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+AddCompany: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+RemoveEmployee: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+GetCompanyInfo: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetCompanyInfo: FAILURE
+AcquireCompany: INVALID_INPUT
+GetEmployeeInfo: FAILURE
+PromoteEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+PromoteEmployee: SUCCESS
+RemoveEmployee: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetCompanyInfo: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: INVALID_INPUT
+AddCompany: SUCCESS
+RemoveCompany: FAILURE
+RemoveCompany: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AddEmployee: FAILURE
+PromoteEmployee: INVALID_INPUT
+HireEmployee: FAILURE
+GetHighestEarner: FAILURE
+AddEmployee: INVALID_INPUT
+AddCompany: INVALID_INPUT
+IncreaseCompanyValue: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+AddCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+GetHighestEarner: FAILURE
+RemoveCompany: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+AcquireCompany: SUCCESS
+AddCompany: FAILURE
+IncreaseCompanyValue: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+RemoveCompany: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+AddCompany: INVALID_INPUT
+HireEmployee: FAILURE
+GetNumEmployeesMatching: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 6603
+1 - 107
+2 - 3388
+3 - 7097
+4 - 932
+5 - 9573
+6 - 5821
+7 - 6286
+8 - 2730
+9 - 4372
+10 - 1948
+11 - 431
+12 - 3212
+13 - 903
+14 - 5321
+15 - 3259
+16 - 8033
+17 - 8741
+18 - 7392
+19 - 9387
+20 - 4032
+21 - 2544
+22 - 6960
+23 - 5879
+24 - 7481
+25 - 9350
+26 - 8918
+27 - 278
+28 - 2632
+29 - 5490
+30 - 3836
+31 - 7331
+32 - 9804
+33 - 5486
+34 - 457
+35 - 4893
+36 - 3968
+37 - 1523
+38 - 577
+39 - 1610
+40 - 9476
+41 - 886
+42 - 9362
+43 - 6972
+44 - 106
+45 - 6508
+46 - 2088
+47 - 422
+48 - 8040
+49 - 399
+50 - 179
+51 - 3282
+52 - 9861
+53 - 9837
+54 - 5231
+55 - 9578
+56 - 1317
+57 - 3942
+58 - 6979
+59 - 8879
+60 - 7611
+61 - 1134
+62 - 459
+63 - 9252
+64 - 4805
+AddCompany: INVALID_INPUT
+AddCompany: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+AddEmployee: FAILURE
+GetHighestEarnerInEachCompany: INVALID_INPUT
+PromoteEmployee: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+RemoveCompany: FAILURE
+HireEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+PromoteEmployee: INVALID_INPUT
+PromoteEmployee: FAILURE
+HireEmployee: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+AddCompany: INVALID_INPUT
+#Finishing with 125 commands
+GetCompanyInfo: FAILURE
+AddCompany: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+IncreaseCompanyValue: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 6972
+1 - 886
+2 - 8918
+3 - 6603
+4 - 8040
+GetCompanyInfo: SUCCESS. Company 7260 has 5 employees and value 781
+AddEmployee: SUCCESS
+IncreaseCompanyValue: INVALID_INPUT
+GetCompanyInfo: SUCCESS. Company 175 has 1 employees and value 872
+GetHighestEarnerInEachCompany: INVALID_INPUT
+AddEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: FAILURE
+RemoveEmployee: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+AddCompany: INVALID_INPUT
+HireEmployee: FAILURE
+AddCompany: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+RemoveEmployee: INVALID_INPUT
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 6972
+1 - 886
+2 - 8918
+3 - 6603
+4 - 8040
+5 - 2544
+6 - 7481
+7 - 5879
+8 - 7097
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 6603
+1 - 107
+2 - 3388
+3 - 7097
+4 - 932
+5 - 9573
+6 - 5821
+7 - 6286
+8 - 2730
+9 - 4372
+10 - 1948
+11 - 431
+12 - 3212
+13 - 903
+14 - 5321
+15 - 3259
+16 - 8033
+17 - 8741
+18 - 7392
+19 - 9387
+20 - 4032
+21 - 2544
+22 - 6960
+23 - 5879
+24 - 7481
+25 - 9350
+26 - 8918
+27 - 278
+28 - 2632
+29 - 5490
+30 - 3836
+31 - 7331
+32 - 9804
+33 - 5486
+34 - 457
+35 - 4893
+36 - 3968
+37 - 1523
+38 - 577
+39 - 1610
+40 - 9476
+41 - 886
+42 - 9362
+43 - 6972
+44 - 106
+45 - 6508
+46 - 5981
+47 - 2088
+48 - 422
+49 - 8040
+50 - 399
+51 - 179
+52 - 3282
+53 - 9861
+54 - 9837
+55 - 5231
+56 - 9578
+57 - 1317
+58 - 3942
+59 - 6979
+60 - 8879
+61 - 7611
+62 - 1134
+63 - 459
+64 - 9252
+65 - 4805
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 6972
+1 - 886
+2 - 8918
+3 - 6603
+4 - 8040
+5 - 2544
+6 - 7481
+7 - 5879
+GetEmployeeInfo: SUCCESS. Employee 4893 works at 7260 and earns 5693 at grade 759
+IncreaseCompanyValue: INVALID_INPUT
+GetEmployeeInfo: SUCCESS. Employee 459 works at 5187 and earns 548 at grade 4112
+GetHighestEarner: SUCCESS. Highest earner is 6603
+RemoveCompany: INVALID_INPUT
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetAllEmployeesBySalary: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+GetAllEmployeesBySalary: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+RemoveEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+PromoteEmployee: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+GetEmployeeInfo: SUCCESS. Employee 3212 works at 9196 and earns 8545 at grade 3757
+HireEmployee: INVALID_INPUT
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: INVALID_INPUT
+AddCompany: INVALID_INPUT
+GetNumEmployeesMatching: SUCCESS. Out of 10, 0 match
+HireEmployee: SUCCESS
+AcquireCompany: FAILURE
+GetCompanyInfo: INVALID_INPUT
+AcquireCompany: FAILURE
+GetCompanyInfo: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+GetEmployeeInfo: SUCCESS. Employee 5486 works at 8377 and earns 5937 at grade 457
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 6286
+RemoveCompany: SUCCESS
+GetHighestEarner: INVALID_INPUT
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 399 works at 1540 and earns 3468 at grade 9694
+PromoteEmployee: FAILURE
+GetAllEmployeesBySalary: FAILURE
+IncreaseCompanyValue: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 6603
+1 - 107
+2 - 3388
+3 - 7097
+4 - 932
+5 - 9573
+6 - 5821
+7 - 6286
+8 - 2730
+9 - 4372
+10 - 1948
+11 - 431
+12 - 3212
+13 - 5321
+14 - 3259
+15 - 8033
+16 - 8741
+17 - 7392
+18 - 9387
+19 - 4032
+20 - 2544
+21 - 6960
+22 - 5879
+23 - 7481
+24 - 9350
+25 - 8918
+26 - 278
+27 - 2632
+28 - 5490
+29 - 3836
+30 - 7331
+31 - 9804
+32 - 5486
+33 - 457
+34 - 4893
+35 - 3968
+36 - 1523
+37 - 577
+38 - 1610
+39 - 9476
+40 - 9362
+41 - 6972
+42 - 106
+43 - 6508
+44 - 5981
+45 - 422
+46 - 8040
+47 - 399
+48 - 179
+49 - 3282
+50 - 9861
+51 - 9837
+52 - 5231
+53 - 9578
+54 - 1317
+55 - 3942
+56 - 6979
+57 - 8879
+58 - 7611
+59 - 1134
+60 - 459
+61 - 9252
+62 - 4805
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: INVALID_INPUT
+PromoteEmployee: SUCCESS
+RemoveEmployee: FAILURE
+AddEmployee: INVALID_INPUT
+AcquireCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+GetEmployeeInfo: INVALID_INPUT
+RemoveCompany: INVALID_INPUT
+GetCompanyInfo: FAILURE
+GetCompanyInfo: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: INVALID_INPUT
+IncreaseCompanyValue: FAILURE
+GetAllEmployeesBySalary: FAILURE
+PromoteEmployee: INVALID_INPUT
+AcquireCompany: INVALID_INPUT
+GetNumEmployeesMatching: INVALID_INPUT
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: INVALID_INPUT
+AddCompany: INVALID_INPUT
+RemoveEmployee: FAILURE
+HireEmployee: SUCCESS
+HireEmployee: FAILURE
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 8093 has 1 employees and value 565
+IncreaseCompanyValue: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 106
+RemoveEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+HireEmployee: FAILURE
+GetHighestEarnerInEachCompany: INVALID_INPUT
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 8918
+1 - 1610
+2 - 8040
+3 - 2544
+4 - 7481
+5 - 5879
+6 - 7097
+7 - 9804
+8 - 932
+9 - 4032
+10 - 7392
+11 - 5821
+12 - 8033
+13 - 6603
+14 - 457
+15 - 9573
+16 - 6960
+17 - 6972
+18 - 2730
+19 - 9362
+20 - 3836
+21 - 9861
+22 - 9387
+AddCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+RemoveEmployee: SUCCESS
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+IncreaseCompanyValue: FAILURE
+GetCompanyInfo: INVALID_INPUT
+Quit done

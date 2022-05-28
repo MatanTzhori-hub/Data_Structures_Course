@@ -1,0 +1,140 @@
+#Test: BasicTest. NumCommands: 100. MinInt: -20. MaxInt: 100. With outer errors. Seed: 7905619473042850345.
+#Injecting commands before Init
+GetHighestEarner: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+AddEmployee: INVALID_INPUT
+GetHighestEarner: INVALID_INPUT
+GetHighestEarnerInEachCompany: INVALID_INPUT
+HireEmployee: INVALID_INPUT
+Init done
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 13
+1 - 12
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 11
+1 - 13
+GetNumEmployeesMatching: SUCCESS. Out of 3, 2 match
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1 has 2 employees and value 150
+GetCompanyInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 3 has 1 employees and value 8965
+GetEmployeeInfo: SUCCESS. Employee 11 works at 1 and earns 60 at grade 70
+GetEmployeeInfo: SUCCESS. Employee 12 works at 1 and earns 600 at grade 700
+GetEmployeeInfo: SUCCESS. Employee 13 works at 3 and earns 6010 at grade 7001
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: FAILURE
+GetAllEmployeesBySalary: INVALID_INPUT
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 12
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 12
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 12
+1 - 11
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 12
+1 - 11
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 1 has 2 employees and value 150
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1 has 0 employees and value 160
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1 has 1 employees and value 160
+GetEmployeeInfo: SUCCESS. Employee 24 works at 1 and earns 94 at grade 78
+GetCompanyInfo: SUCCESS. Company 1 has 1 employees and value 160
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1 has 0 employees and value 170
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 79 works at 1 and earns 72 at grade 85
+GetCompanyInfo: SUCCESS. Company 1 has 1 employees and value 178
+GetCompanyInfo: SUCCESS. Company 1 has 1 employees and value 178
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1 has 1 employees and value 178
+GetCompanyInfo: SUCCESS. Company 1 has 1 employees and value 178
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1 has 1 employees and value 181
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 79
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 1 match
+GetEmployeeInfo: SUCCESS. Employee 58 works at 1 and earns 57 at grade 13
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 79
+GetEmployeeInfo: SUCCESS. Employee 79 works at 1 and earns 167 at grade 85
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 79
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 79
+GetEmployeeInfo: SUCCESS. Employee 79 works at 1 and earns 167 at grade 85
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 1 has 4 employees and value 274
+GetCompanyInfo: SUCCESS. Company 1 has 4 employees and value 274
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 79
+GetHighestEarner: SUCCESS. Highest earner is 79
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 58
+RemoveEmployee: SUCCESS
+Quit done
+#Injecting commands after Quit
+AcquireCompany: INVALID_INPUT
+GetCompanyInfo: INVALID_INPUT
+AddCompany: INVALID_INPUT
+AddCompany: INVALID_INPUT
+RemoveCompany: INVALID_INPUT

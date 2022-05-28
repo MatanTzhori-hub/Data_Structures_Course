@@ -1,0 +1,2664 @@
+#Test: RandomXTest. NumCommands: 2000. MinInt: -100. MaxInt: 1000. Seed: 4251703321543266264.
+Init done
+#Running 100 mutation commands
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: FAILURE
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: FAILURE
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: SUCCESS
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+PromoteEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: FAILURE
+AddEmployee: SUCCESS
+HireEmployee: FAILURE
+AddEmployee: SUCCESS
+RemoveCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: FAILURE
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+IncreaseCompanyValue: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+AcquireCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+#Running 100 mutation commands
+AddCompany: SUCCESS
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: FAILURE
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: FAILURE
+AddEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: SUCCESS
+PromoteEmployee: FAILURE
+PromoteEmployee: FAILURE
+RemoveCompany: SUCCESS
+PromoteEmployee: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+RemoveCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveCompany: SUCCESS
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AddEmployee: FAILURE
+PromoteEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+PromoteEmployee: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+#Running 100 removal commands
+RemoveCompany: SUCCESS
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+#Running 100 random commands
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+HireEmployee: FAILURE
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+AddEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+GetAllEmployeesBySalary: FAILURE
+IncreaseCompanyValue: FAILURE
+GetNumEmployeesMatching: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+RemoveEmployee: FAILURE
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+PromoteEmployee: FAILURE
+HireEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: FAILURE
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: SUCCESS
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 569 has 0 employees and value 11
+RemoveEmployee: FAILURE
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 691 works at 569 and earns 1408 at grade 272
+GetAllEmployeesBySalary: FAILURE
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 569 has 0 employees and value 11
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+GetAllEmployeesBySalary: FAILURE
+AddCompany: SUCCESS
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+AcquireCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 134 works at 569 and earns 801 at grade 65
+#Running 100 random commands
+GetCompanyInfo: SUCCESS. Company 569 has 1 employees and value 11
+GetCompanyInfo: SUCCESS. Company 569 has 1 employees and value 11
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 569 has 2 employees and value 63
+GetHighestEarner: SUCCESS. Highest earner is 134
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 134 works at 569 and earns 1159 at grade 66
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+HireEmployee: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 134
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 134
+HireEmployee: FAILURE
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 134
+GetCompanyInfo: SUCCESS. Company 481 has 0 employees and value 38
+RemoveCompany: SUCCESS
+HireEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 134
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 134
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 329
+GetHighestEarner: SUCCESS. Highest earner is 329
+GetCompanyInfo: SUCCESS. Company 569 has 1 employees and value 79
+AcquireCompany: FAILURE
+HireEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 329
+1 - 251
+RemoveCompany: SUCCESS
+RemoveCompany: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 329
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 329
+1 - 251
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 569 has 2 employees and value 165
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 251
+RemoveCompany: FAILURE
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 251
+1 - 329
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 251
+GetEmployeeInfo: SUCCESS. Employee 329 works at 569 and earns 1229 at grade 515
+GetHighestEarner: SUCCESS. Highest earner is 251
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 329
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 329
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 329
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: FAILURE
+AddCompany: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 329
+AddEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 329
+1 - 756
+2 - 806
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetCompanyInfo: SUCCESS. Company 607 has 0 employees and value 98
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 569 has 4 employees and value 321
+GetHighestEarner: SUCCESS. Highest earner is 329
+GetHighestEarner: FAILURE
+HireEmployee: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 329
+1 - 756
+2 - 442
+3 - 168
+4 - 806
+GetNumEmployeesMatching: FAILURE
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 168
+GetCompanyInfo: SUCCESS. Company 688 has 0 employees and value 58
+RemoveCompany: FAILURE
+GetCompanyInfo: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 756
+1 - 442
+2 - 168
+3 - 806
+RemoveEmployee: SUCCESS
+#Running 100 random commands
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 168 works at 407 and earns 598 at grade 363
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 756
+1 - 168
+2 - 806
+GetCompanyInfo: SUCCESS. Company 569 has 2 employees and value 321
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 168 works at 79 and earns 598 at grade 363
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 756 works at 569 and earns 1796 at grade 826
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 168 works at 79 and earns 616 at grade 364
+GetHighestEarner: SUCCESS. Highest earner is 756
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+RemoveCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 168
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 333 has 0 employees and value 47
+GetHighestEarner: SUCCESS. Highest earner is 756
+GetCompanyInfo: FAILURE
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 756
+1 - 168
+GetHighestEarner: SUCCESS. Highest earner is 756
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 756
+GetCompanyInfo: SUCCESS. Company 991 has 0 employees and value 64
+AddEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 129 works at 730 and earns 348 at grade 945
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 756
+1 - 129
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 756
+1 - 129
+2 - 739
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 739
+GetCompanyInfo: SUCCESS. Company 79 has 1 employees and value 41
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 79 has 1 employees and value 41
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: SUCCESS. Company 333 has 0 employees and value 47
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 991 has 0 employees and value 164
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 991 has 1 employees and value 164
+GetEmployeeInfo: SUCCESS. Employee 739 works at 730 and earns 348 at grade 420
+HireEmployee: SUCCESS
+RemoveEmployee: FAILURE
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 333 has 0 employees and value 47
+RemoveCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 756
+1 - 129
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 569 has 0 employees and value 436
+AddCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 739
+RemoveCompany: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 739
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+PromoteEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 739
+1 - 243
+GetCompanyInfo: SUCCESS. Company 991 has 1 employees and value 164
+PromoteEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 243
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 243 works at 991 and earns 1700 at grade 879
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 739
+1 - 243
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 739 works at 333 and earns 1171 at grade 421
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 243
+1 - 739
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 243
+#Running 100 addition commands
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+#Running 100 mutation commands
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveCompany: FAILURE
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: FAILURE
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: FAILURE
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+#Running 100 random commands
+PromoteEmployee: SUCCESS
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 933
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 282
+1 - 243
+2 - 427
+3 - 453
+4 - 739
+5 - 794
+6 - 562
+7 - 933
+8 - 596
+9 - 851
+10 - 412
+11 - 450
+12 - 773
+13 - 691
+14 - 886
+15 - 474
+16 - 296
+17 - 504
+18 - 763
+19 - 876
+20 - 300
+21 - 131
+22 - 686
+23 - 56
+24 - 230
+25 - 570
+26 - 351
+27 - 503
+28 - 963
+29 - 233
+30 - 884
+31 - 855
+32 - 766
+33 - 789
+34 - 72
+35 - 915
+36 - 15
+37 - 265
+38 - 558
+39 - 216
+40 - 186
+41 - 403
+42 - 420
+43 - 349
+44 - 619
+45 - 584
+46 - 422
+47 - 443
+48 - 447
+49 - 180
+50 - 586
+GetHighestEarnerInEachCompany: FAILURE
+RemoveCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 596
+1 - 474
+2 - 265
+3 - 691
+4 - 503
+5 - 773
+6 - 739
+7 - 504
+8 - 131
+9 - 282
+10 - 186
+11 - 450
+12 - 851
+GetNumEmployeesMatching: SUCCESS. Out of 14, 9 match
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 282
+1 - 243
+2 - 427
+3 - 453
+4 - 739
+5 - 794
+6 - 562
+7 - 933
+8 - 596
+9 - 851
+10 - 412
+11 - 450
+12 - 773
+13 - 691
+14 - 886
+15 - 474
+16 - 296
+17 - 504
+18 - 763
+19 - 876
+20 - 300
+21 - 131
+22 - 686
+23 - 56
+24 - 230
+25 - 570
+26 - 351
+27 - 503
+28 - 963
+29 - 233
+30 - 884
+31 - 855
+32 - 766
+33 - 789
+34 - 72
+35 - 915
+36 - 15
+37 - 265
+38 - 558
+39 - 216
+40 - 186
+41 - 403
+42 - 420
+43 - 349
+44 - 619
+45 - 584
+46 - 422
+47 - 443
+48 - 447
+49 - 180
+50 - 586
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 596
+1 - 474
+2 - 265
+3 - 691
+4 - 503
+5 - 773
+6 - 739
+7 - 504
+8 - 131
+9 - 282
+10 - 186
+11 - 450
+12 - 851
+13 - 420
+14 - 412
+15 - 453
+16 - 300
+17 - 933
+18 - 584
+19 - 763
+20 - 586
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 282
+1 - 243
+2 - 427
+3 - 453
+4 - 739
+5 - 794
+6 - 562
+7 - 933
+8 - 596
+9 - 851
+10 - 412
+11 - 450
+12 - 773
+13 - 691
+14 - 886
+15 - 443
+16 - 752
+17 - 474
+18 - 504
+19 - 763
+20 - 876
+21 - 300
+22 - 131
+23 - 686
+24 - 56
+25 - 230
+26 - 570
+27 - 351
+28 - 503
+29 - 963
+30 - 233
+31 - 855
+32 - 766
+33 - 789
+34 - 72
+35 - 915
+36 - 15
+37 - 265
+38 - 558
+39 - 186
+40 - 403
+41 - 420
+42 - 349
+43 - 619
+44 - 584
+45 - 422
+46 - 447
+47 - 180
+48 - 586
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 739 works at 823 and earns 1171 at grade 421
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 596
+1 - 474
+2 - 265
+3 - 691
+4 - 503
+5 - 773
+6 - 351
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 498 has 1 employees and value 13
+GetEmployeeInfo: SUCCESS. Employee 905 works at 837 and earns 784 at grade 544
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 773
+GetEmployeeInfo: SUCCESS. Employee 453 works at 823 and earns 1385 at grade 462
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 305 has 0 employees and value 96
+GetNumEmployeesMatching: SUCCESS. Out of 11, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 562
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 596
+1 - 474
+2 - 265
+3 - 905
+4 - 691
+5 - 503
+6 - 773
+7 - 351
+8 - 504
+9 - 131
+10 - 282
+11 - 255
+12 - 450
+13 - 851
+14 - 420
+15 - 412
+16 - 453
+17 - 300
+18 - 933
+19 - 584
+20 - 763
+21 - 586
+22 - 562
+23 - 427
+IncreaseCompanyValue: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 282
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 584
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+RemoveCompany: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+RemoveCompany: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 73 has 0 employees and value 117
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 851
+1 - 422
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 752 works at 991 and earns 741 at grade 175
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 453
+1 - 739
+2 - 886
+3 - 619
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 18, 1 match
+RemoveEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 504
+RemoveEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 474
+1 - 265
+2 - 773
+3 - 351
+4 - 504
+5 - 131
+6 - 282
+7 - 255
+8 - 596
+9 - 851
+10 - 420
+11 - 412
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 474
+1 - 265
+2 - 773
+3 - 351
+4 - 504
+5 - 131
+6 - 282
+7 - 255
+8 - 596
+9 - 851
+10 - 420
+11 - 412
+12 - 453
+13 - 300
+14 - 933
+15 - 584
+16 - 763
+17 - 586
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 255 works at 498 and earns 880 at grade 225
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 562
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 259 has 0 employees and value 172
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 975 has 1 employees and value 26
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 282
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+#Running 100 random commands
+GetEmployeeInfo: SUCCESS. Employee 72 works at 991 and earns 315 at grade 205
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 474
+1 - 756
+2 - 690
+3 - 282
+4 - 773
+5 - 504
+6 - 131
+7 - 810
+8 - 766
+9 - 427
+AddEmployee: SUCCESS
+RemoveCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 370 has 2 employees and value 53
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 53 has 2 employees and value 148
+RemoveCompany: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 474
+1 - 756
+2 - 690
+3 - 282
+4 - 773
+GetAllEmployeesBySalary: FAILURE
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 265 works at 259 and earns 229 at grade 594
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 612 has 0 employees and value 35
+GetEmployeeInfo: SUCCESS. Employee 300 works at 828 and earns 614 at grade 302
+GetCompanyInfo: SUCCESS. Company 837 has 1 employees and value 28
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+RemoveEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 282
+GetHighestEarner: SUCCESS. Highest earner is 282
+PromoteEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetHighestEarner: SUCCESS. Highest earner is 690
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 282
+1 - 243
+2 - 427
+3 - 570
+4 - 220
+5 - 453
+6 - 739
+7 - 794
+8 - 766
+9 - 562
+10 - 789
+11 - 933
+12 - 596
+13 - 255
+14 - 412
+15 - 303
+16 - 450
+17 - 773
+18 - 691
+19 - 886
+20 - 443
+21 - 752
+22 - 474
+23 - 445
+24 - 504
+25 - 763
+26 - 876
+27 - 300
+28 - 131
+29 - 810
+30 - 686
+31 - 266
+32 - 230
+33 - 756
+34 - 351
+35 - 963
+36 - 233
+37 - 855
+38 - 72
+39 - 324
+40 - 265
+41 - 558
+42 - 186
+43 - 403
+44 - 420
+45 - 690
+46 - 349
+47 - 619
+48 - 422
+49 - 180
+50 - 586
+51 - 604
+52 - 455
+53 - 971
+AddCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 562
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 282
+1 - 243
+2 - 427
+3 - 570
+4 - 220
+5 - 453
+6 - 739
+7 - 794
+8 - 766
+9 - 562
+10 - 789
+11 - 933
+12 - 596
+13 - 255
+14 - 412
+15 - 303
+16 - 450
+17 - 773
+18 - 691
+19 - 886
+20 - 443
+21 - 752
+22 - 474
+23 - 445
+24 - 504
+25 - 763
+26 - 876
+27 - 300
+28 - 131
+29 - 810
+30 - 686
+31 - 266
+32 - 230
+33 - 756
+34 - 351
+35 - 963
+36 - 233
+37 - 855
+38 - 72
+39 - 324
+40 - 265
+41 - 558
+42 - 186
+43 - 403
+44 - 420
+45 - 690
+46 - 349
+47 - 619
+48 - 422
+49 - 180
+50 - 586
+51 - 604
+52 - 455
+53 - 971
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 282
+1 - 243
+2 - 427
+3 - 570
+4 - 220
+5 - 453
+6 - 739
+7 - 794
+8 - 766
+9 - 562
+10 - 789
+11 - 933
+12 - 596
+13 - 255
+14 - 412
+15 - 303
+16 - 450
+17 - 773
+18 - 691
+19 - 886
+20 - 443
+21 - 752
+22 - 474
+23 - 445
+24 - 504
+25 - 763
+26 - 876
+27 - 300
+28 - 131
+29 - 810
+30 - 686
+31 - 266
+32 - 230
+33 - 756
+34 - 351
+35 - 963
+36 - 233
+37 - 855
+38 - 72
+39 - 324
+40 - 265
+41 - 558
+42 - 186
+43 - 403
+44 - 420
+45 - 690
+46 - 349
+47 - 619
+48 - 422
+49 - 180
+50 - 586
+51 - 604
+52 - 455
+53 - 971
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 282
+GetHighestEarner: SUCCESS. Highest earner is 282
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 756
+1 - 690
+2 - 282
+3 - 773
+4 - 504
+5 - 131
+6 - 810
+7 - 766
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 21, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 7, 3 match
+PromoteEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 756
+1 - 690
+2 - 282
+3 - 773
+4 - 504
+5 - 131
+6 - 810
+7 - 766
+8 - 427
+9 - 266
+10 - 420
+11 - 412
+12 - 300
+13 - 933
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 11, 1 match
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 967 works at 961 and earns 8 at grade 685
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 26, 1 match
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 963 works at 333 and earns 656 at grade 96
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 756
+1 - 690
+2 - 794
+3 - 282
+4 - 773
+5 - 504
+6 - 230
+7 - 810
+8 - 766
+9 - 427
+10 - 422
+11 - 420
+12 - 412
+13 - 300
+14 - 933
+15 - 445
+16 - 763
+17 - 303
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 282
+1 - 243
+2 - 427
+3 - 570
+4 - 220
+5 - 453
+6 - 230
+7 - 739
+8 - 794
+9 - 763
+10 - 766
+11 - 886
+12 - 562
+13 - 789
+14 - 933
+15 - 596
+16 - 255
+17 - 412
+18 - 303
+19 - 450
+20 - 773
+21 - 691
+22 - 443
+23 - 752
+24 - 474
+25 - 445
+26 - 504
+27 - 233
+28 - 963
+29 - 186
+30 - 876
+31 - 300
+32 - 131
+33 - 422
+34 - 810
+35 - 686
+36 - 266
+37 - 756
+38 - 351
+39 - 855
+40 - 72
+41 - 283
+42 - 324
+43 - 265
+44 - 558
+45 - 208
+46 - 567
+47 - 403
+48 - 133
+49 - 420
+50 - 690
+51 - 349
+52 - 619
+53 - 225
+54 - 180
+55 - 586
+56 - 604
+57 - 455
+58 - 967
+59 - 971
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 569 has 19 employees and value 5276
+HireEmployee: SUCCESS
+GetHighestEarner: FAILURE
+AddEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 766
+1 - 255
+2 - 876
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 403 works at 828 and earns 176 at grade 187
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 259 has 3 employees and value 172
+GetNumEmployeesMatching: SUCCESS. Out of 6, 3 match
+GetHighestEarnerInEachCompany: FAILURE
+AddCompany: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 794
+AddCompany: SUCCESS
+RemoveCompany: FAILURE
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 370 has 1 employees and value 53
+#Running 100 addition commands
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: FAILURE
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+#Running Clear All Structure
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+#Running 100 query commands
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetCompanyInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+#Running 100 removal commands
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+#Running 100 query commands
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetCompanyInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+#Running 100 random commands
+GetNumEmployeesMatching: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: SUCCESS. Company 406 has 0 employees and value 61
+GetHighestEarnerInEachCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 406 has 1 employees and value 79
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+GetHighestEarner: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+PromoteEmployee: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AddCompany: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+PromoteEmployee: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+PromoteEmployee: SUCCESS
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: SUCCESS
+GetCompanyInfo: FAILURE
+HireEmployee: FAILURE
+RemoveCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 99 has 0 employees and value 7
+GetAllEmployeesBySalary: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+RemoveEmployee: SUCCESS
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: SUCCESS
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+GetEmployeeInfo: FAILURE
+HireEmployee: FAILURE
+RemoveEmployee: FAILURE
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 478 has 0 employees and value 22
+GetAllEmployeesBySalary: FAILURE
+AcquireCompany: FAILURE
+GetHighestEarner: FAILURE
+AddCompany: SUCCESS
+#Running 100 addition commands
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+#Running Clear All Structure
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+#Running 100 random commands
+AcquireCompany: FAILURE
+GetCompanyInfo: FAILURE
+AddEmployee: FAILURE
+PromoteEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+PromoteEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+PromoteEmployee: FAILURE
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: FAILURE
+RemoveCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+HireEmployee: FAILURE
+GetHighestEarner: FAILURE
+RemoveCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 216 works at 871 and earns 841 at grade 102
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 826 has 0 employees and value 119
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+AcquireCompany: FAILURE
+AddEmployee: FAILURE
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 871 has 0 employees and value 138
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+GetEmployeeInfo: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 335 has 0 employees and value 90
+HireEmployee: FAILURE
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 60 has 0 employees and value 93
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 826 has 0 employees and value 119
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 826 has 0 employees and value 119
+PromoteEmployee: FAILURE
+HireEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 826 has 0 employees and value 164
+GetCompanyInfo: SUCCESS. Company 335 has 0 employees and value 90
+RemoveCompany: SUCCESS
+RemoveEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 826 has 0 employees and value 164
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 335 has 0 employees and value 90
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 335 has 0 employees and value 90
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 335 has 0 employees and value 90
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: FAILURE
+AcquireCompany: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+HireEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: FAILURE
+#Running 33 removal commands
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+Quit done

@@ -1,0 +1,1006 @@
+#Test: BasicInorderMidTest. NumCommands: 1000. MinInt: -20. MaxInt: 1000. Seed: 6421424474937348971.
+Init done
+#Starting with 500 SUCCESS commands
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 704 has 0 employees and value 42
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 901 works at 704 and earns 840 at grade 294
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 173 works at 711 and earns 554 at grade 73
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 173 works at 711 and earns 554 at grade 73
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 711 has 1 employees and value 128
+GetCompanyInfo: SUCCESS. Company 711 has 1 employees and value 128
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 198 works at 711 and earns 560 at grade 672
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 711 has 2 employees and value 128
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 711 has 0 employees and value 128
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 358 works at 711 and earns 1058 at grade 904
+GetEmployeeInfo: SUCCESS. Employee 358 works at 711 and earns 1058 at grade 904
+GetCompanyInfo: SUCCESS. Company 857 has 0 employees and value 59
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 711 has 0 employees and value 128
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 899 has 0 employees and value 95
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 925 has 0 employees and value 80
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 899 has 0 employees and value 131
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 711 has 0 employees and value 229
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 899 has 0 employees and value 131
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 384 works at 485 and earns 103 at grade 869
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 646 has 0 employees and value 12
+GetCompanyInfo: SUCCESS. Company 485 has 2 employees and value 12
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetEmployeeInfo: SUCCESS. Employee 384 works at 485 and earns 605 at grade 870
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 485 has 4 employees and value 197
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 3 match
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 826 has 1 employees and value 164
+GetNumEmployeesMatching: SUCCESS. Out of 3, 1 match
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 826 has 1 employees and value 208
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 485 has 2 employees and value 274
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 867 works at 485 and earns 55 at grade 640
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 485 has 0 employees and value 274
+GetCompanyInfo: SUCCESS. Company 485 has 0 employees and value 274
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 485 has 0 employees and value 283
+GetCompanyInfo: SUCCESS. Company 691 has 0 employees and value 64
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 104 has 0 employees and value 85
+GetCompanyInfo: SUCCESS. Company 533 has 0 employees and value 46
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 104 has 1 employees and value 85
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 456 works at 719 and earns 808 at grade 669
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetEmployeeInfo: SUCCESS. Employee 785 works at 719 and earns 2745 at grade 673
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 456 works at 533 and earns 1430 at grade 670
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 944 has 0 employees and value 21
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 944 has 0 employees and value 21
+GetCompanyInfo: SUCCESS. Company 944 has 0 employees and value 21
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetEmployeeInfo: SUCCESS. Employee 905 works at 719 and earns 844 at grade 34
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 752 has 0 employees and value 100
+GetCompanyInfo: SUCCESS. Company 944 has 0 employees and value 21
+GetCompanyInfo: SUCCESS. Company 845 has 0 employees and value 90
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 180 has 1 employees and value 48
+GetCompanyInfo: SUCCESS. Company 173 has 0 employees and value 81
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 173 has 0 employees and value 81
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: SUCCESS. Company 180 has 1 employees and value 48
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 395 works at 180 and earns 248 at grade 737
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 46 works at 585 and earns 165 at grade 232
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 46 works at 200 and earns 165 at grade 232
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 585 has 0 employees and value 158
+GetCompanyInfo: SUCCESS. Company 210 has 0 employees and value 41
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 699 has 0 employees and value 70
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetEmployeeInfo: SUCCESS. Employee 695 works at 200 and earns 865 at grade 177
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 46 works at 200 and earns 561 at grade 234
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 695 works at 394 and earns 865 at grade 177
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetEmployeeInfo: SUCCESS. Employee 99 works at 200 and earns 236 at grade 209
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 99 works at 200 and earns 236 at grade 209
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 200 has 2 employees and value 123
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: SUCCESS. Company 200 has 2 employees and value 123
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetCompanyInfo: SUCCESS. Company 394 has 1 employees and value 189
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 394 has 1 employees and value 189
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 200 has 2 employees and value 123
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: SUCCESS. Company 394 has 2 employees and value 230
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+GetCompanyInfo: SUCCESS. Company 820 has 0 employees and value 41
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 177 works at 820 and earns 440 at grade 269
+GetCompanyInfo: SUCCESS. Company 359 has 0 employees and value 46
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 4, 2 match
+GetEmployeeInfo: SUCCESS. Employee 695 works at 200 and earns 865 at grade 177
+GetCompanyInfo: SUCCESS. Company 820 has 1 employees and value 41
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 394 has 2 employees and value 339
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 391 works at 200 and earns 55 at grade 106
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 200 has 2 employees and value 170
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 391 works at 200 and earns 55 at grade 106
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 921 has 1 employees and value 140
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 5, 2 match
+GetEmployeeInfo: SUCCESS. Employee 126 works at 820 and earns 1495 at grade 274
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 921 has 1 employees and value 140
+GetEmployeeInfo: SUCCESS. Employee 391 works at 200 and earns 55 at grade 106
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 921 has 1 employees and value 140
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 820 has 1 employees and value 103
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 820 has 1 employees and value 185
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 921 has 3 employees and value 140
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 820 has 2 employees and value 225
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 4, 2 match
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 391 works at 200 and earns 55 at grade 106
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 1 match
+GetCompanyInfo: SUCCESS. Company 921 has 4 employees and value 203
+GetCompanyInfo: SUCCESS. Company 820 has 2 employees and value 225
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 4, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 2 match
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 4, 1 match
+GetEmployeeInfo: SUCCESS. Employee 187 works at 820 and earns 841 at grade 993
+GetNumEmployeesMatching: SUCCESS. Out of 8, 4 match
+GetEmployeeInfo: SUCCESS. Employee 226 works at 820 and earns 105 at grade 680
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 3, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 3, 1 match
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 4, 1 match
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 926 has 0 employees and value 68
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 5, 3 match
+GetEmployeeInfo: SUCCESS. Employee 249 works at 880 and earns 893 at grade 249
+GetNumEmployeesMatching: SUCCESS. Out of 4, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+#Trying 250 mixed SUCCESS/FAILURE commands
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveCompany: SUCCESS
+RemoveEmployee: FAILURE
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 880 has 1 employees and value 64
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: SUCCESS. Company 926 has 0 employees and value 68
+AddCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: FAILURE
+PromoteEmployee: FAILURE
+HireEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+RemoveCompany: FAILURE
+AddCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+PromoteEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 115 works at 820 and earns 46 at grade 291
+GetNumEmployeesMatching: FAILURE
+IncreaseCompanyValue: FAILURE
+AddCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: FAILURE
+HireEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 5, 1 match
+GetNumEmployeesMatching: FAILURE
+AddEmployee: SUCCESS
+PromoteEmployee: FAILURE
+HireEmployee: SUCCESS
+PromoteEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 200 has 3 employees and value 329
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 3, 1 match
+IncreaseCompanyValue: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetEmployeeInfo: FAILURE
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+IncreaseCompanyValue: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 126 works at 921 and earns 2266 at grade 275
+PromoteEmployee: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 249 works at 880 and earns 893 at grade 249
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetCompanyInfo: SUCCESS. Company 200 has 3 employees and value 329
+AddEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: SUCCESS. Company 200 has 3 employees and value 329
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 874 works at 926 and earns 214 at grade 150
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 2 match
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: FAILURE
+HireEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: FAILURE
+PromoteEmployee: FAILURE
+HireEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 569 works at 200 and earns 1748 at grade 993
+HireEmployee: FAILURE
+RemoveCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 363 has 1 employees and value 75
+AddCompany: FAILURE
+RemoveEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+HireEmployee: FAILURE
+GetCompanyInfo: FAILURE
+AddCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 5, 1 match
+GetCompanyInfo: SUCCESS. Company 915 has 0 employees and value 19
+AddCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+PromoteEmployee: SUCCESS
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 8, 1 match
+GetNumEmployeesMatching: FAILURE
+PromoteEmployee: FAILURE
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 6, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+GetCompanyInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddCompany: SUCCESS
+IncreaseCompanyValue: FAILURE
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 7, 4 match
+GetCompanyInfo: SUCCESS. Company 363 has 2 employees and value 75
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: FAILURE
+HireEmployee: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 367 works at 363 and earns 802 at grade 451
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 4, 1 match
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+HireEmployee: SUCCESS
+AddCompany: FAILURE
+PromoteEmployee: SUCCESS
+HireEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+AddCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+HireEmployee: SUCCESS
+HireEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 391 works at 363 and earns 734 at grade 107
+RemoveEmployee: SUCCESS
+HireEmployee: FAILURE
+GetCompanyInfo: FAILURE
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 820 has 2 employees and value 316
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 9, 1 match
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 5, 3 match
+PromoteEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetCompanyInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+IncreaseCompanyValue: FAILURE
+GetCompanyInfo: SUCCESS. Company 363 has 2 employees and value 75
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 6, 4 match
+AddCompany: SUCCESS
+RemoveEmployee: FAILURE
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 95 works at 921 and earns 1172 at grade 255
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: FAILURE
+HireEmployee: SUCCESS
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+HireEmployee: FAILURE
+AddEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveCompany: SUCCESS
+GetCompanyInfo: FAILURE
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: FAILURE
+HireEmployee: SUCCESS
+AddCompany: FAILURE
+RemoveCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 820 has 3 employees and value 316
+GetNumEmployeesMatching: FAILURE
+#Finishing with 250 SUCCESS commands
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: SUCCESS. Company 921 has 1 employees and value 238
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 8, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetEmployeeInfo: SUCCESS. Employee 874 works at 880 and earns 214 at grade 150
+GetCompanyInfo: SUCCESS. Company 820 has 2 employees and value 316
+GetEmployeeInfo: SUCCESS. Employee 95 works at 910 and earns 1172 at grade 255
+GetCompanyInfo: SUCCESS. Company 363 has 2 employees and value 103
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 910 has 3 employees and value 83
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 921 has 1 employees and value 238
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 8, 5 match
+GetCompanyInfo: SUCCESS. Company 880 has 1 employees and value 64
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetCompanyInfo: SUCCESS. Company 910 has 2 employees and value 83
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 8, 3 match
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 95 works at 910 and earns 1172 at grade 255
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 820 has 2 employees and value 316
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 7, 5 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+GetEmployeeInfo: SUCCESS. Employee 187 works at 910 and earns 1525 at grade 994
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetEmployeeInfo: SUCCESS. Employee 874 works at 125 and earns 214 at grade 150
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 439 has 1 employees and value 79
+GetEmployeeInfo: SUCCESS. Employee 874 works at 125 and earns 214 at grade 150
+GetEmployeeInfo: SUCCESS. Employee 52 works at 880 and earns 250 at grade 51
+GetEmployeeInfo: SUCCESS. Employee 805 works at 208 and earns 152 at grade 101
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 805 works at 208 and earns 152 at grade 101
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 3, 1 match
+GetEmployeeInfo: SUCCESS. Employee 52 works at 880 and earns 250 at grade 51
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 0 match
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 4, 0 match
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 263 works at 820 and earns 305 at grade 676
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 5, 1 match
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 910 works at 907 and earns 242 at grade 639
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetEmployeeInfo: SUCCESS. Employee 874 works at 439 and earns 214 at grade 150
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 874 works at 439 and earns 214 at grade 150
+GetEmployeeInfo: SUCCESS. Employee 910 works at 907 and earns 242 at grade 639
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 126 works at 921 and earns 2526 at grade 276
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 52 works at 907 and earns 482 at grade 52
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 4, 1 match
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 125 has 0 employees and value 88
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 502 has 0 employees and value 59
+GetCompanyInfo: SUCCESS. Company 910 has 0 employees and value 261
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 413 has 0 employees and value 17
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 805 works at 921 and earns 1793 at grade 103
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 52 works at 907 and earns 482 at grade 52
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+GetCompanyInfo: SUCCESS. Company 413 has 0 employees and value 17
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 255 works at 880 and earns 1791 at grade 250
+GetCompanyInfo: SUCCESS. Company 735 has 0 employees and value 89
+GetNumEmployeesMatching: SUCCESS. Out of 3, 1 match
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 255 works at 880 and earns 1791 at grade 250
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 735 has 0 employees and value 89
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 5, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetEmployeeInfo: SUCCESS. Employee 261 works at 502 and earns 362 at grade 433
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 52 works at 907 and earns 482 at grade 52
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: SUCCESS. Company 587 has 0 employees and value 62
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 261 works at 502 and earns 938 at grade 434
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 439 has 0 employees and value 79
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 4, 0 match
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 3, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 2, 2 match
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 141 works at 735 and earns 201 at grade 637
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 3, 0 match
+GetCompanyInfo: SUCCESS. Company 880 has 1 employees and value 123
+GetEmployeeInfo: SUCCESS. Employee 261 works at 674 and earns 938 at grade 434
+GetCompanyInfo: SUCCESS. Company 157 has 0 employees and value 124
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+Quit done

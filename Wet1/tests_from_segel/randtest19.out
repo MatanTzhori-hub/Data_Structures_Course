@@ -1,0 +1,5528 @@
+#Test: RandomXTest. NumCommands: 2000. MinInt: -100. MaxInt: 1000. Seed: 4527941960361222388.
+Init done
+#Running 100 random commands
+PromoteEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+HireEmployee: FAILURE
+GetAllEmployeesBySalary: FAILURE
+AddCompany: SUCCESS
+GetHighestEarner: FAILURE
+RemoveEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+HireEmployee: FAILURE
+RemoveEmployee: FAILURE
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+AcquireCompany: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: SUCCESS
+HireEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+HireEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 105 has 0 employees and value 29
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+PromoteEmployee: FAILURE
+PromoteEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+HireEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 105 has 0 employees and value 29
+GetHighestEarner: FAILURE
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 671 works at 105 and earns 562 at grade 67
+GetAllEmployeesBySalary: FAILURE
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+RemoveEmployee: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: SUCCESS. Company 105 has 0 employees and value 29
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 105 has 0 employees and value 29
+RemoveEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: FAILURE
+AcquireCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+HireEmployee: FAILURE
+AddEmployee: FAILURE
+HireEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+AddCompany: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: FAILURE
+RemoveEmployee: SUCCESS
+GetHighestEarner: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+GetEmployeeInfo: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+#Running 100 query commands
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 640 has 0 employees and value 88
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: SUCCESS. Company 640 has 0 employees and value 88
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 640 has 0 employees and value 88
+GetHighestEarner: FAILURE
+GetCompanyInfo: SUCCESS. Company 640 has 0 employees and value 88
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 640 has 0 employees and value 88
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetCompanyInfo: SUCCESS. Company 153 has 0 employees and value 121
+GetAllEmployeesBySalary: FAILURE
+GetCompanyInfo: SUCCESS. Company 153 has 0 employees and value 121
+GetCompanyInfo: SUCCESS. Company 640 has 0 employees and value 88
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetCompanyInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetEmployeeInfo: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: FAILURE
+GetCompanyInfo: SUCCESS. Company 153 has 0 employees and value 121
+GetAllEmployeesBySalary: FAILURE
+GetCompanyInfo: SUCCESS. Company 153 has 0 employees and value 121
+GetHighestEarner: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+#Running 100 addition commands
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+#Running 100 mutation commands
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: FAILURE
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: FAILURE
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: FAILURE
+RemoveCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: FAILURE
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+HireEmployee: FAILURE
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+#Running 100 addition commands
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+#Running 100 query commands
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 330
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 497
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+GetHighestEarner: FAILURE
+GetCompanyInfo: SUCCESS. Company 205 has 3 employees and value 32
+GetHighestEarner: SUCCESS. Highest earner is 20
+GetCompanyInfo: SUCCESS. Company 982 has 3 employees and value 172
+GetEmployeeInfo: SUCCESS. Employee 85 works at 426 and earns 969 at grade 792
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 497
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+GetCompanyInfo: SUCCESS. Company 659 has 2 employees and value 69
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 396
+4 - 20
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 951
+43 - 345
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 541
+68 - 593
+69 - 120
+70 - 929
+71 - 833
+72 - 964
+73 - 66
+74 - 110
+75 - 873
+76 - 973
+77 - 497
+78 - 877
+79 - 965
+80 - 675
+81 - 588
+82 - 768
+83 - 398
+84 - 842
+85 - 759
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 396
+4 - 20
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 951
+43 - 345
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 541
+68 - 593
+69 - 120
+70 - 929
+71 - 833
+72 - 964
+73 - 66
+74 - 110
+75 - 873
+76 - 973
+77 - 497
+78 - 877
+79 - 965
+80 - 675
+81 - 588
+82 - 768
+83 - 398
+84 - 842
+85 - 759
+GetEmployeeInfo: SUCCESS. Employee 864 works at 361 and earns 463 at grade 922
+GetCompanyInfo: SUCCESS. Company 734 has 2 employees and value 39
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 396
+4 - 20
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 951
+43 - 345
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 541
+68 - 593
+69 - 120
+70 - 929
+71 - 833
+72 - 964
+73 - 66
+74 - 110
+75 - 873
+76 - 973
+77 - 497
+78 - 877
+79 - 965
+80 - 675
+81 - 588
+82 - 768
+83 - 398
+84 - 842
+85 - 759
+GetHighestEarnerInEachCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetHighestEarner: SUCCESS. Highest earner is 62
+GetEmployeeInfo: SUCCESS. Employee 850 works at 790 and earns 643 at grade 497
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+29 - 271
+30 - 661
+31 - 521
+32 - 676
+33 - 75
+34 - 598
+35 - 776
+36 - 917
+37 - 715
+38 - 615
+39 - 330
+40 - 60
+GetEmployeeInfo: SUCCESS. Employee 881 works at 472 and earns 748 at grade 572
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetCompanyInfo: SUCCESS. Company 848 has 0 employees and value 20
+GetHighestEarner: SUCCESS. Highest earner is 715
+GetCompanyInfo: SUCCESS. Company 560 has 0 employees and value 12
+GetNumEmployeesMatching: SUCCESS. Out of 51, 25 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 49
+1 - 697
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+GetNumEmployeesMatching: SUCCESS. Out of 73, 1 match
+GetCompanyInfo: SUCCESS. Company 835 has 0 employees and value 83
+GetEmployeeInfo: SUCCESS. Employee 675 works at 87 and earns 80 at grade 409
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+GetEmployeeInfo: SUCCESS. Employee 871 works at 153 and earns 396 at grade 11
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 396
+4 - 20
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 951
+43 - 345
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 541
+68 - 593
+69 - 120
+70 - 929
+71 - 833
+72 - 964
+73 - 66
+74 - 110
+75 - 873
+76 - 973
+77 - 497
+78 - 877
+79 - 965
+80 - 675
+81 - 588
+82 - 768
+83 - 398
+84 - 842
+85 - 759
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetEmployeeInfo: SUCCESS. Employee 443 works at 296 and earns 594 at grade 33
+GetNumEmployeesMatching: SUCCESS. Out of 28, 0 match
+GetEmployeeInfo: SUCCESS. Employee 476 works at 536 and earns 886 at grade 309
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetCompanyInfo: SUCCESS. Company 396 has 1 employees and value 43
+GetNumEmployeesMatching: SUCCESS. Out of 13, 3 match
+GetHighestEarner: SUCCESS. Highest earner is 271
+GetHighestEarner: SUCCESS. Highest earner is 398
+GetHighestEarner: SUCCESS. Highest earner is 917
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 476
+1 - 877
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+GetNumEmployeesMatching: SUCCESS. Out of 29, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 79, 0 match
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 396
+4 - 20
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 951
+43 - 345
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 541
+68 - 593
+69 - 120
+70 - 929
+71 - 833
+72 - 964
+73 - 66
+74 - 110
+75 - 873
+76 - 973
+77 - 497
+78 - 877
+79 - 965
+80 - 675
+81 - 588
+82 - 768
+83 - 398
+84 - 842
+85 - 759
+GetEmployeeInfo: SUCCESS. Employee 350 works at 659 and earns 630 at grade 928
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+GetCompanyInfo: SUCCESS. Company 930 has 0 employees and value 74
+GetNumEmployeesMatching: SUCCESS. Out of 43, 20 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 136
+GetEmployeeInfo: SUCCESS. Employee 842 works at 657 and earns 21 at grade 332
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 396
+4 - 20
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 951
+43 - 345
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 541
+68 - 593
+69 - 120
+70 - 929
+71 - 833
+72 - 964
+73 - 66
+74 - 110
+75 - 873
+76 - 973
+77 - 497
+78 - 877
+79 - 965
+80 - 675
+81 - 588
+82 - 768
+83 - 398
+84 - 842
+85 - 759
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetCompanyInfo: SUCCESS. Company 461 has 0 employees and value 76
+GetCompanyInfo: SUCCESS. Company 790 has 3 employees and value 87
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+29 - 271
+30 - 661
+31 - 521
+32 - 676
+33 - 75
+34 - 598
+35 - 776
+36 - 917
+37 - 715
+38 - 615
+39 - 330
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+29 - 271
+30 - 661
+31 - 521
+32 - 676
+33 - 75
+34 - 598
+35 - 776
+36 - 917
+37 - 715
+GetNumEmployeesMatching: SUCCESS. Out of 17, 3 match
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+29 - 271
+30 - 661
+31 - 521
+32 - 676
+33 - 75
+34 - 598
+35 - 776
+36 - 917
+GetNumEmployeesMatching: SUCCESS. Out of 25, 3 match
+GetCompanyInfo: SUCCESS. Company 757 has 3 employees and value 24
+GetAllEmployeesBySalary: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetHighestEarner: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 396
+4 - 20
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 951
+43 - 345
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 541
+68 - 593
+69 - 120
+70 - 929
+71 - 833
+72 - 964
+73 - 66
+74 - 110
+75 - 873
+76 - 973
+77 - 497
+78 - 877
+79 - 965
+80 - 675
+81 - 588
+82 - 768
+83 - 398
+84 - 842
+85 - 759
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetNumEmployeesMatching: SUCCESS. Out of 4, 0 match
+GetCompanyInfo: SUCCESS. Company 453 has 0 employees and value 16
+GetCompanyInfo: SUCCESS. Company 640 has 5 employees and value 209
+GetEmployeeInfo: SUCCESS. Employee 476 works at 536 and earns 886 at grade 309
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+29 - 271
+30 - 661
+31 - 521
+32 - 676
+33 - 75
+34 - 598
+35 - 776
+GetHighestEarner: SUCCESS. Highest earner is 776
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+29 - 271
+30 - 661
+31 - 521
+32 - 676
+33 - 75
+34 - 598
+GetNumEmployeesMatching: SUCCESS. Out of 15, 6 match
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+29 - 271
+30 - 661
+31 - 521
+32 - 676
+33 - 75
+34 - 598
+35 - 776
+36 - 917
+37 - 715
+38 - 615
+39 - 330
+40 - 60
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 917
+1 - 964
+2 - 66
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 951
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 881
+17 - 446
+18 - 345
+19 - 398
+20 - 476
+21 - 805
+22 - 396
+23 - 136
+24 - 44
+25 - 638
+26 - 317
+27 - 20
+28 - 62
+29 - 271
+30 - 661
+31 - 521
+32 - 676
+33 - 75
+34 - 598
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 60
+1 - 578
+2 - 32
+GetNumEmployeesMatching: SUCCESS. Out of 8, 3 match
+#Running 100 random commands
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 20
+4 - 396
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 345
+43 - 59
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 137
+68 - 541
+69 - 593
+70 - 120
+71 - 929
+72 - 833
+73 - 964
+74 - 66
+75 - 110
+76 - 873
+77 - 973
+78 - 497
+79 - 877
+80 - 965
+81 - 675
+82 - 588
+83 - 768
+84 - 398
+85 - 842
+86 - 759
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 20
+4 - 396
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 345
+43 - 59
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 137
+68 - 541
+69 - 593
+70 - 120
+71 - 929
+72 - 833
+73 - 964
+74 - 66
+75 - 110
+76 - 873
+77 - 973
+78 - 497
+79 - 877
+80 - 965
+81 - 675
+82 - 588
+83 - 768
+84 - 398
+85 - 842
+86 - 759
+RemoveEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 871
+GetNumEmployeesMatching: SUCCESS. Out of 6, 2 match
+GetEmployeeInfo: FAILURE
+HireEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 232
+8 - 619
+9 - 120
+10 - 968
+11 - 497
+12 - 864
+13 - 49
+14 - 153
+15 - 526
+16 - 85
+17 - 881
+18 - 446
+19 - 345
+20 - 398
+21 - 476
+22 - 805
+23 - 396
+24 - 136
+25 - 44
+26 - 638
+27 - 317
+28 - 20
+29 - 62
+30 - 271
+31 - 661
+32 - 521
+33 - 676
+34 - 75
+35 - 598
+36 - 59
+37 - 776
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 930 has 0 employees and value 74
+GetHighestEarner: SUCCESS. Highest earner is 521
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 19 has 0 employees and value 90
+GetNumEmployeesMatching: SUCCESS. Out of 28, 10 match
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 20
+4 - 396
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 443
+39 - 526
+40 - 468
+41 - 801
+42 - 345
+43 - 59
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 770
+51 - 651
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 32
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 137
+68 - 541
+69 - 593
+70 - 120
+71 - 929
+72 - 833
+73 - 964
+74 - 66
+75 - 110
+76 - 873
+77 - 973
+78 - 497
+79 - 877
+80 - 965
+81 - 675
+82 - 588
+83 - 398
+84 - 842
+85 - 759
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AcquireCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 871
+1 - 541
+AddCompany: FAILURE
+PromoteEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 864
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 109
+GetNumEmployeesMatching: SUCCESS. Out of 36, 0 match
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 917
+2 - 439
+3 - 20
+4 - 396
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 330
+11 - 109
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 661
+19 - 410
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 851
+32 - 492
+33 - 615
+34 - 759
+35 - 850
+36 - 75
+37 - 350
+38 - 202
+39 - 443
+40 - 526
+41 - 468
+42 - 801
+43 - 345
+44 - 59
+45 - 25
+46 - 317
+47 - 153
+48 - 711
+49 - 73
+50 - 864
+51 - 398
+52 - 770
+53 - 651
+54 - 232
+55 - 645
+56 - 871
+57 - 691
+58 - 598
+59 - 32
+60 - 961
+61 - 47
+62 - 271
+63 - 924
+64 - 62
+65 - 799
+66 - 800
+67 - 715
+68 - 136
+69 - 137
+70 - 541
+71 - 593
+72 - 120
+73 - 929
+74 - 833
+75 - 964
+76 - 66
+77 - 110
+78 - 873
+79 - 973
+80 - 497
+81 - 127
+82 - 877
+83 - 965
+84 - 675
+85 - 588
+86 - 842
+AddEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+PromoteEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 109
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 232
+8 - 619
+9 - 120
+10 - 968
+11 - 497
+12 - 864
+13 - 49
+14 - 153
+15 - 526
+16 - 85
+17 - 127
+18 - 881
+19 - 851
+20 - 345
+21 - 398
+22 - 476
+23 - 805
+24 - 396
+25 - 136
+26 - 44
+27 - 638
+28 - 317
+29 - 20
+30 - 759
+31 - 271
+32 - 661
+33 - 521
+34 - 676
+35 - 75
+36 - 598
+37 - 59
+GetHighestEarner: SUCCESS. Highest earner is 521
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 136
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 6, 3 match
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 645
+2 - 845
+3 - 73
+4 - 439
+5 - 871
+6 - 691
+7 - 232
+8 - 619
+9 - 968
+10 - 497
+11 - 864
+12 - 49
+13 - 153
+14 - 526
+15 - 85
+16 - 127
+17 - 558
+18 - 881
+19 - 851
+20 - 921
+21 - 345
+22 - 820
+23 - 476
+24 - 805
+25 - 530
+26 - 396
+27 - 136
+28 - 44
+29 - 638
+30 - 317
+31 - 20
+32 - 759
+33 - 271
+34 - 661
+35 - 521
+36 - 676
+37 - 75
+38 - 598
+39 - 59
+40 - 776
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetCompanyInfo: SUCCESS. Company 935 has 0 employees and value 22
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 11, 1 match
+GetHighestEarner: FAILURE
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 85
+GetEmployeeInfo: SUCCESS. Employee 345 works at 499 and earns 555 at grade 462
+AddEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 205 has 2 employees and value 32
+AcquireCompany: FAILURE
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 497 has 1 employees and value 67
+GetHighestEarner: SUCCESS. Highest earner is 521
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 521
+HireEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 439
+2 - 851
+3 - 20
+4 - 593
+5 - 316
+6 - 638
+7 - 805
+8 - 85
+9 - 44
+10 - 676
+11 - 38
+12 - 60
+13 - 476
+14 - 776
+15 - 49
+16 - 661
+17 - 410
+18 - 558
+19 - 697
+20 - 578
+21 - 619
+22 - 881
+23 - 300
+24 - 968
+25 - 845
+26 - 979
+27 - 446
+28 - 921
+29 - 511
+30 - 613
+31 - 492
+32 - 615
+33 - 759
+34 - 850
+35 - 75
+36 - 350
+37 - 202
+38 - 530
+39 - 443
+40 - 468
+41 - 345
+42 - 59
+43 - 25
+44 - 317
+45 - 153
+46 - 711
+47 - 73
+48 - 864
+49 - 398
+50 - 943
+51 - 770
+52 - 651
+53 - 232
+54 - 645
+55 - 871
+56 - 691
+57 - 598
+58 - 32
+59 - 961
+60 - 47
+61 - 271
+62 - 924
+63 - 62
+64 - 799
+65 - 800
+66 - 715
+67 - 136
+68 - 137
+69 - 541
+70 - 929
+71 - 833
+72 - 964
+73 - 66
+74 - 110
+75 - 820
+76 - 973
+77 - 497
+78 - 127
+79 - 877
+80 - 675
+81 - 588
+82 - 842
+AcquireCompany: SUCCESS
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 935 has 0 employees and value 22
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+#Running 100 random commands
+GetEmployeeInfo: FAILURE
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 536 has 2 employees and value 49
+GetCompanyInfo: SUCCESS. Company 495 has 0 employees and value 15
+GetHighestEarner: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 60
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 59
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 598
+AcquireCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 661
+2 - 439
+3 - 851
+4 - 345
+5 - 20
+6 - 593
+7 - 316
+8 - 638
+9 - 805
+10 - 85
+11 - 44
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 410
+19 - 558
+20 - 697
+21 - 578
+22 - 619
+23 - 881
+24 - 300
+25 - 968
+26 - 845
+27 - 979
+28 - 446
+29 - 921
+30 - 511
+31 - 613
+32 - 492
+33 - 615
+34 - 759
+35 - 850
+36 - 75
+37 - 350
+38 - 964
+39 - 202
+40 - 530
+41 - 443
+42 - 468
+43 - 59
+44 - 25
+45 - 317
+46 - 153
+47 - 711
+48 - 73
+49 - 864
+50 - 398
+51 - 943
+52 - 770
+53 - 651
+54 - 232
+55 - 645
+56 - 871
+57 - 691
+58 - 598
+59 - 32
+60 - 961
+61 - 47
+62 - 271
+63 - 924
+64 - 62
+65 - 799
+66 - 800
+67 - 715
+68 - 136
+69 - 137
+70 - 541
+71 - 929
+72 - 833
+73 - 66
+74 - 110
+75 - 820
+76 - 973
+77 - 497
+78 - 127
+79 - 877
+80 - 675
+81 - 735
+82 - 588
+83 - 842
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 412 has 0 employees and value 184
+AcquireCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 439
+1 - 20
+2 - 979
+3 - 25
+4 - 47
+5 - 800
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 645
+2 - 845
+3 - 73
+4 - 439
+5 - 202
+6 - 943
+7 - 871
+8 - 232
+9 - 619
+10 - 410
+11 - 443
+12 - 497
+13 - 864
+14 - 49
+15 - 153
+16 - 85
+17 - 127
+18 - 558
+19 - 881
+20 - 851
+21 - 921
+22 - 345
+23 - 820
+24 - 476
+25 - 805
+26 - 968
+27 - 38
+28 - 136
+GetHighestEarner: SUCCESS. Highest earner is 805
+PromoteEmployee: FAILURE
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 44
+HireEmployee: FAILURE
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 296 has 2 employees and value 73
+GetAllEmployeesBySalary: FAILURE
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 232 works at 205 and earns 416 at grade 982
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 620 has 2 employees and value 97
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 661
+2 - 711
+3 - 638
+4 - 439
+5 - 851
+6 - 345
+7 - 20
+8 - 316
+9 - 805
+10 - 85
+11 - 44
+12 - 676
+13 - 38
+14 - 60
+15 - 476
+16 - 776
+17 - 49
+18 - 759
+19 - 410
+20 - 558
+21 - 697
+22 - 578
+23 - 619
+24 - 881
+25 - 300
+26 - 968
+27 - 845
+28 - 979
+29 - 446
+30 - 921
+31 - 613
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 964
+38 - 202
+39 - 530
+40 - 443
+41 - 468
+42 - 59
+43 - 25
+44 - 317
+45 - 153
+46 - 32
+47 - 73
+48 - 864
+49 - 398
+50 - 943
+51 - 770
+52 - 651
+53 - 232
+54 - 645
+55 - 871
+56 - 691
+57 - 598
+58 - 961
+59 - 47
+60 - 271
+61 - 924
+62 - 62
+63 - 799
+64 - 800
+65 - 715
+66 - 136
+67 - 137
+68 - 541
+69 - 929
+70 - 833
+71 - 66
+72 - 110
+73 - 820
+74 - 973
+75 - 497
+76 - 127
+77 - 877
+78 - 675
+79 - 735
+80 - 588
+81 - 842
+PromoteEmployee: FAILURE
+PromoteEmployee: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 645
+2 - 845
+3 - 73
+4 - 439
+5 - 202
+6 - 943
+7 - 871
+8 - 232
+9 - 619
+10 - 410
+11 - 443
+12 - 497
+13 - 864
+14 - 49
+15 - 153
+16 - 85
+17 - 127
+18 - 558
+19 - 881
+20 - 851
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+GetHighestEarner: SUCCESS. Highest earner is 232
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: FAILURE
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 645
+2 - 845
+3 - 73
+4 - 439
+5 - 202
+6 - 943
+7 - 871
+8 - 232
+9 - 619
+10 - 410
+11 - 443
+12 - 497
+13 - 864
+14 - 49
+15 - 153
+16 - 85
+17 - 127
+18 - 558
+19 - 881
+20 - 851
+21 - 921
+22 - 345
+23 - 820
+24 - 476
+25 - 805
+26 - 968
+27 - 38
+28 - 136
+29 - 44
+30 - 638
+31 - 317
+32 - 973
+33 - 711
+34 - 759
+35 - 271
+36 - 661
+37 - 521
+38 - 676
+39 - 75
+40 - 598
+41 - 59
+42 - 776
+43 - 964
+44 - 715
+45 - 691
+46 - 300
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 661
+2 - 410
+3 - 711
+4 - 638
+5 - 439
+6 - 851
+7 - 345
+8 - 20
+9 - 316
+10 - 805
+11 - 85
+12 - 44
+13 - 676
+14 - 38
+15 - 60
+16 - 476
+17 - 776
+18 - 49
+19 - 759
+20 - 558
+21 - 697
+22 - 578
+23 - 619
+24 - 881
+25 - 300
+26 - 968
+27 - 845
+28 - 979
+29 - 446
+30 - 921
+31 - 613
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 964
+38 - 202
+39 - 530
+40 - 443
+41 - 468
+42 - 23
+43 - 59
+44 - 25
+45 - 317
+46 - 153
+47 - 32
+48 - 73
+49 - 864
+50 - 398
+51 - 943
+52 - 770
+53 - 232
+54 - 645
+55 - 871
+56 - 691
+57 - 598
+58 - 961
+59 - 47
+60 - 271
+61 - 715
+62 - 924
+63 - 62
+64 - 799
+65 - 800
+66 - 136
+67 - 137
+68 - 541
+69 - 929
+70 - 833
+71 - 66
+72 - 110
+73 - 820
+74 - 973
+75 - 497
+76 - 127
+77 - 877
+78 - 675
+79 - 735
+80 - 588
+81 - 842
+AddEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 943 works at 147 and earns 450 at grade 468
+RemoveEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 645
+2 - 845
+3 - 73
+4 - 439
+5 - 202
+6 - 943
+7 - 871
+8 - 232
+9 - 619
+10 - 410
+11 - 443
+12 - 497
+13 - 864
+14 - 697
+15 - 153
+16 - 85
+17 - 127
+18 - 558
+19 - 881
+20 - 851
+21 - 921
+22 - 345
+23 - 820
+24 - 476
+25 - 79
+26 - 805
+27 - 968
+28 - 38
+29 - 136
+30 - 44
+31 - 638
+32 - 317
+33 - 973
+34 - 711
+35 - 759
+36 - 271
+37 - 661
+38 - 521
+39 - 676
+40 - 75
+41 - 598
+42 - 59
+43 - 776
+44 - 49
+45 - 715
+46 - 691
+47 - 300
+48 - 615
+RemoveCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 231 has 0 employees and value 74
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 619 works at 229 and earns 756 at grade 96
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 23, 20 match
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 757 has 2 employees and value 24
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 921 works at 497 and earns 715 at grade 621
+GetNumEmployeesMatching: SUCCESS. Out of 12, 8 match
+AddCompany: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetHighestEarner: SUCCESS. Highest earner is 521
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+#Running 100 random commands
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+GetAllEmployeesBySalary: FAILURE
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 136 works at 644 and earns 284 at grade 499
+GetCompanyInfo: SUCCESS. Company 640 has 2 employees and value 348
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 979 works at 120 and earns 1020 at grade 33
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 258
+2 - 645
+3 - 845
+4 - 73
+AcquireCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 661
+2 - 79
+3 - 410
+4 - 153
+5 - 711
+6 - 638
+7 - 439
+8 - 851
+9 - 345
+10 - 845
+11 - 20
+12 - 979
+13 - 316
+14 - 44
+15 - 676
+16 - 60
+17 - 476
+18 - 776
+19 - 49
+20 - 759
+21 - 558
+22 - 697
+23 - 578
+24 - 619
+25 - 881
+26 - 300
+27 - 446
+28 - 562
+29 - 329
+30 - 921
+31 - 588
+32 - 492
+33 - 615
+34 - 850
+35 - 75
+36 - 350
+37 - 964
+38 - 202
+39 - 530
+40 - 468
+41 - 23
+42 - 258
+43 - 59
+44 - 25
+45 - 317
+46 - 32
+47 - 73
+48 - 864
+49 - 398
+50 - 943
+51 - 770
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 961
+58 - 799
+59 - 271
+60 - 715
+61 - 924
+62 - 62
+63 - 800
+64 - 136
+65 - 137
+66 - 541
+67 - 929
+68 - 833
+69 - 66
+70 - 973
+71 - 497
+72 - 940
+73 - 127
+74 - 877
+75 - 735
+76 - 842
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 10, 6 match
+PromoteEmployee: SUCCESS
+RemoveCompany: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 16, 4 match
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 22, 2 match
+GetNumEmployeesMatching: SUCCESS. Out of 73, 9 match
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 258
+2 - 645
+3 - 845
+4 - 73
+5 - 329
+6 - 439
+7 - 943
+8 - 871
+9 - 232
+10 - 588
+11 - 410
+12 - 137
+13 - 497
+14 - 864
+15 - 697
+16 - 153
+17 - 127
+18 - 558
+19 - 881
+20 - 851
+21 - 921
+22 - 345
+23 - 476
+24 - 79
+25 - 530
+26 - 202
+27 - 136
+28 - 44
+29 - 638
+30 - 924
+31 - 973
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 588 works at 231 and earns 697 at grade 34
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 961 works at 205 and earns 376 at grade 521
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetEmployeeInfo: SUCCESS. Employee 598 works at 837 and earns 385 at grade 518
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 0 match
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 8, 6 match
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 410
+1 - 521
+2 - 153
+3 - 79
+4 - 711
+5 - 638
+6 - 439
+7 - 851
+8 - 345
+9 - 845
+10 - 20
+11 - 202
+12 - 979
+13 - 316
+14 - 44
+15 - 676
+16 - 60
+17 - 476
+18 - 776
+19 - 49
+20 - 759
+21 - 924
+22 - 558
+23 - 697
+24 - 578
+25 - 619
+26 - 881
+27 - 300
+28 - 446
+29 - 562
+30 - 329
+31 - 921
+32 - 588
+33 - 492
+34 - 615
+35 - 850
+36 - 75
+37 - 350
+38 - 964
+39 - 530
+40 - 468
+41 - 258
+42 - 433
+43 - 59
+44 - 25
+45 - 317
+46 - 32
+47 - 73
+48 - 864
+49 - 398
+50 - 943
+51 - 770
+52 - 232
+53 - 645
+54 - 871
+55 - 691
+56 - 598
+57 - 961
+58 - 799
+59 - 271
+60 - 715
+61 - 62
+62 - 800
+63 - 333
+64 - 136
+65 - 541
+66 - 833
+67 - 66
+68 - 973
+69 - 497
+70 - 940
+71 - 127
+72 - 877
+73 - 735
+74 - 842
+75 - 705
+HireEmployee: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 66 works at 901 and earns 168 at grade 181
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 49 works at 901 and earns 813 at grade 626
+AcquireCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 851
+1 - 446
+HireEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 924 works at 665 and earns 773 at grade 152
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 521
+1 - 770
+2 - 799
+GetHighestEarner: SUCCESS. Highest earner is 961
+PromoteEmployee: SUCCESS
+HireEmployee: FAILURE
+GetNumEmployeesMatching: SUCCESS. Out of 45, 6 match
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 410
+HireEmployee: FAILURE
+GetHighestEarner: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 127 works at 432 and earns 107 at grade 900
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 410
+1 - 521
+2 - 638
+3 - 153
+4 - 79
+5 - 711
+6 - 439
+7 - 851
+8 - 345
+9 - 845
+10 - 20
+11 - 562
+12 - 202
+13 - 979
+14 - 316
+15 - 44
+16 - 676
+17 - 60
+18 - 476
+19 - 776
+20 - 49
+21 - 759
+22 - 924
+23 - 558
+24 - 697
+25 - 578
+26 - 619
+27 - 881
+28 - 300
+29 - 446
+30 - 329
+31 - 921
+32 - 588
+33 - 492
+34 - 615
+35 - 850
+36 - 75
+37 - 350
+38 - 964
+39 - 530
+40 - 468
+41 - 258
+42 - 433
+43 - 59
+44 - 25
+45 - 317
+46 - 32
+47 - 73
+48 - 864
+49 - 398
+50 - 943
+51 - 770
+52 - 232
+53 - 645
+54 - 871
+55 - 926
+56 - 691
+57 - 598
+58 - 961
+59 - 799
+60 - 271
+61 - 715
+62 - 62
+63 - 800
+64 - 333
+65 - 136
+66 - 541
+67 - 833
+68 - 66
+69 - 973
+70 - 497
+71 - 940
+72 - 127
+73 - 877
+74 - 735
+75 - 842
+76 - 705
+HireEmployee: FAILURE
+#Running 100 addition commands
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+#Running 100 random commands
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 885
+2 - 258
+3 - 674
+4 - 496
+5 - 845
+6 - 995
+7 - 329
+8 - 232
+9 - 473
+10 - 439
+11 - 48
+12 - 943
+13 - 871
+14 - 961
+15 - 588
+16 - 696
+17 - 410
+18 - 267
+19 - 562
+20 - 62
+21 - 864
+22 - 319
+23 - 697
+24 - 153
+25 - 555
+26 - 326
+27 - 934
+28 - 909
+29 - 127
+30 - 132
+31 - 881
+32 - 851
+33 - 921
+34 - 345
+35 - 476
+36 - 79
+37 - 487
+38 - 530
+39 - 202
+40 - 949
+41 - 44
+42 - 638
+43 - 641
+44 - 184
+45 - 518
+46 - 336
+47 - 711
+48 - 759
+49 - 271
+50 - 521
+51 - 257
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 885
+2 - 258
+3 - 674
+4 - 496
+5 - 845
+6 - 995
+7 - 329
+8 - 232
+9 - 473
+10 - 439
+11 - 48
+12 - 943
+13 - 871
+14 - 961
+15 - 588
+16 - 696
+17 - 410
+18 - 267
+19 - 562
+20 - 62
+21 - 864
+22 - 319
+23 - 697
+24 - 153
+25 - 555
+26 - 326
+27 - 934
+28 - 909
+29 - 127
+30 - 132
+31 - 881
+32 - 851
+AddCompany: SUCCESS
+AddCompany: FAILURE
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 767 has 4 employees and value 74
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 640 has 1 employees and value 348
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 153 works at 396 and earns 1711 at grade 492
+GetAllEmployeesBySalary: FAILURE
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 30, 6 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: SUCCESS. Company 695 has 1 employees and value 74
+AcquireCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 885
+2 - 258
+3 - 674
+4 - 496
+5 - 845
+6 - 995
+7 - 329
+8 - 232
+9 - 473
+10 - 439
+11 - 48
+12 - 943
+13 - 871
+14 - 961
+15 - 588
+16 - 696
+17 - 410
+18 - 267
+19 - 562
+20 - 62
+21 - 864
+22 - 319
+23 - 697
+24 - 153
+25 - 555
+26 - 326
+27 - 934
+28 - 909
+29 - 127
+30 - 132
+31 - 881
+32 - 851
+33 - 921
+34 - 345
+35 - 476
+36 - 103
+37 - 487
+38 - 530
+39 - 202
+40 - 949
+41 - 44
+42 - 638
+43 - 641
+44 - 184
+45 - 518
+46 - 336
+47 - 711
+48 - 79
+49 - 271
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 11, 2 match
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 885
+2 - 258
+3 - 674
+4 - 496
+5 - 845
+6 - 995
+7 - 329
+8 - 232
+9 - 473
+10 - 439
+11 - 48
+12 - 943
+13 - 871
+14 - 961
+15 - 588
+16 - 696
+17 - 410
+18 - 267
+19 - 562
+20 - 62
+21 - 864
+22 - 319
+23 - 697
+24 - 153
+25 - 555
+26 - 326
+27 - 934
+28 - 909
+29 - 127
+30 - 132
+31 - 881
+32 - 851
+33 - 921
+34 - 345
+35 - 476
+36 - 103
+37 - 487
+38 - 530
+39 - 202
+40 - 949
+41 - 44
+42 - 638
+43 - 641
+44 - 184
+45 - 518
+46 - 336
+47 - 711
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 12, 1 match
+AcquireCompany: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 497 works at 326 and earns 137 at grade 431
+GetHighestEarner: SUCCESS. Highest earner is 257
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 410
+1 - 521
+2 - 638
+3 - 99
+4 - 153
+5 - 79
+6 - 711
+7 - 439
+8 - 851
+9 - 345
+10 - 845
+11 - 20
+12 - 562
+13 - 202
+14 - 979
+15 - 436
+16 - 478
+17 - 316
+18 - 648
+19 - 44
+20 - 473
+21 - 856
+22 - 676
+23 - 60
+24 - 132
+25 - 476
+26 - 696
+27 - 613
+28 - 496
+29 - 776
+30 - 49
+31 - 188
+32 - 641
+33 - 759
+34 - 924
+35 - 558
+36 - 697
+37 - 578
+38 - 619
+39 - 881
+40 - 300
+41 - 446
+42 - 815
+43 - 791
+44 - 650
+45 - 329
+46 - 921
+47 - 319
+48 - 588
+49 - 27
+50 - 492
+51 - 615
+52 - 850
+53 - 151
+54 - 442
+55 - 75
+56 - 257
+57 - 350
+58 - 964
+59 - 632
+60 - 556
+61 - 530
+62 - 674
+63 - 885
+64 - 468
+65 - 559
+66 - 258
+67 - 434
+68 - 103
+69 - 433
+70 - 59
+71 - 25
+72 - 949
+73 - 317
+74 - 267
+75 - 32
+76 - 73
+77 - 864
+78 - 398
+79 - 934
+80 - 326
+81 - 943
+82 - 770
+83 - 232
+84 - 995
+85 - 518
+86 - 645
+87 - 871
+88 - 926
+89 - 691
+90 - 598
+91 - 336
+92 - 961
+93 - 799
+94 - 271
+95 - 347
+96 - 655
+97 - 715
+98 - 62
+99 - 800
+100 - 663
+101 - 333
+102 - 683
+103 - 184
+104 - 136
+105 - 541
+106 - 532
+107 - 52
+108 - 833
+109 - 66
+110 - 555
+111 - 909
+112 - 973
+113 - 497
+114 - 940
+115 - 487
+116 - 127
+117 - 877
+118 - 48
+119 - 735
+120 - 429
+121 - 972
+122 - 842
+123 - 705
+124 - 838
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 93, 74 match
+AddEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 410
+GetNumEmployeesMatching: SUCCESS. Out of 4, 4 match
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 326
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 258
+2 - 674
+3 - 496
+4 - 845
+5 - 995
+6 - 329
+7 - 232
+8 - 473
+9 - 439
+10 - 48
+11 - 943
+12 - 871
+13 - 961
+14 - 128
+15 - 588
+16 - 696
+17 - 410
+AddCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 258
+2 - 674
+3 - 496
+4 - 845
+5 - 995
+6 - 329
+7 - 232
+8 - 473
+9 - 439
+10 - 48
+11 - 943
+12 - 871
+13 - 961
+14 - 128
+15 - 588
+16 - 696
+17 - 410
+18 - 267
+19 - 562
+20 - 62
+21 - 864
+22 - 697
+23 - 153
+24 - 555
+25 - 326
+26 - 934
+27 - 909
+28 - 127
+29 - 132
+GetAllEmployeesBySalary: FAILURE
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetCompanyInfo: SUCCESS. Company 601 has 1 employees and value 84
+AcquireCompany: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+GetCompanyInfo: SUCCESS. Company 845 has 1 employees and value 70
+GetCompanyInfo: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 258
+2 - 674
+3 - 496
+4 - 845
+5 - 995
+6 - 329
+7 - 232
+8 - 473
+9 - 439
+10 - 48
+11 - 943
+12 - 871
+GetEmployeeInfo: SUCCESS. Employee 99 works at 499 and earns 1746 at grade 715
+GetCompanyInfo: SUCCESS. Company 601 has 1 employees and value 84
+RemoveEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 360 works at 536 and earns 8 at grade 117
+GetCompanyInfo: SUCCESS. Company 973 has 2 employees and value 98
+GetHighestEarner: SUCCESS. Highest earner is 410
+IncreaseCompanyValue: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 258
+2 - 674
+3 - 496
+4 - 845
+5 - 995
+6 - 329
+7 - 232
+8 - 473
+9 - 439
+10 - 48
+11 - 943
+12 - 871
+13 - 961
+14 - 128
+15 - 588
+16 - 696
+17 - 410
+18 - 267
+19 - 562
+20 - 62
+21 - 864
+22 - 697
+23 - 153
+24 - 555
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 410
+GetNumEmployeesMatching: SUCCESS. Out of 2, 1 match
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 432 has 0 employees and value 58
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: FAILURE
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 235
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 473
+1 - 885
+RemoveEmployee: SUCCESS
+#Running 100 random commands
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 122
+2 - 258
+3 - 674
+4 - 496
+5 - 995
+6 - 329
+7 - 232
+8 - 473
+9 - 439
+10 - 48
+11 - 943
+12 - 871
+13 - 466
+14 - 128
+15 - 696
+16 - 410
+17 - 267
+18 - 562
+19 - 62
+20 - 864
+21 - 347
+22 - 697
+23 - 17
+24 - 153
+25 - 555
+26 - 326
+27 - 934
+28 - 909
+29 - 132
+30 - 881
+31 - 851
+32 - 921
+33 - 99
+34 - 476
+35 - 103
+36 - 487
+37 - 492
+38 - 530
+39 - 202
+40 - 949
+41 - 44
+42 - 638
+43 - 641
+44 - 319
+45 - 518
+46 - 973
+47 - 711
+48 - 79
+49 - 73
+50 - 271
+51 - 521
+52 - 257
+53 - 856
+54 - 676
+55 - 791
+56 - 559
+57 - 972
+58 - 605
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 794 has 1 employees and value 32
+GetCompanyInfo: SUCCESS. Company 837 has 2 employees and value 26
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 973 has 1 employees and value 98
+RemoveCompany: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 521
+GetCompanyInfo: SUCCESS. Company 382 has 1 employees and value 93
+RemoveEmployee: SUCCESS
+AcquireCompany: FAILURE
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 410
+1 - 521
+2 - 638
+3 - 99
+4 - 153
+5 - 79
+6 - 559
+7 - 711
+8 - 439
+9 - 851
+10 - 345
+11 - 20
+12 - 934
+13 - 696
+14 - 562
+15 - 202
+16 - 122
+17 - 979
+18 - 436
+19 - 478
+20 - 316
+21 - 44
+22 - 271
+23 - 466
+24 - 473
+25 - 856
+26 - 676
+27 - 132
+28 - 476
+29 - 613
+30 - 496
+31 - 776
+32 - 49
+33 - 188
+34 - 641
+35 - 940
+36 - 759
+37 - 924
+38 - 558
+39 - 697
+40 - 578
+41 - 619
+42 - 881
+43 - 300
+44 - 446
+45 - 815
+46 - 791
+47 - 650
+48 - 329
+49 - 921
+50 - 319
+51 - 128
+52 - 588
+53 - 27
+54 - 762
+55 - 492
+56 - 615
+57 - 850
+58 - 151
+59 - 442
+60 - 75
+61 - 257
+62 - 350
+63 - 964
+64 - 632
+65 - 556
+66 - 530
+67 - 674
+68 - 885
+69 - 468
+70 - 258
+71 - 434
+72 - 663
+73 - 685
+74 - 103
+75 - 433
+76 - 59
+77 - 949
+78 - 317
+79 - 235
+80 - 267
+81 - 605
+82 - 32
+83 - 73
+84 - 864
+85 - 398
+86 - 326
+87 - 943
+88 - 770
+89 - 232
+90 - 995
+91 - 518
+92 - 645
+93 - 871
+94 - 926
+95 - 598
+96 - 961
+97 - 799
+98 - 347
+99 - 655
+100 - 715
+101 - 62
+102 - 333
+103 - 683
+104 - 136
+105 - 541
+106 - 532
+107 - 52
+108 - 833
+109 - 17
+110 - 66
+111 - 555
+112 - 909
+113 - 973
+114 - 497
+115 - 487
+116 - 877
+117 - 48
+118 - 735
+119 - 429
+120 - 972
+121 - 842
+122 - 360
+123 - 705
+124 - 838
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 833 works at 10 and earns 194 at grade 889
+GetNumEmployeesMatching: SUCCESS. Out of 68, 37 match
+GetCompanyInfo: SUCCESS. Company 381 has 1 employees and value 183
+GetHighestEarner: SUCCESS. Highest earner is 410
+HireEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 122
+2 - 641
+3 - 258
+4 - 674
+5 - 496
+6 - 995
+7 - 329
+8 - 232
+9 - 473
+10 - 439
+11 - 48
+12 - 943
+13 - 871
+14 - 466
+15 - 128
+16 - 696
+17 - 410
+18 - 267
+19 - 562
+20 - 62
+21 - 864
+22 - 347
+23 - 697
+24 - 17
+25 - 153
+26 - 555
+27 - 326
+28 - 934
+29 - 909
+30 - 132
+31 - 881
+32 - 851
+33 - 921
+34 - 99
+35 - 476
+36 - 103
+37 - 487
+38 - 492
+39 - 530
+40 - 202
+41 - 949
+42 - 44
+43 - 638
+44 - 924
+45 - 319
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 8, 0 match
+PromoteEmployee: SUCCESS
+RemoveCompany: FAILURE
+HireEmployee: FAILURE
+RemoveCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 715 works at 912 and earns 356 at grade 653
+IncreaseCompanyValue: FAILURE
+GetCompanyInfo: SUCCESS. Company 461 has 0 employees and value 76
+GetNumEmployeesMatching: SUCCESS. Out of 11, 9 match
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 73
+AcquireCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 476
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 410
+1 - 521
+2 - 638
+3 - 99
+4 - 153
+5 - 79
+6 - 559
+7 - 711
+8 - 439
+9 - 851
+10 - 345
+11 - 20
+12 - 934
+13 - 696
+14 - 562
+15 - 202
+16 - 122
+17 - 979
+18 - 436
+19 - 478
+20 - 316
+21 - 44
+22 - 271
+23 - 466
+24 - 473
+25 - 856
+26 - 676
+27 - 924
+28 - 132
+29 - 476
+30 - 613
+31 - 496
+32 - 776
+33 - 49
+34 - 188
+35 - 641
+36 - 940
+37 - 759
+38 - 130
+39 - 558
+40 - 697
+41 - 578
+42 - 619
+43 - 881
+44 - 300
+45 - 446
+46 - 815
+47 - 791
+48 - 650
+49 - 329
+50 - 921
+51 - 319
+52 - 128
+53 - 588
+54 - 27
+55 - 762
+56 - 492
+57 - 615
+58 - 850
+59 - 151
+60 - 442
+61 - 75
+62 - 257
+63 - 350
+64 - 964
+65 - 632
+66 - 556
+67 - 530
+68 - 674
+69 - 885
+70 - 468
+71 - 635
+72 - 258
+73 - 434
+74 - 663
+75 - 685
+76 - 103
+77 - 433
+78 - 59
+79 - 949
+80 - 317
+81 - 235
+82 - 267
+83 - 605
+84 - 32
+85 - 73
+86 - 864
+87 - 398
+88 - 326
+89 - 943
+90 - 770
+91 - 232
+92 - 995
+93 - 518
+94 - 645
+95 - 871
+96 - 926
+97 - 598
+98 - 961
+99 - 799
+100 - 347
+101 - 655
+102 - 715
+103 - 62
+104 - 541
+105 - 333
+106 - 683
+107 - 136
+108 - 532
+109 - 52
+110 - 833
+111 - 17
+112 - 66
+113 - 555
+114 - 909
+115 - 973
+116 - 497
+117 - 487
+118 - 877
+119 - 48
+120 - 735
+121 - 429
+122 - 972
+123 - 842
+124 - 360
+125 - 705
+126 - 838
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 69, 3 match
+AddCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 122
+AcquireCompany: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 410
+GetHighestEarner: SUCCESS. Highest earner is 434
+GetNumEmployeesMatching: SUCCESS. Out of 100, 49 match
+AddCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 122
+2 - 641
+3 - 258
+4 - 674
+5 - 496
+6 - 995
+7 - 232
+8 - 439
+9 - 48
+10 - 943
+11 - 871
+12 - 466
+13 - 128
+14 - 696
+15 - 410
+16 - 267
+17 - 562
+18 - 62
+19 - 864
+20 - 347
+21 - 697
+22 - 17
+23 - 153
+24 - 555
+25 - 326
+26 - 934
+27 - 909
+28 - 834
+29 - 132
+30 - 881
+31 - 851
+32 - 921
+33 - 99
+34 - 476
+35 - 103
+36 - 487
+37 - 492
+38 - 530
+39 - 202
+40 - 130
+41 - 44
+42 - 638
+43 - 924
+44 - 319
+45 - 518
+46 - 973
+47 - 711
+48 - 79
+49 - 73
+50 - 635
+51 - 271
+52 - 521
+IncreaseCompanyValue: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 33, 20 match
+GetHighestEarnerInEachCompany: FAILURE
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 316
+1 - 122
+2 - 641
+3 - 258
+4 - 674
+5 - 496
+6 - 995
+7 - 232
+8 - 439
+9 - 48
+10 - 943
+11 - 871
+12 - 466
+13 - 128
+14 - 696
+15 - 410
+16 - 267
+17 - 562
+18 - 62
+19 - 864
+20 - 347
+21 - 697
+22 - 17
+23 - 153
+24 - 555
+25 - 326
+26 - 934
+27 - 909
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: FAILURE
+GetEmployeeInfo: FAILURE
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 232
+HireEmployee: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+GetCompanyInfo: SUCCESS. Company 798 has 1 employees and value 27
+GetHighestEarner: SUCCESS. Highest earner is 973
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 410
+RemoveEmployee: SUCCESS
+AddCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 232 works at 91 and earns 416 at grade 982
+GetNumEmployeesMatching: SUCCESS. Out of 36, 15 match
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: FAILURE
+AcquireCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 442
+1 - 122
+2 - 641
+3 - 258
+4 - 674
+5 - 496
+6 - 995
+7 - 232
+8 - 439
+9 - 48
+10 - 943
+11 - 871
+12 - 466
+13 - 128
+14 - 696
+15 - 410
+16 - 267
+17 - 562
+18 - 62
+19 - 864
+20 - 697
+21 - 17
+22 - 153
+23 - 555
+24 - 326
+25 - 934
+26 - 909
+27 - 834
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 442
+1 - 122
+2 - 641
+3 - 258
+4 - 674
+5 - 496
+6 - 995
+7 - 232
+8 - 439
+9 - 48
+10 - 943
+11 - 871
+12 - 466
+13 - 128
+14 - 696
+15 - 410
+16 - 267
+17 - 562
+18 - 62
+19 - 864
+20 - 697
+21 - 17
+22 - 153
+23 - 555
+24 - 326
+25 - 934
+26 - 909
+27 - 834
+28 - 132
+29 - 776
+30 - 881
+31 - 851
+32 - 921
+33 - 99
+34 - 476
+35 - 103
+36 - 487
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 99
+1 - 345
+AddCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 103
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 442
+1 - 122
+2 - 641
+3 - 258
+4 - 674
+5 - 496
+6 - 995
+7 - 232
+8 - 439
+9 - 48
+10 - 943
+11 - 871
+12 - 466
+13 - 128
+14 - 696
+15 - 410
+16 - 198
+17 - 267
+18 - 562
+19 - 62
+20 - 864
+21 - 697
+22 - 17
+23 - 153
+24 - 555
+25 - 326
+26 - 934
+27 - 909
+28 - 834
+29 - 132
+30 - 776
+31 - 881
+32 - 851
+33 - 921
+34 - 99
+35 - 476
+36 - 103
+37 - 93
+38 - 487
+GetEmployeeInfo: SUCCESS. Employee 27 works at 780 and earns 689 at grade 203
+GetCompanyInfo: SUCCESS. Company 499 has 2 employees and value 79
+#Running Clear All Structure
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+#Running 100 mutation commands
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: FAILURE
+AddEmployee: FAILURE
+PromoteEmployee: FAILURE
+HireEmployee: FAILURE
+PromoteEmployee: FAILURE
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: FAILURE
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+HireEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+AddEmployee: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+AddEmployee: FAILURE
+RemoveEmployee: FAILURE
+AddEmployee: FAILURE
+PromoteEmployee: FAILURE
+AddEmployee: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: FAILURE
+PromoteEmployee: FAILURE
+PromoteEmployee: FAILURE
+RemoveCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: SUCCESS
+PromoteEmployee: FAILURE
+RemoveCompany: SUCCESS
+PromoteEmployee: FAILURE
+AddEmployee: FAILURE
+RemoveCompany: FAILURE
+RemoveCompany: FAILURE
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+HireEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+IncreaseCompanyValue: FAILURE
+AddEmployee: FAILURE
+RemoveCompany: FAILURE
+IncreaseCompanyValue: FAILURE
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+#Running 100 random commands
+GetCompanyInfo: SUCCESS. Company 580 has 0 employees and value 148
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 301
+GetCompanyInfo: SUCCESS. Company 580 has 0 employees and value 148
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 301
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 0, 0 match
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 301
+GetHighestEarner: SUCCESS. Highest earner is 215
+GetHighestEarner: SUCCESS. Highest earner is 215
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+IncreaseCompanyValue: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 301
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 215
+GetCompanyInfo: SUCCESS. Company 808 has 0 employees and value 73
+GetEmployeeInfo: FAILURE
+AcquireCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 2 match
+IncreaseCompanyValue: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 215 works at 880 and earns 852 at grade 91
+GetCompanyInfo: SUCCESS. Company 808 has 0 employees and value 73
+GetEmployeeInfo: SUCCESS. Employee 301 works at 226 and earns 865 at grade 433
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 301
+GetHighestEarner: SUCCESS. Highest earner is 215
+PromoteEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 215
+GetCompanyInfo: SUCCESS. Company 226 has 1 employees and value 213
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: FAILURE
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 808 has 0 employees and value 172
+GetNumEmployeesMatching: FAILURE
+GetNumEmployeesMatching: FAILURE
+GetHighestEarner: FAILURE
+GetAllEmployeesBySalary: FAILURE
+HireEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+GetCompanyInfo: SUCCESS. Company 226 has 0 employees and value 213
+GetHighestEarnerInEachCompany: FAILURE
+GetNumEmployeesMatching: FAILURE
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetHighestEarner: FAILURE
+GetHighestEarner: FAILURE
+AddCompany: FAILURE
+PromoteEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 301 works at 226 and earns 1138 at grade 434
+RemoveEmployee: FAILURE
+GetHighestEarner: FAILURE
+IncreaseCompanyValue: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 301 works at 226 and earns 1138 at grade 434
+IncreaseCompanyValue: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetNumEmployeesMatching: FAILURE
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: FAILURE
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 808 has 0 employees and value 248
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+AcquireCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+RemoveEmployee: FAILURE
+AddEmployee: SUCCESS
+GetHighestEarnerInEachCompany: FAILURE
+GetAllEmployeesBySalary: FAILURE
+AddEmployee: SUCCESS
+GetAllEmployeesBySalary: FAILURE
+RemoveEmployee: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 453 works at 808 and earns 764 at grade 920
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+#Running 100 mutation commands
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: FAILURE
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+PromoteEmployee: FAILURE
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+AcquireCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+PromoteEmployee: FAILURE
+HireEmployee: FAILURE
+AcquireCompany: FAILURE
+PromoteEmployee: FAILURE
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: FAILURE
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AddCompany: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveEmployee: SUCCESS
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: FAILURE
+AddCompany: SUCCESS
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveEmployee: FAILURE
+AddCompany: SUCCESS
+PromoteEmployee: FAILURE
+PromoteEmployee: FAILURE
+AddCompany: SUCCESS
+#Running 100 mutation commands
+HireEmployee: FAILURE
+AddCompany: SUCCESS
+HireEmployee: FAILURE
+HireEmployee: FAILURE
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+RemoveEmployee: FAILURE
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: FAILURE
+HireEmployee: SUCCESS
+HireEmployee: SUCCESS
+RemoveEmployee: FAILURE
+PromoteEmployee: FAILURE
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: FAILURE
+IncreaseCompanyValue: FAILURE
+AcquireCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+AcquireCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+HireEmployee: SUCCESS
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+PromoteEmployee: SUCCESS
+AddCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AcquireCompany: FAILURE
+IncreaseCompanyValue: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+AcquireCompany: FAILURE
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: FAILURE
+HireEmployee: SUCCESS
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: SUCCESS
+RemoveCompany: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+PromoteEmployee: SUCCESS
+AcquireCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+RemoveCompany: SUCCESS
+RemoveCompany: FAILURE
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+IncreaseCompanyValue: FAILURE
+IncreaseCompanyValue: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+HireEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AddCompany: SUCCESS
+RemoveCompany: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: FAILURE
+RemoveCompany: FAILURE
+AcquireCompany: FAILURE
+PromoteEmployee: SUCCESS
+HireEmployee: SUCCESS
+#Running 100 addition commands
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: FAILURE
+AddCompany: FAILURE
+AddEmployee: FAILURE
+AddCompany: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+AddEmployee: FAILURE
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+AddCompany: FAILURE
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+AddCompany: SUCCESS
+#Running 60 random commands
+GetNumEmployeesMatching: SUCCESS. Out of 2, 0 match
+AddCompany: SUCCESS
+AcquireCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+RemoveEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 562
+GetEmployeeInfo: FAILURE
+IncreaseCompanyValue: SUCCESS
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 114
+1 - 747
+2 - 687
+3 - 538
+AcquireCompany: SUCCESS
+AcquireCompany: SUCCESS
+GetEmployeeInfo: SUCCESS. Employee 421 works at 673 and earns 627 at grade 522
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 58
+1 - 959
+2 - 484
+3 - 656
+4 - 726
+5 - 773
+6 - 880
+7 - 824
+8 - 661
+9 - 34
+10 - 171
+11 - 223
+12 - 474
+13 - 114
+14 - 456
+15 - 712
+16 - 27
+17 - 735
+RemoveCompany: SUCCESS
+HireEmployee: SUCCESS
+AddCompany: SUCCESS
+AddEmployee: SUCCESS
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+RemoveCompany: SUCCESS
+PromoteEmployee: SUCCESS
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 959
+1 - 484
+2 - 656
+3 - 726
+4 - 773
+5 - 880
+6 - 824
+7 - 661
+8 - 34
+9 - 171
+10 - 223
+11 - 474
+12 - 114
+13 - 58
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 959
+1 - 484
+2 - 656
+3 - 726
+4 - 773
+5 - 880
+RemoveEmployee: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 880
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 959
+1 - 484
+2 - 656
+3 - 726
+4 - 773
+5 - 880
+6 - 824
+7 - 661
+8 - 34
+9 - 171
+HireEmployee: SUCCESS
+GetCompanyInfo: FAILURE
+GetHighestEarner: SUCCESS. Highest earner is 959
+GetCompanyInfo: SUCCESS. Company 816 has 1 employees and value 90
+AddEmployee: SUCCESS
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+GetCompanyInfo: FAILURE
+GetEmployeeInfo: SUCCESS. Employee 747 works at 674 and earns 907 at grade 772
+HireEmployee: SUCCESS
+AddEmployee: SUCCESS
+AcquireCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 185 has 0 employees and value 56
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners:
+Company Index || Employee ID
+0 - 959
+1 - 484
+2 - 656
+3 - 726
+4 - 773
+5 - 674
+6 - 661
+7 - 711
+8 - 171
+9 - 223
+10 - 982
+11 - 474
+12 - 114
+13 - 58
+14 - 34
+15 - 27
+16 - 735
+17 - 334
+18 - 811
+GetEmployeeInfo: SUCCESS. Employee 562 works at 945 and earns 947 at grade 90
+GetNumEmployeesMatching: SUCCESS. Out of 1, 1 match
+AddEmployee: SUCCESS
+GetHighestEarner: SUCCESS. Highest earner is 674
+RemoveEmployee: SUCCESS
+PromoteEmployee: SUCCESS
+AddEmployee: FAILURE
+GetCompanyInfo: SUCCESS. Company 905 has 1 employees and value 79
+RemoveEmployee: SUCCESS
+RemoveCompany: SUCCESS
+AcquireCompany: SUCCESS
+AddCompany: SUCCESS
+IncreaseCompanyValue: SUCCESS
+GetAllEmployeesBySalary: SUCCESS. Highest earners:
+Employee Rank || Employee ID
+0 - 959
+1 - 735
+2 - 1000
+3 - 34
+4 - 773
+5 - 562
+6 - 711
+7 - 661
+8 - 197
+9 - 114
+10 - 747
+11 - 984
+12 - 823
+13 - 705
+14 - 58
+15 - 726
+16 - 484
+17 - 618
+18 - 334
+19 - 811
+20 - 474
+21 - 712
+22 - 421
+23 - 821
+24 - 576
+25 - 27
+26 - 179
+27 - 428
+28 - 7
+29 - 456
+30 - 968
+31 - 259
+32 - 223
+33 - 139
+34 - 511
+35 - 809
+36 - 982
+37 - 824
+38 - 171
+39 - 343
+40 - 883
+41 - 674
+42 - 601
+43 - 687
+44 - 304
+45 - 489
+46 - 538
+47 - 987
+48 - 718
+49 - 656
+50 - 880
+RemoveEmployee: SUCCESS
+AddEmployee: SUCCESS
+AddCompany: SUCCESS
+GetCompanyInfo: SUCCESS. Company 23 has 0 employees and value 73
+GetCompanyInfo: SUCCESS. Company 355 has 0 employees and value 89
+Quit done
