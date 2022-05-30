@@ -1,18 +1,16 @@
 #include "company.h"
-#include "rank_tree.h"
 
 Company::Company(int company_id, int company_value) : company_id(company_id), 
                                                       company_value(company_value),
-                                                      highest_earner(nullptr),
-                                                      employees_salary_filtered(),
-                                                      employees_id_filtered(){}
+                                                      employee_hash_table(),
+                                                      zero_salary_employees_list(),
+                                                      employees_tree_salary_filtered(){}
 
 Company::~Company(){
-    highest_earner = nullptr;   //TODO: check if we need to call destructures
 }
 
 int Company::getSize() const{
-    return employees_salary_filtered.getSize();
+    return zero_salary_employees_list.getSize() + employees_tree_salary_filtered.getSize();
 }
 
 int Company::getId() const{
@@ -23,16 +21,8 @@ int Company::getValue() const{
     return company_value;
 }
 
-Employee* Company::getHighestEarner() const{
-    return highest_earner;
-}
-
-void Company::increaseValue(int new_value){
-    company_value += new_value;
-}
-
-void Company::setHighestEarner(Employee* new_highest_ptr){
-    highest_earner = new_highest_ptr;
+void Company::increaseValue(int value_increase){
+    company_value += value_increase;
 }
 
 void Company::setValue(int new_value){
@@ -40,7 +30,9 @@ void Company::setValue(int new_value){
 }
 
 ReturnValue Company::findEmployee(int employee_id, Employee* returned_employee){
-    auto iter = employees_id_filtered.findElement(employee_id);
+    Employee temp_employee(employee_id, 0, 0, 0);
+    EmployeeHashtableVal temp_employee_hash_val()
+    employee_hash_table.findIndex(employee_id);
     if(iter != employees_id_filtered.end()){
         returned_employee = iter.getData();
         return MY_SUCCESS;

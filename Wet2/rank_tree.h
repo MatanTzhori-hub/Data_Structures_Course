@@ -54,7 +54,7 @@ public:
 
 	//Add or Remove elements
 	void deleteTreeNodes(Node<key_t, data_t, rank_t> *node);
-	ReturnValue insert(key_t key, data_t element);
+	ReturnValue insert(key_t key, data_t element, rank_t rank);
 	ReturnValue removeElement(key_t key);
 
 	Iterator<key_t, data_t, rank_t> findElement(key_t key);
@@ -71,7 +71,7 @@ public:
 	Iterator<key_t, data_t, rank_t> getRightMost();
 
 	//Ranking
-	int Rank(key_t);
+	int Rank(key_t key);
 	Iterator<key_t, data_t, rank_t> Select(int r);
 
 	// Print functions
@@ -159,8 +159,8 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findCloseestEle
 }
 
 template<typename key_t, typename data_t, typename rank_t>
-ReturnValue RankTree<key_t, data_t, rank_t>::insert(key_t key, data_t element) {
-	auto* node_to_insert = new Node<key_t, data_t, rank_t>(key,element);	//this here is roy and adi fix and is important
+ReturnValue RankTree<key_t, data_t, rank_t>::insert(key_t key, data_t element, rank_t rank) {
+	auto* node_to_insert = new Node<key_t, data_t, rank_t>(key,element,rank);	//this here is roy and adi fix and is important
 	if(!node_to_insert){
 		return MY_ALLOCATION_ERROR;
 	}
@@ -574,8 +574,8 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::getRightMost(){
 }
 
 template<typename key_t, typename data_t, typename rank_t>
-int Rank(key_t){
-	r = 0;
+int RankTree<key_t, data_t, rank_t>::Rank(key_t key){
+	int r = 0;
 
 	if(root == nullptr) {
 		return -1;
@@ -601,7 +601,7 @@ int Rank(key_t){
 }
 
 template<typename key_t, typename data_t, typename rank_t>
-Iterator<key_t, data_t, rank_t> Select(int r){
+Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::Select(int r){
 	if(root == nullptr) {
 		return end();
 	}

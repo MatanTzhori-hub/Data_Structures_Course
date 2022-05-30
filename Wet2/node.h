@@ -25,7 +25,7 @@ protected:
 public:
 	Node() = default;
 	~Node();
-	Node(key_t key, data_t data);
+	Node(key_t key, data_t data, rank_t rank);
 	Node* getLeft() {return left; }
 	Node* getRight() {return right; }
 	Node* getFather() {return father; }
@@ -58,14 +58,14 @@ public:
 	bool isALeftSon();
 	bool isARightSon();
 	void printNode();
-	friend class Tree<key_t, data_t>;
-	friend class Iterator<key_t, data_t>;
+	friend class Tree<key_t, data_t, rank_t>;
+	friend class Iterator<key_t, data_t, rank_t>;
 };
 
 
 template<typename key_t, typename data_t, typename rank_t>
-Node<key_t, data_t, rank_t>::Node(key_t key, data_t data) : key(key), data(data),  balance_factor(0), height(0),
-													left(nullptr), right(nullptr), father(nullptr), weight(1){
+Node<key_t, data_t, rank_t>::Node(key_t key, data_t data, rank_t rank) : key(key), data(data), rank(rank), balance_factor(0), height(0),
+													left(nullptr), right(nullptr), father(nullptr){
 }
 
 
