@@ -57,6 +57,7 @@ public:
 	ReturnValue insert(key_t key, data_t element, rank_t rank);
 	ReturnValue removeElement(key_t key);
 
+    Node<key_t, data_t, rank_t>* findElementNode(key_t key);
 	Iterator<key_t, data_t, rank_t> findElement(key_t key);
 	Iterator<key_t, data_t, rank_t> findCloseestElement(key_t key);
 	int getSize() const;
@@ -101,6 +102,29 @@ void RankTree<key_t, data_t, rank_t>::deleteTreeNodes(Node<key_t, data_t, rank_t
 		node->father = nullptr;
 		delete node;
 	}
+}
+
+template<typename key_t, typename data_t, typename rank_t>
+Node<key_t, data_t, rank_t>* RankTree<key_t, data_t, rank_t>::findElementNode(key_t key){
+    if(root == nullptr) {
+        return end();
+    }
+
+    Node<key_t, data_t, rank_t>* curr_node = root;
+
+    while(curr_node){
+        if(curr_node->key == key){
+            return curr_node;
+        }
+        else if(curr_node->key > key){
+            curr_node = curr_node->getLeft();
+        }
+        else{
+            curr_node = curr_node->getRight();
+        }
+    }
+
+    return nullptr;
 }
 
 
@@ -757,6 +781,12 @@ RankTree<key_t, data_t, rank_t>* RankTree<key_t, data_t, rank_t>::mergeToMe(Rank
 	// This will be destructed when we exit this function. will destroy old nodes.
 	RankTree<key_t, data_t, rank_t> temp_tree = RankTree<key_t, data_t, rank_t>();
 	temp_tree.root = old_root;
+
+    // This will be destructed when we exit this function. will destroy old nodes for the other tree.
+    RankTree<key_t, data_t, rank_t> temp2_tree = RankTree<key_t, data_t, rank_t>();
+    temp_tree.root = other_tree.root;
+    other_tree.root = nullptr;
+    other_tree.size = 0;
 
 	delete[] arr1;
     delete[] arr2;

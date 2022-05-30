@@ -28,8 +28,8 @@ int main(){
     my_table.insertElement(dumb5, dumb5.getKey());
     my_table.insertElement(dumb6, dumb6.getKey());
 
-    my_table.deleteElement(13);
-    my_table.deleteElement(999);
+    my_table.removeElement(13);
+    my_table.removeElement(999);
 
     Dummy out;
     ReturnValue res = my_table.findElement(1, &out);

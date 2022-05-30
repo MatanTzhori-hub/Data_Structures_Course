@@ -7,6 +7,12 @@ EmployeeHashtableVal::~EmployeeHashtableVal() {
     list_node = nullptr;
 }
 
+void EmployeeHashtableVal::initializeVal(){
+    employee_ptr = nullptr;
+    tree_node = nullptr;
+    list_node = nullptr;
+}
+
 void EmployeeHashtableVal::setNullListNode() {
     list_node = nullptr;
 }
@@ -16,8 +22,12 @@ void EmployeeHashtableVal::setListNode(DoublyLinkedListNode<Employee*>* new_list
     list_node = new_list_node;
 }
 
-void EmployeeHashtableVal::setTreeNode(Node<Employee*, EmployeeKey, EmployeeRank>* new_tree_node) {
+void EmployeeHashtableVal::setTreeNode(Node<EmployeeKey, Employee*, EmployeeRank>* new_tree_node) {
     tree_node = new_tree_node;
+}
+
+void EmployeeHashtableVal::setEmployeePtr(Employee* other_employee_ptr){
+    employee_ptr = other_employee_ptr;
 }
 
 bool EmployeeHashtableVal::operator==(EmployeeHashtableVal* other_node) {

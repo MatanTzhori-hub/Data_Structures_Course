@@ -29,16 +29,16 @@ class DynamicHashTable {
         int hashBase(int key);
         int hashStep(int key);
         int hash(int key, int iter);
-        void mergeToMe(DynamicHashTable<data_t>* other_hash_table);
 
     public:
         explicit DynamicHashTable(int size = ARRAY_START_SIZE);
         ~DynamicHashTable();
 
         ReturnValue insertElement(data_t data, int key);
-        ReturnValue deleteElement(int key);
+        ReturnValue removeElement(int key);
         ReturnValue findElement(int key, data_t *data);
         int findIndex(int key);
+        void mergeToMe(DynamicHashTable<data_t>* other_hash_table);
 };
 
 
@@ -60,12 +60,13 @@ template<class data_t>
 void DynamicHashTable<data_t>::initializeArrays() {
     for (int i = 0; i < max_size; ++i) {
         graveyard[i] = EMPTY;
+        (hash_array[i]).initializeVal();
     }
     curr_size = 0;
 }
 
 template<class data_t>
-DynamicHashTable<data_t>::~DynamicHashTable() {
+DynamicHashTable<data_t>::~DynamicHashTable(){
     delete[] hash_array;
     delete[] graveyard;
 }
@@ -108,7 +109,7 @@ ReturnValue DynamicHashTable<data_t>::findElement(int key, data_t *data){
             iter++;
         }
     }
-    return MY_FAILURE;
+    return ELEMENT_DOES_NOT_EXIST;
 }
 
 template<class data_t>
@@ -167,7 +168,7 @@ ReturnValue DynamicHashTable<data_t>::insertElement(data_t data, int key){
 }
 
 template<class data_t>
-ReturnValue DynamicHashTable<data_t>::deleteElement(int key){
+ReturnValue DynamicHashTable<data_t>::removeElement(int key){
     int index = findIndex(key);
 
     if (index == -1){
@@ -233,6 +234,14 @@ void DynamicHashTable<data_t>::mergeToMe(DynamicHashTable<data_t>* other_hash_ta
             this->insertData(other_hash_table->hash_array[i], other_hash_table->hash_array[i].getKey());
         }
     }
+
+    delete[] other_hash_table->hash_array;
+    delete[] other_hash_table->graveyard;
+    other_hash_table->hash_array = new data_t[ARRAY_START_SIZE];
+    other_hash_table->graveyard = new int[ARRAY_START_SIZE];
+    other_hash_table->max_size = ARRAY_START_SIZE;
+    other_hash_table->curr_size = 0;
+    other_hash_table->initializeArrays();
 }
 
 

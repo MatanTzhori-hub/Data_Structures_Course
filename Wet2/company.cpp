@@ -43,113 +43,126 @@ ReturnValue Company::findEmployee(int employee_id, Employee* returned_employee){
 }
 
 bool Company::isEmployeeExist(int employee_id){
-    auto iter = employees_id_filtered.findElement(employee_id);
-    if(iter != employees_id_filtered.end()){
+    EmployeeHashtableVal temp_val;
+    ReturnValue ret = employee_hash_table.findElement(employee_id, &temp_val);
+    if(ret == ELEMENT_EXISTS){
         return true;
     }
-    else{
-        return false;
-    }
+    return false;
 }
 
 ReturnValue Company::addEmployee(Employee& employee){
-    Employee_Key employee_key = Employee_Key(employee.getId(), employee.getSalary());
-    ReturnValue res = employees_salary_filtered.insert(employee_key, &employee);
-    if (res != MY_SUCCESS){
-        return res;
-    }
-    res = employees_id_filtered.insert(employee.getId(), &employee);
-    if (res != MY_SUCCESS){
-        employees_salary_filtered.removeElement(employee_key);
-        return res;
+    EmployeeKey employee_key = EmployeeKey(employee.getId(), employee.getSalary());
+    EmployeeHashtableVal new_val;
+    ReturnValue res = employee_hash_table.findElement(employee.getId(), &new_val);
+    if (res == ELEMENT_EXISTS){
+        return MY_FAILURE;
     }
 
-    // Check if need to update highest_earner
-    if(employees_salary_filtered.getSize() == 1){
-        highest_earner = &employee;
-    }
-    else if(*highest_earner < employee){
-        highest_earner = &employee;
-    }
+    new_val.setEmployeePtr(&employee);
+    if (employee.getSalary() == 0){
+        res = zero_salary_employees_list.insert(&employee);
+        if (res != MY_SUCCESS){
+            return res;
+        }
+        new_val.setListNode(zero_salary_employees_list.getHead());
+        res = employee_hash_table.insertElement(new_val, employee.getId());
+        if (res != MY_SUCCESS){
+            zero_salary_employees_list.remove(zero_salary_employees_list.getHead());
+            return res;
+        }
+    } else {
+        EmployeeKey new_key(employee.getId(), employee.getSalary());
+        EmployeeRank new_rank(employee.getGrade());
+        res = employees_tree_salary_filtered.insert(new_key, &employee, new_rank);
+        if (res != MY_SUCCESS){
+            return res;
+        }
 
-    return res;
-}
-
-ReturnValue Company::removeEmployee(Employee& employee){
-    Employee_Key employee_key = Employee_Key(employee.getId(), employee.getSalary());
-    ReturnValue res = employees_salary_filtered.removeElement(employee_key);
-    if (res != MY_SUCCESS){
-        return res;
-    }
-    res = employees_id_filtered.removeElement(employee.getId());
-
-    // Check if need to update highest_earner
-    if(highest_earner == &employee){
-        highest_earner = nullptr;
-        if(employees_id_filtered.getSize() != 0){
-            Iterator<Employee_Key, Employee*> rightmost_iter = employees_salary_filtered.getRightMost();
-            highest_earner = rightmost_iter.getData();
+        new_val.setTreeNode(employees_tree_salary_filtered.findElementNode(new_key));
+        res = employee_hash_table.insertElement(new_val, employee.getId());
+        if (res != MY_SUCCESS){
+            employees_tree_salary_filtered.removeElement(new_key);
+            return res;
         }
     }
+    return MY_SUCCESS;
+}
 
+ReturnValue Company::removeEmployee(int employee_id){
+    EmployeeHashtableVal hash_val;
+    ReturnValue res = employee_hash_table.findElement(employee_id, &hash_val);
+    if (res != ELEMENT_EXISTS){
+        return MY_FAILURE;
+    }
+
+    if (hash_val.getTreeNode() == nullptr){
+        // remove from list
+        DoublyLinkedListNode<Employee*>* temp_node_ptr = hash_val.getListNode();
+        res = zero_salary_employees_list.remove(temp_node_ptr);
+        if (res != MY_SUCCESS){
+            return MY_FAILURE;
+        }
+        hash_val.setListNode(nullptr);
+    } else if (hash_val.getListNode() == nullptr){
+        // remove from tree
+        res = employees_tree_salary_filtered.removeElement(hash_val.getTreeNode()->getKey());
+        if (res != MY_SUCCESS){
+            return MY_FAILURE;
+        }
+        hash_val.setTreeNode(nullptr);
+    }
+
+    // remove from hashtable
+    res = employee_hash_table.removeElement(employee_id);
     return res;
 }
 
 ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor){
-    int new_value = floor((this->getValue() + other_company->getValue())*Factor);
-
-    Employee* new_highest_earner = this->getHighestEarner();
-    if(other_company->getSize() > 0){
-        if(this->getSize() == 0){
-            new_highest_earner = other_company->getHighestEarner();
-        }
-        else{
-            if(*new_highest_earner < *(other_company->getHighestEarner())){
-                new_highest_earner = other_company->getHighestEarner();
-            }
-        }
-
-        employees_id_filtered.mergeToMe(other_company->employees_id_filtered);
-        employees_salary_filtered.mergeToMe(other_company->employees_salary_filtered);
+    // merge lists
+    ReturnValue res = zero_salary_employees_list.merge_to_me(other_company->zero_salary_employees_list);
+    if (res != MY_SUCCESS){
+        return res;
     }
-    this->setValue(new_value);
-    this->setHighestEarner(new_highest_earner);
 
-    return MY_SUCCESS;
+    // merge trees
+    employees_tree_salary_filtered.mergeToMe(other_company->employees_tree_salary_filtered);
+
+    // merge hashtables
+    employee_hash_table.mergeToMe(&(other_company->employee_hash_table));
+
+    // scan new combined tree and update hash table
+    Iterator<EmployeeKey, Employee*, EmployeeRank> iter = employees_tree_salary_filtered.begin();
+    EmployeeHashtableVal temp_hash_val;
+
+    while (iter != employees_tree_salary_filtered.end()){
+        employee_hash_table.findElement(iter.getKey().getId(), &temp_hash_val);
+        temp_hash_val.setTreeNode(iter.getNodePtr());
+    }
 }
 
 void Company::updateCompanyForAllEmployees(){
-    auto iter = this->employees_id_filtered.begin();
-    while(iter != employees_id_filtered.end()){
-        iter.getData()->setCompany(this);
-        iter.next();
+    // update company for employees in tree
+    Iterator<EmployeeKey, Employee*, EmployeeRank> tree_iter = employees_tree_salary_filtered.begin();
+    while (tree_iter != employees_tree_salary_filtered.end()){
+        tree_iter.getData()->setCompany(company_id);
+    }
+
+    // update company for employees in list
+    DoublyLinkedListNode<Employee*>* list_iter_ptr = zero_salary_employees_list.getHead();
+    while (list_iter_ptr){
+        list_iter_ptr->getData()->setCompany(company_id);
+        list_iter_ptr = list_iter_ptr->getNext();
     }
 }
 
+// todo: implement functions for:
+//       (1) calculating avg grade for all employees (in lower/higher range)
+//       (2) calculating sum_grades for top m employees (in tree - use rank tree trick from tutorial 6)
 
-ReturnValue Company::GetAllEmployeesBySalary(int **Employees, int *NumOfEmployees){
-    *NumOfEmployees = employees_salary_filtered.getSize();
-    if(*NumOfEmployees <= 0){
-        return MY_FAILURE;
-    }
-    else{
-        int *Employees_arr = (int*)malloc(*NumOfEmployees * sizeof(int));
-        if(Employees_arr == NULL){
-            return MY_ALLOCATION_ERROR;
-        }
-        auto employee_iter = employees_salary_filtered.begin(-1);
+/*
 
-        for(int i = 0; i < *NumOfEmployees; i++){
-            Employees_arr[i] = employee_iter.getData()->getId();
-            employee_iter.next();
-        }
-
-        *Employees = Employees_arr;
-    }
-    return MY_SUCCESS;
-}
-
-ReturnValue Company::GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary, 
+ReturnValue Company::GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary,
                                             int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees){
     if(employees_id_filtered.getSize() == 0){
         return MY_FAILURE;
@@ -184,3 +197,5 @@ ReturnValue Company::GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeI
     *NumOfEmployees = numEmployees;
     return MY_SUCCESS;
 }
+*/
+

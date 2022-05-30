@@ -29,15 +29,15 @@ class Company{
     ReturnValue findEmployee(int employee_id, Employee* returned_employee);
     bool isEmployeeExist(int employee_id);
     ReturnValue addEmployee(Employee& employee);
-    ReturnValue removeEmployee(Employee& employee);
+    ReturnValue removeEmployee(int employee_id);
     ReturnValue AcquireAnotherCompany(Company* other, double Factor);
-
-    // might be changed
     void updateCompanyForAllEmployees();
-    ReturnValue GetAllEmployeesBySalary(int **Employees, int *NumOfEmployees);
-    ReturnValue GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary, 
+
+/*
+    ReturnValue GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary,
                                         int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees);
-    
+*/
+
 };
 
 #endif // COMPANY_H

@@ -17,6 +17,8 @@ public:
 	~Iterator() {}
 	data_t getData() const {return ptr->getData(); }
 	key_t getKey() const {return ptr->getKey(); }
+    Node<key_t, data_t, rank_t>* getNodePtr() { return ptr; }
+
 	Iterator& next();
 	bool operator==(Iterator other){ return this->ptr == other.ptr;}
 	bool operator!=(Iterator other){ return this->ptr != other.ptr;}

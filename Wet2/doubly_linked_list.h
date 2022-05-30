@@ -9,8 +9,11 @@ class DoublyLinkedList {
     DoublyLinkedListNode<data_t>* head;
     DoublyLinkedListNode<data_t>* tail;
     int size;
+    // todo: make sure we update bump and sum for every employee we add/remove from the list
+    int grade_bump;
+    long grade_sum;
 public:
-    DoublyLinkedList() : size(0), head(nullptr), tail(nullptr) {}
+    DoublyLinkedList() : size(0), head(nullptr), tail(nullptr), grade_bump(0), grade_sum(0) {}
     ~DoublyLinkedList();
     ReturnValue insert(data_t new_data);
     ReturnValue remove(DoublyLinkedListNode<data_t>* node_to_remove);

@@ -8,11 +8,11 @@
 
 class EmployeeHashtableVal {
     Employee* employee_ptr;
-    Node<Employee*, EmployeeKey, EmployeeRank>* tree_node;
+    Node<EmployeeKey, Employee*, EmployeeRank>* tree_node;
     DoublyLinkedListNode<Employee*>* list_node;
 
 public:
-    EmployeeHashtableVal(Employee* employee_ptr, Node<Employee*, EmployeeKey, EmployeeRank>* tree_node, DoublyLinkedListNode<Employee*>* list_node) :
+    EmployeeHashtableVal(Employee* employee_ptr, Node<EmployeeKey, Employee*, EmployeeRank>* tree_node, DoublyLinkedListNode<Employee*>* list_node) :
                                                         employee_ptr(employee_ptr), 
                                                         tree_node(tree_node), 
                                                         list_node(list_node) {}
@@ -24,12 +24,15 @@ public:
                              list_node(nullptr){}
     ~EmployeeHashtableVal();
     Employee* getEmployeePtr() { return employee_ptr; }
+
+    void initializeVal();
     int getKey() { return employee_ptr->getId(); }
     DoublyLinkedListNode<Employee*>* getListNode() { return list_node; }
-    Node<Employee*, EmployeeKey, EmployeeRank>* getTreeNode() { return tree_node; }
+    Node<EmployeeKey, Employee*, EmployeeRank>* getTreeNode() { return tree_node; }
     void setNullListNode();
     void setListNode(DoublyLinkedListNode<Employee*>* new_list_node);
-    void setTreeNode(Node<Employee*, EmployeeKey, EmployeeRank>* new_tree_node);
+    void setTreeNode(Node<EmployeeKey, Employee*, EmployeeRank>* new_tree_node);
+    void setEmployeePtr(Employee* employee_ptr);
 
     bool operator==(EmployeeHashtableVal* other_node);
     EmployeeHashtableVal& operator=(EmployeeHashtableVal* other_node);
