@@ -2,9 +2,10 @@
 #define COMPANIES_MANAGER_H
 
 #include "employee.h"
+#include "rank_tree.h"
 
 class CompaniesManager{
-    Tree<Employee_Key,Employee*> all_employees_salary_filtered;
+    RankTree<EmployeeKey, Employee*> RankTree;
     Tree<int,Employee*> all_employees_id_filtered;
     Tree<int,Company*> all_companies;
     Tree<int,Company*> non_empty_companies;

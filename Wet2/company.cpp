@@ -31,15 +31,14 @@ void Company::setValue(int new_value){
 
 ReturnValue Company::findEmployee(int employee_id, Employee* returned_employee){
     Employee temp_employee(employee_id, 0, 0, 0);
-    EmployeeHashtableVal temp_employee_hash_val()
-    employee_hash_table.findIndex(employee_id);
-    if(iter != employees_id_filtered.end()){
-        returned_employee = iter.getData();
-        return MY_SUCCESS;
+    EmployeeHashtableVal temp_employee_hash_val = EmployeeHashtableVal();
+    ReturnValue ret = employee_hash_table.findElement(employee_id, &temp_employee_hash_val);
+    if(ret != MY_SUCCESS){
+        return MY_FAILURE;
     }
     else{
-        returned_employee = nullptr;
-        return MY_FAILURE;
+        returned_employee = temp_employee_hash_val.getEmployeePtr();
+        return MY_SUCCESS;
     }
 }
 

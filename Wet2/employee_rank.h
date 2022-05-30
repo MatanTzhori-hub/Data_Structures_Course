@@ -3,6 +3,8 @@
 
 #include "employee.h"
 
+class Employee;
+
 class EmployeeRank{
     int weight;
     long sum_of_grades;

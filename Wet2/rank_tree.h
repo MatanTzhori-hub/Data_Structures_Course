@@ -110,17 +110,17 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findElement(key
 		return end();
 	}
 	
-	Node<key_t, data_t, rank_t>* cur_node = root;
+	Node<key_t, data_t, rank_t>* curr_node = root;
 	
-	while(cur_node){
-		if(cur_node->key == key){
-			return Iterator<key_t, data_t, rank_t>(cur_node);
+	while(curr_node){
+		if(curr_node->key == key){
+			return Iterator<key_t, data_t, rank_t>(curr_node);
 		}
-		else if(cur_node->key > key){
-				cur_node = cur_node->getLeft();
+		else if(curr_node->key > key){
+            curr_node = curr_node->getLeft();
 			}
 			else{
-				cur_node = cur_node->getRight();
+            curr_node = curr_node->getRight();
 			}
 		}
 	
@@ -133,25 +133,25 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findCloseestEle
 		return end();
 	}
 	
-	Node<key_t, data_t, rank_t>* cur_node = root;
+	Node<key_t, data_t, rank_t>* curr_node = root;
 	Node<key_t, data_t, rank_t>* closest = root;
 	int min_diff = abs(root->key - key);
 
-	while(cur_node){
-		if(cur_node->key == key){
-			return Iterator<key_t, data_t, rank_t>(cur_node);
+	while(curr_node){
+		if(curr_node->key == key){
+			return Iterator<key_t, data_t, rank_t>(curr_node);
 		}
 		else{
-			if (min_diff > abs(cur_node->key - key)) 
+			if (min_diff > abs(curr_node->key - key))
 			{ 
-				min_diff = abs(cur_node->key - key); 
-				closest = cur_node; 
+				min_diff = abs(curr_node->key - key);
+				closest = curr_node;
 			} 
-			if(cur_node->key > key){
-				cur_node = cur_node->getLeft();
+			if(curr_node->key > key){
+                curr_node = curr_node->getLeft();
 			}
 			else{
-				cur_node = cur_node->getRight();
+                curr_node = curr_node->getRight();
 			}
 		}
 	}
@@ -171,37 +171,37 @@ ReturnValue RankTree<key_t, data_t, rank_t>::insert(key_t key, data_t element, r
 		return MY_SUCCESS;
 	}
 	
-	Node<key_t, data_t, rank_t>* cur_node = root;
+	Node<key_t, data_t, rank_t>* curr_node = root;
 	bool found = false;
-	while(cur_node && !found){
-		if(cur_node->key == key){
+	while(curr_node && !found){
+		if(curr_node->key == key){
 			delete node_to_insert;
 			return ELEMENT_EXISTS;
 		}
-		else if(cur_node->key > key){
-				if(cur_node->getLeft() != nullptr){
-					cur_node = cur_node->getLeft();
+		else if(curr_node->key > key){
+				if(curr_node->getLeft() != nullptr){
+                    curr_node = curr_node->getLeft();
 				}
 				else{
 					found = true;
-					cur_node->left = node_to_insert;
-					node_to_insert->father = cur_node;
+                    curr_node->left = node_to_insert;
+					node_to_insert->father = curr_node;
 				}
 			}
 			else{
-				if(cur_node->getRight() != nullptr){
-					cur_node = cur_node->getRight();
+				if(curr_node->getRight() != nullptr){
+                    curr_node = curr_node->getRight();
 				}
 				else{
 					found = true;
-					cur_node->right = node_to_insert;
-					node_to_insert->father = cur_node;
+                    curr_node->right = node_to_insert;
+					node_to_insert->father = curr_node;
 				}
 			}
 		}
 
 	size++;
-	return fixTree(cur_node);
+	return fixTree(curr_node);
 }
 
 
@@ -337,18 +337,18 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::begin(int order
 	if(root == nullptr){
 		return end();
 	}
-	Node<key_t, data_t, rank_t> *cur = root;
+	Node<key_t, data_t, rank_t> *curr = root;
 	if(order >= 0 ){
-		while(cur->getLeft() != nullptr){
-			cur = cur->getLeft();
+		while(curr->getLeft() != nullptr){
+            curr = curr->getLeft();
 		}
 	}
 	else{
-		while(cur->getRight() != nullptr){
-			cur = cur->getRight();
+		while(curr->getRight() != nullptr){
+            curr = curr->getRight();
 		}
 	}
-	return Iterator<key_t, data_t, rank_t>(cur, order);
+	return Iterator<key_t, data_t, rank_t>(curr, order);
 }
 
 template<typename key_t, typename data_t, typename rank_t>
@@ -356,11 +356,11 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::begin(int order
 	if(root == nullptr){
 		return end();
 	}
-	Node<key_t, data_t, rank_t> *cur = root;
-	while(cur.getLeft() != nullptr){
-		cur = cur.getLeft();
+	Node<key_t, data_t, rank_t> *curr = root;
+	while(curr->getLeft() != nullptr){
+        curr = curr->getLeft();
 	}
-	return Iterator<key_t, data_t, rank_t>(cur);
+	return Iterator<key_t, data_t, rank_t>(curr);
 }
 
 template<typename key_t, typename data_t, typename rank_t>
@@ -581,19 +581,19 @@ int RankTree<key_t, data_t, rank_t>::Rank(key_t key){
 		return -1;
 	}
 	
-	Node<key_t, data_t, rank_t>* cur_node = root;
+	Node<key_t, data_t, rank_t>* curr_node = root;
 	
-	while(cur_node){
-		if(cur_node->key == key){
-			r += (1 + cur_node->left->weight);
+	while(curr_node){
+		if(curr_node->key == key){
+			r += (1 + curr_node->left->weight);
 			return r;
 		}
-		else if(cur_node->key > key){
-				cur_node = cur_node->getLeft();
+		else if(curr_node->key > key){
+            curr_node = curr_node->getLeft();
 			}
 			else{
-				r += (1 + cur_node->left->weight);
-				cur_node = cur_node->getRight();
+				r += (1 + curr_node->left->weight);
+            curr_node = curr_node->getRight();
 			}
 		}
 	
@@ -606,18 +606,18 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::Select(int r){
 		return end();
 	}
 	
-	Node<key_t, data_t, rank_t>* cur_node = root;
+	Node<key_t, data_t, rank_t>* curr_node = root;
 	
-	while(cur_node){
-		if(cur_node->left->weight == (r - 1)){
-			return Iterator<key_t, data_t, rank_t>(cur_node);
+	while(curr_node){
+		if(curr_node->left->weight == (r - 1)){
+			return Iterator<key_t, data_t, rank_t>(curr_node);
 		}
-		else if(cur_node->left->weight > (r - 1)){
-				cur_node = cur_node->getLeft();
+		else if(curr_node->left->weight > (r - 1)){
+            curr_node = curr_node->getLeft();
 			}
 			else{
-				r = r - cur_node->left->weight - 1;
-				cur_node = cur_node->getRight();
+				r = r - curr_node->left->weight - 1;
+            curr_node = curr_node->getRight();
 			}
 		}
 	

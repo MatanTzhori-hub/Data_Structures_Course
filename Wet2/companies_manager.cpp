@@ -1,14 +1,14 @@
 #include "companies_manager.h"
 #include <exception>
 
-CompaniesManager::CompaniesManager(): all_employees_salary_filtered(),
+CompaniesManager::CompaniesManager(): RankTree(),
                                       all_employees_id_filtered(),
                                       all_companies(),
                                       non_empty_companies(),
                                       highest_earner(nullptr){}
 
 CompaniesManager::~CompaniesManager(){
-    deleteTreeData(all_employees_salary_filtered);
+    deleteTreeData(RankTree);
     deleteTreeData(all_companies);
 }
 
@@ -49,7 +49,7 @@ ReturnValue CompaniesManager::AddEmployee(int EmployeeID, int CompanyID, int Sal
         Employee* new_employee = new Employee(EmployeeID, Salary, Grade, company_ptr);
         Employee_Key new_employee_key = Employee_Key(EmployeeID, Salary);
         all_employees_id_filtered.insert(EmployeeID, new_employee);
-        all_employees_salary_filtered.insert(new_employee_key, new_employee);
+        RankTree.insert(new_employee_key, new_employee);
         company_ptr->addEmployee(*new_employee);
         
         if(is_company_empty){
@@ -57,7 +57,7 @@ ReturnValue CompaniesManager::AddEmployee(int EmployeeID, int CompanyID, int Sal
         }
 
         // Check if need to update highest_earner
-        if(all_employees_salary_filtered.getSize() == 1){
+        if(RankTree.getSize() == 1){
             highest_earner = new_employee;
         }
         else if(*highest_earner < *new_employee){
@@ -82,15 +82,15 @@ ReturnValue CompaniesManager::RemoveEmployee(int EmployeeID){
 
         Employee_Key employee_key = Employee_Key(employee_ptr->getId(), employee_ptr->getSalary());
         all_employees_id_filtered.removeElement(EmployeeID);
-        all_employees_salary_filtered.removeElement(employee_key);
+        RankTree.removeElement(employee_key);
 
         company_ptr->removeEmployee(*employee_ptr);
 
         // Check if need to update highest_earner
         if(highest_earner == employee_ptr){
             highest_earner = nullptr;
-            if(all_employees_salary_filtered.getSize() != 0){
-                Iterator<Employee_Key, Employee*> rightmost_iter = all_employees_salary_filtered.getRightMost();
+            if(RankTree.getSize() != 0){
+                Iterator<Employee_Key, Employee*> rightmost_iter = RankTree.getRightMost();
                 highest_earner = rightmost_iter.getData();
             }
         }
@@ -180,7 +180,7 @@ ReturnValue CompaniesManager::PromoteEmployee(int EmployeeID, int SalaryIncrease
 
     Employee_Key employee_key = Employee_Key(employee_ptr->getId(), employee_ptr->getSalary());
     all_employees_id_filtered.removeElement(EmployeeID);
-    all_employees_salary_filtered.removeElement(employee_key);
+    RankTree.removeElement(employee_key);
     company_ptr->removeEmployee(*employee_ptr);
 
     employee_ptr->setSalary(employee_ptr->getSalary() + SalaryIncrease);
@@ -190,7 +190,7 @@ ReturnValue CompaniesManager::PromoteEmployee(int EmployeeID, int SalaryIncrease
 
     Employee_Key new_key = Employee_Key(employee_ptr->getId(), employee_ptr->getSalary());
     ReturnValue res1 = all_employees_id_filtered.insert(employee_ptr->getId(), employee_ptr);
-    ReturnValue res2 = all_employees_salary_filtered.insert(new_key, employee_ptr);
+    ReturnValue res2 = RankTree.insert(new_key, employee_ptr);
     ReturnValue res3 = company_ptr->addEmployee(*employee_ptr);
 
     if(res1 != MY_SUCCESS || res2 != MY_SUCCESS || res3 != MY_SUCCESS){
@@ -303,7 +303,7 @@ ReturnValue CompaniesManager::GetHighestEarner(int CompanyID, int *EmployeeID){
 
 ReturnValue CompaniesManager::GetAllEmployeesBySalary(int CompanyID, int **Employees, int *NumOfEmployees){
     if(CompanyID < 0){
-        *NumOfEmployees = all_employees_salary_filtered.getSize();
+        *NumOfEmployees = RankTree.getSize();
         if(*NumOfEmployees <= 0){
             return MY_FAILURE;
         }
@@ -312,7 +312,7 @@ ReturnValue CompaniesManager::GetAllEmployeesBySalary(int CompanyID, int **Emplo
             if(Employees_arr == NULL){
                 return MY_ALLOCATION_ERROR;
             }
-            auto employee_iter = all_employees_salary_filtered.begin(-1);
+            auto employee_iter = RankTree.begin(-1);
 
             for(int i = 0; i < *NumOfEmployees; i++){
                 Employees_arr[i] = employee_iter.getData()->getId();

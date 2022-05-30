@@ -5,8 +5,8 @@
 #include "doubly_linked_list.h"
 #include "dynamic_hash_table.h"
 #include "employee_key.h"
-#include "employee_rank.h"
 #include "employee.h"
+#include "employee_rank.h"
 #include "employee_hashtable_val.h"
 
 class Employee;
