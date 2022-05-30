@@ -127,7 +127,7 @@ int DynamicHashTable<data_t>::findIndex(int key){
             continue;
         }
         else{
-            if(hash_array[index]->key == key){
+            if(hash_array[index].getKey() == key){
                 return index;
             }
             iter++;
@@ -206,9 +206,11 @@ void DynamicHashTable<data_t>::rescale(double scale){
         throw std::bad_alloc();
     }
 
+    initializeArrays();
+
     curr_size = 0;
     for(int i = 0; i < old_max_size; i++) {
-        if(graveyard[i] != TAKEN){
+        if(old_graveyard[i] != TAKEN){
             continue;
         }
         else{
