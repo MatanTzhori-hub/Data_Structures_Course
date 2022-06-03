@@ -427,6 +427,8 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeRoot(Node<key_t, data_t, rank
 		return MY_SUCCESS;
 	}
 	else if(to_delete->onlyHaveRightSon()) {
+		to_delete->right.rank.setGradeBump(right.rank.getGradeBump() + to_delete->rank.getGradeBump());
+		to_delete->right->getRank
 		to_delete->right->father = nullptr;
 		root = to_delete->right;
 		delete to_delete;

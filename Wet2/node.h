@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <iostream>
 
-template<typename key_t, typename data_t, typename rank_t> class Tree;
+template<typename key_t, typename data_t, typename rank_t> class RankTree;
 template<typename key_t, typename data_t, typename rank_t> class Iterator;
 
 using std::max;
@@ -58,7 +58,7 @@ public:
 	bool isALeftSon();
 	bool isARightSon();
 	void printNode();
-	friend class Tree<key_t, data_t, rank_t>;
+	friend class RankTree<key_t, data_t, rank_t>;
 	friend class Iterator<key_t, data_t, rank_t>;
 };
 

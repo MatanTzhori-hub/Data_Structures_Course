@@ -9,7 +9,6 @@ class DoublyLinkedList {
     DoublyLinkedListNode<data_t>* head;
     DoublyLinkedListNode<data_t>* tail;
     int size;
-    // todo: make sure we update bump and sum for every employee we add/remove from the list
     int grade_bump;
     long grade_sum;
 public:
@@ -21,23 +20,30 @@ public:
     ReturnValue merge_to_me(DoublyLinkedList<data_t> other_list);
     DoublyLinkedListNode<data_t>* getHead() { return head; }
     DoublyLinkedListNode<data_t>* getTail() { return tail; }
+    int getGradeSum();
 };
 
 template <typename data_t>
 ReturnValue DoublyLinkedList<data_t>::insert(data_t new_data){
-    DoublyLinkedListNode<data_t>* newNode = new DoublyLinkedListNode<data_t>(new_data);
-    if(!newNode){
+    DoublyLinkedListNode<data_t>* new_node = new DoublyLinkedListNode<data_t>(new_data);
+    if(!new_node){
         return MY_ALLOCATION_ERROR;
     }
-    newNode->next = head;
+    new_node->next = head;
     if(head != nullptr){
-        head->prev = newNode;
+        head->prev = new_node;
     }
     else{
-        tail = newNode;
+        tail = new_node;
     }
-    head = newNode;
+    head = new_node;
     size++;
+
+    // adding original grade to grade_sum, and updating the grade of the employee to
+    // hold original grade minus the current grade_bump
+    grade_sum += new_node->getData()->getGrade();
+    new_node->getData()->setGrade(new_node->getData()->getGrade() - grade_bump);
+
     return MY_SUCCESS;
 }
 
@@ -83,8 +89,13 @@ ReturnValue DoublyLinkedList<data_t>::remove(DoublyLinkedListNode<data_t>* node_
             node_to_remove->prev = nullptr;
         }
     }
+
+    node_to_remove->getData()->setGrade(node_to_remove->getData()->getGrade() + grade_bump);
+    grade_sum -= node_to_remove->getData()->getGrade();
+
     delete node_to_remove;
     size--;
+
     return MY_SUCCESS;
 }
 
@@ -98,8 +109,28 @@ ReturnValue DoublyLinkedList<data_t>::merge_to_me(DoublyLinkedList<data_t> other
         head = other_list.head;
         tail = other_list.tail;
         size = other_list.size;
+        grade_bump = other_list.grade_bump;
+        grade_sum = other_list.grade_sum;
         return MY_SUCCESS;
     }
+
+    int total_sum = 0;
+    DoublyLinkedListNode<data_t>* temp_node = head;
+    while(temp_node){
+        temp_node->getData()->setGrade(temp_node->getData()->getGrade() + grade_bump);
+        total_sum += temp_node->getData()->getGrade();
+        temp_node = temp_node->getNext();
+    }
+    grade_bump = 0;
+
+    temp_node = other_list.getHead();
+    while(temp_node){
+        temp_node->getData()->setGrade(temp_node->getData()->getGrade() + other_list.grade_bump);
+        total_sum += temp_node->getData()->getGrade();
+        temp_node = temp_node->getNext();
+    }
+    other_list.grade_bump = 0;
+
 
     tail->next = other_list.head;
     other_list.head->prev = tail;
@@ -108,7 +139,13 @@ ReturnValue DoublyLinkedList<data_t>::merge_to_me(DoublyLinkedList<data_t> other
     other_list.head = nullptr;
     other_list.tail = nullptr;
     other_list.size = 0;
+    grade_sum = total_sum;
     return MY_SUCCESS;
+}
+
+template <typename data_t>
+int DoublyLinkedList<data_t>::getGradeSum(){
+    return grade_sum + (size * grade_bump);
 }
 
 #endif //DOUBLY_LINKED_LIST_H

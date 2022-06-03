@@ -17,6 +17,8 @@ class Company{
     DynamicHashTable<EmployeeHashtableVal> employee_hash_table;
     DoublyLinkedList<Employee*> zero_salary_employees_list;
     RankTree<EmployeeKey,Employee*,EmployeeRank> employees_tree_salary_filtered;
+    
+    int calcSumGradeInRange(int lowest_salary, int highest_salary);
 
     public:
     Company(int company_id, int company_value);
@@ -33,6 +35,7 @@ class Company{
     ReturnValue AcquireAnotherCompany(Company* other, double Factor);
     void updateCompanyForAllEmployees();
     ReturnValue employeeSalaryIncrease(int employee_id, int salary_increase);
+
 
 /*
     ReturnValue GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary,

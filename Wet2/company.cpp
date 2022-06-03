@@ -188,6 +188,55 @@ ReturnValue Company::employeeSalaryIncrease(int employee_id, int salary_increase
     }
 }
 
+int Company::calcSumGradeInRange(int lowest_salary, int highest_salary) {
+    int sum_grades_in_range = 0;
+
+    if(lowest_salary > 0){
+        if(employees_tree_salary_filtered.getSize() == 0)
+            return 0;
+    }
+    if(highest_salary <= 0){
+        if(zero_salary_employees_list.getSize() == 0)
+            return 0;
+    }
+
+    Employee* highest_salary_employee;
+    Employee* lowest_salary_employee;
+
+    if (employees_tree_salary_filtered.getSize() == 0) {
+        highest_salary_employee = zero_salary_employees_list.getTail()->getData();
+    } else {
+        highest_salary_employee = employees_tree_salary_filtered.getRightMost().getData();
+    }
+
+    if (zero_salary_employees_list.getSize() == 0) {
+        lowest_salary_employee = employees_tree_salary_filtered.begin().getData();
+    } else {
+        lowest_salary_employee = zero_salary_employees_list.getHead()->getData();
+    }
+
+    if (lowest_salary > highest_salary_employee->getSalary() || highest_salary < lowest_salary_employee->getSalary()){
+        return 0;
+    }
+
+    // calculate how many players are in the range using the rank
+    bool list_included = (lowest_salary <= 0 && highest_salary >= 0);
+    bool tree_included = (lowest_salary > 0 || highest_salary > 0);
+
+    // if 0 is included in range (list_included) get num of players with level 0
+    if (list_included) {
+        sum_grades_in_range += zero_salary_employees_list.getGradeSum();
+    }
+
+    // if tree is included (levels 1 and up are in range)
+    if (tree_included) {
+        // todo: create tree function for calculating grade sum in range 
+        // sum_grades_in_range += employees_tree_salary_filtered.getSumGradeInRange(lowest_salary, highest_salary);
+    }
+
+    return sum_grades_in_range;
+}
+
 // todo: implement functions for:
 //       (1) calculating avg grade for all employees (in lower/higher range)
 //       (2) calculating sum_grades for top m employees (in tree - use rank tree trick from tutorial 6)
