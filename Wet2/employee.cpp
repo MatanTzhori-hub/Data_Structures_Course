@@ -1,13 +1,17 @@
 #include "employee.h"
 
-Employee::Employee(int employee_id, int employee_salary, int employee_grade, int company_id):
+Employee::Employee(int employee_id, int employee_salary, int employee_grade, Company* company):
                     employee_id(employee_id),
                     employee_salary(employee_salary),
                     employee_grade(employee_grade),
-                    company_id(company_id){}
+                    company(company){}
 
 int Employee::getCompanyId(){
-    return company_id;
+    return company->getId();
+}
+
+Company* Employee::getCompanyPtr(){
+    return company;
 }
 
 bool Employee::operator>(Employee &other_employee){

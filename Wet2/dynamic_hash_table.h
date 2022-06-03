@@ -91,6 +91,11 @@ ReturnValue DynamicHashTable<data_t>::findElement(int key, data_t *data){
     int index = -1;
     int iter = 0;
     int base_index = hash(key, iter);
+    if(graveyard[base_index] == TAKEN && hash_array[base_index].getKey() == key){
+        *data = hash_array[base_index];
+        return ELEMENT_EXISTS;
+    }
+    iter++;
 
     while(index != base_index){
         index = hash(key, iter);
@@ -117,6 +122,10 @@ int DynamicHashTable<data_t>::findIndex(int key){
     int index = -1;
     int iter = 0;
     int base_index = hash(key, iter);
+    if(graveyard[base_index] == TAKEN && hash_array[base_index].getKey() == key){
+        return base_index;
+    }
+    iter++;
 
     while(index != base_index){
         index = hash(key, iter);

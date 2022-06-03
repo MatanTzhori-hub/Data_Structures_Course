@@ -9,18 +9,19 @@ class Employee{
     int employee_id;
     int employee_salary;
     int employee_grade;
-    int company_id;
+    Company* company;
 
     public:
-    Employee(int employee_id, int employee_salary, int employee_grade, int company_id);
+    Employee(int employee_id, int employee_salary, int employee_grade, Company* company);
     ~Employee() = default;
     
-    void setCompany(int new_company_id){ company_id = new_company_id; }
+    void setCompany(Company* new_company){ company = new_company; }
     void setGrade(int new_grade){ employee_grade = new_grade; }
     void setSalary(int new_salary){ employee_salary = new_salary; } 
     int getId(){ return employee_id; }
     int getGrade(){ return employee_grade; }
     int getCompanyId();
+    Company* getCompanyPtr();
     int getSalary(){ return employee_salary; }
     Employee operator=(Employee other_employee);
     bool operator<(Employee &other_employee);

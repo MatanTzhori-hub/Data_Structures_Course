@@ -32,6 +32,7 @@ class Company{
     ReturnValue removeEmployee(int employee_id);
     ReturnValue AcquireAnotherCompany(Company* other, double Factor);
     void updateCompanyForAllEmployees();
+    ReturnValue employeeSalaryIncrease(int employee_id, int salary_increase);
 
 /*
     ReturnValue GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary,

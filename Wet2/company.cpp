@@ -145,14 +145,46 @@ void Company::updateCompanyForAllEmployees(){
     // update company for employees in tree
     Iterator<EmployeeKey, Employee*, EmployeeRank> tree_iter = employees_tree_salary_filtered.begin();
     while (tree_iter != employees_tree_salary_filtered.end()){
-        tree_iter.getData()->setCompany(company_id);
+        tree_iter.getData()->setCompany(this);
     }
 
     // update company for employees in list
     DoublyLinkedListNode<Employee*>* list_iter_ptr = zero_salary_employees_list.getHead();
     while (list_iter_ptr){
-        list_iter_ptr->getData()->setCompany(company_id);
+        list_iter_ptr->getData()->setCompany(this);
         list_iter_ptr = list_iter_ptr->getNext();
+    }
+}
+
+ReturnValue Company::employeeSalaryIncrease(int employee_id, int salary_increase){
+    EmployeeHashtableVal employee_val;
+    ReturnValue res = employee_hash_table.findElement(employee_id, &employee_val);
+    if(res != ELEMENT_EXISTS){
+        return res;
+    }
+    else{
+        Employee* employee = employee_val.getEmployeePtr();
+
+        // if true, then employee has salary > 0.
+        if(employee_val.getListNode() == nullptr){
+            EmployeeKey temp_key = EmployeeKey(employee_id, employee->getSalary());
+            employees_tree_salary_filtered.removeElement(temp_key);
+            
+        }
+        // if true, then employee has salary = 0.
+        else if(employee_val.getTreeNode() == nullptr){
+            zero_salary_employees_list.remove(employee_val.getListNode());
+        }
+
+        employee->setSalary(employee->getSalary() + salary_increase);
+        EmployeeKey new_key = EmployeeKey(employee_id, employee->getSalary() + salary_increase);
+        EmployeeRank new_rank = EmployeeRank(employee->getGrade());
+        employees_tree_salary_filtered.insert(new_key, employee, new_rank);
+        Node<EmployeeKey, Employee*, EmployeeRank>* new_node_in_tree = employees_tree_salary_filtered.findElementNode(new_key);
+        employee_val.setTreeNode(new_node_in_tree);
+        employee_val.setNullListNode();
+
+        return MY_SUCCESS;
     }
 }
 
