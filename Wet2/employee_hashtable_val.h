@@ -6,6 +6,9 @@
 #include "node.h"
 #include "doubly_linked_list_node.h"
 
+class Employee;
+class EmployeeRank;
+
 class EmployeeHashtableVal {
     Employee* employee_ptr;
     Node<EmployeeKey, Employee*, EmployeeRank>* tree_node;
@@ -26,7 +29,7 @@ public:
     Employee* getEmployeePtr() { return employee_ptr; }
 
     void initializeVal();
-    int getKey() { return employee_ptr->getId(); }
+    int getKey();
     DoublyLinkedListNode<Employee*>* getListNode() { return list_node; }
     Node<EmployeeKey, Employee*, EmployeeRank>* getTreeNode() { return tree_node; }
     void setNullListNode();

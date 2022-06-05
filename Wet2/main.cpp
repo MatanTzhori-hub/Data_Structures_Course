@@ -1,107 +1,99 @@
-#include "dynamic_hash_table.h"
+#include "company.h"
+#include "employee.h"
+
+#include <iostream>
+
+using std::endl;
 
 int main(){
-    struct Dummy{
-        char data;
-        int id;
 
-        Dummy(char data, int id) : data(data), id(id){};
-        Dummy() = default;
-        ~Dummy() = default;
-        Dummy& operator=(Dummy& dumm) = default;
-        int getKey(){ return id; };
-        void initializeVal(){ data = 0; id = 0;};
-    };
+    double avg_grades = 0;
 
-    DynamicHashTable<Dummy> my_table(4);
+    Company comp1(1, 2);
 
-    Dummy dumb1('a', 1);
-    Dummy dumb2('b', 13);
-    Dummy dumb3('c', 8);
-    Dummy dumb4('d', 999);
-    Dummy dumb5('e', 5);
-    Dummy dumb6('f', 23);
-    Dummy dumb7('g', 2);
-    Dummy dumb8('h', 43);
-    Dummy dumb9('i', 88);
-    Dummy dumb10('j', 1000);
-    Dummy dumb11('k', 20);
-    Dummy dumb12('l', 34);
-    Dummy dumb13('m', 9);
-    Dummy dumb14('n', 677);
-    Dummy dumb15('o', 420);
-    Dummy dumb16('p', 69);
-    Dummy dumb17('q', 666);
-    Dummy dumb18('r', 404);
+    Employee emp1(1, 0, 1, &comp1);
+    Employee emp2(2, 0, 2, &comp1);
+    Employee emp3(10, 0, 3, &comp1);
+    Employee emp4(5, 0, 4, &comp1);
+    Employee emp5(7, 0, 5, &comp1);
+    Employee emp6(3, 0, 6, &comp1);
+    Employee emp7(11, 0, 7, &comp1);
+    Employee emp8(17, 0, 9, &comp1);
+    Employee emp9(299, 0, 3, &comp1);
+    Employee emp10(173, 0, 5, &comp1);
+    Employee emp11(19, 0, 5, &comp1);
+    Employee emp12(189, 0, 6, &comp1);
+    Employee emp13(79, 0, 4, &comp1);
+    Employee emp14(209, 0, 1, &comp1);
+    Employee emp15(156, 0, 2, &comp1);
+    Employee emp16(80, 0, 8, &comp1);
+    Employee emp17(43, 0, 7, &comp1);
+    Employee emp18(91, 0, 2, &comp1);
+    Employee emp19(46, 0, 0, &comp1);
+    Employee emp20(100, 0, 3, &comp1);
+    Employee emp21(47, 0, 1, &comp1);
 
-    Dummy out;
-    ReturnValue res;
+    comp1.addEmployee(emp1);
+    comp1.addEmployee(emp2);
+    comp1.addEmployee(emp3);
+    comp1.addEmployee(emp4);
+    comp1.addEmployee(emp5);
+    comp1.addEmployee(emp6);
+    comp1.addEmployee(emp7);
+    comp1.addEmployee(emp8);
+    comp1.addEmployee(emp9);
+    comp1.addEmployee(emp10);
 
-    res = my_table.insertElement(dumb1, dumb1.getKey());
-    res = my_table.insertElement(dumb2, dumb2.getKey());
-    res = my_table.insertElement(dumb3, dumb3.getKey());
-    res = my_table.insertElement(dumb4, dumb4.getKey());
-    res = my_table.insertElement(dumb5, dumb5.getKey());
-    res = my_table.insertElement(dumb6, dumb6.getKey());
-    res = my_table.insertElement(dumb7, dumb7.getKey());
-    res = my_table.insertElement(dumb8, dumb8.getKey());
-    res = my_table.insertElement(dumb9, dumb9.getKey());
-    res = my_table.insertElement(dumb10, dumb10.getKey());
-    res = my_table.insertElement(dumb11, dumb11.getKey());
-    res = my_table.insertElement(dumb12, dumb12.getKey());
-    res = my_table.insertElement(dumb13, dumb13.getKey());
-    res = my_table.insertElement(dumb14, dumb14.getKey());
-    res = my_table.insertElement(dumb15, dumb15.getKey());
-    res = my_table.insertElement(dumb16, dumb16.getKey());
-    res = my_table.insertElement(dumb17, dumb17.getKey());
-    res = my_table.insertElement(dumb18, dumb18.getKey());
+    comp1.bumpGradeInRange(50, 100, 2);
+    comp1.bumpGradeInRange(0, 100, 2);
 
-    res = my_table.findElement(1, &out);
-    res = my_table.findElement(13, &out);
-    res = my_table.findElement(69, &out);
-    res = my_table.findElement(404, &out);
-    res = my_table.findElement(444, &out);
-    res = my_table.findElement(108, &out);
+    comp1.addEmployee(emp11);
+    comp1.addEmployee(emp12);
+    comp1.addEmployee(emp13);
+    comp1.addEmployee(emp14);
+    comp1.addEmployee(emp15);
 
-    res = my_table.removeElement(13);
-    res = my_table.removeElement(999);
-    
-    res = my_table.removeElement(dumb11.getKey());
-    res = my_table.removeElement(dumb12.getKey());
-    res = my_table.removeElement(dumb13.getKey());
-    res = my_table.removeElement(dumb14.getKey());
-    res = my_table.removeElement(dumb15.getKey());
-    res = my_table.removeElement(dumb16.getKey());
-    res = my_table.removeElement(dumb17.getKey());
-    res = my_table.removeElement(dumb18.getKey());
+    comp1.bumpGradeInRange(0, 100, 3);
 
-    res = my_table.insertElement(dumb11, dumb11.getKey());
-    res = my_table.removeElement(dumb11.getKey());
-    res = my_table.insertElement(dumb12, dumb12.getKey());
-    res = my_table.removeElement(dumb12.getKey());
-    res = my_table.insertElement(dumb13, dumb13.getKey());
-    res = my_table.removeElement(dumb13.getKey());
-    res = my_table.insertElement(dumb14, dumb14.getKey());
-    res = my_table.removeElement(dumb14.getKey());
-    res = my_table.insertElement(dumb15, dumb15.getKey());
-    res = my_table.removeElement(dumb15.getKey());
-    res = my_table.insertElement(dumb16, dumb16.getKey());
-    res = my_table.removeElement(dumb16.getKey());
-    res = my_table.insertElement(dumb17, dumb17.getKey());
-    res = my_table.removeElement(dumb17.getKey());
-    res = my_table.insertElement(dumb18, dumb18.getKey());
-    res = my_table.removeElement(dumb18.getKey());
-    
+    comp1.addEmployee(emp16);
+    comp1.addEmployee(emp17);
+    comp1.addEmployee(emp18);
+    comp1.addEmployee(emp19);
+    comp1.addEmployee(emp20);
+    comp1.addEmployee(emp21);
 
-    res = my_table.findElement(1, &out);
-    res = my_table.findElement(13, &out);
-    res = my_table.findElement(69, &out);
-    res = my_table.findElement(404, &out);
-    res = my_table.findElement(444, &out);
-    res = my_table.findElement(108, &out);
 
-    res = my_table.findElement(1, &out);
-    res = my_table.findElement(13, &out);
+    avg_grades = comp1.calcAvgGradeInRange(50, 100);
+    cout << avg_grades << endl;
+    avg_grades = comp1.calcAvgGradeInRange(0, 100);
+    cout << avg_grades << endl;
+
+    comp1.removeEmployee(emp11.getId());
+    comp1.removeEmployee(emp12.getId());
+    comp1.removeEmployee(emp13.getId());
+    comp1.removeEmployee(emp14.getId());
+    comp1.removeEmployee(emp15.getId());
+
+    avg_grades = comp1.calcAvgGradeInRange(50, 100);
+    cout << avg_grades << endl;
+    avg_grades = comp1.calcAvgGradeInRange(0, 100);
+    cout << avg_grades << endl;
+
+
+    comp1.employeeSalaryIncrease(7, 1);
+    comp1.employeeSalaryIncrease(2, 50);
+    comp1.employeeSalaryIncrease(4, 30);
+    comp1.employeeSalaryIncrease(3, 50);
+    comp1.employeeSalaryIncrease(11, 70);
+    comp1.employeeSalaryIncrease(2, 40);
+    comp1.employeeSalaryIncrease(7, 50);
+    comp1.employeeSalaryIncrease(19, 5);
+    comp1.employeeSalaryIncrease(80, 104);
+    comp1.employeeSalaryIncrease(7, 18);
+    comp1.employeeSalaryIncrease(91, 400);
+
+    avg_grades = comp1.calcAvgGradeInRange(0, 500);
+    cout << avg_grades << endl;
 
     return 0;
 }

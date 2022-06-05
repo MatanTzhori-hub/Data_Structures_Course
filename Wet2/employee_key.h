@@ -1,6 +1,8 @@
 #ifndef EMPLOYEE_KEY_H
 #define EMPLOYEE_KEY_H
 
+#define MAX_SALARY 2147483647
+
 class EmployeeKey{
 
     int employee_id;
@@ -18,6 +20,8 @@ class EmployeeKey{
     
     bool operator>(const EmployeeKey& other) const;
     bool operator<(const EmployeeKey& other) const;
+    bool operator>=(const EmployeeKey& other) const;
+    bool operator<=(const EmployeeKey& other) const;
 };
 
 bool operator==(const EmployeeKey& first, const EmployeeKey& second);

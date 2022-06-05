@@ -87,21 +87,20 @@ void Node<key_t, data_t, rank_t>::updateHeight() {
 template<typename key_t, typename data_t, typename rank_t>
 void Node<key_t, data_t, rank_t>::updateRank() {
 	rank.initializeRank(*data);
-    if (isLeaf()){
-        return;
-    }
+    // if (isLeaf()){
+    // }
     if(onlyHaveLeftSon()){
         rank += left->rank;
-        return;
     }
-    if(onlyHaveRightSon()){
+    else if(onlyHaveRightSon()){
         rank += right->rank;
-        return;
     }
-    if(haveTwoSons()){
+    else if(haveTwoSons()){
         rank += left->rank;
         rank += right->rank;
 	}
+	rank.setSumOfGrades(rank.getSumOfGrades() + rank.getGradeBump() * rank.getWeight());
+	return;
 }
 
 template<typename key_t, typename data_t, typename rank_t>

@@ -22,6 +22,8 @@ public:
 	Iterator& next();
 	bool operator==(Iterator other){ return this->ptr == other.ptr;}
 	bool operator!=(Iterator other){ return this->ptr != other.ptr;}
+
+	friend class RankTree<key_t, data_t, rank_t>;
 };
 
 template<typename key_t, typename data_t, typename rank_t>

@@ -21,6 +21,7 @@ public:
     DoublyLinkedListNode<data_t>* getHead() { return head; }
     DoublyLinkedListNode<data_t>* getTail() { return tail; }
     int getGradeSum();
+    int bumpAllGrade(int bump_amount);
 };
 
 template <typename data_t>
@@ -41,8 +42,8 @@ ReturnValue DoublyLinkedList<data_t>::insert(data_t new_data){
 
     // adding original grade to grade_sum, and updating the grade of the employee to
     // hold original grade minus the current grade_bump
-    grade_sum += new_node->getData()->getGrade();
     new_node->getData()->setGrade(new_node->getData()->getGrade() - grade_bump);
+    grade_sum += new_node->getData()->getGrade();
 
     return MY_SUCCESS;
 }
@@ -90,8 +91,10 @@ ReturnValue DoublyLinkedList<data_t>::remove(DoublyLinkedListNode<data_t>* node_
         }
     }
 
-    node_to_remove->getData()->setGrade(node_to_remove->getData()->getGrade() + grade_bump);
+    // todo : check with adi what is the correct order here:
     grade_sum -= node_to_remove->getData()->getGrade();
+    node_to_remove->getData()->setGrade(node_to_remove->getData()->getGrade() + grade_bump);
+    //
 
     delete node_to_remove;
     size--;
@@ -146,6 +149,12 @@ ReturnValue DoublyLinkedList<data_t>::merge_to_me(DoublyLinkedList<data_t> other
 template <typename data_t>
 int DoublyLinkedList<data_t>::getGradeSum(){
     return grade_sum + (size * grade_bump);
+}
+
+
+template <typename data_t>
+int DoublyLinkedList<data_t>::bumpAllGrade(int bump_amount){
+    return grade_bump += bump_amount;
 }
 
 #endif //DOUBLY_LINKED_LIST_H

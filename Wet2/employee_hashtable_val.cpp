@@ -13,6 +13,10 @@ void EmployeeHashtableVal::initializeVal(){
     list_node = nullptr;
 }
 
+int EmployeeHashtableVal::getKey(){
+    return employee_ptr->getId();
+}
+
 void EmployeeHashtableVal::setNullListNode() {
     list_node = nullptr;
 }

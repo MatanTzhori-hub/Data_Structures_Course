@@ -17,7 +17,7 @@
 typedef enum {FREED = -1, EMPTY, TAKEN} IndexStatus;
 
 template <typename data_t>
-class DynamicHashTable {
+class DynamicHashTable{
     private:
         int max_size;
         int curr_size;
@@ -36,7 +36,7 @@ class DynamicHashTable {
 
         ReturnValue insertElement(data_t data, int key);
         ReturnValue removeElement(int key);
-        ReturnValue findElement(int key, data_t *data);
+        data_t* findElement(int key, ReturnValue &res);
         int findIndex(int key);
         void mergeToMe(DynamicHashTable<data_t>* other_hash_table);
 };
@@ -86,21 +86,23 @@ int DynamicHashTable<data_t>::hash(int key, int iter){
     return (hashBase(key) + iter * hashStep(key)) % max_size;
 }
 
+// big bug in findElement.. not returning the cell we really want but a copy of it
 template<class data_t>
-ReturnValue DynamicHashTable<data_t>::findElement(int key, data_t *data){
+data_t* DynamicHashTable<data_t>::findElement(int key, ReturnValue &res){
     int index = -1;
     int iter = 0;
     int base_index = hash(key, iter);
     if(graveyard[base_index] == TAKEN && hash_array[base_index].getKey() == key){
-        *data = hash_array[base_index];
-        return ELEMENT_EXISTS;
+        res = ELEMENT_EXISTS;
+        return &hash_array[base_index];
     }
     iter++;
 
     while(index != base_index){
         index = hash(key, iter);
         if(graveyard[index] == EMPTY){
-            return ELEMENT_DOES_NOT_EXIST;
+            res = ELEMENT_DOES_NOT_EXIST;
+            return nullptr;
         }
         else if(graveyard[index] == FREED){
             iter++;
@@ -108,13 +110,14 @@ ReturnValue DynamicHashTable<data_t>::findElement(int key, data_t *data){
         }
         else{
             if(hash_array[index].getKey() == key){
-                *data = hash_array[index];
-                return ELEMENT_EXISTS;
+                res = ELEMENT_EXISTS;
+                return &hash_array[index];
             }
             iter++;
         }
     }
-    return ELEMENT_DOES_NOT_EXIST;
+    res = ELEMENT_DOES_NOT_EXIST;
+    return nullptr;
 }
 
 template<class data_t>
@@ -155,8 +158,8 @@ ReturnValue DynamicHashTable<data_t>::insertElement(data_t data, int key){
     int index = 0;
     int iter = 0;
 
-    data_t* temp_data;
-    ReturnValue ret = findElement(key, temp_data);
+    ReturnValue ret = MY_FAILURE;
+    data_t* temp_data_ptr = findElement(key, ret);
 
     if (ret == ELEMENT_EXISTS){
         return MY_FAILURE;
@@ -205,14 +208,18 @@ void DynamicHashTable<data_t>::rescale(double scale){
     hash_array = new data_t[max_size];
 
     if(!hash_array){
+        hash_array = old_hash_array;
+        graveyard = old_graveyard;
         max_size = old_max_size;
         throw std::bad_alloc();
     }
 
     graveyard = new int[max_size];
     if(!graveyard){
+        hash_array = old_hash_array;
+        graveyard = old_graveyard;
         max_size = old_max_size;
-        delete hash_array;
+        delete[] hash_array;
         throw std::bad_alloc();
     }
 
@@ -228,8 +235,8 @@ void DynamicHashTable<data_t>::rescale(double scale){
         }
     }
 
-    delete old_hash_array;
-    delete old_graveyard;
+    delete[] old_hash_array;
+    delete[] old_graveyard;
 }
 
 template<class data_t>
@@ -240,7 +247,7 @@ void DynamicHashTable<data_t>::mergeToMe(DynamicHashTable<data_t>* other_hash_ta
 
     for (int i = 0; i < other_hash_table->max_size; i++){
         if (other_hash_table->graveyard[i] == TAKEN){
-            this->insertData(other_hash_table->hash_array[i], other_hash_table->hash_array[i].getKey());
+            this->insertElement(other_hash_table->hash_array[i], other_hash_table->hash_array[i].getKey());
         }
     }
 

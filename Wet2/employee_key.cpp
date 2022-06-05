@@ -4,15 +4,23 @@ EmployeeKey::EmployeeKey(int employee_id, int employee_salary): employee_id(empl
                                                         employee_salary(employee_salary){};
 
 bool EmployeeKey::operator>(const EmployeeKey& other) const{
-            if(this->employee_salary == other.employee_salary)
-                return this->employee_id < other.employee_id;
-            else
-                return this->employee_salary > other.employee_salary;
-        }
+    if(this->employee_salary == other.employee_salary)
+        return this->employee_id < other.employee_id;
+    else
+        return this->employee_salary > other.employee_salary;
+}
 
 bool EmployeeKey::operator<(const EmployeeKey& other) const{
-            return other > *this;
-    }
+        return other > *this;
+}
+
+bool EmployeeKey::operator>=(const EmployeeKey& other) const{
+    return *this > other || *this == other;
+}
+
+bool EmployeeKey::operator<=(const EmployeeKey& other) const{
+    return *this < other || *this == other;
+}
 
 bool operator==(const EmployeeKey& first, const EmployeeKey& second){
     return first.getId() == second.getId();

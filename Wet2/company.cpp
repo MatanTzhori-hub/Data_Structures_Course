@@ -31,20 +31,22 @@ void Company::setValue(int new_value){
 
 ReturnValue Company::findEmployee(int employee_id, Employee* returned_employee){
     Employee temp_employee(employee_id, 0, 0, 0);
-    EmployeeHashtableVal temp_employee_hash_val = EmployeeHashtableVal();
-    ReturnValue ret = employee_hash_table.findElement(employee_id, &temp_employee_hash_val);
-    if(ret != MY_SUCCESS){
+    ReturnValue ret = MY_FAILURE;
+    EmployeeHashtableVal* temp_employee_hash_val = employee_hash_table.findElement(employee_id, ret);
+    
+    if(ret != ELEMENT_EXISTS){
         return MY_FAILURE;
     }
     else{
-        returned_employee = temp_employee_hash_val.getEmployeePtr();
+        returned_employee = temp_employee_hash_val->getEmployeePtr();
         return MY_SUCCESS;
     }
 }
 
 bool Company::isEmployeeExist(int employee_id){
-    EmployeeHashtableVal temp_val;
-    ReturnValue ret = employee_hash_table.findElement(employee_id, &temp_val);
+    ReturnValue ret = MY_FAILURE;
+    EmployeeHashtableVal* temp_val = employee_hash_table.findElement(employee_id, ret);
+    
     if(ret == ELEMENT_EXISTS){
         return true;
     }
@@ -53,13 +55,14 @@ bool Company::isEmployeeExist(int employee_id){
 
 ReturnValue Company::addEmployee(Employee& employee){
     EmployeeKey employee_key = EmployeeKey(employee.getId(), employee.getSalary());
-    EmployeeHashtableVal new_val;
-    ReturnValue res = employee_hash_table.findElement(employee.getId(), &new_val);
+    ReturnValue res = MY_FAILURE;
+    EmployeeHashtableVal* temp_val = employee_hash_table.findElement(employee.getId(), res);
+    
     if (res == ELEMENT_EXISTS){
         return MY_FAILURE;
     }
 
-    new_val.setEmployeePtr(&employee);
+    EmployeeHashtableVal new_val(&employee);
     if (employee.getSalary() == 0){
         res = zero_salary_employees_list.insert(&employee);
         if (res != MY_SUCCESS){
@@ -90,27 +93,28 @@ ReturnValue Company::addEmployee(Employee& employee){
 }
 
 ReturnValue Company::removeEmployee(int employee_id){
-    EmployeeHashtableVal hash_val;
-    ReturnValue res = employee_hash_table.findElement(employee_id, &hash_val);
+    ReturnValue res = MY_FAILURE;
+    EmployeeHashtableVal* hash_val = employee_hash_table.findElement(employee_id, res);
+    
     if (res != ELEMENT_EXISTS){
         return MY_FAILURE;
     }
 
-    if (hash_val.getTreeNode() == nullptr){
+    if (hash_val->getTreeNode() == nullptr){
         // remove from list
-        DoublyLinkedListNode<Employee*>* temp_node_ptr = hash_val.getListNode();
+        DoublyLinkedListNode<Employee*>* temp_node_ptr = hash_val->getListNode();
         res = zero_salary_employees_list.remove(temp_node_ptr);
         if (res != MY_SUCCESS){
             return MY_FAILURE;
         }
-        hash_val.setListNode(nullptr);
-    } else if (hash_val.getListNode() == nullptr){
+        hash_val->setListNode(nullptr);
+    } else if (hash_val->getListNode() == nullptr){
         // remove from tree
-        res = employees_tree_salary_filtered.removeElement(hash_val.getTreeNode()->getKey());
+        res = employees_tree_salary_filtered.removeElement(hash_val->getTreeNode()->getKey());
         if (res != MY_SUCCESS){
             return MY_FAILURE;
         }
-        hash_val.setTreeNode(nullptr);
+        hash_val->setTreeNode(nullptr);
     }
 
     // remove from hashtable
@@ -133,12 +137,16 @@ ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor
 
     // scan new combined tree and update hash table
     Iterator<EmployeeKey, Employee*, EmployeeRank> iter = employees_tree_salary_filtered.begin();
-    EmployeeHashtableVal temp_hash_val;
+
+    res = MY_FAILURE;
+    EmployeeHashtableVal* temp_hash_val;
 
     while (iter != employees_tree_salary_filtered.end()){
-        employee_hash_table.findElement(iter.getKey().getId(), &temp_hash_val);
-        temp_hash_val.setTreeNode(iter.getNodePtr());
+        temp_hash_val = employee_hash_table.findElement(iter.getKey().getId(), res);
+        temp_hash_val->setTreeNode(iter.getNodePtr());
     }
+
+    return MY_SUCCESS;
 }
 
 void Company::updateCompanyForAllEmployees(){
@@ -157,32 +165,33 @@ void Company::updateCompanyForAllEmployees(){
 }
 
 ReturnValue Company::employeeSalaryIncrease(int employee_id, int salary_increase){
-    EmployeeHashtableVal employee_val;
-    ReturnValue res = employee_hash_table.findElement(employee_id, &employee_val);
+    ReturnValue res = MY_FAILURE;
+    EmployeeHashtableVal* employee_val = employee_hash_table.findElement(employee_id, res);
+    
     if(res != ELEMENT_EXISTS){
         return res;
     }
     else{
-        Employee* employee = employee_val.getEmployeePtr();
+        Employee* employee = employee_val->getEmployeePtr();
 
         // if true, then employee has salary > 0.
-        if(employee_val.getListNode() == nullptr){
+        if(employee_val->getListNode() == nullptr){
             EmployeeKey temp_key = EmployeeKey(employee_id, employee->getSalary());
             employees_tree_salary_filtered.removeElement(temp_key);
             
         }
         // if true, then employee has salary = 0.
-        else if(employee_val.getTreeNode() == nullptr){
-            zero_salary_employees_list.remove(employee_val.getListNode());
+        else if(employee_val->getTreeNode() == nullptr){
+            zero_salary_employees_list.remove(employee_val->getListNode());
         }
 
         employee->setSalary(employee->getSalary() + salary_increase);
-        EmployeeKey new_key = EmployeeKey(employee_id, employee->getSalary() + salary_increase);
+        EmployeeKey new_key = EmployeeKey(employee_id, employee->getSalary());
         EmployeeRank new_rank = EmployeeRank(employee->getGrade());
         employees_tree_salary_filtered.insert(new_key, employee, new_rank);
         Node<EmployeeKey, Employee*, EmployeeRank>* new_node_in_tree = employees_tree_salary_filtered.findElementNode(new_key);
-        employee_val.setTreeNode(new_node_in_tree);
-        employee_val.setNullListNode();
+        employee_val->setTreeNode(new_node_in_tree);
+        employee_val->setNullListNode();
 
         return MY_SUCCESS;
     }
@@ -219,64 +228,144 @@ int Company::calcSumGradeInRange(int lowest_salary, int highest_salary) {
         return 0;
     }
 
-    // calculate how many players are in the range using the rank
     bool list_included = (lowest_salary <= 0 && highest_salary >= 0);
     bool tree_included = (lowest_salary > 0 || highest_salary > 0);
 
-    // if 0 is included in range (list_included) get num of players with level 0
+    // if 0 is included in range (list_included) get num of players with salary 0
     if (list_included) {
         sum_grades_in_range += zero_salary_employees_list.getGradeSum();
     }
 
-    // if tree is included (levels 1 and up are in range)
+    // if tree is included (salaries 1 and up are in range)
     if (tree_included) {
-        // todo: create tree function for calculating grade sum in range 
-        // sum_grades_in_range += employees_tree_salary_filtered.getSumGradeInRange(lowest_salary, highest_salary);
+        sum_grades_in_range += employees_tree_salary_filtered.getSumGradeInRange(lowest_salary, highest_salary);
     }
 
     return sum_grades_in_range;
 }
 
-// todo: implement functions for:
-//       (1) calculating avg grade for all employees (in lower/higher range)
-//       (2) calculating sum_grades for top m employees (in tree - use rank tree trick from tutorial 6)
+int Company::calcNumEmployeesInRange(int lowest_salary, int highest_salary){
+    int sum_employees_in_range = 0;
 
-/*
-
-ReturnValue Company::GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary,
-                                            int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees){
-    if(employees_id_filtered.getSize() == 0){
-        return MY_FAILURE;
+    if(lowest_salary > 0){
+        if(employees_tree_salary_filtered.getSize() == 0)
+            return 0;
+    }
+    if(highest_salary <= 0){
+        if(zero_salary_employees_list.getSize() == 0)
+            return 0;
     }
 
-    int numEmployees = 0;
-    int totalNumEmployees = 0;
-    auto start_iter = employees_id_filtered.findCloseestElement(MinEmployeeID);
-    auto end_iter = employees_id_filtered.findCloseestElement(MaxEmployeeId);
+    Employee* highest_salary_employee;
+    Employee* lowest_salary_employee;
 
-    while(start_iter != end_iter){
-        Employee* employee_ptr = start_iter.getData();
-        if( MinEmployeeID <= employee_ptr->getId() && employee_ptr->getId() <= MaxEmployeeId){
-            totalNumEmployees++;
-            if(MinSalary <= employee_ptr->getSalary() && MinGrade <= employee_ptr->getGrade()){
-                numEmployees++;
-            }
-        }
-        start_iter.next();
+    if (employees_tree_salary_filtered.getSize() == 0) {
+        highest_salary_employee = zero_salary_employees_list.getTail()->getData();
+    } else {
+        highest_salary_employee = employees_tree_salary_filtered.getRightMost().getData();
     }
 
-    // once more, incase end_iter is the largest key and still in range.
-    Employee* employee_ptr = start_iter.getData();
-    if( MinEmployeeID <= employee_ptr->getId() && employee_ptr->getId() <= MaxEmployeeId){
-        totalNumEmployees++;
-        if(MinSalary <= employee_ptr->getSalary() && MinGrade <= employee_ptr->getGrade()){
-            numEmployees++;
-        }
+    if (zero_salary_employees_list.getSize() == 0) {
+        lowest_salary_employee = employees_tree_salary_filtered.begin().getData();
+    } else {
+        lowest_salary_employee = zero_salary_employees_list.getHead()->getData();
     }
 
-    *TotalNumOfEmployees = totalNumEmployees;
-    *NumOfEmployees = numEmployees;
-    return MY_SUCCESS;
+    if (lowest_salary > highest_salary_employee->getSalary() || highest_salary < lowest_salary_employee->getSalary()){
+        return 0;
+    }
+
+    bool list_included = (lowest_salary <= 0 && highest_salary >= 0);
+    bool tree_included = (lowest_salary > 0 || highest_salary > 0);
+
+    // if 0 is included in range (list_included) get num of players with salary 0
+    if (list_included) {
+        sum_employees_in_range += zero_salary_employees_list.getSize();
+    }
+
+    // if tree is included (salaries 1 and up are in range)
+    if (tree_included) {
+        sum_employees_in_range += employees_tree_salary_filtered.getNumEmployeesInRange(lowest_salary, highest_salary);
+    }
+
+    return sum_employees_in_range;
 }
-*/
 
+
+double Company::calcAvgGradeInRange(int lowest_salary, int highest_salary){
+    if((zero_salary_employees_list.getSize() + employees_tree_salary_filtered.getSize()) == 0){
+        return 0;
+    }
+    int sum_grade = calcSumGradeInRange(lowest_salary, highest_salary);
+    if(sum_grade == 0){
+        return 0;
+    }
+    else{
+        int sum_employees = calcNumEmployeesInRange(lowest_salary, highest_salary);
+        return (double)sum_grade / sum_employees;
+    }
+}
+
+
+int Company::calcSumGradeOfmTop(int m){
+    if(m > employees_tree_salary_filtered.getSize()){
+        return -1;
+    }
+    else if(m == employees_tree_salary_filtered.getSize()){
+        return employees_tree_salary_filtered.getTotalSumGrade();
+    }
+    else{
+        return employees_tree_salary_filtered.getSumGradeOfmTop(m);
+    }
+}
+
+
+void Company::promoteEmployee(int employee_id, int bump_amount){
+
+}
+
+
+void Company::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount){
+    int sum_employees_in_range = 0;
+
+    if(lowest_salary > 0){
+        if(employees_tree_salary_filtered.getSize() == 0)
+            return;
+    }
+    if(highest_salary <= 0){
+        if(zero_salary_employees_list.getSize() == 0)
+            return;
+    }
+
+    Employee* highest_salary_employee;
+    Employee* lowest_salary_employee;
+
+    if (employees_tree_salary_filtered.getSize() == 0) {
+        highest_salary_employee = zero_salary_employees_list.getTail()->getData();
+    } else {
+        highest_salary_employee = employees_tree_salary_filtered.getRightMost().getData();
+    }
+
+    if (zero_salary_employees_list.getSize() == 0) {
+        lowest_salary_employee = employees_tree_salary_filtered.begin().getData();
+    } else {
+        lowest_salary_employee = zero_salary_employees_list.getHead()->getData();
+    }
+
+    if (lowest_salary > highest_salary_employee->getSalary() || highest_salary < lowest_salary_employee->getSalary()){
+        return;
+    }
+
+    bool list_included = (lowest_salary <= 0 && highest_salary >= 0);
+    bool tree_included = (lowest_salary > 0 || highest_salary > 0);
+
+    // if 0 is included in range (list_included) get num of players with salary 0
+    if (list_included) {
+        zero_salary_employees_list.bumpAllGrade(bump_amount);
+    }
+
+    // if tree is included (salaries 1 and up are in range)
+    if (tree_included) {
+        employees_tree_salary_filtered.bumpGradeInRange(lowest_salary, highest_salary, bump_amount);
+    }
+}

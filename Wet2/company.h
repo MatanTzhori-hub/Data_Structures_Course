@@ -10,6 +10,8 @@
 #include "employee_hashtable_val.h"
 
 class Employee;
+class EmployeeHashtableVal;
+class EmployeeRank;
 
 class Company{
     int company_id;
@@ -19,6 +21,7 @@ class Company{
     RankTree<EmployeeKey,Employee*,EmployeeRank> employees_tree_salary_filtered;
     
     int calcSumGradeInRange(int lowest_salary, int highest_salary);
+    int calcNumEmployeesInRange(int lowest_salary, int highest_salary);
 
     public:
     Company(int company_id, int company_value);
@@ -35,12 +38,13 @@ class Company{
     ReturnValue AcquireAnotherCompany(Company* other, double Factor);
     void updateCompanyForAllEmployees();
     ReturnValue employeeSalaryIncrease(int employee_id, int salary_increase);
+    
+    double calcAvgGradeInRange(int lowest_salary, int highest_salary);
+    int calcSumGradeOfmTop(int m);
 
-
-/*
-    ReturnValue GetNumEmployeesMatching(int MinEmployeeID, int MaxEmployeeId, int MinSalary,
-                                        int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees);
-*/
+    // todo : imlement the following 2 functions
+    void promoteEmployee(int employee_id, int bump_amount);
+    void bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount);
 
 };
 

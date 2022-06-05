@@ -2,6 +2,7 @@
 #define RANK_TREE_H
 
 #include "iterator.h"
+#include "employee_key.h"
 #include <cmath>
 #include <iostream>
 
@@ -47,6 +48,11 @@ class RankTree {
 	void mergeArrays(Node<key_t, data_t, rank_t>* arr1[], Node<key_t, data_t, rank_t>* arr2[],
 					   Node<key_t, data_t, rank_t>* merged_arr[], int arr1_size, int arr2_size);
 
+	//Bumps calculation - trust that son is really a son of father
+	int calculateBumpsUpToFather(Node<key_t, data_t, rank_t>* son, Node<key_t, data_t, rank_t>* father);
+
+	int getSumGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound);
+	void bumpGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound, int bump_amount);
 
 public:
 	RankTree() : size(0) {root = nullptr; }
@@ -60,6 +66,19 @@ public:
     Node<key_t, data_t, rank_t>* findElementNode(key_t key);
 	Iterator<key_t, data_t, rank_t> findElement(key_t key);
 	Iterator<key_t, data_t, rank_t> findCloseestElement(key_t key);
+	Iterator<key_t, data_t, rank_t> findCloseestElementAbove(key_t key);
+	Iterator<key_t, data_t, rank_t> findCloseestElementBelow(key_t key);
+
+	// bumps and grades
+	void bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount);
+	void bumpSingleEmployeeGrade(Iterator<key_t, data_t, rank_t> to_update, int bump_amount);
+	int getSumGradeOfmTop(int m);
+	int getTotalSumGrade();
+	int getSumGradeInRange(int lowest_salary, int highest_salary);
+	int getNumEmployeesInRange(int lowest_salary, int highest_salary);
+	int calcTrueEmployeeGrade(Node<key_t, data_t, rank_t>* employee_node);
+	
+
 	int getSize() const;
 	Iterator<key_t, data_t, rank_t> begin(int order = 0);
 	Iterator<key_t, data_t, rank_t> begin(int order = 0) const;
@@ -107,7 +126,7 @@ void RankTree<key_t, data_t, rank_t>::deleteTreeNodes(Node<key_t, data_t, rank_t
 template<typename key_t, typename data_t, typename rank_t>
 Node<key_t, data_t, rank_t>* RankTree<key_t, data_t, rank_t>::findElementNode(key_t key){
     if(root == nullptr) {
-        return end();
+        return nullptr;
     }
 
     Node<key_t, data_t, rank_t>* curr_node = root;
@@ -183,6 +202,297 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findCloseestEle
 }
 
 template<typename key_t, typename data_t, typename rank_t>
+Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findCloseestElementAbove(key_t key){
+	if(root == nullptr) {
+		return end();
+	}
+
+	Node<key_t, data_t, rank_t>* curr_node = root;
+	Node<key_t, data_t, rank_t>* closest = nullptr;
+
+	while(curr_node){
+		if(curr_node->key.getSalary() == key.getSalary()){
+			if(curr_node->key.getId() > key.getId()){
+				closest = curr_node;
+				curr_node = curr_node->getRight();
+			}
+			else{
+				curr_node = curr_node->getLeft();
+			}
+		}
+		else if(curr_node->key.getSalary() > key.getSalary()){
+			if(closest != nullptr && curr_node->key.getSalary() > closest->key.getSalary()){
+				curr_node = curr_node->getLeft();
+			}
+			else{
+				closest = curr_node;
+				curr_node = curr_node->getLeft();
+			}
+		}
+		else{
+			curr_node = curr_node->getRight();
+		}
+	}
+	
+	return Iterator<key_t, data_t, rank_t>(closest);
+}
+
+template<typename key_t, typename data_t, typename rank_t>
+Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findCloseestElementBelow(key_t key){
+	if(root == nullptr) {
+		return end();
+	}
+	
+	Node<key_t, data_t, rank_t>* curr_node = root;
+	Node<key_t, data_t, rank_t>* closest = nullptr;
+
+	while(curr_node){
+		if(curr_node->key.getSalary() == key.getSalary()){
+			if(curr_node->key.getId() < key.getId()){
+				closest = curr_node;
+				curr_node = curr_node->getLeft();
+			}
+			else{
+				curr_node = curr_node->getRight();
+			}
+		}
+		else if(curr_node->key.getSalary() < key.getSalary()){
+			if(closest != nullptr && curr_node->key.getSalary() < closest->key.getSalary()){
+				curr_node = curr_node->getRight();
+			}
+			else{
+				closest = curr_node;
+				curr_node = curr_node->getRight();
+			}
+		}
+		else{
+			curr_node = curr_node->getLeft();
+		}
+	}
+
+	return Iterator<key_t, data_t, rank_t>(closest);
+}
+
+template<typename key_t, typename data_t, typename rank_t>
+int RankTree<key_t, data_t, rank_t>::getSumGradeOfmTop(int m){
+	int sum_grade = getTotalSumGrade();
+	Node<key_t, data_t, rank_t>* lower_bound = Select(size - m).getNodePtr();
+	sum_grade -= getSumGradeUpTo(lower_bound);
+	return sum_grade;
+}
+
+
+template<typename key_t, typename data_t, typename rank_t>
+int RankTree<key_t, data_t, rank_t>::getTotalSumGrade(){
+	return root->rank.getSumOfGrades();
+}
+
+
+template<typename key_t, typename data_t, typename rank_t>
+int RankTree<key_t, data_t, rank_t>::getSumGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound){
+	Node<key_t, data_t, rank_t>* curr_node = root;
+	int sum_grades = 0;
+	int accumulative_bump = 0;
+	while(curr_node != upper_bound){
+		accumulative_bump += curr_node->rank.getGradeBump();
+		if(curr_node->key < upper_bound->key){
+			if(curr_node->left != nullptr){
+				sum_grades += curr_node->left->rank.getSumOfGrades();
+				sum_grades += curr_node->left->rank.weight * accumulative_bump;
+			}
+			sum_grades += curr_node->getData()->getGrade();
+			sum_grades += accumulative_bump;
+		}
+		
+		if(curr_node->key == upper_bound->key){
+			break;
+		}
+		else if(curr_node->key > upper_bound->key){
+            curr_node = curr_node->getLeft();
+		}
+		else{
+            curr_node = curr_node->getRight();
+		}
+	}
+	accumulative_bump += curr_node->rank.getGradeBump();
+
+	if(curr_node->left != nullptr){
+		sum_grades += curr_node->left->rank.getSumOfGrades();
+		sum_grades += curr_node->left->rank.weight * accumulative_bump;
+	}
+	sum_grades += curr_node->getData()->getGrade();
+	sum_grades += accumulative_bump;
+
+	return sum_grades;
+}
+
+template<typename key_t, typename data_t, typename rank_t>
+int RankTree<key_t, data_t, rank_t>::getSumGradeInRange(int lowest_salary, int highest_salary){
+	int sum_grades = 0;
+
+	EmployeeKey temp_highest_key = EmployeeKey(0, highest_salary);
+	Iterator<key_t, data_t, rank_t> upper_bound_iter = findCloseestElementBelow(temp_highest_key);
+	if(upper_bound_iter == end()){
+		return 0;
+	}
+
+	if(upper_bound_iter.getKey().getSalary() == highest_salary){
+		upper_bound_iter = findCloseestElementAbove(temp_highest_key);
+	}
+	sum_grades += getSumGradeUpTo(upper_bound_iter.getNodePtr());
+
+
+	EmployeeKey temp_lowest_key = EmployeeKey(MAX_SALARY, lowest_salary);
+	Iterator<key_t, data_t, rank_t> lower_bound_iter = findCloseestElementBelow(temp_lowest_key);
+	if(lower_bound_iter == end()){
+		return sum_grades;
+	}
+	else{
+		sum_grades -= getSumGradeUpTo(lower_bound_iter.getNodePtr());
+		if(lower_bound_iter.getKey().getSalary() >= lowest_salary && lower_bound_iter.getKey().getSalary() <= highest_salary){
+			sum_grades += calcTrueEmployeeGrade(lower_bound_iter.getNodePtr());
+		}
+	}
+
+	return sum_grades;
+}
+
+template<typename key_t, typename data_t, typename rank_t>
+int RankTree<key_t, data_t, rank_t>::calcTrueEmployeeGrade(Node<key_t, data_t, rank_t>* employee_node){
+	if(employee_node == nullptr){
+		return -1;
+	}
+
+	int total_grade = employee_node->getData()->getGrade() + employee_node->rank.getGradeBump();
+	Node<key_t, data_t, rank_t>* curr_node = employee_node->getFather();
+	while(curr_node){
+		total_grade += curr_node->rank.getGradeBump();
+	}
+
+	return total_grade;
+}
+
+
+template<typename key_t, typename data_t, typename rank_t>
+int RankTree<key_t, data_t, rank_t>::getNumEmployeesInRange(int lowest_salary, int highest_salary){
+
+	EmployeeKey temp_highest_key = EmployeeKey(0, highest_salary);
+	Iterator<key_t, data_t, rank_t> upper_bound_iter = findCloseestElementBelow(temp_highest_key);
+	if(upper_bound_iter == end()){
+		return 0;
+	}
+	else if(upper_bound_iter.getKey().getSalary() == highest_salary){
+		upper_bound_iter = findCloseestElementAbove(temp_highest_key);
+	}
+	else{
+		if(upper_bound_iter.getKey().getSalary() < lowest_salary)
+		return 0;
+	}
+
+	EmployeeKey temp_lowest_key = EmployeeKey(MAX_SALARY, lowest_salary);
+	Iterator<key_t, data_t, rank_t> lower_bound_iter = findCloseestElementAbove(temp_lowest_key);
+	if(lower_bound_iter == end()){
+		return 0;
+	}
+	else if(lower_bound_iter.getKey().getSalary() == lowest_salary){
+		lower_bound_iter = findCloseestElementBelow(temp_lowest_key);
+	}
+	else{
+		if(lower_bound_iter.getKey().getSalary() > highest_salary)
+		return 0;
+	}
+	
+	int upper_rank = Rank(upper_bound_iter.getKey());
+	int lower_rank = Rank(lower_bound_iter.getKey());
+
+
+	return upper_rank - lower_rank + 1;
+}
+
+
+//todo : finish this function!
+template<typename key_t, typename data_t, typename rank_t>
+void RankTree<key_t, data_t, rank_t>::bumpGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound, int bump_amount){
+	// enum Crossed {IN, OUT, NO};
+	// Crossed status = NO;
+
+	Node<key_t, data_t, rank_t>* prev = root;
+	Node<key_t, data_t, rank_t>* curr = prev;
+
+	//if we begin by going right, update the root with the bump
+	if(curr->getKey() < upper_bound->getKey()){
+		curr->rank.setGradeBump(curr->rank.getGradeBump() + bump_amount);
+	}
+
+	while(curr != upper_bound){
+		if(curr->getKey() < upper_bound->getKey()){
+			prev = curr;
+			curr = curr->right;
+		}
+		else{
+			prev = curr;
+			curr = curr->left;
+		}
+
+		//crossed out
+		if(prev->getKey() < upper_bound->getKey() && curr->getKey() > upper_bound->getKey()){
+			curr->rank.setGradeBump(curr->rank.getGradeBump() - bump_amount);
+		}
+		//crossed in
+		else if(prev->getKey() > upper_bound->getKey() && curr->getKey() <= upper_bound->getKey()){
+			curr->rank.setGradeBump(curr->rank.getGradeBump() + bump_amount);
+		}
+	}
+
+	if(curr->right != nullptr){
+		curr->right->rank.setGradeBump(curr->right->rank.getGradeBump() - bump_amount);
+		fixTree(curr->right);
+	}
+	else{
+		fixTree(curr);
+	}
+}
+
+
+template<typename key_t, typename data_t, typename rank_t>
+void RankTree<key_t, data_t, rank_t>::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount){
+	
+	EmployeeKey temp_highest_key = EmployeeKey(0, highest_salary);
+	Iterator<key_t, data_t, rank_t> upper_bound_iter = findCloseestElementBelow(temp_highest_key);
+	if(upper_bound_iter == end()){
+		return;
+	}
+
+	if(upper_bound_iter.getKey().getSalary() == highest_salary){
+		upper_bound_iter = findCloseestElementAbove(temp_highest_key);
+	}
+	bumpGradeUpTo(upper_bound_iter.getNodePtr(), bump_amount);
+
+
+	EmployeeKey temp_lowest_key = EmployeeKey(MAX_SALARY, lowest_salary - 1);
+	Iterator<key_t, data_t, rank_t> lower_bound_iter = findCloseestElementBelow(temp_lowest_key);
+	if(lower_bound_iter == end()){
+		return;
+	}
+
+	if(lower_bound_iter.getKey().getSalary() == lowest_salary - 1){
+		lower_bound_iter = findCloseestElementAbove(temp_lowest_key);
+	}
+	bumpGradeUpTo(lower_bound_iter.getNodePtr(), -1 * bump_amount);
+	
+}
+
+
+//todo : add function for promoting grade for specific employee, and then fix the tree
+template<typename key_t, typename data_t, typename rank_t>
+void RankTree<key_t, data_t, rank_t>::bumpSingleEmployeeGrade(Iterator<key_t, data_t, rank_t> to_update, int bump_amount){
+	to_update.getData()->setGrade(to_update.getData()->getGrade() + bump_amount);
+	fixTree(to_update);
+}
+
+
+
+template<typename key_t, typename data_t, typename rank_t>
 ReturnValue RankTree<key_t, data_t, rank_t>::insert(key_t key, data_t element, rank_t rank) {
 	auto* node_to_insert = new Node<key_t, data_t, rank_t>(key,element,rank);	//this here is roy and adi fix and is important
 	if(!node_to_insert){
@@ -197,6 +507,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::insert(key_t key, data_t element, r
 	
 	Node<key_t, data_t, rank_t>* curr_node = root;
 	bool found = false;
+	int tot_grade_bump_on_the_way = curr_node->rank.getGradeBump();
 	while(curr_node && !found){
 		if(curr_node->key == key){
 			delete node_to_insert;
@@ -205,21 +516,25 @@ ReturnValue RankTree<key_t, data_t, rank_t>::insert(key_t key, data_t element, r
 		else if(curr_node->key > key){
 				if(curr_node->getLeft() != nullptr){
                     curr_node = curr_node->getLeft();
+					tot_grade_bump_on_the_way += curr_node->rank.getGradeBump();
 				}
 				else{
 					found = true;
                     curr_node->left = node_to_insert;
 					node_to_insert->father = curr_node;
+					node_to_insert->rank.setGradeBump(node_to_insert->rank.getGradeBump() - tot_grade_bump_on_the_way);
 				}
 			}
 			else{
 				if(curr_node->getRight() != nullptr){
                     curr_node = curr_node->getRight();
+					tot_grade_bump_on_the_way += curr_node->rank.getGradeBump();
 				}
 				else{
 					found = true;
                     curr_node->right = node_to_insert;
 					node_to_insert->father = curr_node;
+					node_to_insert->rank.setGradeBump(node_to_insert->rank.getGradeBump() - tot_grade_bump_on_the_way);
 				}
 			}
 		}
@@ -298,6 +613,9 @@ ReturnValue RankTree<key_t, data_t, rank_t>::LLRoll(Node<key_t, data_t, rank_t>&
 	}
 	node.updateHeight();
 	node.updateBF();
+	saved_left_ptr->right->rank.setGradeBump(saved_left_ptr->right->rank.getGradeBump() + saved_left_ptr->rank.getGradeBump());
+	saved_left_ptr->rank.setGradeBump(saved_left_ptr->rank.getGradeBump() + node.rank.getGradeBump());
+	node.rank.setGradeBump(node.rank.getGradeBump() - saved_left_ptr->rank.getGradeBump());
 	node.updateRank();
 	saved_left_ptr->updateHeight();
 	saved_left_ptr->updateBF();
@@ -329,6 +647,9 @@ ReturnValue RankTree<key_t, data_t, rank_t>::RRRoll(Node<key_t, data_t, rank_t> 
 	}
 	node.updateHeight();
 	node.updateBF();
+	saved_right_ptr->left->rank.setGradeBump(saved_right_ptr->left->rank.getGradeBump() + saved_right_ptr->rank.getGradeBump());
+	saved_right_ptr->rank.setGradeBump(saved_right_ptr->rank.getGradeBump() + node.rank.getGradeBump());
+	node.rank.setGradeBump(node.rank.getGradeBump() - saved_right_ptr->rank.getGradeBump());
 	node.updateRank();
 	saved_right_ptr->updateHeight();
 	saved_right_ptr->updateBF();
@@ -415,6 +736,21 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeElement(key_t key) {
 	}
 }
 
+// calculate the sum of bump without the father and the son
+template<typename key_t, typename data_t, typename rank_t>
+int RankTree<key_t, data_t, rank_t>::calculateBumpsUpToFather(Node<key_t, data_t, rank_t>* son, Node<key_t, data_t, rank_t>* father){
+	if(son == nullptr || father == nullptr){
+		return -1;
+	}
+	
+	int sum_bumps = 0;
+	son = son->father;
+	while(son != father){
+		sum_bumps += son->rank.getGradeBump();
+	}
+	return sum_bumps;
+}
+
 template<typename key_t, typename data_t, typename rank_t>
 ReturnValue RankTree<key_t, data_t, rank_t>::removeRoot(Node<key_t, data_t, rank_t> *to_delete) {
 	if(!to_delete){
@@ -427,8 +763,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeRoot(Node<key_t, data_t, rank
 		return MY_SUCCESS;
 	}
 	else if(to_delete->onlyHaveRightSon()) {
-		to_delete->right.rank.setGradeBump(right.rank.getGradeBump() + to_delete->rank.getGradeBump());
-		to_delete->right->getRank
+		to_delete->right->rank.setGradeBump(to_delete->right->rank.getGradeBump() + to_delete->rank.getGradeBump());
 		to_delete->right->father = nullptr;
 		root = to_delete->right;
 		delete to_delete;
@@ -436,6 +771,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeRoot(Node<key_t, data_t, rank
 		return MY_SUCCESS;
 	}
 	else if(to_delete->onlyHaveLeftSon()){
+		to_delete->left->rank.setGradeBump(to_delete->left->rank.getGradeBump() + to_delete->rank.getGradeBump());
 		to_delete->left->father = nullptr;
 		root = to_delete->left;
 		delete to_delete;
@@ -447,6 +783,20 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeRoot(Node<key_t, data_t, rank
 		while(to_replace->left != nullptr){
 			to_replace = to_replace->getLeft();
 		}
+
+		// check if to_replace is direct son of to_delete, and update grade_bump accordingly
+		if(to_delete->right == to_replace){
+			to_replace->rank.setGradeBump(to_replace->rank.getGradeBump() + to_delete->rank.getGradeBump());
+		}
+		else{
+			int bumps_until_to_delete = calculateBumpsUpToFather(to_replace, to_delete);
+			to_replace->data->setGrade(to_replace->data->getGrade() + to_replace->rank.getGradeBump() + bumps_until_to_delete);
+			int temp_bump = to_replace->rank.getGradeBump();
+			to_replace->rank.setGradeBump(to_delete->rank.getGradeBump());
+			to_delete->rank.setGradeBump(temp_bump);
+		}
+
+
 		if(swapNodes(to_delete, to_replace) == MY_ALLOCATION_ERROR){
 			return MY_ALLOCATION_ERROR;
 		}
@@ -464,6 +814,18 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeNonRoot(Node<key_t, data_t, r
 		while(to_replace->left){
 			to_replace = to_replace->getLeft();
 		}
+
+		// check if to_replace is son of to_delete, and update grade_bump accordingly
+		if(to_delete->right == to_replace){
+			to_replace->rank.setGradeBump(to_replace->rank.getGradeBump() + to_delete->rank.getGradeBump());
+		}
+		else{
+			int bumps_until_to_delete = calculateBumpsUpToFather(to_replace, to_delete);
+			to_replace->data->setGrade(to_replace->data->getGrade() + bumps_until_to_delete);
+			to_replace->data->setGrade(to_replace->data->getGrade() - to_delete->rank.getGradeBump());
+			to_replace->rank.setGradeBump(to_replace->rank.getGradeBump() + to_delete->rank.getGradeBump());
+		}
+
 		if(swapNodes(to_delete, to_replace) == MY_ALLOCATION_ERROR){
 			return MY_ALLOCATION_ERROR;
 		}
@@ -484,6 +846,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeNonRoot(Node<key_t, data_t, r
 		return fixTree(parent);
 	}
 	if(to_delete->onlyHaveLeftSon()){
+		to_delete->left->rank.setGradeBump(to_delete->left->rank.getGradeBump() + to_delete->rank.getGradeBump());
 		if(to_delete->isALeftSon()){
 			to_delete->father->left = to_delete->left;
 			to_delete->left->father = to_delete->father;
@@ -501,6 +864,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeNonRoot(Node<key_t, data_t, r
 		}
 	}
 	else if(to_delete->onlyHaveRightSon()){
+		to_delete->right->rank.setGradeBump(to_delete->right->rank.getGradeBump() + to_delete->rank.getGradeBump());
 		if(to_delete->isALeftSon()){
 			to_delete->father->left = to_delete->right;
 			to_delete->right->father = to_delete->father;
@@ -611,15 +975,21 @@ int RankTree<key_t, data_t, rank_t>::Rank(key_t key){
 	
 	while(curr_node){
 		if(curr_node->key == key){
-			r += (1 + curr_node->left->weight);
+			if(curr_node->left != nullptr){
+				r += curr_node->left->rank.getWeight();
+			}
+			r += 1;
 			return r;
 		}
 		else if(curr_node->key > key){
-            curr_node = curr_node->getLeft();
+            	curr_node = curr_node->getLeft();
 			}
 			else{
-				r += (1 + curr_node->left->weight);
-            curr_node = curr_node->getRight();
+				if(curr_node->left != nullptr){
+					r += curr_node->left->rank.getWeight();
+				}
+				r += 1;
+            	curr_node = curr_node->getRight();
 			}
 		}
 	
@@ -635,15 +1005,15 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::Select(int r){
 	Node<key_t, data_t, rank_t>* curr_node = root;
 	
 	while(curr_node){
-		if(curr_node->left->weight == (r - 1)){
+		if(curr_node->left->rank.getWeight() == (r - 1)){
 			return Iterator<key_t, data_t, rank_t>(curr_node);
 		}
-		else if(curr_node->left->weight > (r - 1)){
-            curr_node = curr_node->getLeft();
+		else if(curr_node->left->rank.getWeight() > (r - 1)){
+            	curr_node = curr_node->getLeft();
 			}
 			else{
-				r = r - curr_node->left->weight - 1;
-            curr_node = curr_node->getRight();
+				r = r - curr_node->left->rank.getWeight() - 1;
+            	curr_node = curr_node->getRight();
 			}
 		}
 	
