@@ -1,7 +1,7 @@
 #ifndef EMPLOYEE_KEY_H
 #define EMPLOYEE_KEY_H
 
-#define MAX_SALARY 2147483647
+#define MAX_ID 2147483647
 
 class EmployeeKey{
 
