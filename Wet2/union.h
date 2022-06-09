@@ -1,5 +1,5 @@
-#ifndef WET2_UNION_H
-#define WET2_UNION_H
+#ifndef UNION_FIND_H
+#define UNION_FIND_H
 
 
 #include <cstdlib>
@@ -13,23 +13,25 @@
  * */
 
 template <typename data_t>
-class Union {
+class Union{
     int size;
     UpTreeNode<data_t>** array_base;
 public:
 
     Union() = default;
     explicit Union(int new_size);
-    ~Union() = default;
+    ~Union();
+    void killAllCompanies();
     ReturnValue makeSet(int index, data_t data);
     ReturnValue findNodeRepByID(int index, UpTreeNode<data_t>** node);
     ReturnValue getNodeByID(int index, UpTreeNode<data_t>** node);
     ReturnValue findDataPtrByIndex(int index, data_t* data_ptr);
-    ReturnValue unify(int index1, int index2);
+    ReturnValue unify(int index1, int index2, double factor);
+    double calcTrueValue(int index);
+    ReturnValue bumpGradeToEmployees(int lowerSalary, int higherSalary, int BumpGrade);
 };
 
-/* union gets num of elements in structure, creates new array with correct size, creates new node for each element
- (each element gets its own tree with only one node), and saves the node pointer in the array element index
+/* union gets num of elements in structure, creates new array with correct size.
  union doesn't create new groups, only array with correct amount of nodes, user needs to create actual new groups
  and insert each group to the correct node in array.*/
 template<typename data_t>
@@ -39,21 +41,24 @@ Union<data_t>::Union(int new_size) : size(new_size) {
     if(!array_base){
         throw std::bad_alloc();
     }
-    // create empty node for each array element and insert its pointer to the array
-    for (int i = 0; i < size; i++){
-        UpTreeNode<data_t>* new_node = new UpTreeNode<data_t>();
-        *(array_base + i) = new_node;
-    }
 }
 
-// todo: make sure element in array_base[0] is deleted properly.
+
 template<typename data_t>
 Union<data_t>::~Union(){
     for (int i = (size-1); i > 0; i--){
         delete array_base[i];
     }
 
-    delete array_base;
+    delete[] array_base;
+}
+
+
+template <typename data_t>
+void Union<data_t>::killAllCompanies(){
+    for (int i = 0; i < size; i++){
+        delete array_base[i]->getData();
+    }
 }
 
 
@@ -137,7 +142,7 @@ ReturnValue Union<data_t>::findDataPtrByIndex(int index, data_t* data_ptr){
 }
 
 template <typename data_t>
-ReturnValue Union<data_t>::unify(int index1, int index2){
+ReturnValue Union<data_t>::unify(int index1, int index2, double factor){
     // check input
     if (index1 < 0 || index1 >= size || index2 < 0 || index2 >= size){
         return MY_INVALID_INPUT;
@@ -167,14 +172,53 @@ ReturnValue Union<data_t>::unify(int index1, int index2){
 
     // check which node has "smaller" data, and merge to the smaller one.
     if (*node1 < *node2) {
-        res = node2->mergeToMe(node1);
+        node1->value_bump += factor * (node2->data->getValue() + node2->value_bump);
+        res = node2->UniteUpTreeNodes(node1, factor);
     }
     else {
-        res = node1->mergeToMe(node2);
+        node1->value_bump += factor * (node2->data->getValue() + node2->value_bump);
+        node2->value_bump -= node1->value_bump;
+        res = node1->UniteUpTreeNodes(node2, factor);
     }
 
     return res;
 }
 
 
-#endif //WET2_UNION_H
+template <typename data_t>
+double Union<data_t>::calcTrueValue(int index){
+    if (index < 0 || index >= size){
+        return -1;
+    }
+
+    UpTreeNode<data_t>* node;
+    ReturnValue res = getNodeByID(index, &node);
+    if(res != MY_SUCCESS){
+        return res;
+    }
+
+    double total_value = node->getData()->getValue();
+
+    while(node->getFather()){
+        total_value += node->getValueBump();
+        node = node->getFather();
+    }
+    total_value += node->getValueBump();
+
+    return total_value;
+}
+
+
+template <typename data_t>
+ReturnValue Union<data_t>::bumpGradeToEmployees(int lowerSalary, int higherSalary, int BumpGrade){
+    for(int i =0; i < size; i++){
+        UpTreeNode<data_t>** node;
+        getNodeByID(i, node);
+        (*node)->data->bumpGradeInRange(lowerSalary, higherSalary, BumpGrade);
+    }
+
+    return MY_SUCCESS;
+}
+
+
+#endif //UNION_FIND_H

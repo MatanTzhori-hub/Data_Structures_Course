@@ -6,11 +6,18 @@ Company::Company(int company_id, int company_value) : company_id(company_id),
                                                       zero_salary_employees_list(),
                                                       employees_tree_salary_filtered(){}
 
-Company::~Company(){
+
+// todo : implement this!
+void Company::killAllEmployees(){
+    employee_hash_table.killAllEmployees();
 }
 
 int Company::getSize() const{
     return zero_salary_employees_list.getSize() + employees_tree_salary_filtered.getSize();
+}
+
+int Company::getPayedEmployeesNum(){
+    return employees_tree_salary_filtered.getSize();
 }
 
 int Company::getId() const{
@@ -29,23 +36,24 @@ void Company::setValue(int new_value){
     this->company_value = new_value;
 }
 
-ReturnValue Company::findEmployee(int employee_id, Employee* returned_employee){
+Employee* Company::findEmployee(int employee_id,  ReturnValue* res){
     Employee temp_employee(employee_id, 0, 0, 0);
     ReturnValue ret = MY_FAILURE;
-    EmployeeHashtableVal* temp_employee_hash_val = employee_hash_table.findElement(employee_id, ret);
+    EmployeeHashtableVal* temp_employee_hash_val = employee_hash_table.findElement(employee_id, &ret);
     
     if(ret != ELEMENT_EXISTS){
-        return MY_FAILURE;
+        *res = ret;
+        return nullptr;
     }
     else{
-        returned_employee = temp_employee_hash_val->getEmployeePtr();
-        return MY_SUCCESS;
+        *res = ret;
+        return temp_employee_hash_val->getEmployeePtr();
     }
 }
 
 bool Company::isEmployeeExist(int employee_id){
     ReturnValue ret = MY_FAILURE;
-    EmployeeHashtableVal* temp_val = employee_hash_table.findElement(employee_id, ret);
+    EmployeeHashtableVal* temp_val = employee_hash_table.findElement(employee_id, &ret);
     
     if(ret == ELEMENT_EXISTS){
         return true;
@@ -56,7 +64,7 @@ bool Company::isEmployeeExist(int employee_id){
 ReturnValue Company::addEmployee(Employee& employee){
     EmployeeKey employee_key = EmployeeKey(employee.getId(), employee.getSalary());
     ReturnValue res = MY_FAILURE;
-    EmployeeHashtableVal* temp_val = employee_hash_table.findElement(employee.getId(), res);
+    EmployeeHashtableVal* temp_val = employee_hash_table.findElement(employee.getId(), &res);
     
     if (res == ELEMENT_EXISTS){
         return MY_FAILURE;
@@ -94,7 +102,7 @@ ReturnValue Company::addEmployee(Employee& employee){
 
 ReturnValue Company::removeEmployee(int employee_id){
     ReturnValue res = MY_FAILURE;
-    EmployeeHashtableVal* hash_val = employee_hash_table.findElement(employee_id, res);
+    EmployeeHashtableVal* hash_val = employee_hash_table.findElement(employee_id, &res);
     
     if (res != ELEMENT_EXISTS){
         return MY_FAILURE;
@@ -122,7 +130,7 @@ ReturnValue Company::removeEmployee(int employee_id){
     return res;
 }
 
-ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor){
+ReturnValue Company::AcquireAnotherCompany(Company* other_company){
     // merge lists
     ReturnValue res = zero_salary_employees_list.merge_to_me(other_company->zero_salary_employees_list);
     if (res != MY_SUCCESS){
@@ -142,9 +150,11 @@ ReturnValue Company::AcquireAnotherCompany(Company* other_company, double Factor
     EmployeeHashtableVal* temp_hash_val;
 
     while (iter != employees_tree_salary_filtered.end()){
-        temp_hash_val = employee_hash_table.findElement(iter.getKey().getId(), res);
+        temp_hash_val = employee_hash_table.findElement(iter.getKey().getId(), &res);
         temp_hash_val->setTreeNode(iter.getNodePtr());
     }
+
+    updateCompanyForAllEmployees();
 
     return MY_SUCCESS;
 }
@@ -166,7 +176,7 @@ void Company::updateCompanyForAllEmployees(){
 
 ReturnValue Company::employeeSalaryIncrease(int employee_id, int salary_increase){
     ReturnValue res = MY_FAILURE;
-    EmployeeHashtableVal* employee_val = employee_hash_table.findElement(employee_id, res);
+    EmployeeHashtableVal* employee_val = employee_hash_table.findElement(employee_id, &res);
     
     if(res != ELEMENT_EXISTS){
         return res;
@@ -292,17 +302,20 @@ int Company::calcNumEmployeesInRange(int lowest_salary, int highest_salary){
 }
 
 
-double Company::calcAvgGradeInRange(int lowest_salary, int highest_salary){
+ReturnValue Company::calcAvgGradeInRange(int lowest_salary, int highest_salary, double *avg){
     if((zero_salary_employees_list.getSize() + employees_tree_salary_filtered.getSize()) == 0){
-        return 0;
+        *avg = 0;
+        return MY_FAILURE;
     }
     int sum_grade = calcSumGradeInRange(lowest_salary, highest_salary);
     if(sum_grade == 0){
-        return 0;
+        *avg = 0;
+        return MY_FAILURE;
     }
     else{
         int sum_employees = calcNumEmployeesInRange(lowest_salary, highest_salary);
-        return (double)sum_grade / sum_employees;
+        *avg = (double)sum_grade / sum_employees;
+        return MY_SUCCESS;
     }
 }
 
@@ -320,8 +333,21 @@ int Company::calcSumGradeOfmTop(int m){
 }
 
 
-void Company::promoteEmployee(int employee_id, int bump_amount){
+ReturnValue Company::promoteEmployee(int employee_id, int bump_amount){
+    ReturnValue res = MY_FAILURE;
+    EmployeeHashtableVal* emp_val = employee_hash_table.findElement(employee_id, &res);
 
+    if(emp_val->getTreeNode() == nullptr){
+        emp_val->getEmployeePtr()->setGrade(emp_val->getEmployeePtr()->getGrade() + bump_amount);
+    }
+    else if(emp_val->getListNode() == nullptr){
+        employees_tree_salary_filtered.bumpSingleEmployeeGrade(emp_val->getTreeNode(), bump_amount);
+    }
+    else{
+        return MY_FAILURE;
+    }
+
+    return MY_SUCCESS;
 }
 
 
@@ -368,4 +394,10 @@ void Company::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_a
     if (tree_included) {
         employees_tree_salary_filtered.bumpGradeInRange(lowest_salary, highest_salary, bump_amount);
     }
+}
+
+
+Company& Company::operator+=(Company& other){
+    this->AcquireAnotherCompany(&other);
+    return *this;
 }

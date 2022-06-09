@@ -41,7 +41,7 @@ class RankTree {
 	bool removeExtraTreeNodes(Node<key_t, data_t, rank_t>* node, int* num_of_nodes_to_delete);
 
 	//Array casting
-	void putTreeToArray(Node<key_t, data_t, rank_t>* node, Node<key_t, data_t, rank_t>* arr[], int* i);
+	void putTreeToArray(Node<key_t, data_t, rank_t>* node, Node<key_t, data_t, rank_t>* arr[], int* i, int accum_bump);
     void putArrayIntoTree(Node<key_t, data_t, rank_t>** tree_node, Node<key_t, data_t, rank_t>*** array, int* i); 
 	
 	//Array merge
@@ -71,7 +71,7 @@ public:
 
 	// bumps and grades
 	void bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount);
-	void bumpSingleEmployeeGrade(Iterator<key_t, data_t, rank_t> to_update, int bump_amount);
+	void bumpSingleEmployeeGrade(Node<key_t, data_t, rank_t>* to_update, int bump_amount);
 	int getSumGradeOfmTop(int m);
 	int getTotalSumGrade();
 	int getSumGradeInRange(int lowest_salary, int highest_salary);
@@ -491,8 +491,8 @@ void RankTree<key_t, data_t, rank_t>::bumpGradeInRange(int lowest_salary, int hi
 
 //todo : add function for promoting grade for specific employee, and then fix the tree
 template<typename key_t, typename data_t, typename rank_t>
-void RankTree<key_t, data_t, rank_t>::bumpSingleEmployeeGrade(Iterator<key_t, data_t, rank_t> to_update, int bump_amount){
-	to_update.getData()->setGrade(to_update.getData()->getGrade() + bump_amount);
+void RankTree<key_t, data_t, rank_t>::bumpSingleEmployeeGrade(Node<key_t, data_t, rank_t>* to_update, int bump_amount){
+	to_update->getData()->setGrade(to_update->getData()->getGrade() + bump_amount);
 	fixTree(to_update);
 }
 
@@ -1159,8 +1159,8 @@ RankTree<key_t, data_t, rank_t>* RankTree<key_t, data_t, rank_t>::mergeToMe(Rank
 	 * insert all nodes of each tree to it's array
 	 * */
 	int i=0 , j = 0;
-	this->putTreeToArray(root, arr1, &i);
-	other_tree.putTreeToArray(other_tree.root, arr2, &j);
+	this->putTreeToArray(root, arr1, &i, 0);
+	other_tree.putTreeToArray(other_tree.root, arr2, &j, 0);
 
 	/*
 	 * merge the 2 arrays to 1 array
@@ -1289,14 +1289,17 @@ int RankTree<key_t, data_t, rank_t>::findNumOfNodesToDelete(int size){
 }
 
 template<typename key_t, typename data_t, typename rank_t>
-void RankTree<key_t, data_t, rank_t>::putTreeToArray(Node<key_t, data_t, rank_t>* node, Node<key_t, data_t, rank_t> **arr, int* i) {
+void RankTree<key_t, data_t, rank_t>::putTreeToArray(Node<key_t, data_t, rank_t>* node, Node<key_t, data_t, rank_t> **arr, int* i, int accum_bump) {
 	if(node == nullptr){
 		return;
 	}
-	putTreeToArray(node->left, arr, i);
+	accum_bump += node->rank.getGradeBump();
+	node->getData()->setGrade(node->getData()->getGrade() + accum_bump);
+	node->rank.setGradeBump(0);
+	putTreeToArray(node->left, arr, i, accum_bump);
 	arr[*i] = node;
 	(*i)++;
-	putTreeToArray(node->right, arr, i);
+	putTreeToArray(node->right, arr, i, accum_bump);
 }
 
 template<typename key_t, typename data_t, typename rank_t>

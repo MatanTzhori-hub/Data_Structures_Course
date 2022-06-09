@@ -3,36 +3,34 @@
 
 #include "rank_tree.h"
 
-template<typename data_t> class UpTree;
-template<typename data_t> class UpTreeIterator;
+
+template <typename data_t>
+class Union;
+
 
 template<typename data_t>
 class UpTreeNode {
     data_t data;
-    bool is_root;
     UpTreeNode<data_t>* father;
     int size;
-    int factor;
-
-    void setRoot(bool is_new_root) { is_root = is_new_root; }
+    double value_bump;
 
 public:
-    UpTreeNode() : data(nullptr), father(nullptr), is_root(true), size(1), factor(1) {}
-    explicit UpTreeNode(data_t new_data) : data(new_data), father(nullptr), is_root(true), size(1), factor(1) {}
+    UpTreeNode() : data(nullptr), father(nullptr), size(1), value_bump(0) {}
+    explicit UpTreeNode(data_t new_data) : data(new_data), father(nullptr), size(1), value_bump(0) {}
     ~UpTreeNode() = default;
     UpTreeNode* getFather() { return father; }
     data_t getData() { return data; }
     int getSize() { return size; }
-    int getFactor() { return factor; }
-    bool isRoot() { return is_root; }
+    bool isRoot() { return father == nullptr; }
     ReturnValue setFather(UpTreeNode<data_t>* new_father);
     void setData(data_t new_data) { data = new_data; }
-    void setFactor(int new_factor) { factor = new_factor; }
-    ReturnValue mergeToMe(UpTreeNode<data_t>* other_node);
+    void setValueBump(double new_bump) { value_bump = new_bump; }
+    double getValueBump() { return value_bump; }
+    ReturnValue UniteUpTreeNodes(UpTreeNode<data_t>* other_node, double factor);
     bool operator<(UpTreeNode<data_t> node2);
 
-    friend class UpTree<data_t>;
-    friend class UpTreeIterator<data_t>;
+    friend class Union<data_t>;
 };
 
 template<typename data_t>
@@ -41,28 +39,38 @@ ReturnValue UpTreeNode<data_t>::setFather(UpTreeNode<data_t>* new_father){
         return MY_FAILURE;
     }
 
-    setRoot(new_father == nullptr);
     father = new_father;
     return MY_SUCCESS;
 }
 
 template<typename data_t>
-ReturnValue UpTreeNode<data_t>::mergeToMe(UpTreeNode<data_t>* other_node){
+ReturnValue UpTreeNode<data_t>::UniteUpTreeNodes(UpTreeNode<data_t>* other_node, double factor){
     // check input
     if (other_node == nullptr){
         return MY_INVALID_INPUT;
     }
 
     // check both are roots, we only merge nodes that are reps of their upTree
-    if (!this->is_root || !other_node->is_root){
+    if (!(this->father == nullptr) || !(other_node->father == nullptr)){
         return MY_FAILURE;
     }
 
     // merge data (actual object) of other node in to this node
-    *(this->data) += *(other_node->getData());
+    *data += *(other_node->data);
 
     // update size of this (UpTreeNode)
     this->size += other_node->size;
+    
+    // We might not want to switch, because then when we try to calculate the true value
+    // of 1 company, we might get the value of the 1 we switched with.
+    // data_t temp_ptr = other_node->data;
+    // other_node->data = data;
+    // data = temp_ptr;
+
+    // double temp_bump = other_node->value_bump;
+    // other_node->value_bump = value_bump;
+    // value_bump = temp_bump;
+
 
     // update other_node father to this (other node is no longer root)
     return other_node->setFather(this);

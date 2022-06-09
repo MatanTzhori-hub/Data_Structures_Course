@@ -25,27 +25,31 @@ class Company{
 
     public:
     Company(int company_id, int company_value);
-    ~Company();
+    ~Company() = default;
+    void killAllEmployees();
+
     int getSize() const;
+    int getPayedEmployeesNum();
     int getId() const;
     int getValue() const;
     void increaseValue(int new_value);
     void setValue(int new_value);
-    ReturnValue findEmployee(int employee_id, Employee* returned_employee);
+    Employee* findEmployee(int employee_id, ReturnValue* res);
     bool isEmployeeExist(int employee_id);
     ReturnValue addEmployee(Employee& employee);
     ReturnValue removeEmployee(int employee_id);
-    ReturnValue AcquireAnotherCompany(Company* other, double Factor);
+    ReturnValue AcquireAnotherCompany(Company* other);
     void updateCompanyForAllEmployees();
     ReturnValue employeeSalaryIncrease(int employee_id, int salary_increase);
     
-    double calcAvgGradeInRange(int lowest_salary, int highest_salary);
+    ReturnValue calcAvgGradeInRange(int lowest_salary, int highest_salary, double *avg);
     int calcSumGradeOfmTop(int m);
 
     // todo : imlement the following 2 functions
-    void promoteEmployee(int employee_id, int bump_amount);
+    ReturnValue promoteEmployee(int employee_id, int bump_amount);
     void bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount);
 
+    Company& operator+=(Company& other);
 };
 
 #endif // COMPANY_H

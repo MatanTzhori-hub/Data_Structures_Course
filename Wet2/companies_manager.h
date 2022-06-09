@@ -2,45 +2,42 @@
 #define COMPANIES_MANAGER_H
 
 #include "employee.h"
-#include "rank_tree.h"
+#include "union.h"
+
 
 class CompaniesManager{
-    RankTree<EmployeeKey, Employee*> RankTree;
-    Tree<int,Employee*> all_employees_id_filtered;
-    Tree<int,Company*> all_companies;
-    Tree<int,Company*> non_empty_companies;
-    Employee* highest_earner;
-
+    Union<Company*> companies_union;
+    int size;
+    
     public:
-    CompaniesManager();
+    CompaniesManager(int size);
     ~CompaniesManager();
 
-    ReturnValue AddCompany(int CompanyID, int Value);
-    ReturnValue AddEmployee(int EmployeeID, int CompanyID, int Salary, int Grade);
-    ReturnValue RemoveEmployee(int EmployeeID);
-    ReturnValue RemoveCompany(int CompanyID);
-    ReturnValue GetCompanyInfo(int CompanyID, int *Value, int *NumEmployees);
-    ReturnValue GetEmployeeInfo(int EmployeeID, int *EmployerID, int *Salary, int *Grade);
-    ReturnValue IncreaseCompanyValue(int CompanyID, int ValueIncrease);
-    ReturnValue PromoteEmployee(int EmployeeID, int SalaryIncrease, int BumpGrade);
-    ReturnValue HireEmployee(int EmployeeID, int NewCompanyID);
-    ReturnValue AcquireCompany(int AcquirerID, int TargetID, double Factor);
-    ReturnValue GetHighestEarner(int CompanyID, int *EmployeeID);
-    ReturnValue GetAllEmployeesBySalary(int CompanyID, int **Employees, int *NumOfEmployees);
-    ReturnValue GetHighestEarnerInEachCompany(int NumOfCompanies, int **Employees);
-    ReturnValue GetNumEmployeesMatching(int CompanyID, int MinEmployeeID, int MaxEmployeeId, int MinSalary, 
-                                        int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees);
+    ReturnValue addEmployee(int EmployeeID, int CompanyID, int Grade);
+    ReturnValue removeEmployee(int EmployeeID);
+    ReturnValue acquireCompany(int AcquirerID, int TargetID, double Factor);
+    ReturnValue employeeSalaryIncrease(int EmployeeID, int SalaryIncrease);
+    ReturnValue promoteEmployee(int EmployeeID, int BumpGrade);
+    ReturnValue sumOfBumpGradeBetweenTopWorkersByCompany (int CompanyID, int m, int* sumBumpGrade);
+    ReturnValue averageBumpGradeBetweenSalaryByCompany (int CompanyID, int lowerSalary, int higherSalary, double* averageBumpGrade);
+    ReturnValue companyValue(int CompanyID, void * standing);
+    ReturnValue bumpGradeToEmployees(int lowerSalary, int higherSalary, int BumpGrade);
 
+    int getSize(){ return size; }
 };
 
-template<typename key, typename data>
-void deleteTreeData(Tree<key,data*> &tree){
-    auto iter = tree.begin();
-    while(iter != tree.end()){
-        data* cur_data = iter.getData();
-        delete cur_data;
-        iter.next();
-    }
-}
+
+/* todo :
+    1.  When removing an employee from all employees tree, we calculate the real grade of another employee and set it to it.
+        we need to make sure we fix the sumgrades in the tree of the specific company.
+    
+    2.  When bumping the grade of all employees in the data struct, we need to also do the same bump to each tree in each company 
+        (on the same range)
+
+    3.  Need to think about what to do with the grades when combaining 2 trees, because it affects the tree of all employees.
+
+    4.  
+*/
+
 
 #endif // COMPANIES_MANAGER_H

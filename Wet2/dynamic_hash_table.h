@@ -6,7 +6,6 @@
 #define DOWN_SCALE          0.5
 #define NO_SCALE            1
 #define MINIMUM_PROPORTION  0.25
-#define PRIME_N             7
 
 #include <cstdlib>
 #include <stdexcept>
@@ -33,10 +32,11 @@ class DynamicHashTable{
     public:
         explicit DynamicHashTable(int size = ARRAY_START_SIZE);
         ~DynamicHashTable();
+        void killAllEmployees();
 
         ReturnValue insertElement(data_t data, int key);
         ReturnValue removeElement(int key);
-        data_t* findElement(int key, ReturnValue &res);
+        data_t* findElement(int key, ReturnValue *res);
         int findIndex(int key);
         void mergeToMe(DynamicHashTable<data_t>* other_hash_table);
 };
@@ -72,6 +72,16 @@ DynamicHashTable<data_t>::~DynamicHashTable(){
 }
 
 template<class data_t>
+void DynamicHashTable<data_t>::killAllEmployees(){
+    for (int i=0; i<max_size; i++){
+        if(graveyard[i]==TAKEN){
+            delete hash_array[i].getEmployeePtr();
+        }
+    }
+}
+
+
+template<class data_t>
 int DynamicHashTable<data_t>::hashBase(int key){
     return key % max_size;
 }
@@ -88,12 +98,12 @@ int DynamicHashTable<data_t>::hash(int key, int iter){
 
 // big bug in findElement.. not returning the cell we really want but a copy of it
 template<class data_t>
-data_t* DynamicHashTable<data_t>::findElement(int key, ReturnValue &res){
+data_t* DynamicHashTable<data_t>::findElement(int key, ReturnValue *res){
     int index = -1;
     int iter = 0;
     int base_index = hash(key, iter);
     if(graveyard[base_index] == TAKEN && hash_array[base_index].getKey() == key){
-        res = ELEMENT_EXISTS;
+        *res = ELEMENT_EXISTS;
         return &hash_array[base_index];
     }
     iter++;
@@ -101,7 +111,7 @@ data_t* DynamicHashTable<data_t>::findElement(int key, ReturnValue &res){
     while(index != base_index){
         index = hash(key, iter);
         if(graveyard[index] == EMPTY){
-            res = ELEMENT_DOES_NOT_EXIST;
+            *res = ELEMENT_DOES_NOT_EXIST;
             return nullptr;
         }
         else if(graveyard[index] == FREED){
@@ -110,13 +120,13 @@ data_t* DynamicHashTable<data_t>::findElement(int key, ReturnValue &res){
         }
         else{
             if(hash_array[index].getKey() == key){
-                res = ELEMENT_EXISTS;
+                *res = ELEMENT_EXISTS;
                 return &hash_array[index];
             }
             iter++;
         }
     }
-    res = ELEMENT_DOES_NOT_EXIST;
+    *res = ELEMENT_DOES_NOT_EXIST;
     return nullptr;
 }
 
@@ -159,7 +169,7 @@ ReturnValue DynamicHashTable<data_t>::insertElement(data_t data, int key){
     int iter = 0;
 
     ReturnValue ret = MY_FAILURE;
-    data_t* temp_data_ptr = findElement(key, ret);
+    data_t* temp_data_ptr = findElement(key, &ret);
 
     if (ret == ELEMENT_EXISTS){
         return MY_FAILURE;

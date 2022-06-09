@@ -17,7 +17,7 @@ public:
     ReturnValue insert(data_t new_data);
     ReturnValue remove(DoublyLinkedListNode<data_t>* node_to_remove);
     int getSize() const{ return size; }
-    ReturnValue merge_to_me(DoublyLinkedList<data_t> other_list);
+    ReturnValue merge_to_me(DoublyLinkedList<data_t> &other_list);
     DoublyLinkedListNode<data_t>* getHead() { return head; }
     DoublyLinkedListNode<data_t>* getTail() { return tail; }
     int getGradeSum();
@@ -103,7 +103,7 @@ ReturnValue DoublyLinkedList<data_t>::remove(DoublyLinkedListNode<data_t>* node_
 }
 
 template <typename data_t>
-ReturnValue DoublyLinkedList<data_t>::merge_to_me(DoublyLinkedList<data_t> other_list){
+ReturnValue DoublyLinkedList<data_t>::merge_to_me(DoublyLinkedList<data_t> &other_list){
     if(other_list.size == 0){
         return MY_SUCCESS;
     }
@@ -114,6 +114,12 @@ ReturnValue DoublyLinkedList<data_t>::merge_to_me(DoublyLinkedList<data_t> other
         size = other_list.size;
         grade_bump = other_list.grade_bump;
         grade_sum = other_list.grade_sum;
+
+        other_list.head = nullptr;
+        other_list.tail = nullptr;
+        other_list.size = 0;
+        other_list.grade_bump = 0;
+        other_list.grade_sum = 0;
         return MY_SUCCESS;
     }
 
@@ -142,6 +148,7 @@ ReturnValue DoublyLinkedList<data_t>::merge_to_me(DoublyLinkedList<data_t> other
     other_list.head = nullptr;
     other_list.tail = nullptr;
     other_list.size = 0;
+    other_list.grade_sum = 0;
     grade_sum = total_sum;
     return MY_SUCCESS;
 }
