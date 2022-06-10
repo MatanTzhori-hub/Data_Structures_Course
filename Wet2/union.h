@@ -167,7 +167,7 @@ ReturnValue Union<data_t>::unify(int index1, int index2, double factor){
 
     // check if both elements have the same rep node (if so, no need to merge)
     if (buyer_node == bought_node){
-        return MY_SUCCESS;
+        return MY_INVALID_INPUT;
     }
 
     if (*buyer_node < *bought_node) {

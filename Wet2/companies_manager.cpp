@@ -66,6 +66,7 @@ ReturnValue CompaniesManager::acquireCompany(int AcquirerID, int TargetID, doubl
 
 
 ReturnValue CompaniesManager::employeeSalaryIncrease(int EmployeeID, int SalaryIncrease){
+
     Company* company_0;
     companies_union.findDataPtrByIndex(0, &company_0);
     ReturnValue res = MY_FAILURE;
@@ -76,8 +77,15 @@ ReturnValue CompaniesManager::employeeSalaryIncrease(int EmployeeID, int SalaryI
     }
 
     Company* real_company = employee_ptr->getCompanyPtr();
-    company_0->employeeSalaryIncrease(EmployeeID, SalaryIncrease);
-    real_company->employeeSalaryIncrease(EmployeeID, 0);
+
+    company_0->removeEmployee(EmployeeID);
+    real_company->removeEmployee(EmployeeID);
+    employee_ptr->setSalary(employee_ptr->getSalary() + SalaryIncrease);
+    company_0->addEmployee(*employee_ptr);
+    real_company->addEmployee(*employee_ptr);
+
+    // company_0->employeeSalaryIncrease(EmployeeID, SalaryIncrease);
+    // real_company->employeeSalaryIncrease(EmployeeID, 0);
 
     return MY_SUCCESS;
 }
@@ -95,7 +103,7 @@ ReturnValue CompaniesManager::promoteEmployee(int EmployeeID, int BumpGrade){
 
     Company* real_company = employee_ptr->getCompanyPtr();
     company_0->promoteEmployee(EmployeeID, BumpGrade);
-    real_company->promoteEmployee(EmployeeID, 0);
+    real_company->promoteEmployee(EmployeeID, BumpGrade);
 
     return MY_SUCCESS;
 }

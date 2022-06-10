@@ -54,7 +54,10 @@ StatusType AcquireCompany(void *DS, int companyID1, int companyID2, double facto
 
     ReturnValue res = manager->acquireCompany(companyID1, companyID2, factor);
 
-    if(res != MY_SUCCESS){
+    if(res == MY_INVALID_INPUT){
+        return INVALID_INPUT;
+    }
+    else if(res != MY_SUCCESS){
         return ALLOCATION_ERROR;
     }
 
@@ -138,7 +141,7 @@ StatusType AverageBumpGradeBetweenSalaryByGroup(void *DS, int companyID, int low
         return FAILURE;
     }
     else{
-        printf("averageBumpGradeBetweenSalaryByCompany: %1f\n", avg);
+        printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", avg);
         return SUCCESS;
     }
 }
@@ -157,7 +160,7 @@ StatusType CompanyValue(void *DS, int companyID){
         return ALLOCATION_ERROR;
     }
 
-    printf("CompanyValue: %1f\n", standing_value);
+    printf("CompanyValue: %.1f\n", standing_value);
     return SUCCESS;
 }
 
@@ -178,8 +181,10 @@ StatusType BumpGradeToEmployees(void *DS, int lowerSalary, int higherSalary, int
 }
 
 void Quit(void** DS){
-    if(DS != NULL){
+    if(DS != NULL && *DS != NULL){
         CompaniesManager** manager = (CompaniesManager**)DS;
         delete *manager;
     }
+
+    *DS = NULL;
 }

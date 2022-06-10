@@ -167,6 +167,7 @@ ReturnValue Company::AcquireAnotherCompany(Company* other_company){
     while (iter != employees_tree_salary_filtered.end()){
         temp_hash_val = employee_hash_table.findElement(iter.getKey().getId(), &res);
         temp_hash_val->setTreeNode(iter.getNodePtr());
+        iter.next();
     }
 
     updateCompanyForAllEmployees();
@@ -179,6 +180,7 @@ void Company::updateCompanyForAllEmployees(){
     Iterator<EmployeeKey, Employee*, EmployeeRank> tree_iter = employees_tree_salary_filtered.begin();
     while (tree_iter != employees_tree_salary_filtered.end()){
         tree_iter.getData()->setCompany(this);
+        tree_iter.next();
     }
 
     // update company for employees in list
@@ -190,6 +192,7 @@ void Company::updateCompanyForAllEmployees(){
 }
 
 ReturnValue Company::employeeSalaryIncrease(int employee_id, int salary_increase){
+
     ReturnValue res = MY_FAILURE;
     EmployeeHashtableVal* employee_val = employee_hash_table.findElement(employee_id, &res);
     

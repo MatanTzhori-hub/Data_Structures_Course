@@ -56,6 +56,8 @@ class RankTree {
 	long long getSumGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound);
 	void bumpGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound, int bump_amount);
 
+	void updateRankToAllTree(Node<key_t, data_t, rank_t>* node);
+
 public:
 	RankTree() : size(0) {root = nullptr; }
 	~RankTree();
@@ -302,7 +304,7 @@ long long RankTree<key_t, data_t, rank_t>::getSumGradeUpTo(Node<key_t, data_t, r
 				sum_grades += curr_node->left->rank.getSumOfGrades();
 				sum_grades += curr_node->left->rank.weight * accumulative_bump;
 			}
-			sum_grades += curr_node->getData()->getGrade();
+			sum_grades += curr_node->rank.getTreeGrade();
 			sum_grades += accumulative_bump;
 		}
 		
@@ -322,7 +324,7 @@ long long RankTree<key_t, data_t, rank_t>::getSumGradeUpTo(Node<key_t, data_t, r
 		sum_grades += curr_node->left->rank.getSumOfGrades();
 		sum_grades += curr_node->left->rank.weight * accumulative_bump;
 	}
-	sum_grades += curr_node->getData()->getGrade();
+	sum_grades += curr_node->rank.getTreeGrade();
 	sum_grades += accumulative_bump;
 
 	return sum_grades;
@@ -366,7 +368,7 @@ long long RankTree<key_t, data_t, rank_t>::calcTrueEmployeeGrade(Node<key_t, dat
 		return -1;
 	}
 
-	long long total_grade = employee_node->getData()->getGrade() + employee_node->rank.getGradeBump();
+	long long total_grade = employee_node->rank.getTreeGrade() + employee_node->rank.getGradeBump();
 	Node<key_t, data_t, rank_t>* curr_node = employee_node->getFather();
 	while(curr_node){
 		total_grade += curr_node->rank.getGradeBump();
@@ -494,7 +496,7 @@ void RankTree<key_t, data_t, rank_t>::bumpGradeInRange(int lowest_salary, int hi
 //todo : add function for promoting grade for specific employee, and then fix the tree
 template<typename key_t, typename data_t, typename rank_t>
 void RankTree<key_t, data_t, rank_t>::bumpSingleEmployeeGrade(Node<key_t, data_t, rank_t>* to_update, int bump_amount){
-	to_update->getData()->setGrade(to_update->getData()->getGrade() + bump_amount);
+	to_update->rank.setTreeGrade(to_update->rank.getTreeGrade() + bump_amount);
 	fixTree(to_update);
 }
 
@@ -745,6 +747,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeElement(key_t key) {
 	}
 	else{
 		Node<key_t, data_t, rank_t> *node = iter.ptr;
+		node->data->setGrade(calcTrueEmployeeGrade(node));
 		if(node == root){
 			return removeRoot(node);
 		}
@@ -809,7 +812,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeRoot(Node<key_t, data_t, rank
 		}
 		else{
 			int bumps_until_to_delete = calculateBumpsUpToFather(to_replace, to_delete);
-			to_replace->data->setGrade(to_replace->data->getGrade() + to_replace->rank.getGradeBump() + bumps_until_to_delete);
+			to_replace->rank.setTreeGrade(to_replace->rank.getTreeGrade() + to_replace->rank.getGradeBump() + bumps_until_to_delete);
 			int temp_bump = to_replace->rank.getGradeBump();
 			to_replace->rank.setGradeBump(to_delete->rank.getGradeBump());
 			to_delete->rank.setGradeBump(temp_bump);
@@ -840,7 +843,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeNonRoot(Node<key_t, data_t, r
 		}
 		else{
 			int bumps_until_to_delete = calculateBumpsUpToFather(to_replace, to_delete);
-			to_replace->data->setGrade(to_replace->data->getGrade() + to_replace->rank.getGradeBump() + bumps_until_to_delete);
+			to_replace->rank.setTreeGrade(to_replace->rank.getTreeGrade() + to_replace->rank.getGradeBump() + bumps_until_to_delete);
 			int temp_bump = to_replace->rank.getGradeBump();
 			to_replace->rank.setGradeBump(to_delete->rank.getGradeBump());
 			to_delete->rank.setGradeBump(temp_bump);
@@ -1184,6 +1187,9 @@ RankTree<key_t, data_t, rank_t>* RankTree<key_t, data_t, rank_t>::mergeToMe(Rank
     putArrayIntoTree(&new_root, &merged_arr, &m);
 	this->size = merged_size;
 
+	Node<key_t, data_t, rank_t>* itr_node = root;
+	updateRankToAllTree(itr_node);
+
 	// This will be destructed when we exit this function. will destroy old nodes.
 	RankTree<key_t, data_t, rank_t> temp_tree = RankTree<key_t, data_t, rank_t>();
 	temp_tree.root = old_root;
@@ -1203,6 +1209,19 @@ RankTree<key_t, data_t, rank_t>* RankTree<key_t, data_t, rank_t>::mergeToMe(Rank
 
 
 template<typename key_t, typename data_t, typename rank_t>
+void RankTree<key_t, data_t, rank_t>::updateRankToAllTree(Node<key_t, data_t, rank_t>* node){
+	if(node == nullptr){
+		return;
+	}
+
+	updateRankToAllTree(node->left);
+	updateRankToAllTree(node->right);
+
+	node->updateRank();
+}
+
+
+template<typename key_t, typename data_t, typename rank_t>
 void RankTree<key_t, data_t, rank_t>::putArrayIntoTree(Node<key_t, data_t, rank_t>** tree_node, Node<key_t, data_t, rank_t>*** array, int* i) {
 	if (!(*tree_node)) {
 		return;
@@ -1214,11 +1233,13 @@ void RankTree<key_t, data_t, rank_t>::putArrayIntoTree(Node<key_t, data_t, rank_
 
     (*tree_node)->updateData((*(*array)[*i]).getData());
     (*tree_node)->updateKey((*(*array)[*i]).getKey());
+	(*tree_node)->rank = (*(*array)[*i]).rank;
 	(*i)++;
     if ((*tree_node)->right){
         putArrayIntoTree(&(*tree_node)->right, array, i);
     }
 }
+
 
 template<typename key_t, typename data_t, typename rank_t>
 Node<key_t, data_t, rank_t>* RankTree<key_t, data_t, rank_t>::createEmptyTree(int* height) {
@@ -1296,23 +1317,8 @@ void RankTree<key_t, data_t, rank_t>::putTreeToArray(Node<key_t, data_t, rank_t>
 		return;
 	}
 	accum_bump += node->rank.getGradeBump();
-	node->getData()->setGrade(node->getData()->getGrade() + accum_bump);
+	node->rank.setTreeGrade(node->rank.getTreeGrade() + accum_bump);
 	node->rank.setGradeBump(0);
-
-	//-------
-	// todo : update the tree of company zero
-	// 
-	// Company* compnay_0 = node->data->getCompany_0();
-	// int none = 0;
-	// Node<key_t, data_t, rank_t> node_0 = company_0->getEmployeeTreeNode(node->data->getId(), &none);
-	// node_0->rank.setGradeBump(node_0.rank.getGradeBump() - accum_bump);
-	// if(node_0->right){
-	// 	node_0->right->rank.setGradeBump(node_0->right->rank.getGradeBump() + accum_bump);
-	// }
-	// if(node_0->left){
-	// 	node_0->left->rank.setGradeBump(node_0->left->rank.getGradeBump() + accum_bump);
-	// }
-	//-------
 
 	putTreeToArray(node->left, arr, i, accum_bump);
 	arr[*i] = node;
