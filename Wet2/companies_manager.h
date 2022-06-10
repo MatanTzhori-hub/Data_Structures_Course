@@ -18,9 +18,9 @@ class CompaniesManager{
     ReturnValue acquireCompany(int AcquirerID, int TargetID, double Factor);
     ReturnValue employeeSalaryIncrease(int EmployeeID, int SalaryIncrease);
     ReturnValue promoteEmployee(int EmployeeID, int BumpGrade);
-    ReturnValue sumOfBumpGradeBetweenTopWorkersByCompany (int CompanyID, int m, int* sumBumpGrade);
+    ReturnValue sumOfBumpGradeBetweenTopWorkersByCompany (int CompanyID, int m, long long* sumBumpGrade);
     ReturnValue averageBumpGradeBetweenSalaryByCompany (int CompanyID, int lowerSalary, int higherSalary, double* averageBumpGrade);
-    ReturnValue companyValue(int CompanyID, void * standing);
+    ReturnValue companyValue(int CompanyID, double* standing);
     ReturnValue bumpGradeToEmployees(int lowerSalary, int higherSalary, int BumpGrade);
 
     int getSize(){ return size; }

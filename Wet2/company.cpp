@@ -37,7 +37,6 @@ void Company::setValue(int new_value){
 }
 
 Employee* Company::findEmployee(int employee_id,  ReturnValue* res){
-    Employee temp_employee(employee_id, 0, 0, 0);
     ReturnValue ret = MY_FAILURE;
     EmployeeHashtableVal* temp_employee_hash_val = employee_hash_table.findElement(employee_id, &ret);
     
@@ -50,6 +49,22 @@ Employee* Company::findEmployee(int employee_id,  ReturnValue* res){
         return temp_employee_hash_val->getEmployeePtr();
     }
 }
+
+
+Node<EmployeeKey,Employee*,EmployeeRank>* Company::getEmployeeTreeNode(int employee_id, ReturnValue* res){
+    ReturnValue ret = MY_FAILURE;
+    EmployeeHashtableVal* temp_employee_hash_val = employee_hash_table.findElement(employee_id, &ret);
+    
+    if(ret != ELEMENT_EXISTS){
+        *res = ret;
+        return nullptr;
+    }
+    else{
+        *res = ret;
+        return temp_employee_hash_val->getTreeNode();
+    }
+}
+
 
 bool Company::isEmployeeExist(int employee_id){
     ReturnValue ret = MY_FAILURE;
@@ -320,7 +335,7 @@ ReturnValue Company::calcAvgGradeInRange(int lowest_salary, int highest_salary, 
 }
 
 
-int Company::calcSumGradeOfmTop(int m){
+long long Company::calcSumGradeOfmTop(int m){
     if(m > employees_tree_salary_filtered.getSize()){
         return -1;
     }
@@ -337,6 +352,13 @@ ReturnValue Company::promoteEmployee(int employee_id, int bump_amount){
     ReturnValue res = MY_FAILURE;
     EmployeeHashtableVal* emp_val = employee_hash_table.findElement(employee_id, &res);
 
+    if(res == ELEMENT_DOES_NOT_EXIST){
+        return MY_FAILURE;
+    }
+    else if(bump_amount <= 0){
+        return MY_SUCCESS;
+    }
+
     if(emp_val->getTreeNode() == nullptr){
         emp_val->getEmployeePtr()->setGrade(emp_val->getEmployeePtr()->getGrade() + bump_amount);
     }
@@ -352,7 +374,6 @@ ReturnValue Company::promoteEmployee(int employee_id, int bump_amount){
 
 
 void Company::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount){
-    int sum_employees_in_range = 0;
 
     if(lowest_salary > 0){
         if(employees_tree_salary_filtered.getSize() == 0)

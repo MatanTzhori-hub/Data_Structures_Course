@@ -35,6 +35,7 @@ class Company{
     void increaseValue(int new_value);
     void setValue(int new_value);
     Employee* findEmployee(int employee_id, ReturnValue* res);
+    Node<EmployeeKey,Employee*,EmployeeRank>* getEmployeeTreeNode(int employee_id, ReturnValue* res);
     bool isEmployeeExist(int employee_id);
     ReturnValue addEmployee(Employee& employee);
     ReturnValue removeEmployee(int employee_id);
@@ -43,7 +44,7 @@ class Company{
     ReturnValue employeeSalaryIncrease(int employee_id, int salary_increase);
     
     ReturnValue calcAvgGradeInRange(int lowest_salary, int highest_salary, double *avg);
-    int calcSumGradeOfmTop(int m);
+    long long calcSumGradeOfmTop(int m);
 
     // todo : imlement the following 2 functions
     ReturnValue promoteEmployee(int employee_id, int bump_amount);

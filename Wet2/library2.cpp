@@ -2,7 +2,7 @@
 #include "companies_manager.h"
 
 void *Init(int k){
-    CompaniesManager* manager = new CompaniesManager(10);
+    CompaniesManager* manager = new CompaniesManager(k);
     return (void*)manager;
 }
 
@@ -87,10 +87,6 @@ StatusType PromoteEmployee(void *DS, int employeeID, int bumpGrade){
         return INVALID_INPUT;
     }
 
-    if(bumpGrade == 0){
-        return SUCCESS;
-    }
-
     ReturnValue res = manager->promoteEmployee(employeeID, bumpGrade);
 
     if(res == MY_ALLOCATION_ERROR){
@@ -110,7 +106,7 @@ StatusType SumOfBumpGradeBetweenTopWorkersByGroup(void *DS, int companyID, int m
         return INVALID_INPUT;
     }
 
-    int sum_grade = 0;
+    long long sum_grade = 0;
     ReturnValue res = manager->sumOfBumpGradeBetweenTopWorkersByCompany(companyID, m, &sum_grade);
 
     if(res == MY_ALLOCATION_ERROR){
@@ -120,7 +116,7 @@ StatusType SumOfBumpGradeBetweenTopWorkersByGroup(void *DS, int companyID, int m
         return FAILURE;
     }
     else{
-        printf("SumOfBumpGradeBetweenTopWorkersByGroup: %d\n", sum_grade);
+        printf("SumOfBumpGradeBetweenTopWorkersByGroup: %lld\n", sum_grade);
         return SUCCESS;
     }
 }

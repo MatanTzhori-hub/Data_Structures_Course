@@ -10,9 +10,10 @@ class Employee{
     int employee_salary;
     int employee_grade;
     Company* company;
+    Company* company_0;
 
     public:
-    Employee(int employee_id, int employee_salary, int employee_grade, Company* company);
+    Employee(int employee_id, int employee_salary, int employee_grade, Company* company, Company* company_0);
     ~Employee() = default;
     
     void setCompany(Company* new_company){ company = new_company; }
@@ -21,7 +22,8 @@ class Employee{
     int getId(){ return employee_id; }
     int getGrade(){ return employee_grade; }
     int getCompanyId();
-    Company* getCompanyPtr();
+    Company* getCompanyPtr() { return company; }
+    Company* getCompany_0() { return company_0; }
     int getSalary(){ return employee_salary; }
     Employee operator=(Employee other_employee);
     bool operator<(Employee &other_employee);

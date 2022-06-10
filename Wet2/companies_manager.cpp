@@ -29,11 +29,11 @@ ReturnValue CompaniesManager::addEmployee(int EmployeeID, int CompanyID, int Gra
     Company* real_company;
     companies_union.findDataPtrByIndex(CompanyID, &real_company);
     try{
-        Employee* new_employee = new Employee(EmployeeID, 0, Grade, real_company);
+        Employee* new_employee = new Employee(EmployeeID, 0, Grade, real_company, company_0);
         real_company->addEmployee(*new_employee);
         company_0->addEmployee(*new_employee);
         }
-    catch(std::bad_alloc err){
+    catch(std::bad_alloc &err){
         return MY_ALLOCATION_ERROR;
     }
     return MY_SUCCESS;
@@ -101,28 +101,16 @@ ReturnValue CompaniesManager::promoteEmployee(int EmployeeID, int BumpGrade){
 }
 
 
-ReturnValue CompaniesManager::sumOfBumpGradeBetweenTopWorkersByCompany (int CompanyID, int m, int* sumBumpGrade){
+ReturnValue CompaniesManager::sumOfBumpGradeBetweenTopWorkersByCompany (int CompanyID, int m, long long * sumBumpGrade){
     
-    if(CompanyID == 0){
-        Company* company_0;
-        companies_union.findDataPtrByIndex(0, &company_0);
+    Company* company;
+    ReturnValue res = companies_union.findDataPtrByIndex(CompanyID, &company);
 
-        if(company_0->getPayedEmployeesNum() < m ){
-            return MY_FAILURE;
-        }
-
-        *sumBumpGrade = company_0->calcSumGradeOfmTop(m);
+    if(res != MY_SUCCESS || company->getPayedEmployeesNum() < m){
+        return MY_FAILURE;
     }
-    else{
-        Company* real_company;
-        companies_union.findDataPtrByIndex(CompanyID, &real_company);
 
-        if(real_company->getPayedEmployeesNum() < m ){
-            return MY_FAILURE;
-        }
-
-        *sumBumpGrade = real_company->calcSumGradeOfmTop(m);
-    }
+    *sumBumpGrade = company->calcSumGradeOfmTop(m);
 
     return MY_SUCCESS;
 }
@@ -130,40 +118,24 @@ ReturnValue CompaniesManager::sumOfBumpGradeBetweenTopWorkersByCompany (int Comp
 
 ReturnValue CompaniesManager::averageBumpGradeBetweenSalaryByCompany (int CompanyID, int lowerSalary, int higherSalary, double* averageBumpGrade){
     double avg;
-    if(CompanyID == 0){
-        Company* company_0;
-        companies_union.findDataPtrByIndex(0, &company_0);
+    Company* company;
+    companies_union.findDataPtrByIndex(CompanyID, &company);
 
-        ReturnValue res = company_0->calcAvgGradeInRange(lowerSalary, higherSalary, &avg);
+    ReturnValue res = company->calcAvgGradeInRange(lowerSalary, higherSalary, &avg);
 
-        if(res != MY_SUCCESS){
-            return res;
-        }
-        else{
-            *averageBumpGrade = avg;
-            return MY_SUCCESS;
-        }
+    if(res != MY_SUCCESS){
+        return res;
     }
     else{
-        Company* real_company;
-        companies_union.findDataPtrByIndex(CompanyID, &real_company);
-
-        ReturnValue res = real_company->calcAvgGradeInRange(lowerSalary, higherSalary, &avg);
-
-        if(res != MY_SUCCESS){
-            return res;
-        }
-        else{
-            *averageBumpGrade = avg;
-            return MY_SUCCESS;
-        }
+        *averageBumpGrade = avg;
+        return MY_SUCCESS;
     }
 }
 
 
-ReturnValue CompaniesManager::companyValue(int CompanyID, void * standing){
+ReturnValue CompaniesManager::companyValue(int CompanyID, double* standing){
     double value = companies_union.calcTrueValue(CompanyID);
-    *(double*)standing = value;
+    *standing = value;
 
     return MY_SUCCESS;
 }

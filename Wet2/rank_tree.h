@@ -12,6 +12,8 @@ typedef enum {MY_ALLOCATION_ERROR, MY_INVALID_INPUT, MY_FAILURE, MY_SUCCESS, ELE
 
 using std::ostream;
 
+class Company;
+
 template<typename key_t, typename data_t, typename rank_t>
 class RankTree {
 	Node<key_t, data_t, rank_t>* root;
@@ -51,7 +53,7 @@ class RankTree {
 	//Bumps calculation - trust that son is really a son of father
 	int calculateBumpsUpToFather(Node<key_t, data_t, rank_t>* son, Node<key_t, data_t, rank_t>* father);
 
-	int getSumGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound);
+	long long getSumGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound);
 	void bumpGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound, int bump_amount);
 
 public:
@@ -72,11 +74,11 @@ public:
 	// bumps and grades
 	void bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount);
 	void bumpSingleEmployeeGrade(Node<key_t, data_t, rank_t>* to_update, int bump_amount);
-	int getSumGradeOfmTop(int m);
-	int getTotalSumGrade();
-	int getSumGradeInRange(int lowest_salary, int highest_salary);
+	long long getSumGradeOfmTop(int m);
+	long long getTotalSumGrade();
+	long long getSumGradeInRange(int lowest_salary, int highest_salary);
 	int getNumEmployeesInRange(int lowest_salary, int highest_salary);
-	int calcTrueEmployeeGrade(Node<key_t, data_t, rank_t>* employee_node);
+	long long calcTrueEmployeeGrade(Node<key_t, data_t, rank_t>* employee_node);
 	
 
 	int getSize() const;
@@ -274,8 +276,8 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findCloseestEle
 }
 
 template<typename key_t, typename data_t, typename rank_t>
-int RankTree<key_t, data_t, rank_t>::getSumGradeOfmTop(int m){
-	int sum_grade = getTotalSumGrade();
+long long RankTree<key_t, data_t, rank_t>::getSumGradeOfmTop(int m){
+	long long sum_grade = getTotalSumGrade();
 	Node<key_t, data_t, rank_t>* lower_bound = Select(size - m).getNodePtr();
 	sum_grade -= getSumGradeUpTo(lower_bound);
 	return sum_grade;
@@ -283,16 +285,16 @@ int RankTree<key_t, data_t, rank_t>::getSumGradeOfmTop(int m){
 
 
 template<typename key_t, typename data_t, typename rank_t>
-int RankTree<key_t, data_t, rank_t>::getTotalSumGrade(){
+long long RankTree<key_t, data_t, rank_t>::getTotalSumGrade(){
 	return root->rank.getSumOfGrades();
 }
 
 
 template<typename key_t, typename data_t, typename rank_t>
-int RankTree<key_t, data_t, rank_t>::getSumGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound){
+long long RankTree<key_t, data_t, rank_t>::getSumGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound){
 	Node<key_t, data_t, rank_t>* curr_node = root;
-	int sum_grades = 0;
-	int accumulative_bump = 0;
+	long long sum_grades = 0;
+	long long accumulative_bump = 0;
 	while(curr_node != upper_bound){
 		accumulative_bump += curr_node->rank.getGradeBump();
 		if(curr_node->key < upper_bound->key){
@@ -327,8 +329,8 @@ int RankTree<key_t, data_t, rank_t>::getSumGradeUpTo(Node<key_t, data_t, rank_t>
 }
 
 template<typename key_t, typename data_t, typename rank_t>
-int RankTree<key_t, data_t, rank_t>::getSumGradeInRange(int lowest_salary, int highest_salary){
-	int sum_grades = 0;
+long long RankTree<key_t, data_t, rank_t>::getSumGradeInRange(int lowest_salary, int highest_salary){
+	long long sum_grades = 0;
 
 	EmployeeKey temp_highest_key = EmployeeKey(MAX_ID, highest_salary);
 	Iterator<key_t, data_t, rank_t> upper_bound_iter = findCloseestElementBelow(temp_highest_key);
@@ -359,12 +361,12 @@ int RankTree<key_t, data_t, rank_t>::getSumGradeInRange(int lowest_salary, int h
 }
 
 template<typename key_t, typename data_t, typename rank_t>
-int RankTree<key_t, data_t, rank_t>::calcTrueEmployeeGrade(Node<key_t, data_t, rank_t>* employee_node){
+long long RankTree<key_t, data_t, rank_t>::calcTrueEmployeeGrade(Node<key_t, data_t, rank_t>* employee_node){
 	if(employee_node == nullptr){
 		return -1;
 	}
 
-	int total_grade = employee_node->getData()->getGrade() + employee_node->rank.getGradeBump();
+	long long total_grade = employee_node->getData()->getGrade() + employee_node->rank.getGradeBump();
 	Node<key_t, data_t, rank_t>* curr_node = employee_node->getFather();
 	while(curr_node){
 		total_grade += curr_node->rank.getGradeBump();
@@ -556,7 +558,7 @@ template<typename key_t, typename data_t, typename rank_t>
 ReturnValue RankTree<key_t, data_t, rank_t>::fixTree(Node<key_t, data_t, rank_t> *node){
 	int old_height = 0;
 	while(node != nullptr){
-		old_height = node->height;
+		//old_height = node->height;
 		node->updateHeight();
 		node->updateBF();
 		node->updateRank();
@@ -1296,6 +1298,22 @@ void RankTree<key_t, data_t, rank_t>::putTreeToArray(Node<key_t, data_t, rank_t>
 	accum_bump += node->rank.getGradeBump();
 	node->getData()->setGrade(node->getData()->getGrade() + accum_bump);
 	node->rank.setGradeBump(0);
+
+	//-------
+	// todo : update the tree of company zero
+	// 
+	// Company* compnay_0 = node->data->getCompany_0();
+	// int none = 0;
+	// Node<key_t, data_t, rank_t> node_0 = company_0->getEmployeeTreeNode(node->data->getId(), &none);
+	// node_0->rank.setGradeBump(node_0.rank.getGradeBump() - accum_bump);
+	// if(node_0->right){
+	// 	node_0->right->rank.setGradeBump(node_0->right->rank.getGradeBump() + accum_bump);
+	// }
+	// if(node_0->left){
+	// 	node_0->left->rank.setGradeBump(node_0->left->rank.getGradeBump() + accum_bump);
+	// }
+	//-------
+
 	putTreeToArray(node->left, arr, i, accum_bump);
 	arr[*i] = node;
 	(*i)++;

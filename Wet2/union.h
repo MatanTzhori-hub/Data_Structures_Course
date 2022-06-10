@@ -154,32 +154,49 @@ ReturnValue Union<data_t>::unify(int index1, int index2, double factor){
     }
 
     // find rep node of each element (elements are saved in reversed tree)
-    UpTreeNode<data_t>* node1;
-    UpTreeNode<data_t>* node2;
-    ReturnValue res = findNodeRepByID(index1, &node1);
+    UpTreeNode<data_t>* buyer_node;
+    UpTreeNode<data_t>* bought_node;
+    ReturnValue res = findNodeRepByID(index1, &buyer_node);
     if (res == MY_INVALID_INPUT || res == ELEMENT_DOES_NOT_EXIST){
         return res;
     }
-    res = findNodeRepByID(index2, &node2);
+    res = findNodeRepByID(index2, &bought_node);
     if (res == MY_INVALID_INPUT || res == ELEMENT_DOES_NOT_EXIST){
         return res;
     }
 
     // check if both elements have the same rep node (if so, no need to merge)
-    if (node1 == node2){
+    if (buyer_node == bought_node){
         return MY_SUCCESS;
     }
 
-    // check which node has "smaller" data, and merge to the smaller one.
-    if (*node1 < *node2) {
-        node1->value_bump += factor * (node2->data->getValue() + node2->value_bump);
-        res = node2->UniteUpTreeNodes(node1, factor);
+    if (*buyer_node < *bought_node) {
+        buyer_node->data->setValue(buyer_node->data->getValue() + buyer_node->getValueBump());
+        bought_node->data->setValue(bought_node->data->getValue() + bought_node->getValueBump());
+        
+        data_t temp = buyer_node->data;
+        buyer_node->data = bought_node->data;
+        bought_node->data = temp;
+
+        UpTreeNode<data_t>* temp_ptr = array_base[buyer_node->data->getId()];
+        array_base[buyer_node->data->getId()] = array_base[bought_node->data->getId()];
+        array_base[bought_node->data->getId()] = temp_ptr;
+
+        UpTreeNode<data_t>* new_buyer_node = bought_node;
+        UpTreeNode<data_t>* new_bought_node = buyer_node;
+
+        new_buyer_node->data->setValue(new_buyer_node->data->getValue() + factor * new_bought_node->data->getValue());
+        new_bought_node->value_bump += factor * new_bought_node->data->getValue();
+        new_bought_node->data->setValue(new_bought_node->data->getValue() - new_bought_node->value_bump);
+        new_buyer_node->data->setValue(new_buyer_node->data->getValue() - new_buyer_node->value_bump);
+        new_bought_node->value_bump -= new_buyer_node->value_bump;
     }
-    else {
-        node1->value_bump += factor * (node2->data->getValue() + node2->value_bump);
-        node2->value_bump -= node1->value_bump;
-        res = node1->UniteUpTreeNodes(node2, factor);
+    else{
+        buyer_node->value_bump += factor * (bought_node->data->getValue() + bought_node->value_bump);
+        bought_node->value_bump -= buyer_node->value_bump;
     }
+
+    res = buyer_node->UniteUpTreeNodes(bought_node, factor);
 
     return res;
 }
@@ -214,6 +231,7 @@ ReturnValue Union<data_t>::bumpGradeToEmployees(int lowerSalary, int higherSalar
     for(int i =0; i < size; i++){
         UpTreeNode<data_t>** node;
         getNodeByID(i, node);
+        
         (*node)->data->bumpGradeInRange(lowerSalary, higherSalary, BumpGrade);
     }
 

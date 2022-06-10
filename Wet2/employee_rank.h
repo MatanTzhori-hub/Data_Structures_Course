@@ -9,8 +9,8 @@ class EmployeeRank{
     friend class RankTree<EmployeeKey, Employee*, EmployeeRank>;
 
     int weight;
-    long sum_of_grades;
-    int grade_bump;
+    long long sum_of_grades;
+    long long grade_bump;
 
 public:
     explicit EmployeeRank(int grade);
@@ -19,8 +19,8 @@ public:
 
     void initializeRank(Employee employee);
     int getWeight() { return weight; }
-    long getSumOfGrades() { return sum_of_grades; }
-    int getGradeBump() { return grade_bump;}
+    long long getSumOfGrades() { return sum_of_grades; }
+    long long getGradeBump() { return grade_bump;}
     void setSumOfGrades(int new_sum) { sum_of_grades = new_sum; }
     void setGradeBump(int new_bump) { grade_bump = new_bump;}
     EmployeeRank& operator+=(EmployeeRank& other_employee_rank);

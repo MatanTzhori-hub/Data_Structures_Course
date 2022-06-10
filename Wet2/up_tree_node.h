@@ -60,17 +60,6 @@ ReturnValue UpTreeNode<data_t>::UniteUpTreeNodes(UpTreeNode<data_t>* other_node,
 
     // update size of this (UpTreeNode)
     this->size += other_node->size;
-    
-    // We might not want to switch, because then when we try to calculate the true value
-    // of 1 company, we might get the value of the 1 we switched with.
-    // data_t temp_ptr = other_node->data;
-    // other_node->data = data;
-    // data = temp_ptr;
-
-    // double temp_bump = other_node->value_bump;
-    // other_node->value_bump = value_bump;
-    // value_bump = temp_bump;
-
 
     // update other_node father to this (other node is no longer root)
     return other_node->setFather(this);
