@@ -5,7 +5,7 @@ EmployeeKey::EmployeeKey(int employee_id, int employee_salary): employee_id(empl
 
 bool EmployeeKey::operator>(const EmployeeKey& other) const{
     if(this->employee_salary == other.employee_salary)
-        return this->employee_id < other.employee_id;
+        return this->employee_id > other.employee_id;
     else
         return this->employee_salary > other.employee_salary;
 }

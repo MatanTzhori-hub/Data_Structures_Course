@@ -60,13 +60,11 @@ ReturnValue CompaniesManager::removeEmployee(int EmployeeID){
 // todo : think with adi how to implement the acquireAnotherCompany function
 //        withou hurting the grade in the all employees tree.
 ReturnValue CompaniesManager::acquireCompany(int AcquirerID, int TargetID, double Factor){
-
     return companies_union.unify(AcquirerID, TargetID, Factor);
 }
 
 
 ReturnValue CompaniesManager::employeeSalaryIncrease(int EmployeeID, int SalaryIncrease){
-
     Company* company_0;
     companies_union.findDataPtrByIndex(0, &company_0);
     ReturnValue res = MY_FAILURE;
@@ -110,7 +108,6 @@ ReturnValue CompaniesManager::promoteEmployee(int EmployeeID, int BumpGrade){
 
 
 ReturnValue CompaniesManager::sumOfBumpGradeBetweenTopWorkersByCompany (int CompanyID, int m, long long * sumBumpGrade){
-    
     Company* company;
     ReturnValue res = companies_union.findDataPtrByIndex(CompanyID, &company);
 

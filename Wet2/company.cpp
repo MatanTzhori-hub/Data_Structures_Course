@@ -192,7 +192,6 @@ void Company::updateCompanyForAllEmployees(){
 }
 
 ReturnValue Company::employeeSalaryIncrease(int employee_id, int salary_increase){
-
     ReturnValue res = MY_FAILURE;
     EmployeeHashtableVal* employee_val = employee_hash_table.findElement(employee_id, &res);
     
@@ -325,16 +324,17 @@ ReturnValue Company::calcAvgGradeInRange(int lowest_salary, int highest_salary, 
         *avg = 0;
         return MY_FAILURE;
     }
-    int sum_grade = calcSumGradeInRange(lowest_salary, highest_salary);
-    if(sum_grade == 0){
+
+    int sum_employees = calcNumEmployeesInRange(lowest_salary, highest_salary);
+    if(sum_employees == 0){
         *avg = 0;
         return MY_FAILURE;
     }
-    else{
-        int sum_employees = calcNumEmployeesInRange(lowest_salary, highest_salary);
-        *avg = (double)sum_grade / sum_employees;
-        return MY_SUCCESS;
-    }
+
+    int sum_grade = calcSumGradeInRange(lowest_salary, highest_salary);
+    *avg = (double)sum_grade / sum_employees;
+    
+    return MY_SUCCESS;
 }
 
 
@@ -363,7 +363,11 @@ ReturnValue Company::promoteEmployee(int employee_id, int bump_amount){
     }
 
     if(emp_val->getTreeNode() == nullptr){
-        emp_val->getEmployeePtr()->setGrade(emp_val->getEmployeePtr()->getGrade() + bump_amount);
+        zero_salary_employees_list.bumpSingleEmployeeGrade(emp_val->getListNode(), bump_amount);
+        // because we increase the employee grade in both the real company and company_0, we want to increase the real grade only once
+        if(this->company_id == 0){
+            emp_val->getEmployeePtr()->setGrade(emp_val->getEmployeePtr()->getGrade() - bump_amount);
+        }
     }
     else if(emp_val->getListNode() == nullptr){
         employees_tree_salary_filtered.bumpSingleEmployeeGrade(emp_val->getTreeNode(), bump_amount);
@@ -377,7 +381,6 @@ ReturnValue Company::promoteEmployee(int employee_id, int bump_amount){
 
 
 void Company::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount){
-
     if(lowest_salary > 0){
         if(employees_tree_salary_filtered.getSize() == 0)
             return;
@@ -419,7 +422,6 @@ void Company::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_a
         employees_tree_salary_filtered.bumpGradeInRange(lowest_salary, highest_salary, bump_amount);
     }
 }
-
 
 Company& Company::operator+=(Company& other){
     this->AcquireAnotherCompany(&other);

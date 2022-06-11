@@ -88,7 +88,9 @@ ReturnValue Union<data_t>::findNodeRepByID(int index, UpTreeNode<data_t>** node)
     UpTreeNode<data_t>* curr_node = array_base[index];
 
     // find rep node for the upTree
+    double bump_on_way = 0;
     while (!(curr_node->isRoot())){
+        bump_on_way += curr_node->value_bump;
         curr_node = curr_node->getFather();
     }
 
@@ -101,10 +103,13 @@ ReturnValue Union<data_t>::findNodeRepByID(int index, UpTreeNode<data_t>** node)
     UpTreeNode<data_t>* root = curr_node; // at this point, curr_node is the root
     UpTreeNode<data_t>* father;
     curr_node = *(array_base + index); // reset cur_node to the original node of index
+
     while (!(curr_node->isRoot())){
         father = curr_node->getFather();
         if (!father->isRoot()){
             res = curr_node->setFather(root);
+            bump_on_way -= curr_node->value_bump;
+            curr_node->data->setValue(curr_node->data->getValue() + bump_on_way);
             if ( res != MY_SUCCESS){
                 return res;
             }
@@ -174,29 +179,36 @@ ReturnValue Union<data_t>::unify(int index1, int index2, double factor){
         buyer_node->data->setValue(buyer_node->data->getValue() + buyer_node->getValueBump());
         bought_node->data->setValue(bought_node->data->getValue() + bought_node->getValueBump());
         
+        // Mark the names for later used after switch
+        UpTreeNode<data_t>* new_buyer_node = bought_node;
+        UpTreeNode<data_t>* new_bought_node = buyer_node;
+
+        // Switch location of buyer and bought
         data_t temp = buyer_node->data;
         buyer_node->data = bought_node->data;
         bought_node->data = temp;
 
+        // Switch pointers in the array
         UpTreeNode<data_t>* temp_ptr = array_base[buyer_node->data->getId()];
         array_base[buyer_node->data->getId()] = array_base[bought_node->data->getId()];
         array_base[bought_node->data->getId()] = temp_ptr;
-
-        UpTreeNode<data_t>* new_buyer_node = bought_node;
-        UpTreeNode<data_t>* new_bought_node = buyer_node;
 
         new_buyer_node->data->setValue(new_buyer_node->data->getValue() + factor * new_bought_node->data->getValue());
         new_bought_node->value_bump += factor * new_bought_node->data->getValue();
         new_bought_node->data->setValue(new_bought_node->data->getValue() - new_bought_node->value_bump);
         new_buyer_node->data->setValue(new_buyer_node->data->getValue() - new_buyer_node->value_bump);
         new_bought_node->value_bump -= new_buyer_node->value_bump;
+
+        // this is for the uniteUpTreeNodes out of the if
+        buyer_node = new_buyer_node;
+        bought_node = new_bought_node;
     }
     else{
         buyer_node->value_bump += factor * (bought_node->data->getValue() + bought_node->value_bump);
         bought_node->value_bump -= buyer_node->value_bump;
     }
 
-    res = buyer_node->UniteUpTreeNodes(bought_node, factor);
+    res = buyer_node->UniteUpTreeNodes(bought_node);
 
     return res;
 }

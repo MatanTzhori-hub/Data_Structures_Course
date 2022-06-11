@@ -95,7 +95,7 @@ static bool isInit = false;
 int main(int argc, const char**argv) {
     char buffer[MAX_STRING_INPUT_SIZE];
 
-    FILE* input = fopen(".\\tests\\input\\in0.txt", "r");
+    FILE* input = fopen(".\\tests\\input\\in5.txt", "r");
 
     // Reading commands
     //while (fgets(buffer, MAX_STRING_INPUT_SIZE, stdin) != NULL) {

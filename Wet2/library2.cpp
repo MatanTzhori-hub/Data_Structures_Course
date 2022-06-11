@@ -141,6 +141,8 @@ StatusType AverageBumpGradeBetweenSalaryByGroup(void *DS, int companyID, int low
         return FAILURE;
     }
     else{
+        avg = floor(avg*10)/10;
+
         printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", avg);
         return SUCCESS;
     }

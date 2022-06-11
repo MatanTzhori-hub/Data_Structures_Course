@@ -22,6 +22,7 @@ public:
     DoublyLinkedListNode<data_t>* getTail() { return tail; }
     long long getGradeSum();
     void bumpAllGrade(int bump_amount);
+    void bumpSingleEmployeeGrade(DoublyLinkedListNode<data_t>* node, int bump_amount);
 };
 
 template <typename data_t>
@@ -162,6 +163,13 @@ long long DoublyLinkedList<data_t>::getGradeSum(){
 template <typename data_t>
 void DoublyLinkedList<data_t>::bumpAllGrade(int bump_amount){
     grade_bump += bump_amount;
+}
+
+
+template <typename data_t>
+void DoublyLinkedList<data_t>::bumpSingleEmployeeGrade(DoublyLinkedListNode<data_t>* node, int bump_amount){
+    node->data->setGrade(node->data->getGrade() + bump_amount);
+    grade_sum += bump_amount;
 }
 
 #endif //DOUBLY_LINKED_LIST_H

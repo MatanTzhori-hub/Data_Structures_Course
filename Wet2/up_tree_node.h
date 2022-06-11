@@ -27,7 +27,7 @@ public:
     void setData(data_t new_data) { data = new_data; }
     void setValueBump(double new_bump) { value_bump = new_bump; }
     double getValueBump() { return value_bump; }
-    ReturnValue UniteUpTreeNodes(UpTreeNode<data_t>* other_node, double factor);
+    ReturnValue UniteUpTreeNodes(UpTreeNode<data_t>* other_node);
     bool operator<(UpTreeNode<data_t> node2);
 
     friend class Union<data_t>;
@@ -44,7 +44,7 @@ ReturnValue UpTreeNode<data_t>::setFather(UpTreeNode<data_t>* new_father){
 }
 
 template<typename data_t>
-ReturnValue UpTreeNode<data_t>::UniteUpTreeNodes(UpTreeNode<data_t>* other_node, double factor){
+ReturnValue UpTreeNode<data_t>::UniteUpTreeNodes(UpTreeNode<data_t>* other_node){
     // check input
     if (other_node == nullptr){
         return MY_INVALID_INPUT;

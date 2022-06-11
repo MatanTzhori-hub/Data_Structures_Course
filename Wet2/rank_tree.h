@@ -216,7 +216,7 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findCloseestEle
 
 	while(curr_node){
 		if(curr_node->key.getSalary() == key.getSalary()){
-			if(curr_node->key.getId() > key.getId()){
+			if(curr_node->key.getId() < key.getId()){
 				closest = curr_node;
 				curr_node = curr_node->getRight();
 			}
@@ -252,7 +252,7 @@ Iterator<key_t, data_t, rank_t> RankTree<key_t, data_t, rank_t>::findCloseestEle
 
 	while(curr_node){
 		if(curr_node->key.getSalary() == key.getSalary()){
-			if(curr_node->key.getId() < key.getId()){
+			if(curr_node->key.getId() > key.getId()){
 				closest = curr_node;
 				curr_node = curr_node->getLeft();
 			}
@@ -334,20 +334,20 @@ template<typename key_t, typename data_t, typename rank_t>
 long long RankTree<key_t, data_t, rank_t>::getSumGradeInRange(int lowest_salary, int highest_salary){
 	long long sum_grades = 0;
 
-	EmployeeKey temp_highest_key = EmployeeKey(MAX_ID, highest_salary);
+	EmployeeKey temp_highest_key = EmployeeKey(0, highest_salary);
 	Iterator<key_t, data_t, rank_t> upper_bound_iter = findCloseestElementBelow(temp_highest_key);
 	if(upper_bound_iter == end()){
 		return 0;
 	}
 
 	if(upper_bound_iter.getKey().getSalary() == highest_salary){
-		temp_highest_key.setId(0);
+		temp_highest_key.setId(MAX_ID);
 		upper_bound_iter = findCloseestElementAbove(temp_highest_key);
 	}
 	sum_grades += getSumGradeUpTo(upper_bound_iter.getNodePtr());
 
 
-	EmployeeKey temp_lowest_key = EmployeeKey(MAX_ID, lowest_salary);
+	EmployeeKey temp_lowest_key = EmployeeKey(0, lowest_salary);
 	Iterator<key_t, data_t, rank_t> lower_bound_iter = findCloseestElementBelow(temp_lowest_key);
 	if(lower_bound_iter == end()){
 		return sum_grades;
@@ -382,13 +382,13 @@ long long RankTree<key_t, data_t, rank_t>::calcTrueEmployeeGrade(Node<key_t, dat
 template<typename key_t, typename data_t, typename rank_t>
 int RankTree<key_t, data_t, rank_t>::getNumEmployeesInRange(int lowest_salary, int highest_salary){
 
-	EmployeeKey temp_highest_key = EmployeeKey(MAX_ID, highest_salary);
+	EmployeeKey temp_highest_key = EmployeeKey(0, highest_salary);
 	Iterator<key_t, data_t, rank_t> upper_bound_iter = findCloseestElementBelow(temp_highest_key);
 	if(upper_bound_iter == end()){
 		return 0;
 	}
 	else if(upper_bound_iter.getKey().getSalary() == highest_salary){
-		temp_highest_key.setId(0);
+		temp_highest_key.setId(MAX_ID);
 		upper_bound_iter = findCloseestElementAbove(temp_highest_key);
 	}
 	else{
@@ -396,13 +396,13 @@ int RankTree<key_t, data_t, rank_t>::getNumEmployeesInRange(int lowest_salary, i
 		return 0;
 	}
 
-	EmployeeKey temp_lowest_key = EmployeeKey(0, lowest_salary);
+	EmployeeKey temp_lowest_key = EmployeeKey(MAX_ID, lowest_salary);
 	Iterator<key_t, data_t, rank_t> lower_bound_iter = findCloseestElementAbove(temp_lowest_key);
 	if(lower_bound_iter == end()){
 		return 0;
 	}
 	else if(lower_bound_iter.getKey().getSalary() == lowest_salary){
-		temp_lowest_key.setId(MAX_ID);
+		temp_lowest_key.setId(0);
 		lower_bound_iter = findCloseestElementBelow(temp_lowest_key);
 	}
 	else{
@@ -465,27 +465,27 @@ void RankTree<key_t, data_t, rank_t>::bumpGradeUpTo(Node<key_t, data_t, rank_t>*
 template<typename key_t, typename data_t, typename rank_t>
 void RankTree<key_t, data_t, rank_t>::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount){
 	
-	EmployeeKey temp_highest_key = EmployeeKey(MAX_ID, highest_salary);
+	EmployeeKey temp_highest_key = EmployeeKey(0, highest_salary);
 	Iterator<key_t, data_t, rank_t> upper_bound_iter = findCloseestElementBelow(temp_highest_key);
 	if(upper_bound_iter == end()){
 		return;
 	}
 
 	if(upper_bound_iter.getKey().getSalary() == highest_salary){
-		temp_highest_key.setId(0);
+		temp_highest_key.setId(MAX_ID);
 		upper_bound_iter = findCloseestElementAbove(temp_highest_key);
 	}
 	bumpGradeUpTo(upper_bound_iter.getNodePtr(), bump_amount);
 
 
-	EmployeeKey temp_lowest_key = EmployeeKey(MAX_ID, lowest_salary - 1);
+	EmployeeKey temp_lowest_key = EmployeeKey(0, lowest_salary - 1);
 	Iterator<key_t, data_t, rank_t> lower_bound_iter = findCloseestElementBelow(temp_lowest_key);
 	if(lower_bound_iter == end()){
 		return;
 	}
 
 	if(lower_bound_iter.getKey().getSalary() == lowest_salary - 1){
-		temp_lowest_key.setId(0);
+		temp_lowest_key.setId(MAX_ID);
 		lower_bound_iter = findCloseestElementAbove(temp_lowest_key);
 	}
 	bumpGradeUpTo(lower_bound_iter.getNodePtr(), -1 * bump_amount);
