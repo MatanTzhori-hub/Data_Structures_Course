@@ -53,6 +53,7 @@ ReturnValue CompaniesManager::removeEmployee(int EmployeeID){
     Company* real_company = employee_ptr->getCompanyPtr();
     real_company->removeEmployee(EmployeeID);
     company_0->removeEmployee(EmployeeID);
+    delete employee_ptr;
     return MY_SUCCESS;
 }
 
