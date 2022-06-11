@@ -104,12 +104,17 @@ ReturnValue Union<data_t>::findNodeRepByID(int index, UpTreeNode<data_t>** node)
     UpTreeNode<data_t>* father;
     curr_node = *(array_base + index); // reset cur_node to the original node of index
 
+    if(index == 17 || index == 13 || index == 2)
+    {
+        printf("");
+    }
+
     while (!(curr_node->isRoot())){
         father = curr_node->getFather();
         if (!father->isRoot()){
             res = curr_node->setFather(root);
             bump_on_way -= curr_node->value_bump;
-            curr_node->data->setValue(curr_node->data->getValue() + bump_on_way);
+            curr_node->value_bump += bump_on_way;
             if ( res != MY_SUCCESS){
                 return res;
             }
