@@ -1196,7 +1196,7 @@ RankTree<key_t, data_t, rank_t>* RankTree<key_t, data_t, rank_t>::mergeToMe(Rank
 
     // This will be destructed when we exit this function. will destroy old nodes for the other tree.
     RankTree<key_t, data_t, rank_t> temp2_tree = RankTree<key_t, data_t, rank_t>();
-    temp_tree.root = other_tree.root;
+    temp2_tree.root = other_tree.root;
     other_tree.root = nullptr;
     other_tree.size = 0;
 

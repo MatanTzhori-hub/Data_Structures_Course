@@ -46,7 +46,7 @@ Union<data_t>::Union(int new_size) : size(new_size) {
 
 template<typename data_t>
 Union<data_t>::~Union(){
-    for (int i = (size-1); i > 0; i--){
+    for (int i = 0; i < size; i++){
         delete array_base[i];
     }
 

@@ -73,9 +73,11 @@ DynamicHashTable<data_t>::~DynamicHashTable(){
 
 template<class data_t>
 void DynamicHashTable<data_t>::killAllEmployees(){
+    int count = 0;
     for (int i=0; i<max_size; i++){
         if(graveyard[i]==TAKEN){
             delete hash_array[i].getEmployeePtr();
+            count++;
         }
     }
 }

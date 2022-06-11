@@ -8,7 +8,6 @@ template<typename key_t, typename data_t, typename rank_t> class RankTree;
 template<typename key_t, typename data_t, typename rank_t>
 class Iterator {
 	Node<key_t, data_t, rank_t>* ptr;
-	friend class RankTree<key_t, data_t, rank_t>;
 	int order;
 
 public:
