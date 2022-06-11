@@ -141,7 +141,7 @@ StatusType AverageBumpGradeBetweenSalaryByGroup(void *DS, int companyID, int low
         return FAILURE;
     }
     else{
-        avg = floor(avg*10)/10;
+        // avg = floor(avg*10)/10;
 
         printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", avg);
         return SUCCESS;
@@ -151,7 +151,7 @@ StatusType AverageBumpGradeBetweenSalaryByGroup(void *DS, int companyID, int low
 StatusType CompanyValue(void *DS, int companyID){
     CompaniesManager* manager = (CompaniesManager*)DS;
 
-    if(DS == NULL || companyID < 0 || companyID > manager->getSize()){
+    if(DS == NULL || companyID <= 0 || companyID > manager->getSize()){
         return INVALID_INPUT;
     }
 
