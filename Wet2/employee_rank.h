@@ -14,7 +14,7 @@ class EmployeeRank{
     long long grade_bump;
 
 public:
-    explicit EmployeeRank(int grade);
+    explicit EmployeeRank(long long grade);
     explicit EmployeeRank() = default;
     ~EmployeeRank() = default;
 
@@ -25,7 +25,7 @@ public:
     long long getTreeGrade() { return tree_grade;}
     void setTreeGrade(long long new_grade) { tree_grade = new_grade; }
     void setSumOfGrades(long long new_sum) { sum_of_grades = new_sum; }
-    void setGradeBump(int new_bump) { grade_bump = new_bump;}
+    void setGradeBump(long long new_bump) { grade_bump = new_bump;}
     EmployeeRank& operator+=(EmployeeRank& other_employee_rank);
     EmployeeRank& operator-=(EmployeeRank& other_employee_rank);
     EmployeeRank& operator=(EmployeeRank& other) = default;

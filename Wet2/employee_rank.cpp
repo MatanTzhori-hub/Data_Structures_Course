@@ -1,6 +1,6 @@
 #include "employee_rank.h"
 
-EmployeeRank::EmployeeRank(int grade): weight(1),
+EmployeeRank::EmployeeRank(long long grade): weight(1),
 									   tree_grade(grade),
 							  		   sum_of_grades(grade),
 									   grade_bump(0){}

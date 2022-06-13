@@ -9,7 +9,7 @@ class DoublyLinkedList {
     DoublyLinkedListNode<data_t>* head;
     DoublyLinkedListNode<data_t>* tail;
     int size;
-    int grade_bump;
+    long long grade_bump;
     long long grade_sum;
 public:
     DoublyLinkedList() : head(nullptr), tail(nullptr), size(0), grade_bump(0), grade_sum(0) {}
@@ -21,8 +21,8 @@ public:
     DoublyLinkedListNode<data_t>* getHead() { return head; }
     DoublyLinkedListNode<data_t>* getTail() { return tail; }
     long long getGradeSum();
-    void bumpAllGrade(int bump_amount);
-    void bumpSingleEmployeeGrade(DoublyLinkedListNode<data_t>* node, int bump_amount);
+    void bumpAllGrade(long long bump_amount);
+    void bumpSingleEmployeeGrade(DoublyLinkedListNode<data_t>* node, long long bump_amount);
 };
 
 template <typename data_t>
@@ -124,7 +124,7 @@ ReturnValue DoublyLinkedList<data_t>::merge_to_me(DoublyLinkedList<data_t> &othe
         return MY_SUCCESS;
     }
 
-    int total_sum = 0;
+    long long total_sum = 0;
     DoublyLinkedListNode<data_t>* temp_node = head;
     while(temp_node){
         temp_node->getData()->setGrade(temp_node->getData()->getGrade() + grade_bump);
@@ -161,13 +161,13 @@ long long DoublyLinkedList<data_t>::getGradeSum(){
 
 
 template <typename data_t>
-void DoublyLinkedList<data_t>::bumpAllGrade(int bump_amount){
+void DoublyLinkedList<data_t>::bumpAllGrade(long long bump_amount){
     grade_bump += bump_amount;
 }
 
 
 template <typename data_t>
-void DoublyLinkedList<data_t>::bumpSingleEmployeeGrade(DoublyLinkedListNode<data_t>* node, int bump_amount){
+void DoublyLinkedList<data_t>::bumpSingleEmployeeGrade(DoublyLinkedListNode<data_t>* node, long long bump_amount){
     node->data->setGrade(node->data->getGrade() + bump_amount);
     grade_sum += bump_amount;
 }

@@ -15,25 +15,25 @@ class EmployeeRank;
 
 class Company{
     int company_id;
-    int company_value;
+    double company_value;
     DynamicHashTable<EmployeeHashtableVal> employee_hash_table;
     DoublyLinkedList<Employee*> zero_salary_employees_list;
     RankTree<EmployeeKey,Employee*,EmployeeRank> employees_tree_salary_filtered;
     
-    int calcSumGradeInRange(int lowest_salary, int highest_salary);
+    long long calcSumGradeInRange(int lowest_salary, int highest_salary);
     int calcNumEmployeesInRange(int lowest_salary, int highest_salary);
 
     public:
-    Company(int company_id, int company_value);
+    Company(int company_id, double company_value);
     ~Company() = default;
     void killAllEmployees();
 
     int getSize() const;
     int getPayedEmployeesNum();
     int getId() const;
-    int getValue() const;
-    void increaseValue(int new_value);
-    void setValue(int new_value);
+    double getValue() const;
+    void increaseValue(double new_value);
+    void setValue(double new_value);
     Employee* findEmployee(int employee_id, ReturnValue* res);
     Node<EmployeeKey,Employee*,EmployeeRank>* getEmployeeTreeNode(int employee_id, ReturnValue* res);
     bool isEmployeeExist(int employee_id);
@@ -47,8 +47,8 @@ class Company{
     long long calcSumGradeOfmTop(int m);
 
     // todo : imlement the following 2 functions
-    ReturnValue promoteEmployee(int employee_id, int bump_amount);
-    void bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount);
+    ReturnValue promoteEmployee(int employee_id, long long bump_amount);
+    void bumpGradeInRange(int lowest_salary, int highest_salary, long long bump_amount);
 
     Company& operator+=(Company& other);
 };

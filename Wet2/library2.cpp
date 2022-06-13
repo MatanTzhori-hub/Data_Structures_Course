@@ -145,7 +145,7 @@ StatusType AverageBumpGradeBetweenSalaryByGroup(void *DS, int companyID, int low
 
         printf("AverageBumpGradeBetweenSalaryByGroup: %.1f\n", avg);
         return SUCCESS;
-    }
+    }  
 }
 
 StatusType CompanyValue(void *DS, int companyID){

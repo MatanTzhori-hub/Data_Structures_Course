@@ -1,6 +1,6 @@
 #include "employee.h"
 
-Employee::Employee(int employee_id, int employee_salary, int employee_grade, Company* company, Company* company_0):
+Employee::Employee(int employee_id, int employee_salary, long long employee_grade, Company* company, Company* company_0):
                     employee_id(employee_id),
                     employee_salary(employee_salary),
                     employee_grade(employee_grade),

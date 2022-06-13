@@ -1,6 +1,6 @@
 #include "company.h"
 
-Company::Company(int company_id, int company_value) : company_id(company_id), 
+Company::Company(int company_id, double company_value) : company_id(company_id), 
                                                       company_value(company_value),
                                                       employee_hash_table(),
                                                       zero_salary_employees_list(),
@@ -24,15 +24,15 @@ int Company::getId() const{
     return company_id;
 }
 
-int Company::getValue() const{
+double Company::getValue() const{
     return company_value;
 }
 
-void Company::increaseValue(int value_increase){
+void Company::increaseValue(double value_increase){
     company_value += value_increase;
 }
 
-void Company::setValue(int new_value){
+void Company::setValue(double new_value){
     this->company_value = new_value;
 }
 
@@ -224,8 +224,8 @@ ReturnValue Company::employeeSalaryIncrease(int employee_id, int salary_increase
     }
 }
 
-int Company::calcSumGradeInRange(int lowest_salary, int highest_salary) {
-    int sum_grades_in_range = 0;
+long long Company::calcSumGradeInRange(int lowest_salary, int highest_salary) {
+    long long sum_grades_in_range = 0;
 
     if(lowest_salary > 0){
         if(employees_tree_salary_filtered.getSize() == 0)
@@ -331,7 +331,7 @@ ReturnValue Company::calcAvgGradeInRange(int lowest_salary, int highest_salary, 
         return MY_FAILURE;
     }
 
-    int sum_grade = calcSumGradeInRange(lowest_salary, highest_salary);
+    long long sum_grade = calcSumGradeInRange(lowest_salary, highest_salary);
     *avg = (double)sum_grade / sum_employees;
     
     return MY_SUCCESS;
@@ -351,7 +351,7 @@ long long Company::calcSumGradeOfmTop(int m){
 }
 
 
-ReturnValue Company::promoteEmployee(int employee_id, int bump_amount){
+ReturnValue Company::promoteEmployee(int employee_id, long long bump_amount){
     ReturnValue res = MY_FAILURE;
     EmployeeHashtableVal* emp_val = employee_hash_table.findElement(employee_id, &res);
 
@@ -380,7 +380,7 @@ ReturnValue Company::promoteEmployee(int employee_id, int bump_amount){
 }
 
 
-void Company::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount){
+void Company::bumpGradeInRange(int lowest_salary, int highest_salary, long long bump_amount){
     if(lowest_salary > 0){
         if(employees_tree_salary_filtered.getSize() == 0)
             return;

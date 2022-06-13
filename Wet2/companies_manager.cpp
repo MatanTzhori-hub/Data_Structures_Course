@@ -16,7 +16,7 @@ CompaniesManager::~CompaniesManager(){
     companies_union.killAllCompanies();
 }
 
-ReturnValue CompaniesManager::addEmployee(int EmployeeID, int CompanyID, int Grade){
+ReturnValue CompaniesManager::addEmployee(int EmployeeID, int CompanyID, long long Grade){
     Company* company_0;
     companies_union.findDataPtrByIndex(0, &company_0);
     ReturnValue res = MY_FAILURE;
@@ -90,7 +90,7 @@ ReturnValue CompaniesManager::employeeSalaryIncrease(int EmployeeID, int SalaryI
 }
 
 
-ReturnValue CompaniesManager::promoteEmployee(int EmployeeID, int BumpGrade){
+ReturnValue CompaniesManager::promoteEmployee(int EmployeeID, long long BumpGrade){
     Company* company_0;
     companies_union.findDataPtrByIndex(0, &company_0);
     ReturnValue res = MY_FAILURE;
@@ -147,7 +147,7 @@ ReturnValue CompaniesManager::companyValue(int CompanyID, double* standing){
 }
 
 
-ReturnValue CompaniesManager::bumpGradeToEmployees(int lowerSalary, int higherSalary, int BumpGrade){
+ReturnValue CompaniesManager::bumpGradeToEmployees(int lowerSalary, int higherSalary, long long BumpGrade){
     ReturnValue res = companies_union.bumpGradeToEmployees(lowerSalary, higherSalary, BumpGrade);
     return res;
 }

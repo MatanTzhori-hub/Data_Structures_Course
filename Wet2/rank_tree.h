@@ -51,10 +51,10 @@ class RankTree {
 					   Node<key_t, data_t, rank_t>* merged_arr[], int arr1_size, int arr2_size);
 
 	//Bumps calculation - trust that son is really a son of father
-	int calculateBumpsUpToFather(Node<key_t, data_t, rank_t>* son, Node<key_t, data_t, rank_t>* father);
+	long long calculateBumpsUpToFather(Node<key_t, data_t, rank_t>* son, Node<key_t, data_t, rank_t>* father);
 
 	long long getSumGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound);
-	void bumpGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound, int bump_amount);
+	void bumpGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound, long long bump_amount);
 
 	void updateRankToAllTree(Node<key_t, data_t, rank_t>* node);
 
@@ -74,8 +74,8 @@ public:
 	Iterator<key_t, data_t, rank_t> findCloseestElementBelow(key_t key);
 
 	// bumps and grades
-	void bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount);
-	void bumpSingleEmployeeGrade(Node<key_t, data_t, rank_t>* to_update, int bump_amount);
+	void bumpGradeInRange(int lowest_salary, int highest_salary, long long bump_amount);
+	void bumpSingleEmployeeGrade(Node<key_t, data_t, rank_t>* to_update, long long bump_amount);
 	long long getSumGradeOfmTop(int m);
 	long long getTotalSumGrade();
 	long long getSumGradeInRange(int lowest_salary, int highest_salary);
@@ -420,7 +420,7 @@ int RankTree<key_t, data_t, rank_t>::getNumEmployeesInRange(int lowest_salary, i
 
 //todo : finish this function!
 template<typename key_t, typename data_t, typename rank_t>
-void RankTree<key_t, data_t, rank_t>::bumpGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound, int bump_amount){
+void RankTree<key_t, data_t, rank_t>::bumpGradeUpTo(Node<key_t, data_t, rank_t>* upper_bound, long long bump_amount){
 	// enum Crossed {IN, OUT, NO};
 	// Crossed status = NO;
 
@@ -463,7 +463,7 @@ void RankTree<key_t, data_t, rank_t>::bumpGradeUpTo(Node<key_t, data_t, rank_t>*
 
 
 template<typename key_t, typename data_t, typename rank_t>
-void RankTree<key_t, data_t, rank_t>::bumpGradeInRange(int lowest_salary, int highest_salary, int bump_amount){
+void RankTree<key_t, data_t, rank_t>::bumpGradeInRange(int lowest_salary, int highest_salary, long long bump_amount){
 	
 	EmployeeKey temp_highest_key = EmployeeKey(0, highest_salary);
 	Iterator<key_t, data_t, rank_t> upper_bound_iter = findCloseestElementBelow(temp_highest_key);
@@ -495,7 +495,7 @@ void RankTree<key_t, data_t, rank_t>::bumpGradeInRange(int lowest_salary, int hi
 
 //todo : add function for promoting grade for specific employee, and then fix the tree
 template<typename key_t, typename data_t, typename rank_t>
-void RankTree<key_t, data_t, rank_t>::bumpSingleEmployeeGrade(Node<key_t, data_t, rank_t>* to_update, int bump_amount){
+void RankTree<key_t, data_t, rank_t>::bumpSingleEmployeeGrade(Node<key_t, data_t, rank_t>* to_update, long long bump_amount){
 	to_update->rank.setTreeGrade(to_update->rank.getTreeGrade() + bump_amount);
 	fixTree(to_update);
 }
@@ -517,7 +517,7 @@ ReturnValue RankTree<key_t, data_t, rank_t>::insert(key_t key, data_t element, r
 	
 	Node<key_t, data_t, rank_t>* curr_node = root;
 	bool found = false;
-	int tot_grade_bump_on_the_way = curr_node->rank.getGradeBump();
+	long long tot_grade_bump_on_the_way = curr_node->rank.getGradeBump();
 	while(curr_node && !found){
 		if(curr_node->key == key){
 			delete node_to_insert;
@@ -759,12 +759,12 @@ ReturnValue RankTree<key_t, data_t, rank_t>::removeElement(key_t key) {
 
 // calculate the sum of bump without the father and the son
 template<typename key_t, typename data_t, typename rank_t>
-int RankTree<key_t, data_t, rank_t>::calculateBumpsUpToFather(Node<key_t, data_t, rank_t>* son, Node<key_t, data_t, rank_t>* father){
+long long RankTree<key_t, data_t, rank_t>::calculateBumpsUpToFather(Node<key_t, data_t, rank_t>* son, Node<key_t, data_t, rank_t>* father){
 	if(son == nullptr || father == nullptr){
 		return -1;
 	}
 	
-	int sum_bumps = 0;
+	long long sum_bumps = 0;
 	son = son->father;
 	while(son != father){
 		sum_bumps += son->rank.getGradeBump();

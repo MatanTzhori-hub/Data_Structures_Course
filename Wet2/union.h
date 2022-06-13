@@ -28,7 +28,7 @@ public:
     ReturnValue findDataPtrByIndex(int index, data_t* data_ptr);
     ReturnValue unify(int index1, int index2, double factor);
     double calcTrueValue(int index);
-    ReturnValue bumpGradeToEmployees(int lowerSalary, int higherSalary, int BumpGrade);
+    ReturnValue bumpGradeToEmployees(int lowerSalary, int higherSalary, long long BumpGrade);
 };
 
 /* union gets num of elements in structure, creates new array with correct size.
@@ -244,7 +244,7 @@ double Union<data_t>::calcTrueValue(int index){
 
 
 template <typename data_t>
-ReturnValue Union<data_t>::bumpGradeToEmployees(int lowerSalary, int higherSalary, int BumpGrade){
+ReturnValue Union<data_t>::bumpGradeToEmployees(int lowerSalary, int higherSalary, long long BumpGrade){
     for(int i =0; i < size; i++){
         UpTreeNode<data_t>** node;
         getNodeByID(i, node);
